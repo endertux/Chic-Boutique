@@ -3,6 +3,95 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
+###############################################################
+######################### Dress Up ############################
+###############################################################
+default bottom = 0
+default shoes = 0
+default top = 0
+
+#Player and clothing seperation
+screen playerSprite:
+    image "playerAssets/bodyBase.png":
+        xpos 300
+        ypos 0
+
+screen top0 zorder 2:
+    image "playerAssets/top0.png":
+        xpos 300
+        ypos 0
+
+screen top1 zorder 2:
+    image "playerAssets/top1.png":
+        xpos 300
+        ypos 0
+
+screen top2 zorder 2:
+    image "playerAssets/top2.png":
+        xpos 300
+        ypos 0
+
+screen bottom0 zorder 1:
+    image "playerAssets/bottom0.png":
+        xpos 300
+        ypos 0
+
+screen bottom1 zorder 1:
+    image "playerAssets/bottom1.png":
+        xpos 300
+        ypos 0
+
+screen bottom2 zorder 1:
+    image "playerAssets/bottom2.png":
+        xpos 300
+        ypos 0
+
+screen shoe0 zorder 1:
+    image "playerAssets/shoe0.png":
+        xpos 300
+        ypos 0
+
+screen shoe1 zorder 1:
+    image "playerAssets/shoe1.png":
+        xpos 300
+        ypos 0
+
+screen shoe2 zorder 1:
+    image "playerAssets/shoe2.png":
+        xpos 300
+        ypos 0
+
+#Dress up menu screen
+#Start button
+screen outfits:
+    image "/game/images/Backgrounds/pinkbackground.jpg"
+    imagebutton auto "Minigame/start_%s.png" align(0.5, 0.40) action [Show("outfits_ui"), Show("Dana_Sprite"), Show("top0"), Show("bottom0")]
+
+#Minigame
+screen outfits_ui:
+    image "/game/images/Backgrounds/pinkbackground.jpg"
+    image "game/playerAssets/bodyBase.png" align(1.0, 0.0)
+
+    imagebutton auto "Minigame/done_%s.png" align(0.80, 0.75) action Jump("accept letter")
+
+#Tops
+    imagebutton auto "game/playerAssets/top0.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+    imagebutton auto "game/playerAssets/top1.PNG" align(0.655, 0.45) action [Show("top1"), Hide("top0"), Hide("top2"), SetVariable("top", 1)]
+    imagebutton auto "game/playerAssets/top2.png" align(0.655, 0.45) action [Show("top2"), Hide("top0"), Hide("top1"), SetVariable("top", 1)]
+
+#Bottoms
+    imagebutton auto "game/playerAssets/bottom1.png" align(0.755, 0.25) action [Show("bottom0"), Hide("bottom1"),SetVariable("bottom", 0)]
+    imagebutton auto "game/playerAssets/bottom2.PNG" align(0.755, 0.45) action [Show("bottom1"), Hide("bottom0"), SetVariable("bottom", 1)]
+
+#Shoes
+    imagebutton auto "game/playerAssets/shoe0.png" align(0.855, 0.25) action [Show("shoe0"), Hide("shoe1"), Hide("shoe2"), SetVariable("shoe", 0)]
+    imagebutton auto "game/playerAssets/shoe1.PNG" align(0.855, 0.45) action [Show("shoe1"), Hide("shoe0"), Hide("shoe2"), SetVariable("shoe", 1)]
+    imagebutton auto "game/playerAssets/shoe2.PNG" align(0.855, 0.45) action [Show("shoe2"), Hide("shoe0"), SetVariable("shoe", 2)]
+
+
+###############################################################
+######################### Gameplay ############################
+###############################################################
 define e = Character("MC")
 define x = Character("???")
 
@@ -11,7 +100,7 @@ define b = Character("BADDIE")
 define g = Character("GYM BRO")
 
 define ra = Character("RA")
-define bsf = Character("BSF")
+define bsf = Character("BSF") 
 
 # The game starts here.
 
