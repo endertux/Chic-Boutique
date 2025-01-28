@@ -64,30 +64,101 @@ screen shoe2 zorder 1:
 #Dress up menu screen
 #Start button
 screen outfits:
-    image "/game/images/Backgrounds/pinkbackground.jpg"
-    imagebutton auto "Minigame/start_%s.png" align(0.5, 0.40) action [Show("outfits_ui"), Show("Dana_Sprite"), Show("top0"), Show("bottom0")]
+    image "game/images/Backgrounds/background.jpg"
+    imagebutton auto "./Minigame/start_%s.png" align(0.5, 0.40) action [Show("outfits_ui"), Show("playerSprite"), Show("top0"), Show("bottom0"), Show("shoe0")]
 
 #Minigame
 screen outfits_ui:
-    image "/game/images/Backgrounds/pinkbackground.jpg"
+    image "game/images/Backgrounds/pinkbackground.jpg"
     image "game/playerAssets/bodyBase.png" align(1.0, 0.0)
 
-    imagebutton auto "Minigame/done_%s.png" align(0.80, 0.75) action Jump("accept letter")
+    imagebutton auto "Minigame/done_%s.png" align(0.80, 0.75) action Jump("instructions")
 
 #Tops
-    imagebutton auto "game/playerAssets/top0.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
-    imagebutton auto "game/playerAssets/top1.PNG" align(0.655, 0.45) action [Show("top1"), Hide("top0"), Hide("top2"), SetVariable("top", 1)]
-    imagebutton auto "game/playerAssets/top2.png" align(0.655, 0.45) action [Show("top2"), Hide("top0"), Hide("top1"), SetVariable("top", 1)]
+    imagebutton auto "game/playerAssets/top0_%s.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+    imagebutton auto "game/playerAssets/top1_%s.png" align(0.655, 0.45) action [Show("top1"), Hide("top0"), Hide("top2"), SetVariable("top", 1)]
+    imagebutton auto "game/playerAssets/top2_%s.png" align(0.655, 0.45) action [Show("top2"), Hide("top0"), Hide("top1"), SetVariable("top", 2)]
 
 #Bottoms
-    imagebutton auto "game/playerAssets/bottom1.png" align(0.755, 0.25) action [Show("bottom0"), Hide("bottom1"),SetVariable("bottom", 0)]
-    imagebutton auto "game/playerAssets/bottom2.PNG" align(0.755, 0.45) action [Show("bottom1"), Hide("bottom0"), SetVariable("bottom", 1)]
+    imagebutton auto "game/playerAssets/bottom0_%s.png" align(0.755, 0.25) action [Show("bottom0"), Hide("bottom1"),SetVariable("bottom", 0)]
+    imagebutton auto "game/playerAssets/bottom1_%s.png" align(0.755, 0.45) action [Show("bottom1"), Hide("bottom0"), SetVariable("bottom", 1)]
+    imagebutton auto "game/playerAssets/bottom2_%s.png" align(0.755, 0.45) action [Show("bottom2"), Hide("bottom0"), Hide("bottom3"), SetVariable("bottom", 1)]
 
 #Shoes
-    imagebutton auto "game/playerAssets/shoe0.png" align(0.855, 0.25) action [Show("shoe0"), Hide("shoe1"), Hide("shoe2"), SetVariable("shoe", 0)]
-    imagebutton auto "game/playerAssets/shoe1.PNG" align(0.855, 0.45) action [Show("shoe1"), Hide("shoe0"), Hide("shoe2"), SetVariable("shoe", 1)]
-    imagebutton auto "game/playerAssets/shoe2.PNG" align(0.855, 0.45) action [Show("shoe2"), Hide("shoe0"), SetVariable("shoe", 2)]
+    imagebutton auto "game/playerAssets/shoe0_%s.png" align(0.855, 0.25) action [Show("shoe0"), Hide("shoe1"), Hide("shoe2"), SetVariable("shoe", 0)]
+    imagebutton auto "game/playerAssets/shoe1_%s.png" align(0.855, 0.45) action [Show("shoe1"), Hide("shoe0"), Hide("shoe2"), SetVariable("shoe", 1)]
+    imagebutton auto "game/playerAssets/shoe2_%s.png" align(0.855, 0.45) action [Show("shoe2"), Hide("shoe0"), Hide("shoe3"), SetVariable("shoe", 2)]
 
+#This image can be used for the rest of the game, or just as a final reveal.
+layeredimage Player:
+    always:
+        "playerAssets/bodyBase.png"
+
+    group top:
+        attribute 0 default:
+            "game/playerAssets/top0.png"
+    if top == 1:
+        "game/playerAssets/top1.PNG"
+    if top == 2:
+        "game/playerAssets/top2.PNG"
+
+    group bottom:
+        attribute 0 default:
+            "game/playerAssets/bottom0.png"
+    if bottom == 1:
+        "game/playerAssets/bottom1.png"
+    if bottom == 2:
+        "game/playerAssets/bottom2.png"
+
+    group shoe:
+        attribute 0 default:
+            "game/playerAssets/shoe0.png"
+    if bottom == 1:
+        "game/playerAssets/shoe1.png"
+    if bottom == 2:
+        "game/playerAssets/shoe2.png"
+
+
+# Dress Up intro
+label start:
+        with fade
+        scene black bg
+        "Test"
+
+        "fthgjkl"
+
+        jump dress
+
+label dress:
+    call screen outfits
+
+    label instructions:
+        #scene bg with dissolve
+
+        hide screen outfits
+        hide screen outfits_ui
+
+        hide screen playerSprite
+
+        hide screen top0
+        hide screen top1
+        hide screen top2
+
+        hide screen bottom0
+        hide screen bottom1
+        hide screen bottom2
+
+        hide screen shoe0
+        hide screen shoe1
+        hide screen shoe2
+
+        show playerSprite:
+            xpos 0.38
+            ypos 0
+        
+        "Looking good! Now lets start the game!"
+
+        jump letter
 
 ###############################################################
 ######################### Gameplay ############################
@@ -104,7 +175,7 @@ define bsf = Character("BSF")
 
 # The game starts here.
 
-label start:
+label letter:
 
     # display lines of dialogue.
 
