@@ -115,7 +115,7 @@ label start:
 
     #Letter (on screen, not text box):
     #[animation, you got mail!]
-    "Congratulations! On behalf of the staff here at Slaycademy Institute of the Arts, we are pleased to inform you of your acceptance into the Fashion major."
+    "Testing !!Congratulations! On behalf of the staff here at Slaycademy Institute of the Arts, we are pleased to inform you of your acceptance into the Fashion major."
     #*CG of a desk with a ripped envelope.
 
     "Your application stood out amongst the thousands that our committee considered, and we expect to see great things from you."
