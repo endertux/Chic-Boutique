@@ -62,7 +62,7 @@
 #I set the default to 0, but you can set it to whatever you want.
 #We need these variables if you want to keep the outfit you chose for the rest of the game, or if you want to do a reveal at the end of the minigame.
 default bottom = 0
-default socks = 0
+default shoe = 0
 default top = 0
 
 define e = Character("Player")
@@ -99,23 +99,36 @@ screen top2 zorder 2:
         ypos 0
 
 # Pants Define
-screen bottom0 zorder 1:
+screen bottom0 zorder 3:
     image "Dana_Imgs/Dana_Bottom_1.png":
         xpos 300
         ypos 0
 
-screen bottom1 zorder 1:
+screen bottom1 zorder 3:
     image "Dana_Imgs/Dana_Bottom_2.png":
         xpos 300
         ypos 0
 
-screen bottom2 zorder 1:
+screen bottom2 zorder 3:
     image "Dana_Imgs/Dana_Bottom_3.png":
         xpos 300
         ypos 0
 
 # Shoes
+screen shoe1 zorder 1:
+    image "Dana_Imgs/Dana_Shoe_1.png":
+        xpos 300
+        ypos 0
 
+screen shoe2 zorder 1:
+    image "Dana_Imgs/Dana_Shoe_2.png":
+        xpos 300
+        ypos 0
+
+screen shoe3 zorder 1:
+    image "Dana_Imgs/Dana_Shoe_3.png":
+        xpos 300
+        ypos 0
 
 
 #Dress up menu screen
@@ -132,16 +145,19 @@ screen outfits_ui:
     imagebutton auto "Minigame/done_%s.png" align(0.80, 0.75) action Jump("instructions")
 
 #Tops
-    imagebutton auto "Dana_Imgs/Dana_Top_1_%s.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), SetVariable("top", 0)]
-    imagebutton auto "Dana_Imgs/Dana_Top_2_%s.png" align(0.655, 0.45) action [Show("top1"), Hide("top0"), SetVariable("top", 1)]
-    imagebutton auto "Dana_Imgs/Dana_Top_3_%s.png" align(0.655, 0.65) action [Show("top1"), Hide("top0"), SetVariable("top", 1)]
+    imagebutton auto "Dana_Imgs/Dana_Top_1_%s.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+    imagebutton auto "Dana_Imgs/Dana_Top_2_%s.png" align(0.655, 0.45) action [Show("top1"), Hide("top0"), Hide("top2"), SetVariable("top", 1)]
+    imagebutton auto "Dana_Imgs/Dana_Top_3_%s.png" align(0.655, 0.65) action [Show("top2"), Hide("top0"), Hide("top1"), SetVariable("top", 2)]
 
 #Bottoms
-    imagebutton auto "Dana_Imgs/Dana_Bottom_1_%s.png" align(0.755, 0.25) action [Show("bottom0"), Hide("bottom1"),SetVariable("bottom", 0)]
-    imagebutton auto "Dana_Imgs/Dana_Bottom_2_%s.png" align(0.755, 0.45) action [Show("bottom1"), Hide("bottom0"), SetVariable("bottom", 1)]
+    imagebutton auto "Dana_Imgs/Dana_Bottom_1_%s.png" align(0.755, 0.25) action [Show("bottom0"), Hide("bottom1"), Hide("bottom2"), SetVariable("bottom", 0)]
+    imagebutton auto "Dana_Imgs/Dana_Bottom_2_%s.png" align(0.755, 0.45) action [Show("bottom1"), Hide("bottom0"), Hide("bottom2"), SetVariable("bottom", 1)]
+    imagebutton auto "Dana_Imgs/Dana_Bottom_3_%s.png" align(0.755, 0.65) action [Show("bottom2"), Hide("bottom0"), Hide("bottom1"), SetVariable("bottom", 2)]
 
 #Shoes
-
+    imagebutton auto "Dana_Imgs/Dana_Shoe_1_%s.png" align(0.955, 0.25) action [Show("shoe1"), Hide("shoe2"), Hide("shoe3"),SetVariable("shoe", 0)]
+    imagebutton auto "Dana_Imgs/Dana_Shoe_2_%s.png" align(0.955, 0.45) action [Show("shoe2"), Hide("shoe1"), Hide("shoe3"),SetVariable("shoe", 1)]
+    imagebutton auto "Dana_Imgs/Dana_Shoe_3_%s.png" align(0.955, 0.65) action [Show("shoe3"), Hide("shoe1"), Hide("shoe2"),SetVariable("shoe", 2)]
 
 
 #This image can be used for the rest of the game, or just as a final reveal.
@@ -154,13 +170,25 @@ layeredimage Player:
             "Dana_Imgs/Dana_Top_1.png"
     if top == 1:
         "Dana_Imgs/Dana_Top_2.png"
+    if top == 2:
+        "Dana_Imgs/Dana_Top_3.png"
 
     group bottom:
         attribute 0 default:
             "Dana_Imgs/Dana_Bottom_1.png"
     if bottom == 1:
         "Dana_Imgs/Dana_Bottom_2.png"
-
+    if bottom == 2:
+        "Dana_Imgs/Dana_Bottom_3.png"
+    
+    group shoe:
+        attribute 0 default:
+            "Dana_Imgs/Dana_Shoe_1.png"
+    if shoe == 1: 
+        "Dana_Imgs/Dana_Shoe_2.png"
+    if shoe == 2: 
+        "Dana_Imgs/Dana_Shoe_3.png"
+        
 ###############################################################
 ######################### Gameplay ############################
 ###############################################################
@@ -211,9 +239,15 @@ label dress:
 
         hide screen top0
         hide screen top1
+        hide screen top2
 
         hide screen bottom0
         hide screen bottom1
+        hide screen bottom2
+
+        hide screen shoe1
+        hide screen shoe2
+        hide screen shoe3
 
         show Player:
             xpos 0.38

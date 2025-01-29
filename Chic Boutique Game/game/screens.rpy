@@ -2,9 +2,7 @@
 ## Initialization
 ################################################################################
 
-init offset = -1
-
-
+init offset = -1 
 ################################################################################
 ## Styles
 ################################################################################
@@ -286,12 +284,19 @@ style quick_button_text:
 ## to other menus, and to start the game.
 
 screen navigation():
+    # Add the Logo on top
+    add "gui/overlay/Logo.png" xpos 0.5 xanchor 0.5 ypos 0.3 yanchor 0.5 zoom 0.7
 
     vbox:
         style_prefix "navigation"
 
-        xpos gui.navigation_xpos
-        yalign 0.5
+        if main_menu:
+            xalign 0.5
+            yalign 0.8
+        else:
+            xoffset 60
+            yalign 0.5
+
 
         spacing gui.navigation_spacing
 
@@ -307,7 +312,7 @@ screen navigation():
 
         textbutton _("Load") action ShowMenu("load")
 
-        textbutton _("Preferences") action ShowMenu("preferences")
+        textbutton _("Options") action ShowMenu("preferences")
 
         if _in_replay:
 
@@ -340,6 +345,9 @@ style navigation_button:
 
 style navigation_button_text:
     properties gui.text_properties("navigation_button")
+    font "gui/fonts/schoolbell.ttf"
+    selected_color "#ffc8dd"
+    xalign 0.5
 
 
 ## Main Menu screen ############################################################
@@ -385,7 +393,7 @@ style main_menu_frame:
     xsize 420
     yfill True
 
-    background "gui/overlay/main_menu.png"
+
 
 style main_menu_vbox:
     xalign 1.0
@@ -421,7 +429,9 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
         add gui.main_menu_background
     else:
         add gui.game_menu_background
-
+        
+        
+        
     frame:
         style "game_menu_outer_frame"
 
@@ -501,7 +511,7 @@ style game_menu_outer_frame:
     bottom_padding 45
     top_padding 180
 
-    background "gui/overlay/game_menu.png"
+
 
 style game_menu_navigation_frame:
     xsize 420

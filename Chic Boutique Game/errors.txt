@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 209: Line is indented, but the preceding scene statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    with fade
+File "game/script.rpy", line 185: end of line expected.
+    if shoe == 1: 
     ^
 
 Ren'Py Version: Ren'Py 8.2.3.24061702
-Tue Jan 28 19:54:50 2025
+Tue Jan 28 22:50:26 2025
