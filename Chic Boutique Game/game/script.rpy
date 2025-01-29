@@ -82,6 +82,7 @@ screen Dana_Sprite:
         xpos 300
         ypos 0
 
+# Tops Define
 screen top0 zorder 2:
     image "Dana_Imgs/Dana_Top_1.png":
         xpos 300
@@ -92,6 +93,12 @@ screen top1 zorder 2:
         xpos 300
         ypos 0
 
+screen top2 zorder 2:
+    image "Dana_Imgs/Dana_Top_3.png":
+        xpos 300
+        ypos 0
+
+# Pants Define
 screen bottom0 zorder 1:
     image "Dana_Imgs/Dana_Bottom_1.png":
         xpos 300
@@ -101,6 +108,14 @@ screen bottom1 zorder 1:
     image "Dana_Imgs/Dana_Bottom_2.png":
         xpos 300
         ypos 0
+
+screen bottom2 zorder 1:
+    image "Dana_Imgs/Dana_Bottom_3.png":
+        xpos 300
+        ypos 0
+
+# Shoes
+
 
 
 #Dress up menu screen
@@ -119,14 +134,18 @@ screen outfits_ui:
 #Tops
     imagebutton auto "Dana_Imgs/Dana_Top_1_%s.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), SetVariable("top", 0)]
     imagebutton auto "Dana_Imgs/Dana_Top_2_%s.png" align(0.655, 0.45) action [Show("top1"), Hide("top0"), SetVariable("top", 1)]
+    imagebutton auto "Dana_Imgs/Dana_Top_3_%s.png" align(0.655, 0.65) action [Show("top1"), Hide("top0"), SetVariable("top", 1)]
 
 #Bottoms
     imagebutton auto "Dana_Imgs/Dana_Bottom_1_%s.png" align(0.755, 0.25) action [Show("bottom0"), Hide("bottom1"),SetVariable("bottom", 0)]
     imagebutton auto "Dana_Imgs/Dana_Bottom_2_%s.png" align(0.755, 0.45) action [Show("bottom1"), Hide("bottom0"), SetVariable("bottom", 1)]
 
+#Shoes
+
+
 
 #This image can be used for the rest of the game, or just as a final reveal.
-layeredimage Dana_N:
+layeredimage Player:
     always:
         "Dana_Imgs/Dana_Sprite.png"
 
@@ -147,7 +166,7 @@ layeredimage Dana_N:
 ###############################################################
 label start:
 
-    # display lines of dialogue.
+    # display lines of dialogue
 
     scene accept letter
     with fade
@@ -156,7 +175,7 @@ label start:
 
     #Letter (on screen, not text box):
     #[animation, you got mail!]
-    "Testing gege lol !!Congratulations! On behalf of the staff here at Slaycademy Institute of the Arts, we are pleased to inform you of your acceptance into the Fashion major."
+    "Congratulations! On behalf of the staff here at Slaycademy Institute of the Arts, we are pleased to inform you of your acceptance into the Fashion major."
     #*CG of a desk with a ripped envelope.
 
     "Your application stood out amongst the thousands that our committee considered, and we expect to see great things from you."
@@ -196,7 +215,7 @@ label dress:
         hide screen bottom0
         hide screen bottom1
 
-        show Dana_N:
+        show Player:
             xpos 0.38
             ypos 0
         
@@ -228,6 +247,7 @@ label story:
     scene courtyard bg
     with fade
 
+    show Player
     e "Oh my gosh, this school is so big! How am I ever going to get around this place?"
 
     e "They gave me this map, but it doesn’t make much sense…"
