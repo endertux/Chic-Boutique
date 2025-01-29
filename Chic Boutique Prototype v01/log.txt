@@ -1,0 +1,1738 @@
+2025-01-28 01:26:23 UTC
+Windows-10-10.0.26100
+Ren'Py 8.2.3.24061702
+
+Early init took 0.07s
+Loading error handling took 0.09s
+Loading script took 0.11s
+Loading save slot metadata took 0.22s
+Loading persistent took 0.00s
+Running init code took 0.12s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.15s
+Index archives took 0.00s
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.02s
+DPI scale factor: 1.750000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.22s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 1.02s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4070 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 561.19'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1971, in execute
+    self.call("execute")
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1953, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\statements.py", line 349, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\exports.py", line 3420, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2166, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 3208, in interact_core
+    rv = root_widget.event(ev, x, y, 0)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\layout.py", line 1202, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\layout.py", line 1202, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\layout.py", line 1202, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 793, in event
+    rv = self.child.event(ev, x, y, st)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\layout.py", line 1202, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\behavior.py", line 1174, in event
+    return handle_click(self.clicked)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\behavior.py", line 1095, in handle_click
+    rv = run(action)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\behavior.py", line 388, in run
+    new_rv = run(i, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\behavior.py", line 395, in run
+    return action(*args, **kwargs)
+  File "renpy/common/00action_control.rpy", line 131, in __call__
+    renpy.show_screen(self.screen, *self.args, **self.kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 1322, in show_screen
+    raise Exception("Screen %s is not known.\n" % (name[0],))
+Exception: Screen Dana_Sprite is not known.
+
+
+While loading <renpy.display.im.Image object ('/game/images/Backgrounds/pinkbackground.jpg') at 0x0000000005bbf190>:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "renpy/common/00action_control.rpy", line 131, in __call__
+    renpy.show_screen(self.screen, *self.args, **self.kwargs)
+Exception: Screen Dana_Sprite is not known.
+
+Resetting cache.
+Early init took 71.51s
+Loading error handling took 0.02s
+Loading script took 0.14s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\hhall\\AppData\\Roaming/RenPy/backups\\Chic Boutique Prototype v01':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.750000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.18s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.50s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4070 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 561.19'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1971, in execute
+    self.call("execute")
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1953, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\statements.py", line 349, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\exports.py", line 3420, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2166, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 3208, in interact_core
+    rv = root_widget.event(ev, x, y, 0)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\layout.py", line 1202, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\layout.py", line 1202, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\layout.py", line 1202, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 793, in event
+    rv = self.child.event(ev, x, y, st)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\layout.py", line 1202, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\behavior.py", line 1174, in event
+    return handle_click(self.clicked)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\behavior.py", line 1095, in handle_click
+    rv = run(action)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\behavior.py", line 388, in run
+    new_rv = run(i, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\behavior.py", line 395, in run
+    return action(*args, **kwargs)
+  File "renpy/common/00action_control.rpy", line 131, in __call__
+    renpy.show_screen(self.screen, *self.args, **self.kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 1322, in show_screen
+    raise Exception("Screen %s is not known.\n" % (name[0],))
+Exception: Screen Dana_Sprite is not known.
+
+
+While loading <renpy.display.im.Image object ('/game/images/Backgrounds/pinkbackground.jpg') at 0x0000000004b1b4c0>:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "renpy/common/00action_control.rpy", line 131, in __call__
+    renpy.show_screen(self.screen, *self.args, **self.kwargs)
+Exception: Screen Dana_Sprite is not known.
+
+Resetting cache.
+Early init took 114.65s
+Loading error handling took 0.01s
+Loading script took 0.12s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\hhall\\AppData\\Roaming/RenPy/backups\\Chic Boutique Prototype v01':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.750000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.18s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.49s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4070 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 561.19'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1971, in execute
+    self.call("execute")
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1953, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\statements.py", line 349, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\exports.py", line 3420, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2166, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 78, in execute
+    imagebutton auto "game/playerAssets/top0.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 950, in _imagebutton
+    idle = choice(idle, idle_image, "idle", required=True)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 938, in choice
+    rv = renpy.config.imagemap_auto_function(auto, name)
+  File "renpy/common/00defaults.rpy", line 168, in _imagemap_auto_function
+    rv = auto_param % variant
+TypeError: not all arguments converted during string formatting
+
+While loading <renpy.display.im.Image object ('/game/images/Backgrounds/pinkbackground.jpg') at 0x0000000005a21a30>:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 78, in execute
+    imagebutton auto "game/playerAssets/top0.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+  File "renpy/common/00defaults.rpy", line 168, in _imagemap_auto_function
+    rv = auto_param % variant
+TypeError: not all arguments converted during string formatting
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1971, in execute
+    self.call("execute")
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1953, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\statements.py", line 349, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\exports.py", line 3420, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2166, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 78, in execute
+    imagebutton auto "game/playerAssets/top0.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 950, in _imagebutton
+    idle = choice(idle, idle_image, "idle", required=True)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 938, in choice
+    rv = renpy.config.imagemap_auto_function(auto, name)
+  File "renpy/common/00defaults.rpy", line 168, in _imagemap_auto_function
+    rv = auto_param % variant
+TypeError: not all arguments converted during string formatting
+
+While loading <renpy.display.im.Image object ('/game/images/Backgrounds/pinkbackground.jpg') at 0x0000000005b96610>:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 78, in execute
+    imagebutton auto "game/playerAssets/top0.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+  File "renpy/common/00defaults.rpy", line 168, in _imagemap_auto_function
+    rv = auto_param % variant
+TypeError: not all arguments converted during string formatting
+Resetting cache.
+Early init took 2670.48s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.06s
+DPI scale factor: 1.750000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.19s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.54s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4070 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 561.19'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1971, in execute
+    self.call("execute")
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1953, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\statements.py", line 349, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\exports.py", line 3420, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2166, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 78, in execute
+    imagebutton auto "game/playerAssets/top0.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 950, in _imagebutton
+    idle = choice(idle, idle_image, "idle", required=True)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 938, in choice
+    rv = renpy.config.imagemap_auto_function(auto, name)
+  File "renpy/common/00defaults.rpy", line 168, in _imagemap_auto_function
+    rv = auto_param % variant
+TypeError: not all arguments converted during string formatting
+
+While loading <renpy.display.im.Image object ('/game/images/Backgrounds/pinkbackground.jpg') at 0x00000000059da490>:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 78, in execute
+    imagebutton auto "game/playerAssets/top0.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+  File "renpy/common/00defaults.rpy", line 168, in _imagemap_auto_function
+    rv = auto_param % variant
+TypeError: not all arguments converted during string formatting
+Resetting cache.
+Early init took 2765.57s
+Loading error handling took 0.01s
+Loading script took 0.11s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\hhall\\AppData\\Roaming/RenPy/backups\\Chic Boutique Prototype v01':
+Dump and make backups took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.750000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.19s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.54s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4070 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 561.19'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1971, in execute
+    self.call("execute")
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1953, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\statements.py", line 349, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\exports.py", line 3420, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2166, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 78, in execute
+    imagebutton auto "game/playerAssets/top0.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 950, in _imagebutton
+    idle = choice(idle, idle_image, "idle", required=True)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 938, in choice
+    rv = renpy.config.imagemap_auto_function(auto, name)
+  File "renpy/common/00defaults.rpy", line 168, in _imagemap_auto_function
+    rv = auto_param % variant
+TypeError: not all arguments converted during string formatting
+
+While loading <renpy.display.im.Image object ('game/images/Backgrounds/pinkbackground.jpg') at 0x00000000058c2af0>:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 78, in execute
+    imagebutton auto "game/playerAssets/top0.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+  File "renpy/common/00defaults.rpy", line 168, in _imagemap_auto_function
+    rv = auto_param % variant
+TypeError: not all arguments converted during string formatting
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2864.98s
+Loading error handling took 0.01s
+Loading script took 0.11s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\hhall\\AppData\\Roaming/RenPy/backups\\Chic Boutique Prototype v01':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.750000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4070 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 561.19'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1971, in execute
+    self.call("execute")
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1953, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\statements.py", line 349, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\exports.py", line 3420, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2166, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 78, in execute
+    imagebutton auto "game/playerAssets/top0.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 950, in _imagebutton
+    idle = choice(idle, idle_image, "idle", required=True)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 938, in choice
+    rv = renpy.config.imagemap_auto_function(auto, name)
+  File "renpy/common/00defaults.rpy", line 168, in _imagemap_auto_function
+    rv = auto_param % variant
+TypeError: not all arguments converted during string formatting
+
+While loading <renpy.display.im.Image object ('game/images/Backgrounds/pinkbackground.jpg') at 0x0000000005b9be20>:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 78, in execute
+    imagebutton auto "game/playerAssets/top0.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+  File "renpy/common/00defaults.rpy", line 168, in _imagemap_auto_function
+    rv = auto_param % variant
+TypeError: not all arguments converted during string formatting
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2986.70s
+Loading error handling took 0.01s
+Loading script took 0.12s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\hhall\\AppData\\Roaming/RenPy/backups\\Chic Boutique Prototype v01':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.750000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4070 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 561.19'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1971, in execute
+    self.call("execute")
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1953, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\statements.py", line 349, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\exports.py", line 3420, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2166, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 78, in execute
+    imagebutton auto "game/playerAssets/top0_%s.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 950, in _imagebutton
+    idle = choice(idle, idle_image, "idle", required=True)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 944, in choice
+    raise Exception("Imagebutton does not have a %s image. (auto=%r)." % (name, auto))
+Exception: Imagebutton does not have a idle image. (auto='game/playerAssets/top0_%s.png').
+
+While loading <renpy.display.im.Image object ('game/images/Backgrounds/pinkbackground.jpg') at 0x0000000003c17a00>:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 78, in execute
+    imagebutton auto "game/playerAssets/top0_%s.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+Exception: Imagebutton does not have a idle image. (auto='game/playerAssets/top0_%s.png').
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 3083.70s
+Loading error handling took 0.01s
+Loading script took 0.13s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\hhall\\AppData\\Roaming/RenPy/backups\\Chic Boutique Prototype v01':
+Dump and make backups took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.750000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.50s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4070 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 561.19'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1971, in execute
+    self.call("execute")
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1953, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\statements.py", line 349, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\exports.py", line 3420, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2166, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 78, in execute
+    imagebutton auto "game/playerAssets/top0_%s.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 950, in _imagebutton
+    idle = choice(idle, idle_image, "idle", required=True)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 944, in choice
+    raise Exception("Imagebutton does not have a %s image. (auto=%r)." % (name, auto))
+Exception: Imagebutton does not have a idle image. (auto='game/playerAssets/top0_%s.png').
+
+While loading <renpy.display.im.Image object ('game/images/Backgrounds/pinkbackground.jpg') at 0x0000000004b858b0>:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 78, in execute
+    imagebutton auto "game/playerAssets/top0_%s.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+Exception: Imagebutton does not have a idle image. (auto='game/playerAssets/top0_%s.png').
+Resetting cache.
+Early init took 3175.95s
+Loading error handling took 0.02s
+Loading script took 0.12s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\hhall\\AppData\\Roaming/RenPy/backups\\Chic Boutique Prototype v01':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.750000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.19s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.54s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4070 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 561.19'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1971, in execute
+    self.call("execute")
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1953, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\statements.py", line 349, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\exports.py", line 3420, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2166, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 78, in execute
+    imagebutton auto "game/playerAssets/top0_%s.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 950, in _imagebutton
+    idle = choice(idle, idle_image, "idle", required=True)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 944, in choice
+    raise Exception("Imagebutton does not have a %s image. (auto=%r)." % (name, auto))
+Exception: Imagebutton does not have a idle image. (auto='game/playerAssets/top0_%s.png').
+
+While loading <renpy.display.im.Image object ('game/images/Backgrounds/pinkbackground.jpg') at 0x0000000004a75430>:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 78, in execute
+    imagebutton auto "game/playerAssets/top0_%s.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+Exception: Imagebutton does not have a idle image. (auto='game/playerAssets/top0_%s.png').
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 3188.42s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.750000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.18s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.55s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4070 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 561.19'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1971, in execute
+    self.call("execute")
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1953, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\statements.py", line 349, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\exports.py", line 3420, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2166, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 78, in execute
+    imagebutton auto "game/playerAssets/top0_%s.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 950, in _imagebutton
+    idle = choice(idle, idle_image, "idle", required=True)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 944, in choice
+    raise Exception("Imagebutton does not have a %s image. (auto=%r)." % (name, auto))
+Exception: Imagebutton does not have a idle image. (auto='game/playerAssets/top0_%s.png').
+
+While loading <renpy.display.im.Image object ('game/images/Backgrounds/pinkbackground.jpg') at 0x000000000590bc10>:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 78, in execute
+    imagebutton auto "game/playerAssets/top0_%s.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+Exception: Imagebutton does not have a idle image. (auto='game/playerAssets/top0_%s.png').
+Resetting cache.
+Early init took 3228.26s
+Loading error handling took 0.01s
+Loading script took 0.13s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\hhall\\AppData\\Roaming/RenPy/backups\\Chic Boutique Prototype v01':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.750000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.51s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4070 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 561.19'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1971, in execute
+    self.call("execute")
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1953, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\statements.py", line 349, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\exports.py", line 3420, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2166, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 78, in execute
+    imagebutton auto "game/playerAssets/top0_%s.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 950, in _imagebutton
+    idle = choice(idle, idle_image, "idle", required=True)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 944, in choice
+    raise Exception("Imagebutton does not have a %s image. (auto=%r)." % (name, auto))
+Exception: Imagebutton does not have a idle image. (auto='game/playerAssets/top0_%s.png').
+
+While loading <renpy.display.im.Image object ('game/images/Backgrounds/background.jpg') at 0x0000000004b02730>:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 78, in execute
+    imagebutton auto "game/playerAssets/top0_%s.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+Exception: Imagebutton does not have a idle image. (auto='game/playerAssets/top0_%s.png').
+Resetting cache.
+Early init took 3320.32s
+Loading error handling took 0.01s
+Loading script took 0.11s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\hhall\\AppData\\Roaming/RenPy/backups\\Chic Boutique Prototype v01':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.06s
+DPI scale factor: 1.750000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.19s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.60s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4070 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 561.19'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1971, in execute
+    self.call("execute")
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1953, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\statements.py", line 349, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\exports.py", line 3420, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2166, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 78, in execute
+    imagebutton auto "game/playerAssets/top0_%s.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 950, in _imagebutton
+    idle = choice(idle, idle_image, "idle", required=True)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 944, in choice
+    raise Exception("Imagebutton does not have a %s image. (auto=%r)." % (name, auto))
+Exception: Imagebutton does not have a idle image. (auto='game/playerAssets/top0_%s.png').
+
+While loading <renpy.display.im.Image object ('game/images/Backgrounds/background.jpg') at 0x0000000005b50d30>:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 78, in execute
+    imagebutton auto "game/playerAssets/top0_%s.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+Exception: Imagebutton does not have a idle image. (auto='game/playerAssets/top0_%s.png').
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 3361.49s
+Loading error handling took 0.01s
+Loading script took 0.12s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\hhall\\AppData\\Roaming/RenPy/backups\\Chic Boutique Prototype v01':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.750000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.18s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4070 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 561.19'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1971, in execute
+    self.call("execute")
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1953, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\statements.py", line 349, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\exports.py", line 3420, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2166, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 78, in execute
+    imagebutton auto "game/playerAssets/top0_%s.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 950, in _imagebutton
+    idle = choice(idle, idle_image, "idle", required=True)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 944, in choice
+    raise Exception("Imagebutton does not have a %s image. (auto=%r)." % (name, auto))
+Exception: Imagebutton does not have a idle image. (auto='game/playerAssets/top0_%s.png').
+
+While loading <renpy.display.im.Image object ('game/images/Backgrounds/background.jpg') at 0x0000000004dafe80>:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 78, in execute
+    imagebutton auto "game/playerAssets/top0_%s.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+Exception: Imagebutton does not have a idle image. (auto='game/playerAssets/top0_%s.png').
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 4201.90s
+Loading error handling took 0.01s
+Loading script took 0.06s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.750000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.16s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.53s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4070 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 561.19'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1971, in execute
+    self.call("execute")
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1953, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\statements.py", line 349, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\exports.py", line 3420, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2166, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  [Previous line repeated 1 more time]
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 421, in visit_all
+    for d in self.visit():
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\image.py", line 540, in visit
+    self.find_target()
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 246, in _duplicate
+    args.extraneous()
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'black' does not accept attributes 'bg'.
+
+While running game code:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+Exception: Image 'black' does not accept attributes 'bg'.
+Resetting cache.
+Early init took 4308.22s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.750000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.16s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4070 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 561.19'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1971, in execute
+    self.call("execute")
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1953, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\statements.py", line 349, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\exports.py", line 3420, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2166, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 78, in execute
+    imagebutton auto "game/playerAssets/top0_%s.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 950, in _imagebutton
+    idle = choice(idle, idle_image, "idle", required=True)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 944, in choice
+    raise Exception("Imagebutton does not have a %s image. (auto=%r)." % (name, auto))
+Exception: Imagebutton does not have a idle image. (auto='game/playerAssets/top0_%s.png').
+
+While loading <renpy.display.im.Image object ('game/images/Backgrounds/background.jpg') at 0x0000000005a12fd0>:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 78, in execute
+    imagebutton auto "game/playerAssets/top0_%s.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+Exception: Imagebutton does not have a idle image. (auto='game/playerAssets/top0_%s.png').
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 5923.07s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.06s
+DPI scale factor: 1.750000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.19s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4070 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 561.19'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1971, in execute
+    self.call("execute")
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1953, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\statements.py", line 349, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\exports.py", line 3420, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2166, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 78, in execute
+    imagebutton auto "game/playerAssets/top0_%s.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 950, in _imagebutton
+    idle = choice(idle, idle_image, "idle", required=True)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 944, in choice
+    raise Exception("Imagebutton does not have a %s image. (auto=%r)." % (name, auto))
+Exception: Imagebutton does not have a idle image. (auto='game/playerAssets/top0_%s.png').
+
+While loading <renpy.display.im.Image object ('game/images/Backgrounds/background.jpg') at 0x0000000004bad370>:
+  File "game/script.rpy", line 133, in script
+    call screen outfits
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 71, in execute
+    screen outfits_ui:
+  File "game/script.rpy", line 78, in execute
+    imagebutton auto "game/playerAssets/top0_%s.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+Exception: Imagebutton does not have a idle image. (auto='game/playerAssets/top0_%s.png').
