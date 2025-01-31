@@ -547,7 +547,7 @@ label dorms02:
 
     e "Yeah totally!"
 
-    "They both finished picking up the clumsy students luggage."
+    "They finished picking up the girl's luggage."
 
     "As MC gets up, they noticed the room number on the door."
 
