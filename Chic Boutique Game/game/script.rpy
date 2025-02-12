@@ -368,7 +368,7 @@ label art:
     jump dorms01
 
 label baddie:
-    scene tinted bg
+    scene classroom bg
     with fade
 
     e "(I walk to what seems to be a large building with big tinted windows…)"
