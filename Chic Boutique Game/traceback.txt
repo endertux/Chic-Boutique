@@ -1,66 +1,62 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 218, in script
+  File "game/script.rpy", line 236, in script
     call screen outfits
   File "renpy/common/000statements.rpy", line 671, in execute_call_screen
     store._return = renpy.call_screen(name, *args, **kwargs)
-  File "game/script.rpy", line 141, in execute
-    screen outfits_ui:
-  File "game/script.rpy", line 141, in execute
-    screen outfits_ui:
-  File "game/script.rpy", line 158, in execute
-    imagebutton auto "Dana_Imgs/Data_Shoe_1_%s.png" align(0.955, 0.25) action [Show("shoe1"), Hide("shoe2"), Hide("shoe3"),SetVariable("shoe", 0)]
-Exception: Imagebutton does not have a idle image. (auto='Dana_Imgs/Data_Shoe_1_%s.png').
+  File "renpy/common/00action_control.rpy", line 131, in __call__
+    renpy.show_screen(self.screen, *self.args, **self.kwargs)
+Exception: Screen shoe0 is not known.
+
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 218, in script
+  File "game/script.rpy", line 236, in script
     call screen outfits
-  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1971, in execute
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/ast.py", line 1980, in execute
     self.call("execute")
-  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1953, in call
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/ast.py", line 1959, in call
     return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\statements.py", line 349, in call
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/statements.py", line 374, in call
     return method(parsed, *args, **kwargs)
   File "renpy/common/000statements.rpy", line 671, in execute_call_screen
     store._return = renpy.call_screen(name, *args, **kwargs)
-  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\exports.py", line 3420, in call_screen
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/exports/statementexports.py", line 345, in call_screen
     rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
-  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 301, in interact
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/ui.py", line 301, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2166, in interact
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/core.py", line 2215, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in interact_core
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 480, in visit_all
-    callback(self)
-  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in <lambda>
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 491, in per_interact
-    self.update()
-  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 697, in update
-    self.screen.function(**self.scope)
-  File "game/script.rpy", line 141, in execute
-    screen outfits_ui:
-  File "game/script.rpy", line 141, in execute
-    screen outfits_ui:
-  File "game/script.rpy", line 158, in execute
-    imagebutton auto "Dana_Imgs/Data_Shoe_1_%s.png" align(0.955, 0.25) action [Show("shoe1"), Hide("shoe2"), Hide("shoe3"),SetVariable("shoe", 0)]
-  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 950, in _imagebutton
-    idle = choice(idle, idle_image, "idle", required=True)
-  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ui.py", line 944, in choice
-    raise Exception("Imagebutton does not have a %s image. (auto=%r)." % (name, auto))
-Exception: Imagebutton does not have a idle image. (auto='Dana_Imgs/Data_Shoe_1_%s.png').
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/core.py", line 3286, in interact_core
+    rv = root_widget.event(ev, x, y, 0)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/layout.py", line 1297, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/layout.py", line 1297, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/layout.py", line 1297, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/screen.py", line 791, in event
+    rv = self.child.event(ev, x, y, st)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/layout.py", line 1297, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/behavior.py", line 1182, in event
+    return handle_click(self.clicked)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/behavior.py", line 1103, in handle_click
+    rv = run(action)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/behavior.py", line 394, in run
+    new_rv = run(i, *args, **kwargs)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/behavior.py", line 401, in run
+    return action(*args, **kwargs)
+  File "renpy/common/00action_control.rpy", line 131, in __call__
+    renpy.show_screen(self.screen, *self.args, **self.kwargs)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/screen.py", line 1325, in show_screen
+    raise Exception("Screen %s is not known.\n" % (name[0],))
+Exception: Screen shoe0 is not known.
 
-Windows-10-10.0.26100 AMD64
-Ren'Py 8.2.3.24061702
+
+macOS-15.0.1-arm64-arm-64bit arm64
+Ren'Py 8.3.4.24120703
 Chic Boutique Prototype v01 1.0
-Tue Jan 28 22:40:00 2025
+Tue Feb 11 18:41:02 2025

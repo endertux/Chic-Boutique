@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../Desktop/Chic Boutique Prototype v01"
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/*.rpyc": true,
+			"**/*.rpa": true,
+			"**/*.rpymc": true,
+			"**/cache/": true
+		}
+	}
+}

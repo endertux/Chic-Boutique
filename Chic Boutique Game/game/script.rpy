@@ -167,7 +167,9 @@ layeredimage Player:
 
     group top:
         attribute 0 default:
-            "Dana_Imgs/Dana_Top_1.png"
+            Null()
+    if top == 0:
+        "Dana_Imgs/Dana_Top_1.png"
     if top == 1:
         "Dana_Imgs/Dana_Top_2.png"
     if top == 2:
@@ -175,7 +177,9 @@ layeredimage Player:
 
     group bottom:
         attribute 0 default:
-            "Dana_Imgs/Dana_Bottom_1.png"
+            Null()
+    if bottom == 0:
+        "Dana_Imgs/Dana_Bottom_1.png"
     if bottom == 1:
         "Dana_Imgs/Dana_Bottom_2.png"
     if bottom == 2:
@@ -183,7 +187,9 @@ layeredimage Player:
     
     group shoe:
         attribute 0 default:
-            "Dana_Imgs/Dana_Shoe_1.png"
+            Null()
+    if shoe == 0: 
+        "Dana_Imgs/Dana_Shoe_1.png"
     if shoe == 1: 
         "Dana_Imgs/Dana_Shoe_2.png"
     if shoe == 2: 
