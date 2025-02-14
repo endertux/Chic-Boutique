@@ -309,6 +309,10 @@ label art:
     scene art build bg
     with fade
 
+    show Player:
+        xpos 0.01
+        ypos 0.6
+
     #show ARTGUY netural
     e "(I walk to what seems to be a spread-out building with painted murals all around me.)"
     
@@ -359,6 +363,10 @@ label art:
     show artguy normal
     with dissolve
 
+    show Player:
+        xpos 0.01
+        ypos 0.6
+
     a "Oh, looks like we’re here."
 
     e "Thank you so much!"
@@ -370,6 +378,10 @@ label art:
 label baddie:
     scene classroom bg
     with fade
+
+    show Player:
+        xpos 0.01
+        ypos 0.6
 
     e "(I walk to what seems to be a large building with big tinted windows…)"
 
@@ -406,6 +418,10 @@ label gymBro:
     scene gym bg
     with fade
 
+    show Player:
+        xpos 0.01
+        ypos 0.6
+
     e "(I walk to what seems to be a small building near a large field…)"
 
     x "(Outfit piece) at the gym, that’s an interesting choice."
@@ -427,6 +443,10 @@ label gymBro:
     scene dorms outside bg
     with fade
 
+    show Player:
+        xpos 0.01
+        ypos 0.6
+
     e "(What is with that guy? He just got on my nerves! But I guess I'm here.)"
 
     jump dorms01
@@ -435,6 +455,10 @@ label gymBro:
 label dorms01:
     scene office bg
     with fade
+
+    show Player:
+        xpos 0.01
+        ypos 0.6
 
     "MC arrives and walks into the lobby."
 
@@ -488,7 +512,6 @@ label raInteraction01:
     jump dorms02
 
 
-
 label raInteraction02:
     e "Uh.. yeah. Can’t you see I’m new here?"
 
@@ -520,6 +543,10 @@ label dorms02:
     scene dorm hallway bg
     with fade
 
+    show Player:
+        xpos 0.01
+        ypos 0.6
+
     "MC walks to the elevator and enters the fourth floor."
 
     "The elevator opens up to a long hallway with adjacent hallways veering off to places unseen."
@@ -542,6 +569,10 @@ label dorms02:
 
     show bsf normal
     with dissolve
+
+    show Player:
+        xpos 0.01
+        ypos 0.6
 
     x "Uh yeah, that would actually be great!"
 
@@ -570,6 +601,10 @@ label dorms02:
     scene fade
     scene mc dorm empty bg
 
+    show Player:
+        xpos 0.01
+        ypos 0.6
+
     "The room is spacious, with two four-poster beds and desks at the far end, and a couch with a tv in the center."
 
     "There are two huge floor-to-to ceiling windows between the beds. As they walk inside, there is a small kitchen with a stove, oven, and fridge, and another window is behind it."
@@ -577,6 +612,10 @@ label dorms02:
     e "Wow! I thought the dorms would be fancy, but I wasn’t expecting all this!"
 
     show bsf normal
+
+    show Player:
+        xpos 0.01
+        ypos 0.6
 
     bsf "I mean we’re at one of the best art schools in the world, considering how much we’re paying I'd hope it’d be this nice!"
 

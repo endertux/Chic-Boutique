@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 371: end of line expected.
-    scene classroomBG.jpg
-                     ^
+File "game/script.rpy", line 446: Line is indented, but the preceding with statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    show Player:
+    ^
 
-Ren'Py Version: Ren'Py 8.2.3.24061702
-Tue Feb 11 19:03:52 2025
+Ren'Py Version: Ren'Py 8.3.4.24120703
+Fri Feb 14 14:20:42 2025
