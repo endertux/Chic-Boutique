@@ -65,15 +65,15 @@ default bottom = 0
 default shoe = 0
 default top = 0
 
-define e = Character("Player")
+define e = Character("[povname]")
 define x = Character("???")
 
-define a = Character("ART GUY")
-define b = Character("BADDIE")
-define g = Character("GYM BRO")
+define a = Character("Felix")
+define b = Character("Addison")
+define g = Character("Kyle")
 
 define ra = Character("RA")
-define bsf = Character("BSF")
+define bsf = Character("Zoë")
 
 
 #This is where we create a separate screen for each article of clothing, as well as the character base. Make sure they're all aligned!
@@ -235,33 +235,39 @@ label dress:
 
     call screen outfits
 
-    label instructions:
-        scene bg with dissolve
+label instructions:
+    scene bg with dissolve
 
-        hide screen outfits
-        hide screen outfits_ui
+    hide screen outfits
+    hide screen outfits_ui
 
-        hide screen Dana_Sprite
+    hide screen Dana_Sprite
+    hide screen top0
+    hide screen top1
+    hide screen top2
+    hide screen bottom0
+    hide screen bottom1
+    hide screen bottom2
+    hide screen shoe1
+    hide screen shoe2
+    hide screen shoe3
 
-        hide screen top0
-        hide screen top1
-        hide screen top2
+    show Player:
+        xpos 0.38
+        ypos 0
 
-        hide screen bottom0
-        hide screen bottom1
-        hide screen bottom2
+    "Once you’re satisfied with your creation, it’s time to step onto the runway and show the world your style!"
 
-        hide screen shoe1
-        hide screen shoe2
-        hide screen shoe3
+    # Ask player for their custom name
+    $ povname = renpy.input("Before you make your grand debut, what is your name?", default="Dana").strip()
 
-        show Player:
-            xpos 0.38
-            ypos 0
-        
-        "Once you’re satisfied with your creation, it’s time to step onto the runway and show the world your style!"
+    # Ensure the first letter is capitalized
+    $ povname = povname.capitalize()
 
-        jump story
+    "Welcome to your first day of Slaycademy, [povname]!"
+
+    jump story
+
 
 label story:
     scene slaycad bg
@@ -316,7 +322,7 @@ label art:
     #show ARTGUY netural
     e "(I walk to what seems to be a spread-out building with painted murals all around me.)"
     
-    "As MC wanders the area, they bump into someone by accident."
+    "As [povname] wanders the area, they bump into someone by accident."
 
     e "Oh gosh! I'm so sorry, are you alright?"
 
@@ -355,7 +361,7 @@ label art:
 
     a "*laughs* But seriously, I really love what I do."
 
-    "ART GUY starts walking to the dorms. *Later they arrive."
+    "Felix starts walking to the dorms. *Later they arrive."
 
     scene dorms outside bg
     with fade
@@ -396,7 +402,7 @@ label baddie:
 
     b "Oh! Let me see…"
 
-    "Baddie’s manicured hand points the way as her smile remains warm yet slightly teasing."
+    "Addison’s manicured hand points the way as her smile remains warm yet slightly teasing."
 
     b "Ah you’re almost there, Just head down that path over there and take a right at the next building."
 
@@ -404,7 +410,7 @@ label baddie:
     
     b "Of course babes! This campus is like a maze. Let me know if you need anything else."
 
-    "As the MC is about to leave, BADDIE stops them."
+    "As [povname] is about to leave, Addison stops them."
 
     b "Also I really like your outfit, you look so good!"
 
@@ -460,7 +466,7 @@ label dorms01:
         xpos 0.01
         ypos 0.6
 
-    "MC arrives and walks into the lobby."
+    "[povname] arrives and walks into the lobby."
 
     show ra normal
     with dissolve
@@ -483,15 +489,15 @@ label raInteraction01:
 
     ra "So first things first, what is your name?"
 
-    "*Insert game prompt to enter their name"
-
-    ra "Alright, MC… MC… Oh MC! Here you are!"
+    e "Oh uhh, my name is [povname]."
+    
+    ra "Alright, [povname]… [povname]… Oh [povname]! Here you are!"
 
     ra "These are your room keys, and your dorm number is 407."
 
     e "Ok, thank you so much!"
 
-    "MC begins to walk away"
+    "[povname] begins to walk away"
 
     ra "Wait, I forgot to mention. There's going to be a *insert event name*."
         
@@ -501,7 +507,7 @@ label raInteraction01:
 
     "She turned to walk away again."
 
-    ra "Umm… the elevator is just to your right *MC."
+    ra "Umm… the elevator is just to your right [povname]."
 
     e "Ahaha… right, got it!"
 
@@ -523,7 +529,7 @@ label raInteraction02:
 
     "*Insert game prompt to enter their name"
 
-    e "MC."
+    e "[povname]."
 
     ra "Oh! Wow, it looks like I'm your RA."
     
@@ -547,7 +553,7 @@ label dorms02:
         xpos 0.01
         ypos 0.6
 
-    "MC walks to the elevator and enters the fourth floor."
+    "[povname] walks to the elevator and enters the fourth floor."
 
     "The elevator opens up to a long hallway with adjacent hallways veering off to places unseen."
 
@@ -555,15 +561,15 @@ label dorms02:
 
     e "Alright, lets see...403…404…"
 
-    "MC is then interrupted by a loud thud, almost sounding like multiple heavy objects were dropped."
+    "[povname] is then interrupted by a loud thud, almost sounding like multiple heavy objects were dropped."
 
-    "MC walks to the sound, from around the corner and sees someone sitting on the floor."
+    "[povname] walks to the sound, from around the corner and sees someone sitting on the floor."
 
-    "*Insert CG of BSF character on the ground with multiple large luggages around her."
+    "*Insert CG of Zoë'scharacter on the ground with multiple large luggages around her."
 
     x "Aww geez, maybe I brought a little too much stuff with me…"
 
-    "MC approaches the student sitting on the floor."
+    "[povname] approaches the student sitting on the floor."
 
     e "Are you ok? Do you need some help?"
 
@@ -576,7 +582,7 @@ label dorms02:
 
     x "Uh yeah, that would actually be great!"
 
-    "MC begins helping her pick up her stuff."
+    "[povname] begins helping her pick up her stuff."
 
     e "Is it your first year too?"
 
@@ -586,7 +592,7 @@ label dorms02:
 
     "They finished picking up the girl's luggage."
 
-    "As MC gets up, they noticed the room number on the door."
+    "As [povname] gets up, they noticed the room number on the door."
 
     e "This is room 407!"
 
@@ -594,9 +600,9 @@ label dorms02:
 
     e "Yes!"
 
-    bsf "Oh my gosh! You’re my roommate! My name is *BSF!"
+    bsf "Oh my gosh! You’re my roommate! My name is Zoë!"
 
-    e "I’m *MC."
+    e "I’m [povname]."
 
     scene fade
     scene mc dorm empty bg
