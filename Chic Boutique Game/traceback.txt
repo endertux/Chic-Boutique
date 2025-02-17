@@ -1,26 +1,20 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 263, in script
-    $ povname = renpy.input("What is your name?", default=player_name).strip()
-  File "game/script.rpy", line 263, in <module>
-    $ povname = renpy.input("What is your name?", default=player_name).strip()
-NameError: name 'player_name' is not defined
+After initialization, but before game start.
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jennie/Documents/GitHub/Chic-Boutique/Chic Boutique Game/game/saves/navigation.json.new' -> '/Users/jennie/Documents/GitHub/Chic-Boutique/Chic Boutique Game/game/saves/navigation.json'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 263, in script
-    $ povname = renpy.input("What is your name?", default=player_name).strip()
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/ast.py", line 827, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 263, in <module>
-    $ povname = renpy.input("What is your name?", default=player_name).strip()
-NameError: name 'player_name' is not defined
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/main.py", line 599, in main
+    renpy.dump.dump(False)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/dump.py", line 262, in dump
+    os.rename(new, filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jennie/Documents/GitHub/Chic-Boutique/Chic Boutique Game/game/saves/navigation.json.new' -> '/Users/jennie/Documents/GitHub/Chic-Boutique/Chic Boutique Game/game/saves/navigation.json'
 
 macOS-15.0.1-arm64-arm-64bit arm64
 Ren'Py 8.3.4.24120703
 Chic Boutique Prototype v01 1.0
-Sun Feb 16 16:18:32 2025
+Sun Feb 16 23:22:08 2025

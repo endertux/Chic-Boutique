@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 492: Indentation mismatch.
+File "game/script.rpy", line 459: expected 'label_name_declare' not found.
+    label :
+         ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Sun Feb 16 16:34:40 2025
+Sun Feb 16 21:04:34 2025

@@ -140,24 +140,24 @@ screen outfits:
 #Minigame
 screen outfits_ui:
     image "Minigame/bg.png"
-    image "Minigame/ui_base.png" align(1.0, 0.0)
+    image "Minigame/ui_base.png" align(1.1, 1.0) size (1300, 1100) 
 
-    imagebutton auto "Minigame/done_%s.png" align(0.80, 0.75) action Jump("instructions")
+    imagebutton auto "Minigame/done_%s.png" align(0.70, 0.85) action Jump("instructions")
 
 #Tops
-    imagebutton auto "Dana_Imgs/Dana_Top_1_%s.png" align(0.655, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
-    imagebutton auto "Dana_Imgs/Dana_Top_2_%s.png" align(0.655, 0.45) action [Show("top1"), Hide("top0"), Hide("top2"), SetVariable("top", 1)]
-    imagebutton auto "Dana_Imgs/Dana_Top_3_%s.png" align(0.655, 0.65) action [Show("top2"), Hide("top0"), Hide("top1"), SetVariable("top", 2)]
+    imagebutton auto "Dana_Imgs/Dana_Top_1_%s.png" align(0.50, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+    imagebutton auto "Dana_Imgs/Dana_Top_2_%s.png" align(0.50, 0.45) action [Show("top1"), Hide("top0"), Hide("top2"), SetVariable("top", 1)]
+    imagebutton auto "Dana_Imgs/Dana_Top_3_%s.png" align(0.50, 0.65) action [Show("top2"), Hide("top0"), Hide("top1"), SetVariable("top", 2)]
 
 #Bottoms
-    imagebutton auto "Dana_Imgs/Dana_Bottom_1_%s.png" align(0.755, 0.25) action [Show("bottom0"), Hide("bottom1"), Hide("bottom2"), SetVariable("bottom", 0)]
-    imagebutton auto "Dana_Imgs/Dana_Bottom_2_%s.png" align(0.755, 0.45) action [Show("bottom1"), Hide("bottom0"), Hide("bottom2"), SetVariable("bottom", 1)]
-    imagebutton auto "Dana_Imgs/Dana_Bottom_3_%s.png" align(0.755, 0.65) action [Show("bottom2"), Hide("bottom0"), Hide("bottom1"), SetVariable("bottom", 2)]
+    imagebutton auto "Dana_Imgs/Dana_Bottom_1_%s.png" align(0.69, 0.25) action [Show("bottom0"), Hide("bottom1"), Hide("bottom2"), SetVariable("bottom", 0)]
+    imagebutton auto "Dana_Imgs/Dana_Bottom_2_%s.png" align(0.69, 0.45) action [Show("bottom1"), Hide("bottom0"), Hide("bottom2"), SetVariable("bottom", 1)]
+    imagebutton auto "Dana_Imgs/Dana_Bottom_3_%s.png" align(0.69, 0.65) action [Show("bottom2"), Hide("bottom0"), Hide("bottom1"), SetVariable("bottom", 2)]
 
 #Shoes
-    imagebutton auto "Dana_Imgs/Dana_Shoe_1_%s.png" align(0.955, 0.25) action [Show("shoe1"), Hide("shoe2"), Hide("shoe3"),SetVariable("shoe", 0)]
-    imagebutton auto "Dana_Imgs/Dana_Shoe_2_%s.png" align(0.955, 0.45) action [Show("shoe2"), Hide("shoe1"), Hide("shoe3"),SetVariable("shoe", 1)]
-    imagebutton auto "Dana_Imgs/Dana_Shoe_3_%s.png" align(0.955, 0.65) action [Show("shoe3"), Hide("shoe1"), Hide("shoe2"),SetVariable("shoe", 2)]
+    imagebutton auto "Dana_Imgs/Dana_Shoe_1_%s.png" align(0.90, 0.25) action [Show("shoe1"), Hide("shoe2"), Hide("shoe3"),SetVariable("shoe", 0)]
+    imagebutton auto "Dana_Imgs/Dana_Shoe_2_%s.png" align(0.90, 0.45) action [Show("shoe2"), Hide("shoe1"), Hide("shoe3"),SetVariable("shoe", 1)]
+    imagebutton auto "Dana_Imgs/Dana_Shoe_3_%s.png" align(0.90, 0.70) action [Show("shoe3"), Hide("shoe1"), Hide("shoe2"),SetVariable("shoe", 2)]
 
 
 #This image can be used for the rest of the game, or just as a final reveal.
@@ -214,9 +214,6 @@ label start:
 
     "Your application stood out amongst the thousands that our committee considered, and we expect to see great things from you."
     
-    #scene bg room
-    with fade
-    
     "This journey is sure to be full of great opportunities for you, but first, let’s customize your character."
 
     "The fashion scene at Slaycademy is unparalleled, so get ready to unleash your inner fashionista and create a character as stylish as you are!"
@@ -225,9 +222,10 @@ label start:
     #[The camera pans over the character creation menu, showcasing the options available.]
 
     jump dress
+    with fade
 
 label dress:
-    scene bg
+    scene school
     "Now you can customize every aspect of your character’s appearance."
 
     "Experiment with an array of hairstyles, eye colors, facial features, and so much more. Mix and match until you find the perfect combinations that reflect you and your style."
@@ -259,7 +257,7 @@ label instructions:
     "Once you’re satisfied with your creation, it’s time to step onto the runway and show the world your style!"
 
     # Ask player for their custom name
-    $ povname = renpy.input("Before you make your grand debut, what is your name?", default="Dana").strip()
+    $ povname = renpy.input("Before you make your grand debut, what is your name?", default="Enter your name here.").strip()
 
     # Ensure the first letter is capitalized
     $ povname = povname.capitalize()
@@ -270,7 +268,7 @@ label instructions:
 
 
 label story:
-    scene slaycad bg
+    scene school
     with fade
     #After character customization: 
     #*Insert CG of the giant school facade with chill music
@@ -290,7 +288,7 @@ label story:
 
     "Do you have what it takes to succeed? Good luck!"
 
-    scene courtyard bg
+    scene background
     with fade
 
     show Player
@@ -312,7 +310,7 @@ label story:
             jump gymBro
 
 label art:
-    scene art build bg
+    scene hallway
     with fade
 
     show Player:
@@ -363,7 +361,7 @@ label art:
 
     "Felix starts walking to the dorms. *Later they arrive."
 
-    scene dorms outside bg
+    scene building
     with fade
 
     show artguy normal
@@ -421,7 +419,7 @@ label baddie:
     jump dorms01
 
 label gymBro:
-    scene gym bg
+    scene gym
     with fade
 
     show Player:
@@ -446,7 +444,7 @@ label gymBro:
 
     e "Thanks…"
 
-    scene dorms outside bg
+    scene building
     with fade
 
     show Player:
@@ -459,7 +457,7 @@ label gymBro:
     
 
 label dorms01:
-    scene office bg
+    scene building
     with fade
 
     show Player:
@@ -490,7 +488,7 @@ label raInteraction01:
     ra "So first things first, what is your name?"
 
     e "Oh uhh, my name is [povname]."
-    
+
     ra "Alright, [povname]… [povname]… Oh [povname]! Here you are!"
 
     ra "These are your room keys, and your dorm number is 407."
@@ -499,7 +497,7 @@ label raInteraction01:
 
     "[povname] begins to walk away"
 
-    ra "Wait, I forgot to mention. There's going to be a *insert event name*."
+    ra "Wait, I forgot to mention. Tonight, there's going to be a movie showing"
         
     ra "It’s part of our Welcome Week activities for freshmen. Don’t miss out!"
 
@@ -527,9 +525,7 @@ label raInteraction02:
 
     ra "Can I get your name?"
 
-    "*Insert game prompt to enter their name"
-
-    e "[povname]."
+    e "Uh yeah, it's [povname]."
 
     ra "Oh! Wow, it looks like I'm your RA."
     
@@ -546,7 +542,7 @@ label raInteraction02:
     jump dorms02
 
 label dorms02:
-    scene dorm hallway bg
+    scene dorm hallway
     with fade
 
     show Player:
@@ -605,7 +601,7 @@ label dorms02:
     e "I’m [povname]."
 
     scene fade
-    scene mc dorm empty bg
+    scene room
 
     show Player:
         xpos 0.01
