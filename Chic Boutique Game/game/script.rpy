@@ -132,6 +132,11 @@ screen shoe3 zorder 1:
 
 
 #Dress up menu screen
+#Start button
+screen outfits:
+    image "Minigame/bg.png"
+    imagebutton auto "Minigame/start_%s.png" align(0.5, 0.40) action [Show("outfits_ui"), Show("Dana_Sprite"), Show("top0"), Show("bottom0")]
+
 #Minigame
 screen outfits_ui:
     image "Minigame/bg.png"
