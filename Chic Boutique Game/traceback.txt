@@ -17,4 +17,4 @@ FileNotFoundError: [Errno 2] No such file or directory: '/Users/jennie/Documents
 macOS-15.0.1-arm64-arm-64bit arm64
 Ren'Py 8.3.4.24120703
 Chic Boutique Prototype v01 1.0
-Sun Feb 16 23:22:08 2025
+Mon Feb 17 15:30:56 2025
