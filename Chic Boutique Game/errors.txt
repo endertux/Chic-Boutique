@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 470: expected statement.
-    xpos 0.38
-          ^
-
-File "game/script.rpy", line 471: expected statement.
-    ypos 0
-          ^
+File "game/script.rpy", line 135: expected statement.
+    \
+    
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Mon Feb 17 15:27:17 2025
+Mon Feb 17 16:53:39 2025

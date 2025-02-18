@@ -132,11 +132,6 @@ screen shoe3 zorder 1:
 
 
 #Dress up menu screen
-#Start button
-screen outfits:
-    image "Minigame/bg.png"
-    imagebutton auto "Minigame/start_%s.png" align(0.5, 0.40) action [Show("outfits_ui"), Show("Dana_Sprite"), Show("top0"), Show("bottom0")]
-
 #Minigame
 screen outfits_ui:
     image "Minigame/bg.png"
@@ -300,13 +295,13 @@ label story:
     menu:
         e "Maybe I should go ask someone for directions, but where do I go?"
         
-        "Forward":
+        "Head straight toward the art department.":
             jump art
 
-        "Left":
+        "Turn left and head to the fashion department.":
             jump baddie
 
-        "Right":
+        "Take a right toward the gym.":
             jump gymBro
 
 label art:
@@ -474,10 +469,10 @@ label dorms01:
     menu:
         ra "Hello! How can I help you?"
 
-        "give a polite response":
+        "Hi! I'm new here and I'm looking for my room.":
             jump raInteraction01
 
-        "give a bitter response":
+        "Uh.. yeah. Can’t you see I’m new here?":
             jump raInteraction02
 
 label raInteraction01:
@@ -518,6 +513,9 @@ label raInteraction01:
 
 label raInteraction02:
     e "Uh.. yeah. Can’t you see I’m new here?"
+
+    show ra angry
+    with dissolve
 
     ra "I can definitely see that.."
 
