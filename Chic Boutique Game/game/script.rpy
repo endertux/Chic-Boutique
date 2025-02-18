@@ -483,7 +483,7 @@ label dorms01:
 label raInteraction01:
     e "Hi! I'm new here and I’m looking for my room."
 
-    ra "Alright! I’m *RA by the way, I'm going to be your RA for this year."
+    ra "Alright! I'm going to be your RA for this year."
 
     ra "So first things first, what is your name?"
 
@@ -524,7 +524,7 @@ label raInteraction02:
 
     ra "I can definitely see that.."
 
-    ra "I’m an RA for this building, I’m checking people in."
+    ra "I’m the RA for this building, I’m checking people in."
 
     ra "Can I get your name?"
 
@@ -532,7 +532,7 @@ label raInteraction02:
 
     ra "Oh! Wow, it looks like I'm your RA."
     
-    ra "I’m *RA. Here’s your key and your dorm number is 407."
+    ra "Here’s your key and your dorm number is 407."
 
     ra "I’m sure I’ll see you around."
 
@@ -564,13 +564,17 @@ label dorms02:
 
     "[povname] walks to the sound, from around the corner and sees someone sitting on the floor."
 
-    "*Insert CG of Zoë'scharacter on the ground with multiple large luggages around her."
+    scene zoe cg
+    with fade
 
     x "Aww geez, maybe I brought a little too much stuff with me…"
 
     "[povname] approaches the student sitting on the floor."
 
     e "Are you ok? Do you need some help?"
+
+    scene dorm hallway
+    with fade
 
     show bsf normal
     with dissolve
