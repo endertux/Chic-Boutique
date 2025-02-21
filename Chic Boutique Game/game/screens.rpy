@@ -143,8 +143,16 @@ style namebox:
     ypos gui.name_ypos
     ysize gui.namebox_height
 
-    background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
+    background Frame("gui/button/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
     padding gui.namebox_borders.padding
+define gui.namebox_width = 400  # Adjust width
+define gui.namebox_height = 100  # Adjust height
+define gui.namebox_borders = Borders(15, 15, 15, 15)  # Increase padding
+define gui.name_xpos = 240
+define gui.name_ypos = -55
+define gui.name_text_size = 30  # Bigger text
+
+
 
 style say_label:
     properties gui.text_properties("name", accent=True)
@@ -284,9 +292,6 @@ style quick_button_text:
 ## to other menus, and to start the game.
 
 screen navigation():
-    # Add the Logo on top
-    add "gui/overlay/Logo.png" xpos 0.5 xanchor 0.5 ypos 0.3 yanchor 0.5 zoom 0.7
-
     vbox:
         style_prefix "navigation"
 
@@ -345,8 +350,8 @@ style navigation_button:
 
 style navigation_button_text:
     properties gui.text_properties("navigation_button")
-    font "gui/fonts/schoolbell.ttf"
-    selected_color "#ffc8dd"
+    font "gui/fonts/quicksand.ttf"
+    selected_color "#000000"
     xalign 0.5
 
 

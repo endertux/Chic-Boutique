@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 135: expected statement.
-    \
-    
+File "game/gui.rpy", line 69: expected expression
+    define gui.text_size = 
+                           ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Mon Feb 17 16:53:39 2025
+Thu Feb 20 02:23:04 2025
