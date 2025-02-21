@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/gui.rpy", line 69: expected expression
-    define gui.text_size = 
-                           ^
+File "game/screens.rpy", line 107: Line is indented, but the preceding style statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    background Frame("gui/namebox.png", 10, 10)
+    ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Thu Feb 20 02:23:04 2025
+Fri Feb 21 00:10:15 2025

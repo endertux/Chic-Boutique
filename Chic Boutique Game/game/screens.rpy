@@ -96,14 +96,15 @@ style frame:
 screen say(who, what):
     style_prefix "say"
 
+screen say(who, what):
     window:
         id "window"
 
         if who is not None:
-
             window:
                 id "namebox"
                 style "namebox"
+                background Frame("gui/namebox.png", 20, 20)  # Adjust padding for scaling
                 text who id "who"
 
         text what id "what"
@@ -143,16 +144,8 @@ style namebox:
     ypos gui.name_ypos
     ysize gui.namebox_height
 
-    background Frame("gui/button/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
+    background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
     padding gui.namebox_borders.padding
-define gui.namebox_width = 400  # Adjust width
-define gui.namebox_height = 100  # Adjust height
-define gui.namebox_borders = Borders(15, 15, 15, 15)  # Increase padding
-define gui.name_xpos = 240
-define gui.name_ypos = -55
-define gui.name_text_size = 30  # Bigger text
-
-
 
 style say_label:
     properties gui.text_properties("name", accent=True)
@@ -351,7 +344,7 @@ style navigation_button:
 style navigation_button_text:
     properties gui.text_properties("navigation_button")
     font "gui/fonts/quicksand.ttf"
-    selected_color "#000000"
+    selected_color "#ffc8dd"
     xalign 0.5
 
 
@@ -427,76 +420,63 @@ style main_menu_version:
 ## transcluded (placed) inside it.
 
 screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
-
+    
     style_prefix "game_menu"
 
+    ## Ensure the correct background is applied based on context
     if main_menu:
-        add gui.main_menu_background
+        add "gui/main_menu_background.png"  # Make sure this is the correct background
     else:
-        add gui.game_menu_background
-        
-        
-        
+        add "gui/game_menu_background.png"  # Ensure this file exists
+
     frame:
         style "game_menu_outer_frame"
 
         hbox:
-
-            ## Reserve space for the navigation section.
             frame:
                 style "game_menu_navigation_frame"
-
+            
             frame:
                 style "game_menu_content_frame"
 
                 if scroll == "viewport":
-
                     viewport:
                         yinitial yinitial
                         scrollbars "vertical"
                         mousewheel True
                         draggable True
                         pagekeys True
-
                         side_yfill True
-
                         vbox:
                             spacing spacing
-
                             transclude
 
                 elif scroll == "vpgrid":
-
                     vpgrid:
                         cols 1
                         yinitial yinitial
-
                         scrollbars "vertical"
                         mousewheel True
                         draggable True
                         pagekeys True
-
                         side_yfill True
-
                         spacing spacing
-
                         transclude
 
                 else:
-
                     transclude
 
+    ## Navigation buttons
     use navigation
 
     textbutton _("Return"):
         style "return_button"
-
         action Return()
 
     label title
 
     if main_menu:
-        key "game_menu" action ShowMenu("main_menu")
+        key "game_menu" action ShowMenu("game_menu")
 
 
 style game_menu_outer_frame is empty

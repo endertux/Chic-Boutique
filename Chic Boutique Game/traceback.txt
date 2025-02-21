@@ -1,26 +1,80 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While parsing /Users/jennie/Documents/GitHub/Chic-Boutique/Chic Boutique Game/game/gui.rpy.
-ScriptError: Name ('game/gui.rpy', 1740123156, 13) is defined twice, at game/gui.rpy:58 and game/gui.rpy:60.
+While running game code:
+  File "game/script.rpy", line 206, in script
+    with fade
+Exception: Could not find font 'gui/fonts/quicksand.ttf'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/bootstrap.py", line 359, in bootstrap
-    renpy.main.main()
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/main.py", line 470, in main
-    renpy.game.script.load_script() # sets renpy.game.script.
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/script.py", line 359, in load_script
-    self.load_appropriate_file(".rpyc", [ "_ren.py", ".rpy" ], dir, fn, initcode)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/script.py", line 957, in load_appropriate_file
-    self.finish_load(stmts, initcode, filename=lastfn) # type: ignore
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/script.py", line 590, in finish_load
-    check_name(node)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/script.py", line 566, in check_name
-    raise ScriptError("Name %s is defined twice, at %s:%d and %s:%d." %
-ScriptError: Name ('game/gui.rpy', 1740123156, 13) is defined twice, at game/gui.rpy:58 and game/gui.rpy:60.
+  File "game/script.rpy", line 206, in script
+    with fade
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/ast.py", line 1367, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/exports/statementexports.py", line 257, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/core.py", line 1578, in do_with
+    return self.interact(trans_pause=True,
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/core.py", line 2879, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/core.py", line 1381, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 486, in renpy.display.render.render_screen
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/transition.py", line 194, in render
+    renpy.display.render.render(self.transitions[-1], width, height, 0, 0)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/transition.py", line 384, in render
+    top = render(self.new_widget, width, height, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/screen.py", line 752, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/layout.py", line 1113, in render
+    surf = render(d, rw, height - y, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/behavior.py", line 976, in render
+    rv = super(Button, self).render(width, height, st, at)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/layout.py", line 1457, in render
+    surf = render(child,
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/text/text.py", line 2600, in render
+    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/text/text.py", line 767, in __init__
+    glyphs = ts.glyphs(s, self)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/text/text.py", line 340, in glyphs
+    fo = font.get_font(self.font, self.size, self.bold, self.italic, 0, self.antialias, self.vertical, self.hinting, layout.oversample, self.shaper, self.instance, self.axis)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/text/font.py", line 745, in get_font
+    face = load_face(fn, shaper)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/text/font.py", line 673, in load_face
+    raise Exception("Could not find font {0!r}.".format(orig_fn))
+Exception: Could not find font 'gui/fonts/quicksand.ttf'.
 
 macOS-15.0.1-arm64-arm-64bit arm64
 Ren'Py 8.3.4.24120703
- 
-Thu Feb 20 23:32:38 2025
+Chic Boutique Prototype v01 1.0
+Fri Feb 21 00:02:05 2025

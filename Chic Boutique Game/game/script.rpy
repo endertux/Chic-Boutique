@@ -257,7 +257,7 @@ label instructions:
     "Once you’re satisfied with your creation, it’s time to step onto the runway and show the world your style!"
 
     # Ask player for their custom name
-    $ povname = renpy.input("Before you make your grand debut, what is your name?", default="Enter your name here.").strip()
+    $ povname = renpy.input("Before you make your grand debut, what is your name?", default="").strip()
 
     # Ensure the first letter is capitalized
     $ povname = povname.capitalize()
