@@ -202,7 +202,7 @@ label start:
 
     # display lines of dialogue
 
-    scene accept letter
+    scene congratulations
     with fade
 
     ### PROLOGUE ###
