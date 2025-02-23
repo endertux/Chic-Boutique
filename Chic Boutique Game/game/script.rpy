@@ -540,7 +540,7 @@ label raInteraction02:
 
     ra "Try not to miss it."
 
-    e "(Wow, she seems assertive!)"
+    e "(Wow, she seems assertive.)"
 
     jump dorms02
 
