@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 107: Line is indented, but the preceding style statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    background Frame("gui/namebox.png", 10, 10)
+File "game/script.rpy", line 869: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    return
     ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri Feb 21 00:10:15 2025
+Wed Feb 26 08:51:18 2025

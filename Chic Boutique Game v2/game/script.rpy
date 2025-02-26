@@ -65,15 +65,15 @@ default bottom = 0
 default shoe = 0
 default top = 0
 
-define e = Character("[povname]")
-define x = Character("???")
+define Ariadne = Character("[povname]")
+define anon = Character("???")
 
-define a = Character("Felix")
-define b = Character("Addison")
-define g = Character("Kyle")
+define Felix = Character("Felix")
+define Addie = Character("Addison")
+define Kyle = Character("Kyle")
 
 define ra = Character("RA")
-define bsf = Character("Zoë")
+define Nadia = Character("Nadia")
 
 
 #This is where we create a separate screen for each article of clothing, as well as the character base. Make sure they're all aligned!
@@ -196,40 +196,859 @@ layeredimage Player:
         "Dana_Imgs/Dana_Shoe_3.png"
         
 ###############################################################
-######################### Gameplay ############################
+#################### Gameplay: Prologue #######################
 ###############################################################
 label start:
-
-    # display lines of dialogue
-
-    scene congratulations
+    #LETTER CG
+    scene black bg
     with fade
 
-    ### PROLOGUE ###
+    #[allow player to input their name]
+    #[if player does not input a name; default name: Ariadne]
 
-    #Letter (on screen, not text box):
-    #[animation, you got mail!]
-    "Congratulations! On behalf of the staff here at Slaycademy Institute of the Arts, we are pleased to inform you of your acceptance into the Fashion major."
-    #*CG of a desk with a ripped envelope.
+    # Ask player for their custom name
+    $ povname = renpy.input("Congratulations!", default="Ariadne").strip()
 
-    "Your application stood out amongst the thousands that our committee considered, and we expect to see great things from you."
+    # Ensure the first letter is capitalized
+    $ povname = povname.capitalize()
+
+    scene congratulations
+    with dissolve
+    #"Congratulations, [povname]!"
+
+    "After reviewing your application, we have decided to offer you admission to Slaycademy Institute of the Arts for the 20XX school year."
+
+    "We believe that your application is a reflection of your effort and dedication to creative endeavors."
+
+    "We believe that you can truly excel at Slaycademy and achieve greatness. Welcome to Slaycademy."
+
+    show Player:
+        xpos 0.01
+        ypos 0.6
+    "I made it? All my hard work was worth it!"
+
+    "All of the people I’ll meet and the opportunities I’ll come across…"
+
+    "I have to make the most of this."
+
+    "I will make the most of this."
+
+    hide Player
+
+    #BLACK SCREEN WITH WHITE TEXT ACROSS
+    scene black bg
+    with fade
+
+    "A summer passes and the Fall season begins…"
+
+    #BLACK SCREEN WITH WHITE TEXT ACROSS 
+
+    "A new adventure begins…"
+
+    #CG OF SLAYCADEMY ENTraNCE 
+    #IF POSSIBLE, do a pan up reveal
+    scene school
+    with fade
+
+    show Player:
+        xpos 0.01
+        ypos 0.6
     
-    "This journey is sure to be full of great opportunities for you, but first, let’s customize your character."
+    #play music
+    play music "podcast-smooth-jazz-instrumental-music-225674.mp3" volume 0.5
+    # https://pixabay.com/music/smooth-jazz-podcast-smooth-jazz-instrumental-music-225674/
 
-    "The fashion scene at Slaycademy is unparalleled, so get ready to unleash your inner fashionista and create a character as stylish as you are!"
-    #*MC is in her room wearing pajamas, clicks on the closet to get dressed
+    "This doesn’t feel real…"
 
-    #[The camera pans over the character creation menu, showcasing the options available.]
+    "One of the most prestigious art schools in the world and I’m here"
+
+    "Not as a visitor but as a real student."
+
+    #INSERT OF SCHOOL MAP 
+    #map should look confusing and unclear
+
+    "Orientation materials are never any help when you can’t read maps!" 
+    #😞
+
+    "And an online orientation? At least include a tour!"
+
+    "If I had to figure this out right before classes I’d be totally screwed"
+
+    "…"
+
+    "…"
+
+    "Hah…"
+
+    #FADE INSERT AWAY
+    scene black bg
+    with dissolve
+    show Player:
+        xpos 0.01
+        ypos 0.6
+
+    "WHY AM I SO NERVOUS"
+
+    "One foot in front of the other…"
+
+    "I have to at least go into the school if I want to attend…"
+
+    #"…Which way first?"
+
+    #COMMON ROUTE CHOICE 1: [museum] [garden] [field]
+    menu:
+        "…Which way first?"
+
+        "Museum":
+            jump museum
+        "Garden":
+            jump garden
+        "Field":
+            jump field
+
+
+label museum:
+    #BG ART OF SCHOOL MUSEUM
+    scene classroom bg
+    with fade
+    show Player:
+        xpos 0.01
+        ypos 0.6
+
+    "Where am I!" 
+    #🥲
+
+    "I’m totally lost but…"
+
+    "This place is beautiful so I’m not complaining!"
+
+    "I can’t believe that a school has a building like this"
+
+    "As expected from a top university…"
+
+    #INSERT OF AN ART PIECE 
+    #im referencing this one you can just take the pic and put a pixel filter over bc its public domain now (refer to google doc)
+    #"Virgin and Child with Canon van der Paele" Painting by Jan van Eyck
+    show madone painting
+    with fade
+
+    "The colors on this are so vibrant!"
+
+    #(Felix)
+    anon "It’s amazing, right?"
+
+    "!"
+
+    hide madone painting
+    #FELIX SPRITE
+    show artguy normal
+    with dissolve
+
+    #(Felix)
+    anon "Sorry! I didn’t mean to startle you."
+
+    #(Felix)
+    anon "It’s just that I noticed you seemed lost in thought looking at this piece."
+
+    scene black bg
+    hide artguy normal
+    hide Player
+    show madone painting
+    with fade
+
+    show artguy normal:
+        xpos -0.04
+        ypos 0.6
+
+    #(Felix)
+    anon "I feel the same way every time I see it."
+    hide artguy
+
+    show Player:
+        xpos 0.01
+        ypos 0.6
+
+    Ariadne "The colors are so bright…I feel like I’m getting sucked into the painting just by looking at it."
+    hide Player
+
+    show artguy normal:
+        xpos -0.04
+        ypos 0.6
+
+    #(Felix)
+    anon "I get what you mean! The artist actually spent months meticulously making his own paints."
+
+    #(Felix)
+    anon "Back then, oil paints were made with eggs rather than oil, but then this guy came along and had the idea of using oil. So simple yet effective…"
+
+    hide madone painting
+    hide art guy normal
+    scene black bg
+    with fade
+
+    scene classroom bg
+
+    show Player:
+        xpos 0.01
+        ypos 0.6
+    Ariadne "You seem to know a lot about this painting! I just thought it looked cool."
+    #😅
+    
+    show artguy normal
+
+    #(Felix)
+    anon "Ah, I’m a fine arts major. I’m working on a project focusing on just the pieces we have at our campus museum."
+
+    Ariadne "The fabric looks so real that I can tell exactly what they are. I can practically feel the soft velvety texture in my hands…"
+
+    #(Felix)
+    anon "It’s so intentional too! He built up thin layers of paint to make it more vibrant and textured. This artist is actually credited for coming up with the technique."
+
+    #FADE INSERT AWAY
+
+    #(Felix)
+    anon "From your fabric comment, I’m guessing you’re here for fashion?"
+
+    Ariadne "Haha, so obvious right? I’m [povname]. It’s my first day on campus."
+
+    Felix "Felix. Fashion’s not an easy department to get into. You must be really good."
+
+    Ariadne "I wouldn’t say all that. It’s just hard work."
+
+    Felix "I don’t usually see fashion majors in this building. Thinking of switching majors?" 
+    #this is just said playfully hes not actually asking so maybe put a playful expression
+
+    Ariadne "More like just totally, utterly lost."
+
+    Felix "I gotta say, the campus is nice but navigating it…not as great. Where are you headed? Maybe I can point you in the right direction."
+
+    Ariadne "I guess freshman dorms? I should check in before exploring around a bit more."
+
+    Felix "No wonder why you were so lost! The dorms are always impossible to get to."
+
+    Felix "Bad news is…it’s about a 25 minute walk."
+
+    Ariadne "25 minutes?!"
+
+    Felix "But wait! The good news is that I can walk you there."
+
+    Ariadne "Are you sure? 25 minutes is a long ways away…"
+
+    Felix "It’s no problem. Research can wait."
+
+    Ariadne "If you’re researching right now, you should focus!"
+
+    Ariadne "Plus if you walked me there I have a feeling I’d tune out my surroundings and never get the hang of the campus layout. I’ll be fine on my own, just point me in the right direction."
+
+    Felix "Alright, alright just don’t get too lost and end up back in front of this painting again."
+
+    #INSERT OF SCHOOL MAP
+    #map should look confusing and unclear still
+
+    Felix "There’s a clear path riiiight here. Here, I’ll highlight it for you so you can’t miss it."
+
+    #INSERT OF SCHOOL MAP
+    #map should now have a highlighted path on it
+    scene black bg
+    with fade
+    #FADE SCENE TO OUTSIDE ON PATH
+    jump path
+
+
+label garden:
+    #BG ART OF SCHOOL GARDEN
+    scene background
+
+    show Player:
+        xpos 0.01
+        ypos 0.6
+
+    "Ah! I’ve seen this place on the school website before!"
+
+    "And now I’m really here in real life!"
+
+    "Seems like a nice place to study…maybe I should mark it on the map for later."
+
+    "…"
+
+    "Where did my map go…"
+    #😞
+
+    #(Addie)
+    anon "Hey, cutie!"
+
+    "?"
+
+    #ADDIE SPRITE
+    #should be kind of far away on the screen
+
+    "Is she talking to me?"
+
+    anon "Yes, you! Cutie with the dark hair! You dropped your map!"
+    #erm i need mc description here…i'll add after u guys make the design
+
+    Ariadne "Oh!"
+
+    #RUNNING SOUND EFFECT
+    #ADDIE SPRITE APPEARS CLOSER
+    show baddie normal
+    with dissolve
+
+    Ariadne "Thank you so much! I didn’t even notice that I had dropped it."
+    #😞
+
+    #(Addie)
+    anon "No probs."
+
+    #(Addie)
+    anon "You a freshman?"
+
+    Ariadne "Did the map give it away?"
+
+    #(Addie)
+    anon "The lost look in your eyes did. This school is huge…we’ve all been there."
+
+    #(Addie)
+    anon "Where you heading, kid?"
+    #addie is a second year 😭 kinda wanna make it a running joke that she always calls mc kid despite only being a year older than her; she just wanna give unnie vibes
+
+
+    Ariadne "If I can figure this map out, the student dorms."
+
+    #(Addie)
+    anon "Ooh! I lived there last year! I don’t have anything going on right now if you want me to take you there?"
+
+    Ariadne "Is it far? I don’t want to trouble you too much…"
+
+    #(Addie)
+    anon "No, no it’s fine. You’ve already caught my attention so I wanna get to know you."
+
+    scene black bg
+    with fade
+
+    #WALKING SOUND EFFECT THROUGHOUT SCENE
+    #since they’re outside make it sound like they’re on a track; sound shouldn’t be too loud so it doesn’t distract from dialogue
+
+    show baddie normal
+    #(Addie)
+    anon "So, what’s your name?"
+
+    show Player:
+        xpos 0.01
+        ypos 0.6
+
+    Ariadne "[povname]. You’re…?"
+
+    #(Addie)
+    Addie "Addie. It’s easy to remember because it rhymes with baddie!"
+    #😉
+
+    Ariadne "It’s nice to meet someone so friendly right away. I was really concerned about making friends here to be honest…"
+
+    Addie "With a face like that? C’mon you’ll have no problem making friends."
+
+    "Her gaze is making me a little nervous…it’s like I’m being studied"
+    #😓
+
+    Addie "So, what are you here for? Architecture? Film?"
+
+    "Ah-"
+
+    "I should’ve dressed a little nicer…"
+
+    Ariadne "I’m a fashion major. I usually dress up a little more than this…I didn’t expect to meet anyone until the first day of classes…"
+
+    Addie "Hey, the sweats are a good indicator too! I can never get mine to look that stylish."
+
+    Ariadne "The trick is to look at the seam on the side here. And the cuffs on the bottom are a minor change but they make a big difference!"
+
+    Addie "You totally need to give me more tips. I wanna up my wardrobe game this year."
+
+    Ariadne "Really? …Your outfit already looks great though?"
+
+    Addie "Thanks, cutie. But what you don’t see is that I literally wear this outfit alllll the time. I gotta change things up."
+
+    scene building
+
+    #WALKING SOUND EFFECT STOPS
+
+    #ADDIE SPRITE DROPS TO HER KNEES
+    show building with vpunch
+
+    show Player:
+        xpos 0.01
+        ypos 0.6
+
+    "?!"
+
+    Ariadne "Are you okay?!"
+
+    #Maybe we could have a music change here? Something comedic sounding
+
+    show baddie normal
+
+    Addie "Pleaseee tell me you’ll help me out! Be my little fashionista!"
+
+    Ariadne "Ahh- please stand up!"
+
+    Addie "Say yes!"
+
+    Addie "Please please please please please please please pl-" 
+    #number 1 flirting technique she’s such a pro….
+
+    Ariadne "Yes, yes I’ll help you!"
+
+    Ariadne "Please stand up. You’ll get dirt all over your clothes…"
+
+    #ADDIE SPRITE BACK TO NORMAL
+    #WALKING SOUND EFFECT STARTS AGAIN
+
+    Addie "Phew! I thought I was gonna have to start crying."
+
+    "This girl is kind of…"
+    #😅
+
+    Ariadne "You didn’t need to beg y’know. I was hoping to find a model for my projects anyways."
+
+    Addie "Me, me! I volunteer! Plus I’m in fashion marketing and merchandising so we’ll be in the same buildings all the time."
+
+    Addie "It’s like a match made in heaven! You can teach me the rules of fashion and I can be your muse."
+
+    Ariadne "Muse? I didn’t say all th-"
+
+    #(Student)
+    anon "Addison!"
+
+    Addie "Shoot!" 
+    #😨
+
+    #(Student)
+    anon "You told me you’d meet me at the quad 20 minutes ago!"
+
+    Addie "Sorry, cutie! I gotta run."
+
+    Addie "Luckily it’s super easy to get to the dorms from here. Just follow this path to the end, ‘kay?"
+
+    Ariadne "Thanks! I’ll see you around then."
+
+    Addie "See ya!"
+
+    #RUNNING SOUND
+    #ADDIE SPRITE GONE
+
+    "I thought she said she had nothing to do…?"
+
+    #FADE SCENE TO OUTSIDE ON PATH
+    scene black bg
+    with fade
+
+    jump path
+
+label field:
+    #BG ART OF SCHOOL FOOTBALL FIELD
+    scene gym
+    with fade
+
+    show Player:
+        xpos 0.01
+        ypos 0.6
+
+    "Well, this is a place I probably won’t be seeing much of…"
+
+    "I didn’t even think that an art school would need a place like this."
+
+    "Maybe that’s just the kind of crazy budget that they h-"
+
+    Ariadne "AHH-"
+
+    #SHAKE SCREEN EFFECT
+    #CraSH NOISE
+    show gym with hpunch
+
+    Ariadne "Ow…"
+
+    #maybe put some sort of screen movement here to indicate that she stood back up after falling
+
+    #KYLE SPRITE
+
+    show gymbro normal
+
+    #(Kyle)
+    anon "You’re blocking the field, bro!!!!!"
+
+    "No apology?"
+
+    Ariadne "If you saw me then you didn’t have to barrel right into me!"
+
+    #(Kyle)
+    anon "Yah, you’re right, dude. My bad!"
+
+    "What’s with this guy!"
+
+    #(Kyle)
+    anon "So, you here to play?"
+
+    Ariadne "Huh?"
+
+    Ariadne "Oh! No, no I was just wandering around and got a little lost."
+
+    #(Kyle)
+    anon "That’s a shame, man. We could really use more students in the sports department."
+
+    Ariadne "Are you a sports major?"
+
+    #(Kyle)
+    anon "Yeah, bro. Can’t you tell I lift??"
+
+    Ariadne "I just didn’t know that Slaycademy had a sports department."
+
+    anon "Haha, they don’t!"
+
+    Ariadne "What? Then how are you-"
+
+
+    #(Kyle)
+    anon "Look, man. Rome wasn’t built in a day, alright?"
+
+    #(Kyle)
+    anon "You know what they say!"
+
+    "No…I don’t…"
+
+    "Please! Someone…anyone! Get me out of this conversation!!"
+
+    "Ah…we’re the only ones on the field…"
+    #😔
+
+    #(Kyle)
+    anon "Anyways, I’m gonna be attempting a 350 squat today. It’ll be hard but I think with an audience I’ll be hyped enough to do it."
+
+    #(Kyle)
+    anon "Maybe I should practice right now! Tell me how my form is, here-"
+
+    Ariadne "Actually, I really gotta get going."
+
+    #(Kyle)
+    anon "Aw man, that’s a shame! We were really vibing!"
+
+    "Were we?"
+
+    Ariadne "Would you mind pointing me in the direction of the freshman dorms?"
+
+
+    "Please respond normally!"
+
+    #(Kyle)
+    anon "Down near the tennis courts over there, follow the dirt path."
+
+    "Oh, thank god…"
+
+    #(Kyle)
+    anon "Haha, that reminds me of a movie I watched. Follow the yellow brick road!"
+
+    #(Kyle)
+    anon "The movie’s super underground. Sorry for the obscure reference!"
+
+    "..."
+
+    Ariadne "Yeah…thanks for the directions."
+
+    #(Kyle)
+    anon "No prob, bro. Gotta get back to running my laps. Good luck finding the cafeteria or wherever you wanted to go!"
+
+    hide gymbro
+    with dissolve
+
+    Ariadne "Did this guy really give me the right directions??"
+
+    scene black bg
+    with fade
+
+    jump path
+
+label path:
+    #FADE TO SCENE OUTSIDE ON PATH
+
+    #atp all choice options should have converged into the same main story where player is on the path outside
+
+    #BG ART OF PATH
+    scene building
+    with fade
+
+    show Player:
+        xpos 0.01
+        ypos 0.6
+
+    "It’s great that I was able to get directions from someone. I don’t think I would’ve made it here on my own."
+    #😓
+
+    "But this path looks like it goes on forever…"
+
+    "Hah…"
+
+    "They better tell me about a campus shuttle or something later."
+
+    #FADE BLACK SCREEN WITH WHITE TEXT ACROSS
+
+    scene black bg
+    with fade
+
+    "A while later…"
+
+    #FADE BRIGHT WHITE SCREEN
+    #think it would be funny here to make it a scene where shes like i didnt think i would make it 😭 and the bright light is literally like her being like i see the light
+
+    show white bg
+    with fade
+
+    show Player:
+        xpos 0.01
+        ypos 0.6
+
+    Ariadne "Did-"
+
+    Ariadne "Did I really make it?"
+
+    "Who had the bright idea of building this school on a bunch of hills?!"
+    #tbh this is straight out of my experience at korea university bc korea is super mountainous but its like they did no landscaping at all they just plopped the school right on the hills…walked to the dorms ONCE and was so winded and with my iron deficiency i was seeing stars
+
+    "I need to sit down…"
+
+    #BG ART OF DORMS FRONT DESK
+    show building
+    with dissolve
+
+    show Player:
+        xpos 0.01
+        ypos 0.6
+
+    Ariadne "Hah…"
+    #😓
+
+    #SOUND AND SCREEN EFFECT TO INDICATE THAT PLAYER IS NOW SITTING
+
+    "Big ass school and no way to get up here besides that dirt path-"
+
+    "Judging by how long that took me, I’ll need to wake up before classes like an hour early-"
+    "If I want my outfit to be even a little decent, it’ll need to be earlier"
+
+    "Should I drop out?"
+
+    "Should I do it?"
+
+    ra "Um…"
+
+    "?"
+
+    #ra SPRITE
+    show ra normal
+    with dissolve
+
+    ra "Are you a student here?"
+
+    show Player:
+        xpos 0.01
+        ypos 0.6
+
+    Ariadne "Ah-yes! I’m sorry, I should’ve checked in before using the lounge!"
+
+    ra "Please, feel free to have a seat! I’ll get you checked in. New students usually get winded after that hike."
+
+    ra "But don’t worry, it gets easier!"
+
+    Ariadne "I hope so…"
+
+    "I really don’t think that’s something that I can do every day!"
+
+    ra "Could you give me your name and ID number for check in?"
+
+    Ariadne "Yes, it’s [povname] and my ID number is 14399333."
+
+    ra "Wonderful! You’re all checked in."
+
+    #INSERT OF ACCESS CARD
+
+    ra "This will give you access to the dorm building and all amenities. The number in the corner is the PIN for your room’s lock."
+
+    #FADE INSERT AWAY
+
+    ra "You’ll be on the second floor in room 143. Your roommate checked in early this morning, so she should be here already."
+
+    Ariadne "Thank you!"
+
+    ra "Oh! And the elevator is in maintenance this week. The stairs are right next to it."
+
+    Ariadne "Thanks…"
+    #😭
+
+    #BG ART OF DORM HALL
+    scene dorm hallway
+    with fade
+
+    show Player:
+        xpos 0.01
+        ypos 0.6
+
+    "Clearly the school budget didn’t make it to the housing department."
+
+    "Hopefully the room will be better-"
+
+    Ariadne "Ah!"
+
+    #(Nadia)
+    anon "AH-"
+    show dorm hallway with hpunch
+
+    #CraSH EFFECT
+
+    scene zoe cg
+
+    #CG NADIA ON FLOOR
+
+    #(Nadia)
+    anon "Ow ow ow ow ow"
+
+    Ariadne "Are you alright?!"
+
+    #(Nadia)
+    anon "Oh my god! I’m so sorry! I totally wasn’t looking where I was going…"
+
+
+    Ariadne "Don’t worry about it! Are you hurt? Do you need help getting up?"
+
+    #(Nadia)
+    anon "No, I’m good, I’m good."
+
+    scene dorm hallway
+    with fade
+
+    show bsf normal
+
+    #(Nadia)
+    anon "I lost a piece of jewelry that’s important to me earlier and the ra just called and told me that someone turned it in."
+
+    #(Nadia)
+    anon "I guess thinking about it now…it’s not like it was gonna go anywhere."
+
+    #(Nadia)
+    anon "But I was so desperate to get it back!"
+
+    show Player:
+        xpos 0.01
+        ypos 0.6
+
+    Ariadne "I’m guessing you’re a resident of this dorm?"
+
+    Nadia "Yup! Name’s Nadia."
+
+    Ariadne "[povname]. You should probably go get that jewelry. Seems like it means a lot to you."
+
+    Nadia "Ah! The jewelry! I almost forgot…"
+
+    "..."
+
+    Nadia "I’m sure we’ll see each other around a lot. Let’s hang out sometime!"
+
+    Ariadne "Sounds good! It’ll be nice to have a friend in the dorms."
+
+    Nadia "Oh, for sure. I gotta run but maybe I’ll see you at movie night!"
+
+    hide bsf normal
+    with dissolve
+
+    Ariadne "Movie n-"
+
+    "She left…"
+
+    "Well, I’m bound to see her again sometime soon."
+
+    #BG ART DORM ROOM
+    scene room
+    with fade
+
+    show Player:
+        xpos 0.01
+        ypos 0.6
+
+    "!"
+
+    "So many boxes…"
+
+    "Thankfully the dorm seems a lot nicer than the halls."
+
+    "It’s so much bigger than I thought it would be! Let’s see…"
+
+    "I could set up a mannequin here…sewing machine in this corner…"
+
+    #DOOR BEEPING SOUND EFFECT
+
+    "?"
+
+    #NADIA SPRITE
+    show bsf normal
+
+    Nadia "You’re…"
+
+    Ariadne "From earlier…"
+
+    Nadia "HAHAHAHAHA"
+
+    Nadia "Did we really end up as roommates!"
+
+    Ariadne "What are the chances!"
+
+    Nadia "Well it’s a good thing we got introductions out of the way."
+
+    Ariadne "Yup, we’re practically old friends!"
+
+    Nadia "..."
+
+    Nadia "..."
+
+    Ariadne "Nadia…?"
+
+    #DOOM SOUND EFFECT
+    Nadia "I MADE SUCH A BAD FIRST IMPRESSION."
+
+    Ariadne "Oh, come on stop worrying about that. You’re the one who ended up on the floor!"
+
+    Ariadne "Ah, but I was curious about what you meant by movie night."
+
+    Nadia "No one told you about movie night?"
+
+    Ariadne "Haven’t heard of it."
+
+    Nadia "Oh, it’s just a little social event they’re holding for new students in the lounge tomorrow."
+
+    Nadia "They’re having upperclassmen come in too so that we can meet people who have a bit more experience than us."
+
+    Nadia "You have to come! It’ll be fun and you’ll make a ton of friends."
+
+    Ariadne "I wish I knew about this earlier! I would’ve planned an outfit but now I gotta unpack first."
+
+    Nadia "There are wayyyy too many boxes. How much clothes do you have?"
+
+    Ariadne "A lot…the thrifting addiction is real…"
+
+    Nadia "I get it. I had to leave tonsils of boxes at my parent’s."
+
+    Nadia "Hmm…well you don’t really wanna unpack now, do you?"
+
+    Ariadne "No, but what choice do I have?"
+    #😭
+
+    #Nadia "Just borrow something from my closet."
+
+    #Nadia "Something casual, nothing too fancy!"
 
     jump dress
     with fade
 
+    #PROMPT DRESS UP CHOICE
 label dress:
-    scene school
-    "Now you can customize every aspect of your character’s appearance."
+    Nadia "Just borrow something from my closet."
 
-    "Experiment with an array of hairstyles, eye colors, facial features, and so much more. Mix and match until you find the perfect combinations that reflect you and your style."
-    #[As players make their selections, the avatar on the screen transforms accordingly, showcasing the chosen features.]
+    Nadia "Something casual, nothing too fancy!"
 
     call screen outfits
 
@@ -254,410 +1073,10 @@ label instructions:
         xpos 0.38
         ypos 0
 
-    "Once you’re satisfied with your creation, it’s time to step onto the runway and show the world your style!"
+    Nadia "Wow! Looking real good [povname]!"
 
-    # Ask player for their custom name
-    $ povname = renpy.input("Before you make your grand debut, what is your name?", default="").strip()
-
-    # Ensure the first letter is capitalized
-    $ povname = povname.capitalize()
-
-    "Welcome to your first day of Slaycademy, [povname]!"
-
-    jump story
-
-
-label story:
-    scene school
-    with fade
-    #After character customization: 
-    #*Insert CG of the giant school facade with chill music
-    #[MC looks distressed/ in awe of the size of the school.]
-
-    #play music
-    play music "podcast-smooth-jazz-instrumental-music-225674.mp3" volume 0.5
-        # https://pixabay.com/music/smooth-jazz-podcast-smooth-jazz-instrumental-music-225674/
-
-    #Main Entrance
-
-    "Slaycademy, one of the world’s most prestigious art schools dedicated to excellency. Only the best and brightest young artists and designers are chosen to attend."
-
-    "Here, your talents will be nurtured by the expert staff and endless amenities available to you."
-
-    "Every year, Slaycademy hosts its own special showcase honoring designs by the best students. Be prepared to work hard, and you will be rewarded."
-
-    "Do you have what it takes to succeed? Good luck!"
-
-    scene background
-    with fade
-
-    show Player
-    e "Oh my gosh, this school is so big! How am I ever going to get around this place?"
-
-    e "They gave me this map, but it doesn’t make much sense…"
-
-    #*screen opens to a CG of a large map with random shapes*
-    menu:
-        e "Maybe I should go ask someone for directions, but where do I go?"
-        
-        "Head straight toward the art department.":
-            jump art
-
-        "Turn left and head to the fashion department.":
-            jump baddie
-
-        "Take a right toward the gym.":
-            jump gymBro
-
-label art:
-    scene hallway
-    with fade
-
-    show Player:
-        xpos 0.01
-        ypos 0.6
-
-    #show ARTGUY netural
-    e "(I walk to what seems to be a spread-out building with painted murals all around me.)"
-    
-    "As [povname] wanders the area, they bump into someone by accident."
-
-    e "Oh gosh! I'm so sorry, are you alright?"
-
-    show artguy normal
-    with dissolve
-
-    a "Oh don’t worry about it, I'm alright! Are you looking for something?"
-
-    e "Actually, yeah… I’m a little lost. The map they gave me is so confusing!"
-
-    a "Yeah I remember going through that when I first came here, where are you trying to go?"
-
-    e "I’m looking for the dorms."
-
-    a "Oh you're not far off! The dorms are actually right over here."
-
-    "he points to where the dorms are on the map."
-
-    e "Umm… That would actually be helpful if I knew where we are right now."
-
-    a "*chuckles* I can just take you there…"
-    
-    a "I know you’re going to hear this a hundred times.. But what's your major?"
-
-    e "Actually, you're the first to ask, I'm a Fashion major."
-
-    a "Wow! That’s so awesome, I heard that one is really hard to get into."
-    
-    a "I’m in Fine Arts."
-
-    e "Oh that sounds cool! Do you enjoy studying fine arts?"
-    
-    a "It changes the way I see everything; the colors of the sky, the shapes of the buildings, the expression of the people around me… It’s a beautiful thing."
-
-    e "..."
-
-    a "*laughs* But seriously, I really love what I do."
-
-    "Felix starts walking to the dorms. *Later they arrive."
-
-    scene building
-    with fade
-
-    show artguy normal
-    with dissolve
-
-    show Player:
-        xpos 0.01
-        ypos 0.6
-
-    a "Oh, looks like we’re here."
-
-    e "Thank you so much!"
-
-    a "Of course! Good luck on your first week!"
-    
-    jump dorms01
-
-label baddie:
-    scene classroom bg
-    with fade
-
-    show Player:
-        xpos 0.01
-        ypos 0.6
-
-    e "(I walk to what seems to be a large building with big tinted windows…)"
-
-    e "(There are large mahogany doors with columns on either side.)"
-
-    show baddie normal
-    with dissolve
-
-    b "Hi babe, are you looking for classes too?"
-
-    e "I’m looking for the dorms, but I’m having trouble finding it on this map…"
-
-    b "Oh! Let me see…"
-
-    "Addison’s manicured hand points the way as her smile remains warm yet slightly teasing."
-
-    b "Ah you’re almost there, Just head down that path over there and take a right at the next building."
-
-    e "Oh thank you! It was right there all along."
-    
-    b "Of course babes! This campus is like a maze. Let me know if you need anything else."
-
-    "As [povname] is about to leave, Addison stops them."
-
-    b "Also I really like your outfit, you look so good!"
-
-    e "Oh my gosh thank you!"
-
-    b "Yeah of course, hope you find the dorms ok!"
-
-    jump dorms01
-
-label gymBro:
-    scene gym
-    with fade
-
-    show Player:
-        xpos 0.01
-        ypos 0.6
-
-    e "(I walk to what seems to be a small building near a large field…)"
-
-    x "(Outfit piece) at the gym, that’s an interesting choice."
-
-    e "What? Oh! I'm not here for the gym. I’m actually looking for the dorms"
-
-    show gymbro normal
-    with dissolve
-
-    g "Lol, You’re in the opposite direction, have you tried looking around?"
-    # *Gym sprite is smirking/snickering*
-
-    e "Wha-?"
-
-    g "Hahah….I’m just messing with you, the dorms are over there to your left."
-
-    e "Thanks…"
-
-    scene building
-    with fade
-
-    show Player:
-        xpos 0.01
-        ypos 0.6
-
-    e "(What is with that guy? He just got on my nerves! But I guess I'm here.)"
-
-    jump dorms01
-    
-
-label dorms01:
-    scene building
-    with fade
-
-    show Player:
-        xpos 0.01
-        ypos 0.6
-
-    "[povname] arrives and walks into the lobby."
-
-    show ra normal
-    with dissolve
-    
-    "The RA is at the counter, reading, and looks up from her book."
-
-    menu:
-        ra "Hello! How can I help you?"
-
-        "Hi! I'm new here and I'm looking for my room.":
-            jump raInteraction01
-
-        "Uh.. yeah. Can’t you see I’m new here?":
-            jump raInteraction02
-
-label raInteraction01:
-    e "Hi! I'm new here and I’m looking for my room."
-
-    ra "Alright! I'm going to be your RA for this year."
-
-    ra "So first things first, what is your name?"
-
-    e "Oh uhh, my name is [povname]."
-
-    ra "Alright, [povname]… [povname]… Oh [povname]! Here you are!"
-
-    ra "These are your room keys, and your dorm number is 407."
-
-    e "Ok, thank you so much!"
-
-    "[povname] begins to walk away"
-
-    ra "Wait, I forgot to mention. Tonight, there's going to be a movie showing"
-        
-    ra "It’s part of our Welcome Week activities for freshmen. Don’t miss out!"
-
-    e "Ooh sounds fun! I'll look into it, thanks!"
-
-    "She turned to walk away again."
-
-    ra "Umm… the elevator is just to your right [povname]."
-
-    e "Ahaha… right, got it!"
-
-    ra "Of course! And don’t hesitate to reach out if you have any questions!"
-
-    ra "Or if you encounter any problems during your time here, just come talk to me."
-
-    jump dorms02
-
-
-label raInteraction02:
-    e "Uh.. yeah. Can’t you see I’m new here?"
-
-    show ra angry
-    with dissolve
-
-    ra "I can definitely see that.."
-
-    ra "I’m the RA for this building, I’m checking people in."
-
-    ra "Can I get your name?"
-
-    e "Uh yeah, it's [povname]."
-
-    ra "Oh! Wow, it looks like I'm your RA."
-    
-    ra "Here’s your key and your dorm number is 407."
-
-    ra "I’m sure I’ll see you around."
-
-    ra "And, the elevator is to your right."
-
-    ra "Try not to miss it."
-
-    e "(Wow, she seems assertive.)"
-
-    jump dorms02
-
-label dorms02:
-    scene dorm hallway
-    with fade
-
-    show Player:
-        xpos 0.01
-        ypos 0.6
-
-    "[povname] walks to the elevator and enters the fourth floor."
-
-    "The elevator opens up to a long hallway with adjacent hallways veering off to places unseen."
-
-    "Tall mahogany doors are widely spread out on each side, with each door having an ornate plaque carrying the room numbers."
-
-    e "Alright, lets see...403…404…"
-
-    "[povname] is then interrupted by a loud thud, almost sounding like multiple heavy objects were dropped."
-
-    "[povname] walks to the sound, from around the corner and sees someone sitting on the floor."
-
-    scene zoe cg
-    with fade
-
-    x "Aww geez, maybe I brought a little too much stuff with me…"
-
-    "[povname] approaches the student sitting on the floor."
-
-    e "Are you ok? Do you need some help?"
-
-    scene dorm hallway
-    with fade
-
-    show bsf normal
-    with dissolve
-
-    show Player:
-        xpos 0.01
-        ypos 0.6
-
-    x "Uh yeah, that would actually be great!"
-
-    "[povname] begins helping her pick up her stuff."
-
-    e "Is it your first year too?"
-
-    x "Yeah! I’m so excited, I’ve always wanted to go here. This school is so pretty, don’t you think?"
-
-    e "Yeah totally!"
-
-    "They finished picking up the girl's luggage."
-
-    "As [povname] gets up, they noticed the room number on the door."
-
-    e "This is room 407!"
-
-    x "Oh, yeah. Wait, are you in this room too?"
-
-    e "Yes!"
-
-    bsf "Oh my gosh! You’re my roommate! My name is Zoë!"
-
-    e "I’m [povname]."
-
-    scene fade
-    scene room
-
-    show Player:
-        xpos 0.01
-        ypos 0.6
-
-    "The room is spacious, with two four-poster beds and desks at the far end, and a couch with a tv in the center."
-
-    "There are two huge floor-to-to ceiling windows between the beds. As they walk inside, there is a small kitchen with a stove, oven, and fridge, and another window is behind it."
-
-    e "Wow! I thought the dorms would be fancy, but I wasn’t expecting all this!"
-
-    show bsf normal
-
-    show Player:
-        xpos 0.01
-        ypos 0.6
-
-    bsf "I mean we’re at one of the best art schools in the world, considering how much we’re paying I'd hope it’d be this nice!"
-
-    e "Haha yeah."
-
-    e "(Maybe now’s not the time to mention that I’m here on a scholarship…)"
-
-    "They start unpacking."
-
-    bsf "So what’s your major?"
-
-    e "I’m a Fashion Major!"
-
-    bsf "You’re kidding, me too! Well, Slaycademy is known for having a really good fashion department, so I guess I shouldn’t be surprised!"
-
-    bsf "So, what classes do you have?"
-
-    e "Pretty much the basic classes right now, like *class and *class."
-
-    bsf "Oh I’m taking *class too! Does it happen to be the Monday class at 9 am?"
-
-    e "Yup! I’m kind of worried I won’t be able to find it though. This campus is so huge…"
-
-    bsf "Oh I think I know where it is actually! I’ve been here a few times for parties so I know my way around a little."
-
-    bsf "Do you want me to show you?"
-
-    e "Could you? That would be great!"
-
-    bsf "Of course! It’ll be a good opportunity for you to explore the campus."
-    
-    bsf "C'mon let's go!"
-
+    scene black bg
+    "End of Prototype"
 
     # This ends the game.
 
