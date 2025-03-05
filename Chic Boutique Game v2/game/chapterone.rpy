@@ -71,22 +71,22 @@ screen outfits_ui2:
     image "Minigame/bg.png"
     image "Minigame/ui_base.png" align(1.1, 1.0) size (1300, 1100) 
 
-    imagebutton auto "Minigame/done_%s.png" align(0.70, 0.85) action Jump("instructions2")
+    imagebutton auto "Minigame/done_%s.png" align(0.02, 0.05) action Jump("instructions2")
 
 #Tops
-    imagebutton auto "Dana_Imgs/Dana_Top_1_%s.png" align(0.50, 0.25) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
-    imagebutton auto "Dana_Imgs/Dana_Top_2_%s.png" align(0.50, 0.45) action [Show("top1"), Hide("top0"), Hide("top2"), SetVariable("top", 1)]
-    imagebutton auto "Dana_Imgs/Dana_Top_3_%s.png" align(0.50, 0.65) action [Show("top2"), Hide("top0"), Hide("top1"), SetVariable("top", 2)]
+    imagebutton auto "Dana_Imgs/Dana_Top_1_%s.png" align(0.50, 0.22) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+    imagebutton auto "Dana_Imgs/Dana_Top_2_%s.png" align(0.66, 0.33) action [Show("top1"), Hide("top0"), Hide("top2"), SetVariable("top", 1)]
+    imagebutton auto "Dana_Imgs/Dana_Top_3_%s.png" align(0.78, 0.24) action [Show("top2"), Hide("top0"), Hide("top1"), SetVariable("top", 2)]
 
 #Bottoms
-    imagebutton auto "Dana_Imgs/Dana_Bottom_1_%s.png" align(0.69, 0.25) action [Show("bottom0"), Hide("bottom1"), Hide("bottom2"), SetVariable("bottom", 0)]
-    imagebutton auto "Dana_Imgs/Dana_Bottom_2_%s.png" align(0.69, 0.45) action [Show("bottom1"), Hide("bottom0"), Hide("bottom2"), SetVariable("bottom", 1)]
-    imagebutton auto "Dana_Imgs/Dana_Bottom_3_%s.png" align(0.69, 0.65) action [Show("bottom2"), Hide("bottom0"), Hide("bottom1"), SetVariable("bottom", 2)]
+    imagebutton auto "Dana_Imgs/Dana_Bottom_1_%s.png" align(0.51, 0.60) action [Show("bottom0"), Hide("bottom1"), Hide("bottom2"), SetVariable("bottom", 0)]
+    imagebutton auto "Dana_Imgs/Dana_Bottom_2_%s.png" align(0.64, 0.60) action [Show("bottom1"), Hide("bottom0"), Hide("bottom2"), SetVariable("bottom", 1)]
+    imagebutton auto "Dana_Imgs/Dana_Bottom_3_%s.png" align(0.79, 0.60) action [Show("bottom2"), Hide("bottom0"), Hide("bottom1"), SetVariable("bottom", 2)]
 
 #Shoes
-    imagebutton auto "Dana_Imgs/Dana_Shoe_1_%s.png" align(0.90, 0.25) action [Show("shoe1"), Hide("shoe2"), Hide("shoe3"),SetVariable("shoe", 0)]
-    imagebutton auto "Dana_Imgs/Dana_Shoe_2_%s.png" align(0.90, 0.45) action [Show("shoe2"), Hide("shoe1"), Hide("shoe3"),SetVariable("shoe", 1)]
-    imagebutton auto "Dana_Imgs/Dana_Shoe_3_%s.png" align(0.90, 0.70) action [Show("shoe3"), Hide("shoe1"), Hide("shoe2"),SetVariable("shoe", 2)]
+    imagebutton auto "Dana_Imgs/Dana_Shoe_1_%s.png" align(0.50, 0.90) action [Show("shoe1"), Hide("shoe2"), Hide("shoe3"),SetVariable("shoe", 0)]
+    imagebutton auto "Dana_Imgs/Dana_Shoe_2_%s.png" align(0.64, 0.90) action [Show("shoe2"), Hide("shoe1"), Hide("shoe3"),SetVariable("shoe", 1)]
+    imagebutton auto "Dana_Imgs/Dana_Shoe_3_%s.png" align(0.79, 0.88) action [Show("shoe3"), Hide("shoe1"), Hide("shoe2"),SetVariable("shoe", 2)]
 
 
 #This image can be used for the rest of the game, or just as a final reveal.

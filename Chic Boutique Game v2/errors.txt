@@ -2,9 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/prologue.rpy", line 210: positional argument follows keyword argument
-    povname = renpy.input("Congratulations!", default="Ariadne", "Enter your name here and press enter when you are done!").strip()
-                                                                                                                           ^
+File "game/prologue.rpy", line 148: is not terminated with a newline. (Check strings and parenthesis.)
+        imagebutton auto "Dana_Imgs/Dana_Top_1_%s.png" align(0.50, 0.25 action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
 
-Ren'Py Version: Ren'Py 8.2.3.24061702
-Wed Mar  5 00:07:04 2025
+Ren'Py Version: Ren'Py 8.3.4.24120703
+Wed Mar  5 06:17:10 2025
