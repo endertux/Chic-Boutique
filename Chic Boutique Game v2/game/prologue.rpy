@@ -209,6 +209,31 @@ label start:
     # Ask player for their custom name
     $ povname = renpy.input("Congratulations!", default="Ariadne").strip()
 
+    call screen outfits
+
+label instructions:
+    scene bg with dissolve
+
+    hide screen outfits
+    hide screen outfits_ui
+
+    hide screen Dana_Sprite
+    hide screen top0
+    hide screen top1
+    hide screen top2
+    hide screen bottom0
+    hide screen bottom1
+    hide screen bottom2
+    hide screen shoe1
+    hide screen shoe2
+    hide screen shoe3
+
+    show Player:
+        xpos 0.38
+        ypos 0
+
+    "slay"
+
     # Ensure the first letter is capitalized
     $ povname = povname.capitalize()
 
@@ -1037,47 +1062,5 @@ label path:
     Ariadne "No, but what choice do I have?"
     #😭
 
-    #Nadia "Just borrow something from my closet."
-
-    #Nadia "Something casual, nothing too fancy!"
-
     jump dress
     with fade
-
-    #PROMPT DRESS UP CHOICE
-label dress:
-    Nadia "Just borrow something from my closet."
-
-    Nadia "Something casual, nothing too fancy!"
-
-    call screen outfits
-
-label instructions:
-    scene bg with dissolve
-
-    hide screen outfits
-    hide screen outfits_ui
-
-    hide screen Dana_Sprite
-    hide screen top0
-    hide screen top1
-    hide screen top2
-    hide screen bottom0
-    hide screen bottom1
-    hide screen bottom2
-    hide screen shoe1
-    hide screen shoe2
-    hide screen shoe3
-
-    show Player:
-        xpos 0.38
-        ypos 0
-
-    Nadia "Wow! Looking real good [povname]!"
-
-    scene black bg
-    "End of Prototype"
-
-    # This ends the game.
-
-    return

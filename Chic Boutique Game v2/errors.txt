@@ -2,9 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 869: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    return
-    ^
+The label instructions is defined twice, at File "game/chapterone.rpy", line 138:
+label instructions:
+and File "game/prologue.rpy", line 214:
+label instructions:
+
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Wed Feb 26 08:51:18 2025
+Tue Mar  4 21:41:22 2025

@@ -1,24 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 938, in script
-    Ariande "I’m guessing you’re a resident of this dorm?"
-Exception: Sayer 'Ariande' is not defined.
+  File "renpy/common/00start.rpy", line 233, in script
+    $ _old_history = _history
+  File "renpy/common/00start.rpy", line 233, in <module>
+    $ _old_history = _history
+NameError: name '_history' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 938, in script
-    Ariande "I’m guessing you’re a resident of this dorm?"
-  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 2579, in execute
-    Say.execute(self)
-  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 581, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 470, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'Ariande' is not defined.
+  File "renpy/common/00start.rpy", line 233, in script
+    $ _old_history = _history
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 827, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 233, in <module>
+    $ _old_history = _history
+NameError: name '_history' is not defined
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.4.24120703
 Chic Boutique 1.0
-Wed Feb 26 11:27:31 2025
+Tue Mar  4 21:34:17 2025
