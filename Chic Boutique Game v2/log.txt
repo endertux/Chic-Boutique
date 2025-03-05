@@ -1,45 +1,45 @@
-2025-03-05 08:45:48 UTC
-macOS-13.5-arm64-arm-64bit
-Ren'Py 8.2.3.24061702
+2025-03-05 09:59:51 UTC
+Windows-10-10.0.26100
+Ren'Py 8.3.4.24120703
 
-Early init took 0.05s
-Loading error handling took 0.03s
-Loading script took 0.17s
-Loading save slot metadata took 0.04s
+Early init took 0.09s
+Loading error handling took 0.04s
+Loading script took 0.33s
+Loading save slot metadata took 0.07s
 Loading persistent took 0.00s
-Running init code took 0.04s
+Running init code took 0.07s
 Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
+Reloading save slot metadata took 0.03s
 Index archives took 0.00s
-Backing up script files to '/Users/rubyhirsch/Library/RenPy/backups/Chic Boutique Game v2':
-Dump and make backups took 0.04s
+Backing up script files to 'C:\\Users\\hhall\\AppData\\Roaming/RenPy/backups\\Chic Boutique Game v2':
+Dump and make backups took 0.08s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.02s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.750000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.42s
 Cleaning stores took 0.00s
-Init translation took 0.02s
+Init translation took 0.04s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.57s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.04s
+Running _start took 0.01s
+Interface start took 0.92s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1710, 1107)
+primary display bounds: (0, 0, 2880, 1800)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M2'
-Version: b'2.1 Metal - 83.1'
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4070 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.60'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1710, 983) drawable=(3420, 1966)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1710, 983) drawable=(3420, 1966)
+Screen sizes: virtual=(1920, 1080) physical=(1680, 945) drawable=(1680, 945)
 Maximum texture size: 4096x4096

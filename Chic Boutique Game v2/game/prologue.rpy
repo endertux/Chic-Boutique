@@ -232,8 +232,6 @@ label instructions:
         xpos 0.38
         ypos 0
 
-    "slay"
-
     # Ensure the first letter is capitalized
     $ povname = povname.capitalize()
 
@@ -376,20 +374,21 @@ label museum:
     show artguy normal
     with dissolve
 
+    show artguy speak
     #(Felix)
     anon "Sorry! I didn’t mean to startle you."
 
     #(Felix)
     anon "It’s just that I noticed you seemed lost in thought looking at this piece."
 
-    scene museum
+    scene black bg
     hide artguy normal
     hide Player
     show madone painting
     with fade
 
-    show artguy normal:
-        xpos -0.04
+    show artguy speak:
+        xpos -0.08
         ypos 0.6
 
     #(Felix)
@@ -403,8 +402,8 @@ label museum:
     Ariadne "The colors are so bright…I feel like I’m getting sucked into the painting just by looking at it."
     hide Player
 
-    show artguy normal:
-        xpos -0.04
+    show artguy speak:
+        xpos -0.08
         ypos 0.6
 
     #(Felix)
@@ -414,7 +413,7 @@ label museum:
     anon "Back then, oil paints were made with eggs rather than oil, but then this guy came along and had the idea of using oil. So simple yet effective…"
 
     hide madone painting
-    hide art guy normal
+    hide art guy speak
     scene museum
     with fade
 
@@ -426,13 +425,18 @@ label museum:
     Ariadne "You seem to know a lot about this painting! I just thought it looked cool."
     #😅
     
-    show artguy normal
+    show artguy speak
+    with dissolve
 
     #(Felix)
     anon "Ah, I’m a fine arts major. I’m working on a project focusing on just the pieces we have at our campus museum."
 
+    show artguy normal
+    
     Ariadne "The fabric looks so real that I can tell exactly what they are. I can practically feel the soft velvety texture in my hands…"
 
+    show artguy speak
+    
     #(Felix)
     anon "It’s so intentional too! He built up thin layers of paint to make it more vibrant and textured. This artist is actually credited for coming up with the technique."
 
@@ -441,37 +445,65 @@ label museum:
     #(Felix)
     anon "From your fabric comment, I’m guessing you’re here for fashion?"
 
+    show artguy normal
+
     Ariadne "Haha, so obvious right? I’m [povname]. It’s my first day on campus."
+
+    show artguy speak
 
     Felix "Felix. Fashion’s not an easy department to get into. You must be really good."
 
+    show artguy normal
+
     Ariadne "I wouldn’t say all that. It’s just hard work."
+
+    show artguy speak
 
     Felix "I don’t usually see fashion majors in this building. Thinking of switching majors?" 
     #this is just said playfully hes not actually asking so maybe put a playful expression
 
+    show artguy normal
+    
     Ariadne "More like just totally, utterly lost."
+
+    show artguy speak
 
     Felix "I gotta say, the campus is nice but navigating it…not as great. Where are you headed? Maybe I can point you in the right direction."
 
+    show artguy normal
+   
     Ariadne "I guess freshman dorms? I should check in before exploring around a bit more."
+
+    show artguy speak
 
     Felix "No wonder why you were so lost! The dorms are always impossible to get to."
 
     Felix "Bad news is…it’s about a 25 minute walk."
 
+    show artguy normal
+
     Ariadne "25 minutes?!"
+
+    show artguy speak
 
     Felix "But wait! The good news is that I can walk you there."
 
+    show artguy normal
+
     Ariadne "Are you sure? 25 minutes is a long ways away…"
 
+    show artguy speak
+
     Felix "It’s no problem. Research can wait."
+
+    show artguy normal
 
     Ariadne "If you’re researching right now, you should focus!"
 
     Ariadne "Plus if you walked me there I have a feeling I’d tune out my surroundings and never get the hang of the campus layout. I’ll be fine on my own, just point me in the right direction."
 
+    show artguy speak
+    
     Felix "Alright, alright just don’t get too lost and end up back in front of this painting again."
 
     #INSERT OF SCHOOL MAP
@@ -847,7 +879,7 @@ label path:
     "I need to sit down…"
 
     #BG ART OF DORMS FRONT DESK
-    show building
+    scene building
     with dissolve
 
     show Player:
