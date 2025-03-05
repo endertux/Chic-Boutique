@@ -207,7 +207,7 @@ label start:
     #[if player does not input a name; default name: Ariadne]
 
     # Ask player for their custom name
-    $ povname = renpy.input("Congratulations!", default="Ariadne").strip()
+    $ povname = renpy.input("What is your name? After you are done, press enter!", default="Ariadne").strip()
 
     call screen outfits
 
@@ -237,11 +237,11 @@ label instructions:
     # Ensure the first letter is capitalized
     $ povname = povname.capitalize()
 
-    scene congratulations
+    scene congratsnew
     with dissolve
     #"Congratulations, [povname]!"
 
-    "After reviewing your application, we have decided to offer you admission to Slaycademy Institute of the Arts for the 20XX school year."
+    "After reviewing your application, we have decided to offer you admission to Slaycademy Institute of the Arts for the upcoming school year."
 
     "We believe that your application is a reflection of your effort and dedication to creative endeavors."
 
@@ -316,6 +316,13 @@ label instructions:
 
     "One foot in front of the other…"
 
+    #FADE INSERT AWAY
+    #scene 
+    #with dissolve
+    #show Player:
+    #    xpos 0.01
+    #    ypos 0.6
+
     "I have to at least go into the school if I want to attend…"
 
     #"…Which way first?"
@@ -334,7 +341,7 @@ label instructions:
 
 label museum:
     #BG ART OF SCHOOL MUSEUM
-    scene classroom bg
+    scene museum
     with fade
     show Player:
         xpos 0.01
@@ -375,7 +382,7 @@ label museum:
     #(Felix)
     anon "It’s just that I noticed you seemed lost in thought looking at this piece."
 
-    scene black bg
+    scene museum
     hide artguy normal
     hide Player
     show madone painting
@@ -408,10 +415,10 @@ label museum:
 
     hide madone painting
     hide art guy normal
-    scene black bg
+    scene museum
     with fade
 
-    scene classroom bg
+    scene museum
 
     show Player:
         xpos 0.01
@@ -671,7 +678,7 @@ label garden:
 
 label field:
     #BG ART OF SCHOOL FOOTBALL FIELD
-    scene gym
+    scene field
     with fade
 
     show Player:
@@ -688,7 +695,7 @@ label field:
 
     #SHAKE SCREEN EFFECT
     #CraSH NOISE
-    show gym with hpunch
+    show field with hpunch
 
     Ariadne "Ow…"
 

@@ -2,11 +2,9 @@
 errors listed below, and try again.
 
 
-The label instructions is defined twice, at File "game/chapterone.rpy", line 138:
-label instructions:
-and File "game/prologue.rpy", line 214:
-label instructions:
+File "game/prologue.rpy", line 210: positional argument follows keyword argument
+    povname = renpy.input("Congratulations!", default="Ariadne", "Enter your name here and press enter when you are done!").strip()
+                                                                                                                           ^
 
-
-Ren'Py Version: Ren'Py 8.3.4.24120703
-Tue Mar  4 21:41:22 2025
+Ren'Py Version: Ren'Py 8.2.3.24061702
+Wed Mar  5 00:07:04 2025
