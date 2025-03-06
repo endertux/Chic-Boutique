@@ -2,8 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/gui.rpy", line 28: EOL while scanning string literal
-    '#404040''
+File "game/screens.rpy", line 290: keyword argument 'xalign' appears more than once in a vbox statement.
+    xalign 0.5
+          ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Wed Mar  5 23:39:04 2025
+Thu Mar  6 02:12:48 2025

@@ -1,6 +1,6 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Image object ('gui/main_menu_background.png') at 0x10540b160>:
+While running game code:
 TypeError: missing a required argument: 'title'
 
 -- Full Traceback ------------------------------------------------------------
@@ -46,4 +46,4 @@ TypeError: missing a required argument: 'title'
 macOS-15.0.1-arm64-arm-64bit arm64
 Ren'Py 8.3.4.24120703
 Chic Boutique 1.0
-Wed Mar  5 22:56:16 2025
+Thu Mar  6 02:13:53 2025

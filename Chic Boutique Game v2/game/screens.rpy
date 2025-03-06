@@ -281,10 +281,11 @@ style quick_button_text:
 ## to other menus, and to start the game.
 
 screen navigation():
+
     vbox:
         style_prefix "navigation"
 
-        if main_menu:
+        if renpy.get_screen("main_menu"):
             xalign 0.5
             yalign 0.8
         else:
@@ -340,7 +341,7 @@ style navigation_button:
 style navigation_button_text:
     properties gui.text_properties("navigation_button")
     font "gui/fonts/quicksand.ttf"
-    selected_color "#c8819c"
+    selected_color "#ffc8dd"
     xalign 0.5
 
 
@@ -350,7 +351,7 @@ style navigation_button_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
-screen main_menu():
+screen main_menu(title=_("Main Menu")):
 
     ## This ensures that any other menu screen is replaced.
     tag menu
@@ -582,10 +583,9 @@ screen save():
 
 
 screen load():
-
     tag menu
+    use file_slots(_("Load Game"))
 
-    use file_slots(_("Load"))
 
 
 screen file_slots(title):
@@ -716,7 +716,7 @@ style slot_button_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#preferences
 
-screen preferences():
+screen preferences(title=_("Options")):
 
     tag menu
 
@@ -964,7 +964,7 @@ style history_label_text:
 ## screens (keyboard_help, mouse_help, and gamepad_help) to display the actual
 ## help.
 
-screen help():
+screen help(title=_("Help")):
 
     tag menu
 
