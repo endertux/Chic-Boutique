@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/chapterone.rpy", line 146: end of line expected.
-    hide screen Body.Base
-                    ^
+File "game/gui.rpy", line 49: expected expression
+    define gui.muted_color = 
+                             ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Thu Mar  6 03:20:40 2025
+Thu Mar  6 03:52:21 2025

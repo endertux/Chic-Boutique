@@ -32,10 +32,10 @@ define gui.idle_color = '#E195AB'
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
-define gui.idle_small_color = '#FB9EC6'
+define gui.idle_small_color = '#E195AB'
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = '#FB9EC6'
+define gui.hover_color = '#f3b3c5'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
@@ -46,8 +46,8 @@ define gui.insensitive_color = '#7070707f'
 
 ## Colors used for the portions of bars that are not filled in. These are not
 ## used directly, but are used when re-generating bar image files.
-define gui.muted_color = '#e066a3'
-define gui.hover_muted_color = '#ea99c1'
+define gui.muted_color = '#c0d4fc'
+define gui.hover_muted_color = '#c0d4fc'
 
 ## The colors used for dialogue and menu choice text.
 define gui.text_color = '#404040'
@@ -102,6 +102,7 @@ define gui.textbox_height = 278
 ## The placement of the textbox vertically on the screen. 0.0 is the top, 0.5 is
 ## center, and 1.0 is the bottom.
 define gui.textbox_yalign = 1.0
+define gui.textbox_xalign = 2.0
 
 
 ## The placement of the speaking character's name, relative to the textbox.
@@ -175,7 +176,7 @@ define gui.button_text_size = gui.interface_text_size
 ## The color of button text in various states.
 define gui.button_text_idle_color = gui.idle_color
 define gui.button_text_hover_color = gui.hover_color
-define gui.button_text_selected_color = "#ffc8dd"
+define gui.button_text_selected_color = "#c0d4fc"
 define gui.button_text_insensitive_color = gui.insensitive_color
 
 ## The horizontal alignment of the button text. (0.0 is left, 0.5 is center, 1.0

@@ -286,6 +286,7 @@ screen navigation():
         style_prefix "navigation"
 
         if renpy.get_screen("main_menu"):
+
             xalign 0.5
             yalign 0.8
         else:
@@ -341,7 +342,7 @@ style navigation_button:
 style navigation_button_text:
     properties gui.text_properties("navigation_button")
     font "gui/fonts/quicksand.ttf"
-    selected_color "#ffc8dd"
+    selected_color "#352f2f7f"
     xalign 0.5
 
 
