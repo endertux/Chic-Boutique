@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/prologue.rpy", line 148: is not terminated with a newline. (Check strings and parenthesis.)
-        imagebutton auto "Dana_Imgs/Dana_Top_1_%s.png" align(0.50, 0.25 action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+File "game/gui.rpy", line 28: EOL while scanning string literal
+    '#404040''
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Wed Mar  5 06:17:10 2025
+Wed Mar  5 23:39:04 2025

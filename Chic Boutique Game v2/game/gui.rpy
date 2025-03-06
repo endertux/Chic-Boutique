@@ -66,13 +66,13 @@ define gui.name_text_font = "gui/fonts/quicksand.ttf"
 define gui.interface_text_font = "gui/fonts/quicksand.ttf"
 
 ## The size of normal dialogue text.
-define gui.text_size = 29
+define gui.text_size = 28
 
 ## The size of character names.
-define gui.name_text_size = 45
+define gui.name_text_size = 36
 
 ## The size of text in the game's user interface.
-define gui.interface_text_size = 45
+define gui.interface_text_size = 40
 
 ## The size of labels in the game's user interface.
 define gui.label_text_size = 36
@@ -81,7 +81,7 @@ define gui.label_text_size = 36
 define gui.notify_text_size = 24
 
 ## The size of the game's title.
-define gui.title_text_size = 75
+define gui.title_text_size = 70
 
 
 ## Main and Game Menus #########################################################
@@ -106,12 +106,14 @@ define gui.textbox_yalign = 1.0
 
 ## The placement of the speaking character's name, relative to the textbox.
 ## These can be a whole number of pixels from the left or top, or 0.5 to center.
-define gui.name_xpos = 360
-define gui.name_ypos = 0
+define gui.name_xpos = 0.55
+define gui.name_ypos = 4.0
 
 ## The horizontal alignment of the character's name. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
-define gui.name_xalign = 0.0
+define gui.name_xalign = 0.5
+define gui.name_yalign = 0.8
+
 
 ## The width, height, and borders of the box containing the character's name, or
 ## None to automatically size it.
@@ -121,17 +123,17 @@ define gui.namebox_background = "gui/namebox.png"
 
 ## The borders of the box containing the character's name, in left, top, right,
 ## bottom order.
-define gui.namebox_borders = Borders(5, 5, 5, 5)
+define gui.namebox_borders = Borders(2, 2, 2, 2)
 
 ## If True, the background of the namebox will be tiled, if False, the
 ## background of the namebox will be scaled.
 define gui.namebox_tile = False
-define gui.namebox_width = 400  # Adjust width
-define gui.namebox_height = 100  # Adjust height
-define gui.namebox_borders = Borders(15, 15, 15, 15)  # Increase padding
-define gui.name_xpos = 240
-define gui.name_ypos = -55
-define gui.name_text_size = 30  # Bigger text
+define gui.namebox_width = 250  # Adjust width
+define gui.namebox_height = 95 # Adjust height
+define gui.namebox_borders = Borders(5, 5, 5, 5)  # Increase padding
+define gui.name_xpos = 430
+define gui.name_ypos = -85
+define gui.name_text_size = 32  # Bigger text
 
 
 ## The placement of dialogue relative to the textbox. These can be a whole
