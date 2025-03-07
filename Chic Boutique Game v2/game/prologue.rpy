@@ -65,7 +65,7 @@ default bottom = 0
 default shoe = 0
 default top = 0
 
-define Ariadne = Character("[povname]")
+define mc = Character("[povname]")
 define anon = Character("???")
 
 define Felix = Character("Felix")
@@ -204,10 +204,10 @@ label start:
     with fade
 
     #[allow player to input their name]
-    #[if player does not input a name; default name: Ariadne]
+    #[if player does not input a name; default name: mc]
 
     # Ask player for their custom name
-    $ povname = renpy.input("What is your name?  When you are done, press enter!", default="Ariadne").strip()
+    $ povname = renpy.input("What is your name? When you are done, press enter!", default="").strip()
 
     call screen outfits
 
@@ -266,7 +266,7 @@ label instructions:
 
     #BLACK SCREEN WITH WHITE TEXT ACROSS 
 
-    "A new adventure begins…"
+    "A new chapter begins…"
 
     #CG OF SLAYCADEMY ENTraNCE 
     #IF POSSIBLE, do a pan up reveal
@@ -350,7 +350,7 @@ label museum:
 
     "This place is beautiful so I’m not complaining!"
 
-    "I can’t believe that a school has a building like this"
+    "I can’t believe that a school has a building like this."
 
     "As expected from a top university…"
 
@@ -397,7 +397,7 @@ label museum:
         xpos 0.01
         ypos 0.6
 
-    Ariadne "The colors are so bright…I feel like I’m getting sucked into the painting just by looking at it."
+    mc "The colors are so bright…I feel like I’m getting sucked into the painting just by looking at it."
     hide Player
 
     show artguy speak:
@@ -420,7 +420,7 @@ label museum:
     show Player:
         xpos 0.01
         ypos 0.6
-    Ariadne "You seem to know a lot about this painting! I just thought it looked cool."
+    mc "You seem to know a lot about this painting! I just thought it looked cool."
     #😅
     
     show artguy speak
@@ -431,7 +431,7 @@ label museum:
 
     show artguy normal
     
-    Ariadne "The fabric looks so real that I can tell exactly what they are. I can practically feel the soft velvety texture in my hands…"
+    mc "The fabric looks so real that I can tell exactly what they are. I can practically feel the soft velvety texture in my hands…"
 
     show artguy speak
     
@@ -445,7 +445,7 @@ label museum:
 
     show artguy normal
 
-    Ariadne "Haha, so obvious right? I’m [povname]. It’s my first day on campus."
+    mc "Haha, so obvious right? I’m [povname]. It’s my first day on campus."
 
     show artguy speak
 
@@ -453,7 +453,7 @@ label museum:
 
     show artguy normal
 
-    Ariadne "I wouldn’t say all that. It’s just hard work."
+    mc "I wouldn’t say all that. It’s just hard work."
 
     show artguy speak
 
@@ -462,7 +462,7 @@ label museum:
 
     show artguy normal
     
-    Ariadne "More like just totally, utterly lost."
+    mc "More like just totally, utterly lost."
 
     show artguy speak
 
@@ -470,7 +470,7 @@ label museum:
 
     show artguy normal
    
-    Ariadne "I guess freshman dorms? I should check in before exploring around a bit more."
+    mc "I guess freshman dorms? I should check in before exploring around a bit more."
 
     show artguy speak
 
@@ -480,7 +480,7 @@ label museum:
 
     show artguy normal
 
-    Ariadne "25 minutes?!"
+    mc "25 minutes?!"
 
     show artguy speak
 
@@ -488,7 +488,7 @@ label museum:
 
     show artguy normal
 
-    Ariadne "Are you sure? 25 minutes is a long ways away…"
+    mc "Are you sure? 25 minutes is a long ways away…"
 
     show artguy speak
 
@@ -496,13 +496,13 @@ label museum:
 
     show artguy normal
 
-    Ariadne "If you’re researching right now, you should focus!"
+    mc "If you’re researching right now, you should focus!"
 
-    Ariadne "Plus if you walked me there I have a feeling I’d tune out my surroundings and never get the hang of the campus layout. I’ll be fine on my own, just point me in the right direction."
+    mc "Plus if you walked me there I have a feeling I’d tune out my surroundings and never get the hang of the campus layout. I’ll be fine on my own, just point me in the right direction."
 
     show artguy speak
     
-    Felix "Alright, alright just don’t get too lost and end up back in front of this painting again."
+    Felix "Alright, alright. just don’t get too lost and end up back in front of this painting again."
 
     #INSERT OF SCHOOL MAP
     #map should look confusing and unclear still
@@ -548,14 +548,14 @@ label garden:
 
     anon "Yes, you! Cutie with the cute fit! You dropped your map!"
 
-    Ariadne "Oh!"
+    mc "Oh!"
 
     #RUNNING SOUND EFFECT
     #ADDIE SPRITE APPEARS CLOSER
     show baddie normal
     with dissolve
 
-    Ariadne "Thank you so much! I didn’t even notice that I had dropped it."
+    mc "Thank you so much! I didn’t even notice that I had dropped it."
     #😞
 
     "Wow she’s so pretty… and her outfit is so put-together yet effortless."
@@ -566,7 +566,7 @@ label garden:
     #(Addie)
     anon "You a freshman?"
 
-    Ariadne "Did the map give it away?"
+    mc "Did the map give it away?"
 
     #(Addie)
     anon "The lost look in your eyes told me. Don’t worry about it, this school is huge. We’ve all been there."
@@ -576,7 +576,7 @@ label garden:
     #(Addie)
     anon "So where ya headin, babe?"
 
-    Ariadne "I was trying to get to the student dorms, before I lost my map."
+    mc "I was trying to get to the student dorms, before I lost my map."
 
     #(Addie)
     anon "Ooh! I lived there last year! So many memories…"
@@ -584,7 +584,7 @@ label garden:
     #(Addie)
     anon "Hey, I don’t have anything going on right now if you want me to take you there?"
 
-    Ariadne "Is it far? I don’t want to trouble you too much…"
+    mc "Is it far? I don’t want to trouble you too much…"
 
     #(Addie)
     anon "No, it’s no trouble at all. I can’t leave a cute girl lost in the garden like this!"
@@ -603,13 +603,13 @@ label garden:
         xpos 0.01
         ypos 0.6
 
-    Ariadne "[povname]. And you’re…?"
+    mc "[povname]. And you’re…?"
 
     #(Addie)
     Addie "Addison. But my friends call me Addie!"
     #😉
 
-    Ariadne "Gotcha. It’s nice to meet someone so friendly right away. I was really concerned about making friends here to be honest…"
+    mc "Gotcha. It’s nice to meet someone so friendly right away. I was really concerned about making friends here to be honest…"
 
     Addie "No I get it. I’m not gonna lie, you’re gonna meet some people here that are a little pretentious. It is Slaycademy, after all."
 
@@ -617,7 +617,7 @@ label garden:
 
     Addie "But don’t worry! Most of the people here are really nice. And for a girl as cute as you, you’ll have no problem making friends!"
 
-    Ariadne "Haha...thanks."
+    mc "Haha...thanks."
 
     Addie "Of course!"
 
@@ -627,9 +627,9 @@ label garden:
 
     "I should’ve dressed a little nicer…"
 
-    Ariadne "I’m a fashion major!"
+    mc "I’m a fashion major!"
     
-    Ariadne "I usually dress up a little more than this…I didn’t expect to meet anyone until the first day of classes."
+    mc "I usually dress up a little more than this…I didn’t expect to meet anyone until the first day of classes."
 
     Addie "Hey, what are you talking about! I can tell a fellow fashionista when I see one."
 
@@ -646,21 +646,21 @@ label garden:
 
     Addie "Oh shi-"
 
-    Ariadne "What?!"
+    mc "What?!"
 
     show baddie normal
 
     Addie "Oh my gosh oh my gosh, DON’T freak out, okay!"
 
-    Ariadne "What is it?!"
+    mc "What is it?!"
 
     Addie "Th-there’s a bee!"
 
-    Ariadne "AHHHH GET IT OFF!!!" 
+    mc "AHHHH GET IT OFF!!!" 
 
     #ADDIE BACKS AWAY SLOWLY
 
-    Ariadne "Aren’t you going to help me?"
+    mc "Aren’t you going to help me?"
 
     Addie "Sorry! I’m just- ah!"
 
@@ -673,7 +673,7 @@ label garden:
 
     Addie "Ok…got it!"
 
-    Ariadne "Phew, thanks!"
+    mc "Phew, thanks!"
 
     #ADDIE FLIPS HER HAIR.
     #SHOW SOMEHOW THROUGH HER SMILING
@@ -684,7 +684,7 @@ label garden:
 
     Addie "It probably just thought you were a flower! Easy mistake."
 
-    Ariadne "Haha… HAHAHA"
+    mc "Haha… HAHAHA"
 
     #(Student)
     anon "Addison!"
@@ -699,14 +699,14 @@ label garden:
 
     Addie "Luckily it’s super easy to get to the dorms from here. Just follow this path to the end, ‘kay?"
 
-    Ariadne "Thank you so much! For everything. I’ll see you around then!"
+    mc "Thank you so much! For everything. I’ll see you around then!"
 
     Addie "See ya!"
 
     #RUNNING SOUND
     #ADDIE SPRITE GONE
 
-    "Wait a minute…didn't she say she had nothing to do?"
+    "Wait a minute… Didn't she say she had nothing to do?"
 
     #FADE SCENE TO OUTSIDE ON PATH
     scene black bg
@@ -729,13 +729,13 @@ label field:
 
     "Maybe that’s just the kind of crazy budget that they h-"
 
-    Ariadne "AHH-"
+    mc "AHH-"
 
     #SHAKE SCREEN EFFECT
     #CraSH NOISE
     show field with hpunch
 
-    Ariadne "Ow…"
+    mc "Ow…"
 
     #maybe put some sort of screen movement here to indicate that she stood back up after falling
 
@@ -748,7 +748,7 @@ label field:
 
     "No apology?"
 
-    Ariadne "If you saw me then you didn’t have to barrel right into me!"
+    mc "If you saw me then you didn’t have to barrel right into me!"
 
     #(Kyle)
     anon "Yah, you’re right, dude. My bad!"
@@ -758,23 +758,23 @@ label field:
     #(Kyle)
     anon "So, you here to play?"
 
-    Ariadne "Huh?"
+    mc "Huh?"
 
-    Ariadne "Oh! No, no I was just wandering around and got a little lost."
+    mc "Oh! No, no I was just wandering around and got a little lost."
 
     #(Kyle)
     anon "That’s a shame, man. We could really use more students in the sports department."
 
-    Ariadne "Are you a sports major?"
+    mc "Are you a sports major?"
 
     #(Kyle)
     anon "Yeah, bro. Can’t you tell I lift??"
 
-    Ariadne "I just didn’t know that Slaycademy had a sports department."
+    mc "I just didn’t know that Slaycademy had a sports department."
 
     anon "Haha, they don’t!"
 
-    Ariadne "What? Then how are you-"
+    mc "What? Then how are you-"
 
 
     #(Kyle)
@@ -785,7 +785,7 @@ label field:
 
     "No…I don’t…"
 
-    "Please! Someone…anyone! Get me out of this conversation!!"
+    "Please! Someone…anyone! Get me out of this conversation!"
 
     "Ah…we’re the only ones on the field…"
     #😔
@@ -796,14 +796,14 @@ label field:
     #(Kyle)
     anon "Maybe I should practice right now! Tell me how my form is, here-"
 
-    Ariadne "Actually, I really gotta get going."
+    mc "Actually, I really gotta get going."
 
     #(Kyle)
     anon "Aw man, that’s a shame! We were really vibing!"
 
     "Were we?"
 
-    Ariadne "Would you mind pointing me in the direction of the freshman dorms?"
+    mc "Would you mind pointing me in the direction of the freshman dorms?"
 
 
     "Please respond normally!"
@@ -821,7 +821,7 @@ label field:
 
     "..."
 
-    Ariadne "Yeah…thanks for the directions."
+    mc "Yeah… Thanks for the directions."
 
     #(Kyle)
     anon "No prob, bro. Gotta get back to running my laps. Good luck finding the cafeteria or wherever you wanted to go!"
@@ -829,7 +829,7 @@ label field:
     hide gymbro
     with dissolve
 
-    Ariadne "Did this guy really give me the right directions??"
+    mc "Did this guy really give me the right directions??"
 
     scene black bg
     with fade
@@ -873,9 +873,9 @@ label path:
         xpos 0.01
         ypos 0.6
 
-    Ariadne "Did-"
+    mc "Did-"
 
-    Ariadne "Did I really make it?"
+    mc "Did I really make it?"
 
     "Who had the bright idea of building this school on a bunch of hills?!"
     #tbh this is straight out of my experience at korea university bc korea is super mountainous but its like they did no landscaping at all they just plopped the school right on the hills…walked to the dorms ONCE and was so winded and with my iron deficiency i was seeing stars
@@ -890,7 +890,7 @@ label path:
         xpos 0.01
         ypos 0.6
 
-    Ariadne "Hah…"
+    mc "Hah…"
     #😓
 
     #SOUND AND SCREEN EFFECT TO INDICATE THAT PLAYER IS NOW SITTING
@@ -898,7 +898,7 @@ label path:
     "Big ass school and no way to get up here besides that dirt path-"
 
     "Judging by how long that took me, I’ll need to wake up before classes like an hour early-"
-    "If I want my outfit to be even a little decent, it’ll need to be earlier"
+    "If I want my outfit to be even a little decent, it’ll need to be earlier."
 
     "Should I drop out?"
 
@@ -918,17 +918,17 @@ label path:
         xpos 0.01
         ypos 0.6
 
-    Ariadne "Ah-yes! I’m sorry, I should’ve checked in before using the lounge!"
+    mc "Ah-yes! I’m sorry, I should’ve checked in before using the lounge!"
 
     ra "No worries! …did you really walk all that way?"
 
-    Ariadne "...yes."
+    mc "...yes."
 
     ra "You know we have a shuttle system right?"
 
-    Ariadne "Wait, WHAT?!"
+    mc "Wait, WHAT?!"
 
-    Ariadne "You mean I didn’t have to walk all that way?!"
+    mc "You mean I didn’t have to walk all that way?!"
 
     ra "Haha don’t worry, you’re not the only one who’s made that mistake. It’s kind of an unofficial freshman tradition."
 
@@ -936,7 +936,7 @@ label path:
 
     ra "Could you give me your name and ID number for check in?"
 
-    Ariadne "Yes, it’s [povname] and my ID number is 14399333."
+    mc "Yes, it’s [povname] and my ID number is 14399333."
 
     ra "Wonderful! You’re all checked in."
 
@@ -948,11 +948,11 @@ label path:
 
     ra "You’ll be on the second floor in room 143. Your roommate checked in early this morning, so she should be here already."
 
-    Ariadne "Thank you!"
+    mc "Thank you!"
 
     ra "Oh! And the elevator is in maintenance this week. The stairs are right next to it."
 
-    Ariadne "Thanks…"
+    mc "Thanks…"
     #😭
 
     #BG ART OF DORM HALL
@@ -963,11 +963,11 @@ label path:
         xpos 0.01
         ypos 0.6
 
-    "Whoah, even the hallways are nice."
+    "Whoa, even the hallways are nice."
 
     "I can't wait to see my-"
 
-    Ariadne "Ah!"
+    mc "Ah!"
 
     #(Nadia)
     anon "AH-"
@@ -982,13 +982,13 @@ label path:
     #(Nadia)
     anon "Ow ow ow ow ow"
 
-    Ariadne "Are you alright?!"
+    mc "Are you alright?!"
 
     #(Nadia)
     anon "Oh my god! I’m so sorry! I totally wasn’t looking where I was going…"
 
 
-    Ariadne "Don’t worry about it! Are you hurt? Do you need help getting up?"
+    mc "Don’t worry about it! Are you hurt? Do you need help getting up?"
 
     #(Nadia)
     anon "No, I’m good, I’m good."
@@ -999,10 +999,10 @@ label path:
     show bsf normal
 
     #(Nadia)
-    anon "I lost a piece of jewelry that’s important to me earlier and the ra just called and told me that someone turned it in."
+    anon "I lost a piece of jewelry that’s important to me earlier and the RA just called and told me that someone turned it in."
 
     #(Nadia)
-    anon "I guess thinking about it now…it’s not like it was gonna go anywhere."
+    anon "I guess thinking about it now… it’s not like it was gonna go anywhere."
 
     #(Nadia)
     anon "But I was so desperate to get it back!"
@@ -1011,11 +1011,11 @@ label path:
         xpos 0.01
         ypos 0.6
 
-    Ariadne "I’m guessing you’re a resident of this dorm?"
+    mc "I’m guessing you’re a resident of this dorm?"
 
     Nadia "Yup! Name’s Nadia."
 
-    Ariadne "[povname]. You should probably go get that jewelry. Seems like it means a lot to you."
+    mc "[povname]. You should probably go get that jewelry. Seems like it means a lot to you."
 
     Nadia "Ah! The jewelry! I almost forgot…"
 
@@ -1023,14 +1023,14 @@ label path:
 
     Nadia "I’m sure we’ll see each other around a lot. Let’s hang out sometime!"
 
-    Ariadne "Sounds good! It’ll be nice to have a friend in the dorms."
+    mc "Sounds good! It’ll be nice to have a friend in the dorms."
 
     Nadia "Oh, for sure. I gotta run but maybe I’ll see you at movie night!"
 
     hide bsf normal
     with dissolve
 
-    Ariadne "Movie n-"
+    mc "Movie n-"
 
     "She left…"
 
@@ -1052,7 +1052,7 @@ label path:
 
     "It’s so much bigger than I thought it would be! Let’s see…"
 
-    "I could set up a mannequin here…sewing machine in this corner…"
+    "I could set up a mannequin here… sewing machine in this corner…"
 
     #DOOR BEEPING SOUND EFFECT
 
@@ -1063,34 +1063,34 @@ label path:
 
     Nadia "You’re…"
 
-    Ariadne "From earlier…"
+    mc "From earlier…"
 
     Nadia "HAHAHAHAHA"
 
     Nadia "Did we really end up as roommates!"
 
-    Ariadne "What are the chances!"
+    mc "What are the chances!"
 
     Nadia "Well it’s a good thing we got introductions out of the way."
 
-    Ariadne "Yup, we’re practically old friends!"
+    mc "Yup, we’re practically old friends!"
 
     Nadia "..."
 
     Nadia "..."
 
-    Ariadne "Nadia…?"
+    mc "Nadia…?"
 
     #DOOM SOUND EFFECT
     Nadia "I MADE SUCH A BAD FIRST IMPRESSION."
 
-    Ariadne "Oh, come on stop worrying about that. You’re the one who ended up on the floor!"
+    mc "Oh, come on stop worrying about that. You’re the one who ended up on the floor!"
 
-    Ariadne "Ah, but I was curious about what you meant by movie night."
+    mc "Ah, but I was curious about what you meant by movie night."
 
     Nadia "No one told you about movie night?"
 
-    Ariadne "Haven’t heard of it."
+    mc "Haven’t heard of it."
 
     Nadia "Oh, it’s just a little social event they’re holding for new students in the lounge tomorrow."
 
@@ -1098,17 +1098,17 @@ label path:
 
     Nadia "You have to come! It’ll be fun and you’ll make a ton of friends."
 
-    Ariadne "I wish I knew about this earlier! I would’ve planned an outfit but now I gotta unpack first."
+    mc "I wish I knew about this earlier! I would’ve planned an outfit but now I gotta unpack first."
 
-    Nadia "There are wayyyy too many boxes. How much clothes do you have?"
+    Nadia "There are wayyyy too many boxes. How many clothes do you have?"
 
-    Ariadne "A lot…the thrifting addiction is real…"
+    mc "A lot… the thrifting addiction is real…"
 
     Nadia "I get it. I had to leave tons of boxes at my parent’s."
 
-    Nadia "Hmm…well you don’t really wanna unpack now, do you?"
+    Nadia "Hmm… well you don’t really wanna unpack now, do you?"
 
-    Ariadne "No, but what choice do I have?"
+    mc "No, but what choice do I have?"
     #😭
 
     jump dress
