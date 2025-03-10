@@ -1,26 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While parsing /Users/jennie/Documents/GitHub/Chic-Boutique/Chic Boutique Game v2/game/prologue.rpy.
-ScriptError: Name ('game/prologue.rpy', 1741378224, 4) is defined twice, at game/prologue.rpy:68 and game/prologue.rpy:69.
+While running game code:
+  File "game/prologue.rpy", line 224, in script
+    $ povname = povname.capitalize()
+  File "game/prologue.rpy", line 224, in <module>
+    $ povname = povname.capitalize()
+NameError: name 'povname' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/bootstrap.py", line 359, in bootstrap
-    renpy.main.main()
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/main.py", line 470, in main
-    renpy.game.script.load_script() # sets renpy.game.script.
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/script.py", line 359, in load_script
-    self.load_appropriate_file(".rpyc", [ "_ren.py", ".rpy" ], dir, fn, initcode)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/script.py", line 957, in load_appropriate_file
-    self.finish_load(stmts, initcode, filename=lastfn) # type: ignore
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/script.py", line 590, in finish_load
-    check_name(node)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/script.py", line 566, in check_name
-    raise ScriptError("Name %s is defined twice, at %s:%d and %s:%d." %
-ScriptError: Name ('game/prologue.rpy', 1741378224, 4) is defined twice, at game/prologue.rpy:68 and game/prologue.rpy:69.
+  File "game/prologue.rpy", line 224, in script
+    $ povname = povname.capitalize()
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/ast.py", line 827, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/prologue.rpy", line 224, in <module>
+    $ povname = povname.capitalize()
+NameError: name 'povname' is not defined
 
 macOS-15.0.1-arm64-arm-64bit arm64
 Ren'Py 8.3.4.24120703
 Chic Boutique 1.0
-Fri Mar  7 12:10:25 2025
+Mon Mar 10 03:12:33 2025

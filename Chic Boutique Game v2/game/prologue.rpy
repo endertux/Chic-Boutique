@@ -130,13 +130,11 @@ screen shoe3 zorder 1:
         xpos 300
         ypos 0
 
-
 #Dress up menu screen
 #Start button
 screen outfits:
-    image "Minigame/bg.png"
-    imagebutton auto "Minigame/start_%s.png" align(0.5, 0.40) action [Show("outfits_ui"), Show("Body_Base"), Show("top0"), Show("bottom0")]
-
+    image "Minigame/startmenu.png"
+    imagebutton auto "Minigame/start_%s.png" align(0.5, 0.55) action [Show("outfits_ui"), Show("Body_Base"), Show("top0"), Show("bottom0")]
 #Minigame
 screen outfits_ui:
     image "Minigame/bg.png"
@@ -199,18 +197,7 @@ layeredimage Player:
 #################### Gameplay: Prologue #######################
 ###############################################################
 label start:
-    #LETTER CG
-    scene black bg
-    with fade
-
-    #[allow player to input their name]
-    #[if player does not input a name; default name: mc]
-
-    # Ask player for their custom name
-    $ povname = renpy.input("What is your name? When you are done, press enter!", default="").strip()
-
-    call screen outfits
-
+call screen outfits
 label instructions:
     scene bg with dissolve
 
@@ -231,6 +218,9 @@ label instructions:
     show Player:
         xpos 0.38
         ypos 0
+
+    # Ask player for their custom name
+    $ povname = renpy.input("Before you make your grand debut, what is your name?", default="").strip()
 
     # Ensure the first letter is capitalized
     $ povname = povname.capitalize()
