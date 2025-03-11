@@ -238,10 +238,13 @@ label instructions:
     show Player:
         xpos 0.01
         ypos 0.6
+    
+    # Neutral/Happy Face
     "I made it? All my hard work was worth it!"
 
     "All of the people I’ll meet and the opportunities I’ll come across…"
 
+    # Determined Face
     "I have to make the most of this."
 
     "I will make the most of this."
@@ -271,6 +274,7 @@ label instructions:
     play music "podcast-smooth-jazz-instrumental-music-225674.mp3" volume 0.5
     # https://pixabay.com/music/smooth-jazz-podcast-smooth-jazz-instrumental-music-225674/
 
+    # Suprised Face
     "This doesn’t feel real…"
 
     "One of the most prestigious art schools in the world and I’m here!"
@@ -281,7 +285,7 @@ label instructions:
     #map should look confusing and unclear
 
     "Orientation materials are never any help when you can’t read maps!" 
-    #😞
+    #😞 Sigh Face
 
     "And an online orientation? At least include a tour!"
 
@@ -298,8 +302,10 @@ label instructions:
         xpos 0.01
         ypos 0.6
 
+    # Cry Face
     "WHY AM I SO NERVOUS?!"
 
+    # Determined Face
     "Aright, one foot in front of the other…"
 
     #FADE INSERT AWAY
@@ -315,6 +321,7 @@ label instructions:
 
     #COMMON ROUTE CHOICE 1: [museum] [garden] [field]
     menu:
+        # Confused Face
         "…Which way first?"
 
         "Museum":
@@ -338,6 +345,7 @@ label museum:
 
     "I’m totally lost but…"
 
+    # Suprised Face
     "This place is beautiful so I’m not complaining!"
 
     "I can’t believe that a school has a building like this."
@@ -355,6 +363,7 @@ label museum:
     #(Felix)
     anon "It’s amazing, right?"
 
+    # Confused Face
     "!"
 
     hide madone painting
@@ -363,8 +372,9 @@ label museum:
     with dissolve
 
     show artguy speak
-    #(Felix)
+    #(Felix) Neutral Face
     anon "Sorry! I didn’t mean to startle you."
+    # MC nerutal face
 
     #(Felix)
     anon "It’s just that I noticed you seemed lost in thought looking at this piece."
@@ -379,7 +389,7 @@ label museum:
         xpos -0.08
         ypos 0.6
 
-    #(Felix)
+    #(Felix) Intrested Face
     anon "I feel the same way every time I see it."
     hide artguy
 
@@ -387,6 +397,7 @@ label museum:
         xpos 0.01
         ypos 0.6
 
+    # Suprised Face
     mc "The colors are so bright…I feel like I’m getting sucked into the painting just by looking at it."
     hide Player
 
@@ -394,7 +405,7 @@ label museum:
         xpos -0.08
         ypos 0.6
 
-    #(Felix)
+    #(Felix) Intrested Face
     anon "I get what you mean! The artist actually spent months meticulously making his own paints."
 
     #(Felix)
@@ -411,21 +422,22 @@ label museum:
         xpos 0.01
         ypos 0.6
     mc "You seem to know a lot about this painting! I just thought it looked cool."
-    #😅
+    #😅 Nervous Sweat Drop Face
     
     show artguy speak
     with dissolve
 
-    #(Felix)
+    #(Felix) Shy Face - Looking down, slight turned away & blush
     anon "Ah, I’m a fine arts major. I’m working on a project focusing on just the pieces we have at our campus museum."
 
     show artguy normal
     
+    # Surprised Face
     mc "The fabric looks so real that I can tell exactly what they are. I can practically feel the soft velvety texture in my hands…"
 
     show artguy speak
     
-    #(Felix)
+    #(Felix) Neutral Face
     anon "It’s so intentional too! He built up thin layers of paint to make it more vibrant and textured. This artist is actually credited for coming up with the technique."
 
     #FADE INSERT AWAY
@@ -435,10 +447,12 @@ label museum:
 
     show artguy normal
 
+    # Neutral/Happy Face
     mc "Haha, so obvious right? I’m [povname]. It’s my first day on campus."
 
     show artguy speak
 
+    # Neutral Face
     Felix "Felix. Fashion’s not an easy department to get into. You must be really good!"
 
     show artguy normal
@@ -447,29 +461,36 @@ label museum:
 
     show artguy speak
 
+    # Sly/Smerking Face
     Felix "I don’t usually see fashion majors in this building. Thinking of switching majors?" 
     #this is just said playfully hes not actually asking so maybe put a playful expression
 
     show artguy normal
     
+    # Sweat Drop Face
     mc "More like just totally, utterly lost."
 
     show artguy speak
 
+    # Neutral Face
     Felix "I gotta say, the campus is nice but navigating it…not as great. Where are you headed? Maybe I can point you in the right direction."
 
     show artguy normal
    
+    # Neutral Face
     mc "I guess freshman dorms? I should check in before exploring around a bit more."
 
     show artguy speak
 
+    # Suprised Face (little bit, eyebrow raise)
     Felix "No wonder why you were so lost! The dorms are always impossible to get to."
 
+    # Neutral Face 
     Felix "Bad news is…it’s about a 25 minute walk."
 
     show artguy normal
 
+    # Cry Face
     mc "25 minutes?!"
 
     show artguy speak
@@ -478,6 +499,7 @@ label museum:
 
     show artguy normal
 
+    # Neutral Face
     mc "Are you sure? 25 minutes is a long ways away…"
 
     show artguy speak
@@ -486,8 +508,10 @@ label museum:
 
     show artguy normal
 
+    # Determined Face
     mc "If you’re researching right now, you should focus!"
 
+    # Sweat Drop Face
     mc "Plus if you walked me there I have a feeling I’d tune out my surroundings and never get the hang of the campus layout. I’ll be fine on my own, just point me in the right direction."
 
     show artguy speak
@@ -515,39 +539,43 @@ label garden:
         xpos 0.01
         ypos 0.6
 
+    # Surprised Face
     "Ah! I’ve seen this place on the school website before!"
 
     "And now I’m really here in real life! It’s so pretty!"
 
     "Seems like a nice place to study…maybe I should mark it on the map for later."
 
+    # Confused Face
     "…"
 
     "Wait…where did my map go?"
-    #😞
+    #😞 Cry Face
 
     #(Addie)
     anon "Hey, you there!"
 
     "?"
-
     #ADDIE SPRITE
+    show baddie normal
+    with dissolve
     #should be kind of far away on the screen
 
+    # Confused Face
     "Is she talking to me?"
 
     anon "Yes, you! Cutie with the cute fit! You dropped your map!"
 
+    # Suprised Face
     mc "Oh!"
 
     #RUNNING SOUND EFFECT
     #ADDIE SPRITE APPEARS CLOSER
-    show baddie normal
-    with dissolve
 
     mc "Thank you so much! I didn’t even notice that I had dropped it."
-    #😞
+    #😞 Cry Face
 
+    # Suprised Face
     "Wow she’s so pretty… and her outfit is so put-together yet effortless."
 
     #(Addie)
@@ -556,11 +584,13 @@ label garden:
     #(Addie)
     anon "You a freshman?"
 
+    # Neutral Face
     mc "Did the map give it away?"
 
     #(Addie)
     anon "The lost look in your eyes told me. Don’t worry about it, this school is huge. We’ve all been there."
 
+    # Sweat Drop Face
     "Her gaze is making me a little nervous…it’s like I’m being studied."
 
     #(Addie)
@@ -568,15 +598,16 @@ label garden:
 
     mc "I was trying to get to the student dorms, before I lost my map."
 
-    #(Addie)
+    #(Addie) Excited Talking Face
     anon "Ooh! I lived there last year! So many memories…"
 
-    #(Addie)
+    #(Addie) Eager Face
     anon "Hey, I don’t have anything going on right now if you want me to take you there?"
 
+    # Surprised Face
     mc "Is it far? I don’t want to trouble you too much…"
 
-    #(Addie)
+    #(Addie) Winking Face
     anon "No, it’s no trouble at all. I can’t leave a cute girl lost in the garden like this!"
 
     scene black bg
@@ -586,37 +617,47 @@ label garden:
     #since they’re outside make it sound like they’re on a track; sound shouldn’t be too loud so it doesn’t distract from dialogue
 
     show baddie normal
-    #(Addie)
+    #(Addie) Neutral Face
     anon "So, what’s your name?"
 
     show Player:
         xpos 0.01
         ypos 0.6
 
+    # Neutral Face
     mc "[povname]. And you’re…?"
 
-    #(Addie)
+    #(Addie) Winking Face
     Addie "Addison. But my friends call me Addie!"
     #😉
 
+    # Sweat Drop Face
     mc "Gotcha. It’s nice to meet someone so friendly right away. I was really concerned about making friends here to be honest…"
 
+    # Neutral Face
     Addie "No I get it. I’m not gonna lie, you’re gonna meet some people here that are a little pretentious. It is Slaycademy, after all."
 
+    # MC Confused Face
+
+    # Notice Face
     Addie "?"
 
+    # Excited Talking Face
     Addie "But don’t worry! Most of the people here are really nice. And for a girl as cute as you, you’ll have no problem making friends!"
 
-    mc "Haha...thanks."
+    mc "You think so?"
 
     Addie "Of course!"
 
+    # Neutral Face
     Addie "So, what are you here for? Architecture? Film?"
 
+    # Cry Face
     "Ah-"
 
     "I should’ve dressed a little nicer…"
 
+    # Sweat Drop Face
     mc "I’m a fashion major!"
     
     mc "I usually dress up a little more than this…I didn’t expect to meet anyone until the first day of classes."
@@ -634,19 +675,24 @@ label garden:
         xpos 0.01
         ypos 0.6
 
-    Addie "Oh shi-"
+    # Surprised Face
+    Addie "Umm..."
 
-    mc "What?!"
+    # Confused Face
+    mc "What??"
 
     show baddie normal
 
-    Addie "Oh my gosh oh my gosh, DON’T freak out, okay!"
+    Addie "Alright... DON’T freak out, okay..."
 
-    mc "What is it?!"
+    Addie "There-"
+    
+    Addie "There’s a bee"
 
-    Addie "Th-there’s a bee!"
-
-    mc "AHHHH GET IT OFF!!!" 
+    #mc "AHHHH GET IT OFF!!!"
+    # Put choice here
+        # Handle the Bee
+        # Let Addie do it
 
     #ADDIE BACKS AWAY SLOWLY
 
