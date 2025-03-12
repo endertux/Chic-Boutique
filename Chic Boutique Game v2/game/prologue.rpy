@@ -685,6 +685,7 @@ label garden:
 
     Addie "Alright... DON’T freak out, okay..."
 
+    # Surprised Face
     Addie "There-"
     
     Addie "There’s a bee"
@@ -692,56 +693,79 @@ label garden:
     #mc "AHHHH GET IT OFF!!!"
     # Put choice here
         # Handle the Bee
+            #MC: "Ah..."
+            #MC: "That's no big deal."
+            #Addie sprite backing up
+            #show through visual/audio guides a bee to a flower
+            #Addie cry face
+            #Addie: "How were you so calm??"
+            #MC: "They're harmless as long as you leave them alone!"
+            #Addie distressed face
+            #Addie: "Ugh, I'm just glad that it's gone"
+            #MC: "No way..."
+            #MC: "Are you...scared of bees?"
+            #Addie: "How could you not be!"
+            #mc closed eye smiling
+            #MC: "Haha, I didn't expect you to be so afraid of something so small."
+            #Addie: "Well, at least it's been dealt with."
         # Let Addie do it
+            #MC: ?!?!?
+            #MC: "Get it off!"
+            #addie distressed face
+            #Addie sprite backing up
+            #MC: ???
+            #MC: "Aren't you going to help me?"
+            #Addie: "I'm sorry! I just- ah!"
+            #Addie: "This is something I just can't deal with!"
+            #mc cry face
+            #MC: "Please..."
+            #MC: "I can feel it crawling on me..."
+            #Addie: "O-okay."
+            #Addie: "Just-just give me one second, okay?"
+            #hide Addie sprite
+            #show Addie sprite with notebook in hand
+            #woosh sfx and vfx
+            #Addie sigh face
+            #Addie: "Got it!"
+            #mc sigh face
+            #MC: "Thank you!"
+            #Addie: "Of course, babe!"
+            #Addie: "It was nothing, really."
 
-    #ADDIE BACKS AWAY SLOWLY
 
-    mc "Aren’t you going to help me?"
-
-    Addie "Sorry! I’m just- ah!"
-
-    #ADDIE SPRITE BACK TO NORMAL
-    #WALKING SOUND EFFECT STARTS AGAIN
-
-    Addie "This is something I just can’t deal with!"
-
-    Addie "Alright, well…hold still."
-
-    Addie "Ok…got it!"
-
-    mc "Phew, thanks!"
-
-    #ADDIE FLIPS HER HAIR.
-    #SHOW SOMEHOW THROUGH HER SMILING
-    
-    Addie "Of course, babe!"
+    #addie hair flip sprite would require a new pose which idk if artists are willing to do
+    #good substitute could just be addie wink face (or honestly just her neutral face)
 
     "Oh, she's returned to normal."
 
+    # wink face
     Addie "It probably just thought you were a flower! Easy mistake."
-
-    mc "Haha… HAHAHA"
 
     #(Student)
     anon "Addison!"
 
+    # surprised face
     Addie "Shoot!" 
     #😨
 
     #(Student)
     anon "You told me you’d meet me at the quad 20 minutes ago!"
 
+    # wink face
     Addie "Sorry babe, I gotta run."
 
+    # neutral face
     Addie "Luckily it’s super easy to get to the dorms from here. Just follow this path to the end, ‘kay?"
 
+    # neutral happy face
     mc "Thank you so much! For everything. I’ll see you around then!"
 
     Addie "See ya!"
 
     #RUNNING SOUND
-    #ADDIE SPRITE GONE
+    #ADDIE SPRITE HIDE
 
+    # sweat drop face
     "Wait a minute… Didn't she say she had nothing to do?"
 
     #FADE SCENE TO OUTSIDE ON PATH
@@ -759,18 +783,21 @@ label field:
         xpos 0.01
         ypos 0.6
 
+    # neutral face
     "Well, this is a place I probably won’t be seeing much of…"
 
     "I didn’t even think that an art school would need a place like this."
 
     "Maybe that’s just the kind of crazy budget that they h-"
 
+    # surprised face
     mc "AHH-"
 
     #SHAKE SCREEN EFFECT
     #CraSH NOISE
     show field with hpunch
 
+    # cry face
     mc "Ow…"
 
     #maybe put some sort of screen movement here to indicate that she stood back up after falling
@@ -779,13 +806,17 @@ label field:
 
     show gymbro normal
 
+    # yelling face
     #(Kyle)
     anon "You’re blocking the field, bro!!!!!"
 
+    # confused face
     "No apology?"
 
+    # determined face
     mc "If you saw me then you didn’t have to barrel right into me!"
 
+    # neutral face
     #(Kyle)
     anon "Yah, you’re right, dude. My bad!"
 
@@ -794,8 +825,10 @@ label field:
     #(Kyle)
     anon "So, you here to play?"
 
+    # confused face
     mc "Huh?"
 
+    # neutral face
     mc "Oh! No, no I was just wandering around and got a little lost."
 
     #(Kyle)
@@ -810,6 +843,7 @@ label field:
 
     anon "Haha, they don’t!"
 
+    # confused face
     mc "What? Then how are you-"
 
 
@@ -819,12 +853,12 @@ label field:
     #(Kyle)
     anon "You know what they say!"
 
+    # cry face
     "No…I don’t…"
 
     "Please! Someone…anyone! Get me out of this conversation!"
 
     "Ah…we’re the only ones on the field…"
-    #😔
 
     #(Kyle)
     anon "Anyways, I’m gonna be attempting a 350 squat today. It’ll be hard but I think with an audience I’ll be hyped enough to do it."
@@ -832,6 +866,7 @@ label field:
     #(Kyle)
     anon "Maybe I should practice right now! Tell me how my form is, here-"
 
+    # sweat drop face
     mc "Actually, I really gotta get going."
 
     #(Kyle)
@@ -839,14 +874,16 @@ label field:
 
     "Were we?"
 
+    # neutral face
     mc "Would you mind pointing me in the direction of the freshman dorms?"
 
-
+    # cry face
     "Please respond normally!"
 
     #(Kyle)
     anon "Down near the tennis courts over there, follow the dirt path."
 
+    # sigh face
     "Oh, thank god…"
 
     #(Kyle)
@@ -855,6 +892,7 @@ label field:
     #(Kyle)
     anon "The movie’s super underground. Sorry for the obscure reference!"
 
+    # flat face
     "..."
 
     mc "Yeah… Thanks for the directions."
@@ -865,6 +903,7 @@ label field:
     hide gymbro
     with dissolve
 
+    # sweat drop face
     mc "Did this guy really give me the right directions??"
 
     scene black bg
@@ -885,12 +924,15 @@ label path:
         xpos 0.01
         ypos 0.6
 
-    "It’s great that I was able to get directions from someone. I don’t think I would’ve made it here on my own."
+    # neutral happy face
+    "It’s great that I was able to get directions from someone."
+    
+    # sweat drop face
+    "I don’t think I would’ve made it here on my own."
     #😓
 
+    # surprised face
     "But this path looks like it goes on forever…"
-
-    "Hah…"
 
     #FADE BLACK SCREEN WITH WHITE TEXT ACROSS
 
@@ -909,13 +951,16 @@ label path:
         xpos 0.01
         ypos 0.6
 
+    # distressed face
     mc "Did-"
 
     mc "Did I really make it?"
 
+    # determined face (if artists draw it vaguely enough, it can serve as upset face)
     "Who had the bright idea of building this school on a bunch of hills?!"
     #tbh this is straight out of my experience at korea university bc korea is super mountainous but its like they did no landscaping at all they just plopped the school right on the hills…walked to the dorms ONCE and was so winded and with my iron deficiency i was seeing stars
 
+    # distressed face
     "I need to sit down…"
 
     #BG ART OF DORMS FRONT DESK
@@ -931,15 +976,19 @@ label path:
 
     #SOUND AND SCREEN EFFECT TO INDICATE THAT PLAYER IS NOW SITTING
 
+    # determined face (can serve as upset)
     "Big ass school and no way to get up here besides that dirt path-"
 
     "Judging by how long that took me, I’ll need to wake up before classes like an hour early-"
+
+    # distressed face
     "If I want my outfit to be even a little decent, it’ll need to be earlier."
 
     "Should I drop out?"
 
     "Should I do it?"
 
+    # concerned face
     ra "Um…"
 
     "?"
@@ -948,22 +997,30 @@ label path:
     show ra normal
     with dissolve
 
+    # concerned face
     ra "Are you a student here?"
 
     show Player:
         xpos 0.01
         ypos 0.6
 
-    mc "Ah-yes! I’m sorry, I should’ve checked in before using the lounge!"
+    #  happy neutral face
+    mc "Ah-yes!"
+    
+    # distressed face
+    mc "I’m sorry, I should’ve checked in before using the lounge!"
 
+    # neutral face
     ra "No worries! …did you really walk all that way?"
 
     mc "...yes."
 
     ra "You know we have a shuttle system right?"
 
+    # surprised face
     mc "Wait, WHAT?!"
 
+    # cry face
     mc "You mean I didn’t have to walk all that way?!"
 
     ra "Haha don’t worry, you’re not the only one who’s made that mistake. It’s kind of an unofficial freshman tradition."
@@ -972,6 +1029,7 @@ label path:
 
     ra "Could you give me your name and ID number for check in?"
 
+    # neutral happy face
     mc "Yes, it’s [povname] and my ID number is 14399333."
 
     ra "Wonderful! You’re all checked in."
@@ -988,6 +1046,7 @@ label path:
 
     ra "Oh! And the elevator is in maintenance this week. The stairs are right next to it."
 
+    # cry face
     mc "Thanks…"
     #😭
 
@@ -999,10 +1058,12 @@ label path:
         xpos 0.01
         ypos 0.6
 
-    "Whoa, even the hallways are nice."
+    # happy neutral face
+    "Even the hallways feel fancy."
 
-    "I can't wait to see my-"
+    "I wonder what the room w-"
 
+    # surprised face
     mc "Ah!"
 
     #(Nadia)
@@ -1018,6 +1079,7 @@ label path:
     #(Nadia)
     anon "Ow ow ow ow ow"
 
+    # distressed face
     mc "Are you alright?!"
 
     #(Nadia)
@@ -1047,6 +1109,7 @@ label path:
         xpos 0.01
         ypos 0.6
 
+    # neutral happy face
     mc "I’m guessing you’re a resident of this dorm?"
 
     Nadia "Yup! Name’s Nadia."
@@ -1055,10 +1118,12 @@ label path:
 
     Nadia "Ah! The jewelry! I almost forgot…"
 
+    # sweat drop face
     "..."
 
     Nadia "I’m sure we’ll see each other around a lot. Let’s hang out sometime!"
 
+    # neutral happy face
     mc "Sounds good! It’ll be nice to have a friend in the dorms."
 
     Nadia "Oh, for sure. I gotta run but maybe I’ll see you at movie night!"
@@ -1066,10 +1131,13 @@ label path:
     hide bsf normal
     with dissolve
 
+    # confused face
     mc "Movie n-"
 
+    # sweat drop face
     "She left…"
 
+    # neutral happy face
     "Well, I’m bound to see her again sometime soon."
 
     #BG ART DORM ROOM
@@ -1080,11 +1148,13 @@ label path:
         xpos 0.01
         ypos 0.6
 
+    # distressed face
     "!"
 
     "So many boxes…"
 
-    "Thankfully the dorm seems a lot nicer than the halls."
+    # neutral happy face
+    "So, the dorm is nice too."
 
     "It’s so much bigger than I thought it would be! Let’s see…"
 
@@ -1092,6 +1162,7 @@ label path:
 
     #DOOR BEEPING SOUND EFFECT
 
+    # surprised face
     "?"
 
     #NADIA SPRITE
@@ -1105,6 +1176,7 @@ label path:
 
     Nadia "Did we really end up as roommates!"
 
+    # happy face
     mc "What are the chances!"
 
     Nadia "Well it’s a good thing we got introductions out of the way."
@@ -1115,18 +1187,22 @@ label path:
 
     Nadia "..."
 
+    # confused face
     mc "Nadia…?"
 
     #DOOM SOUND EFFECT
     Nadia "I MADE SUCH A BAD FIRST IMPRESSION."
 
+    # neutral happy face
     mc "Oh, come on stop worrying about that. You’re the one who ended up on the floor!"
 
+    # surprised face
     mc "Ah, but I was curious about what you meant by movie night."
 
     Nadia "No one told you about movie night?"
 
-    mc "Haven’t heard of it."
+    # confused face
+    mc "Not at all..."
 
     Nadia "Oh, it’s just a little social event they’re holding for new students in the lounge tomorrow."
 
@@ -1134,16 +1210,19 @@ label path:
 
     Nadia "You have to come! It’ll be fun and you’ll make a ton of friends."
 
+    # cry face
     mc "I wish I knew about this earlier! I would’ve planned an outfit but now I gotta unpack first."
 
     Nadia "There are wayyyy too many boxes. How many clothes do you have?"
 
+    # sweat drop face
     mc "A lot… the thrifting addiction is real…"
 
     Nadia "I get it. I had to leave tons of boxes at my parent’s."
 
     Nadia "Hmm… well you don’t really wanna unpack now, do you?"
 
+    # sweat drop face
     mc "No, but what choice do I have?"
     #😭
 

@@ -158,7 +158,7 @@ label instructions2:
         xpos 0.38
         ypos 0
 
-    Nadia "Wow! Looking real good [povname]!"
+    Nadia "Perfect! That works just fine!"
 
     scene black bg
     "End of Prototype"
