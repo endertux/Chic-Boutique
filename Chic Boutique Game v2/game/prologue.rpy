@@ -68,12 +68,12 @@ default top = 0
 define mc = Character("[povname]")
 define anon = Character("???")
 
-define Felix = Character("Felix")
-define Addie = Character("Addison")
-define Kyle = Character("Kyle")
+define Felix = Character("Felix", color = "#3f7d2d" )
+define Addie = Character("Addison", color = "#32327c" )
+define Kyle = Character("Kyle", color = "#b72417")
 
-define ra = Character("RA")
-define Nadia = Character("Nadia")
+define ra = Character("RA", color = "#a84480")
+define Nadia = Character("Nadia", color = "#9b33c6")
 
 #This is where we create a separate screen for each article of clothing, as well as the character base. Make sure they're all aligned!
 screen Body_Base:
@@ -294,6 +294,14 @@ label instructions:
     #INSERT OF SCHOOL MAP 
     #map should look confusing and unclear
 
+    scene map temp 
+    with fade 
+    
+    show Player:
+        xpos 0.01
+        ypos 0.07 
+    with dissolve
+
     "Orientation materials are never any help when you can’t read maps!" 
     #😞 Sigh Face
 
@@ -319,6 +327,8 @@ label instructions:
     # Determined Face
     "Aright, one foot in front of the other…"
 
+    scene map temp 
+    with fade 
     #FADE INSERT AWAY
     #scene 
     #with dissolve
@@ -554,7 +564,7 @@ label museum:
 
 label garden:
     #BG ART OF SCHOOL GARDEN
-    scene background
+    scene garden temp
 
     show Player:
         xpos 0.01
@@ -601,7 +611,7 @@ label garden:
     #RUNNING SOUND EFFECT
     #ADDIE SPRITE APPEARS CLOSER
 
-    scene background
+    scene garden temp
     with dissolve
 
     show Player:
@@ -648,9 +658,6 @@ label garden:
 
     #(Addie) Winking Face
     anon "No, it’s no trouble at all. I can’t leave a cute girl lost in the garden like this!"
-
-    scene black bg
-    with fade
 
     #WALKING SOUND EFFECT THROUGHOUT SCENE
     #since they’re outside make it sound like they’re on a track; sound shouldn’t be too loud so it doesn’t distract from dialogue
@@ -1208,7 +1215,7 @@ label path:
     "Well, I’m bound to see her again sometime soon."
 
     #BG ART DORM ROOM
-    scene room
+    scene temp dorm
     with fade
 
     show Player:
