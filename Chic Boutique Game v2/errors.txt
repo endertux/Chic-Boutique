@@ -2,9 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/prologue.rpy", line 165: Line is indented, but the preceding imagebutton statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    imagebutton auto "Assets/Shoe_3_%s.png" align(0.78, 0.88) action [Show("shoe3"), Hide("shoe1"), Hide("shoe2"),SetVariable("shoe", 2)]
-    ^
+The label start is defined twice, at File "game/chapterone.rpy", line 153:
+label start:
+and File "game/prologue.rpy", line 223:
+label start:
+
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Wed Mar 12 23:52:25 2025
+Thu Mar 13 02:46:32 2025
