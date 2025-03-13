@@ -158,15 +158,11 @@ label dress:
     Nadia "Just borrow something from my closet."
 
     Nadia "Something casual, nothing too fancy!"
-
-    call screen outfits2
-
+    
+call screen outfits2
 label instructions2:
-    scene bg with dissolve
-
-    hide screen outfits
-    hide screen outfits_ui
-
+    hide screen outfits2
+    hide screen outfits_ui2
     hide screen Body_Base
     hide screen top0
     hide screen top1
@@ -182,12 +178,13 @@ label instructions2:
     hide screen shoe1
     hide screen shoe2
     hide screen shoe3
-    hide screen shoe4  
+    hide screen shoe4
 
+    scene bg
     show Player:
         xpos 0.38
         ypos 0
-
+    with dissolve
     Nadia "Perfect! That works just fine!"
 
     scene black bg

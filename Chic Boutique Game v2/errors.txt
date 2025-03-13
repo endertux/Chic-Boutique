@@ -2,11 +2,9 @@
 errors listed below, and try again.
 
 
-The label start is defined twice, at File "game/chapterone.rpy", line 153:
-label start:
-and File "game/prologue.rpy", line 223:
-label start:
+File "game/chapterone.rpy", line 166: Line is indented, but the preceding hide screen statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    hide screen outfits_ui
+    ^
 
-
-Ren'Py Version: Ren'Py 8.3.6.25022803
-Thu Mar 13 02:46:32 2025
+Ren'Py Version: Ren'Py 8.3.4.24120703
+Thu Mar 13 14:20:27 2025
