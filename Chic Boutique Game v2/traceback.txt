@@ -1,26 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/prologue.rpy", line 224, in script
-    $ povname = povname.capitalize()
-  File "game/prologue.rpy", line 224, in <module>
-    $ povname = povname.capitalize()
-NameError: name 'povname' is not defined
+  File "game/prologue.rpy", line 241, in script
+    with blur
+  File "game/prologue.rpy", line 241, in <module>
+    with blur
+NameError: name 'blur' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/prologue.rpy", line 224, in script
-    $ povname = povname.capitalize()
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/ast.py", line 827, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/prologue.rpy", line 224, in <module>
-    $ povname = povname.capitalize()
-NameError: name 'povname' is not defined
+  File "game/prologue.rpy", line 241, in script
+    with blur
+  File "C:\Users\jenni\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 1367, in execute
+    trans = renpy.python.py_eval(self.expr)
+  File "C:\Users\jenni\Downloads\renpy-8.3.6-sdk\renpy\python.py", line 1215, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\jenni\Downloads\renpy-8.3.6-sdk\renpy\python.py", line 1208, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/prologue.rpy", line 241, in <module>
+    with blur
+NameError: name 'blur' is not defined
 
-macOS-15.0.1-arm64-arm-64bit arm64
-Ren'Py 8.3.4.24120703
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.3.6.25022803
 Chic Boutique 1.0
-Mon Mar 10 03:12:33 2025
+Wed Mar 12 21:24:15 2025

@@ -75,7 +75,6 @@ define Kyle = Character("Kyle")
 define ra = Character("RA")
 define Nadia = Character("Nadia")
 
-
 #This is where we create a separate screen for each article of clothing, as well as the character base. Make sure they're all aligned!
 screen Body_Base:
     image "Assets/Body.Base.png":
@@ -218,6 +217,7 @@ label instructions:
     show Player:
         xpos 0.38
         ypos 0
+    with dissolve
 
     # Ask player for their custom name
     $ povname = renpy.input("Before you make your grand debut, what is your name?", default="").strip()
@@ -237,7 +237,8 @@ label instructions:
 
     show Player:
         xpos 0.01
-        ypos 0.6
+        ypos 0.1
+    with dissolve
     
     # Neutral/Happy Face
     "I made it? All my hard work was worth it!"
@@ -268,7 +269,8 @@ label instructions:
 
     show Player:
         xpos 0.01
-        ypos 0.6
+        ypos 0.07 
+    with dissolve
     
     #play music
     play music "podcast-smooth-jazz-instrumental-music-225674.mp3" volume 0.5
@@ -301,6 +303,7 @@ label instructions:
     show Player:
         xpos 0.01
         ypos 0.6
+    with dissolve
 
     # Cry Face
     "WHY AM I SO NERVOUS?!"
@@ -338,7 +341,8 @@ label museum:
     with fade
     show Player:
         xpos 0.01
-        ypos 0.6
+        ypos 0.07
+    with dissolve
 
     "Where am I!" 
     #🥲
@@ -368,7 +372,13 @@ label museum:
 
     hide madone painting
     #FELIX SPRITE
+    show Player:
+        xpos 0.01
+        ypos 0.6
+    with dissolve
+
     show artguy normal
+
     with dissolve
 
     show artguy speak
@@ -386,8 +396,8 @@ label museum:
     with fade
 
     show artguy speak:
-        xpos -0.08
-        ypos 0.6
+        xpos 0.72
+        ypos 0.1
 
     #(Felix) Intrested Face
     anon "I feel the same way every time I see it."
@@ -395,15 +405,15 @@ label museum:
 
     show Player:
         xpos 0.01
-        ypos 0.6
+        ypos 0.07
 
     # Suprised Face
     mc "The colors are so bright…I feel like I’m getting sucked into the painting just by looking at it."
     hide Player
 
     show artguy speak:
-        xpos -0.08
-        ypos 0.6
+        xpos 0.72
+        ypos 0.1
 
     #(Felix) Intrested Face
     anon "I get what you mean! The artist actually spent months meticulously making his own paints."
@@ -416,16 +426,17 @@ label museum:
     scene museum
     with fade
 
-    scene museum
 
+    scene museum
     show Player:
         xpos 0.01
         ypos 0.6
+
+    show artguy normal
+    with dissolve
+
     mc "You seem to know a lot about this painting! I just thought it looked cool."
     #😅 Nervous Sweat Drop Face
-    
-    show artguy speak
-    with dissolve
 
     #(Felix) Shy Face - Looking down, slight turned away & blush
     anon "Ah, I’m a fine arts major. I’m working on a project focusing on just the pieces we have at our campus museum."
@@ -523,6 +534,8 @@ label museum:
 
     Felix "There’s a clear path riiiight here. Here, I’ll highlight it for you so you can’t miss it."
 
+    with dissolve
+
     #INSERT OF SCHOOL MAP
     #map should now have a highlighted path on it
     scene black bg
@@ -537,7 +550,8 @@ label garden:
 
     show Player:
         xpos 0.01
-        ypos 0.6
+        ypos 0.07
+    with dissolve
 
     # Surprised Face
     "Ah! I’ve seen this place on the school website before!"
@@ -557,12 +571,19 @@ label garden:
 
     "?"
     #ADDIE SPRITE
-    show baddie normal
+    show Player:
+        xpos 0.01
+        ypos 0.07
     with dissolve
     #should be kind of far away on the screen
 
     # Confused Face
     "Is she talking to me?"
+
+    show baddie normal:
+        xpos 0.75
+        ypos 0.3
+    with dissolve
 
     anon "Yes, you! Cutie with the cute fit! You dropped your map!"
 
@@ -571,6 +592,16 @@ label garden:
 
     #RUNNING SOUND EFFECT
     #ADDIE SPRITE APPEARS CLOSER
+
+    scene background
+    with dissolve
+
+    show Player:
+        xpos 0.01
+        ypos 0.6
+
+    show baddie normal
+    with dissolve
 
     mc "Thank you so much! I didn’t even notice that I had dropped it."
     #😞 Cry Face
@@ -615,14 +646,16 @@ label garden:
 
     #WALKING SOUND EFFECT THROUGHOUT SCENE
     #since they’re outside make it sound like they’re on a track; sound shouldn’t be too loud so it doesn’t distract from dialogue
-
-    show baddie normal
-    #(Addie) Neutral Face
-    anon "So, what’s your name?"
-
     show Player:
         xpos 0.01
         ypos 0.6
+
+    show baddie normal
+    with dissolve
+
+    #(Addie) Neutral Face
+    anon "So, what’s your name?"
+
 
     # Neutral Face
     mc "[povname]. And you’re…?"
@@ -759,6 +792,10 @@ label garden:
 
     # neutral happy face
     mc "Thank you so much! For everything. I’ll see you around then!"
+      
+    show baddie normal at Move((0.33, 0), (0.8, 0), 2.0)
+    pause 1.3
+    show baddie normal at Alpha(1.0, 0.0, 1.0)
 
     Addie "See ya!"
 
@@ -782,6 +819,7 @@ label field:
     show Player:
         xpos 0.01
         ypos 0.6
+    with dissolve
 
     # neutral face
     "Well, this is a place I probably won’t be seeing much of…"
@@ -805,6 +843,7 @@ label field:
     #KYLE SPRITE
 
     show gymbro normal
+    with dissolve 
 
     # yelling face
     #(Kyle)
@@ -922,7 +961,8 @@ label path:
 
     show Player:
         xpos 0.01
-        ypos 0.6
+        ypos 0.07
+    with dissolve
 
     # neutral happy face
     "It’s great that I was able to get directions from someone."
@@ -950,6 +990,7 @@ label path:
     show Player:
         xpos 0.01
         ypos 0.6
+    with dissolve
 
     # distressed face
     mc "Did-"
@@ -969,7 +1010,8 @@ label path:
 
     show Player:
         xpos 0.01
-        ypos 0.6
+        ypos 0.07 
+    with dissolve
 
     mc "Hah…"
     #😓
@@ -992,21 +1034,32 @@ label path:
     ra "Um…"
 
     "?"
-
-    #ra SPRITE
-    show ra normal
-    with dissolve
-
-    # concerned face
-    ra "Are you a student here?"
-
     show Player:
         xpos 0.01
         ypos 0.6
 
+    #ra SPRITE
+    show ra normal:
+        xpos 0.70
+        ypos 0.4
+
+    with dissolve   
+    # concerned face
+    ra "Are you a student here?" 
+
     #  happy neutral face
     mc "Ah-yes!"
-    
+
+    scene building 
+    with dissolve
+
+    show Player:
+        xpos 0.01
+        ypos 0.6  
+
+    show ra normal
+    with dissolve
+
     # distressed face
     mc "I’m sorry, I should’ve checked in before using the lounge!"
 
@@ -1094,6 +1147,10 @@ label path:
     scene dorm hallway
     with fade
 
+    show Player:
+        xpos 0.01
+        ypos 0.6  
+
     show bsf normal
 
     #(Nadia)
@@ -1128,8 +1185,10 @@ label path:
 
     Nadia "Oh, for sure. I gotta run but maybe I’ll see you at movie night!"
 
-    hide bsf normal
-    with dissolve
+
+    show bsf normal at Move((0.35, 0), (0.7  , 0), 2.0)
+    pause 1.2
+    show bsf normal at Alpha(1.0, 0.0, 1.0)
 
     # confused face
     mc "Movie n-"
@@ -1146,7 +1205,8 @@ label path:
 
     show Player:
         xpos 0.01
-        ypos 0.6
+        ypos 0.07 
+    with dissolve 
 
     # distressed face
     "!"
@@ -1167,6 +1227,11 @@ label path:
 
     #NADIA SPRITE
     show bsf normal
+
+    show Player:
+        xpos 0.01
+        ypos 0.6  
+    with dissolve
 
     Nadia "You’re…"
 

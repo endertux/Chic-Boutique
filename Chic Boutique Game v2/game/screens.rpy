@@ -93,6 +93,7 @@ style frame:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#say
 
+
 screen say(who, what):
     style_prefix "say"
 
@@ -303,6 +304,8 @@ screen navigation():
         else:
 
             textbutton _("History") action ShowMenu("history")
+
+            textbutton _("Back") action ShowMenu("back")
 
             textbutton _("Save") action ShowMenu("save")
 
@@ -582,6 +585,11 @@ screen save():
 
     use file_slots(_("Save"))
 
+screen back():
+
+    tag menu
+
+    use file_slots(_("Back"))  
 
 screen load():
     tag menu

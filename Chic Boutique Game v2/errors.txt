@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/prologue.rpy", line 223: Indentation mismatch.
+File "game/prologue.rpy", line 1193: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    mc "Movie n-"
+    ^
 
-Ren'Py Version: Ren'Py 8.3.4.24120703
-Mon Mar 10 03:11:29 2025
+Ren'Py Version: Ren'Py 8.3.6.25022803
+Wed Mar 12 21:30:35 2025
