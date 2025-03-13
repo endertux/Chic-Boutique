@@ -97,6 +97,11 @@ screen top2 zorder 2:
         xpos 300
         ypos 0
 
+screen top3 zorder 3:
+    image "Assets/Top_4.png":
+        xpos 300
+        ypos 0
+
 # Pants Define
 screen bottom0 zorder 3:
     image "Assets/Bottom_1.png":
@@ -121,7 +126,7 @@ screen shoe1 zorder 1:
 
 screen shoe2 zorder 1:
     image "Assets/Shoe_2.png":
-        xpos 300
+        xpos 260
         ypos 0
 
 screen shoe3 zorder 1:
@@ -142,19 +147,22 @@ screen outfits_ui:
     imagebutton auto "Minigame/done_%s.png" align(0.02, 0.05) action Jump("instructions")
 
 #Tops
-    imagebutton auto "Assets/Top_1_%s.png" align(0.50, 0.22) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
+    imagebutton auto "Assets/Top_1_%s.png" align(0.495, 0.22) action [Show("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 0)]
     imagebutton auto "Assets/Top_2_%s.png" align(0.66, 0.33) action [Show("top1"), Hide("top0"), Hide("top2"), SetVariable("top", 1)]
     imagebutton auto "Assets/Top_3_%s.png" align(0.78, 0.24) action [Show("top2"), Hide("top0"), Hide("top1"), SetVariable("top", 2)]
+    imagebutton auto "Assets/Top_4_%s.png" align(0.923, 0.24) action [Show("top2"), Hide("top0"), Hide("top1"), SetVariable("top", 2)]
 
 #Bottoms
     imagebutton auto "Assets/Bottom_1_%s.png" align(0.51, 0.60) action [Show("bottom0"), Hide("bottom1"), Hide("bottom2"), SetVariable("bottom", 0)]
     imagebutton auto "Assets/Bottom_2_%s.png" align(0.64, 0.56) action [Show("bottom1"), Hide("bottom0"), Hide("bottom2"), SetVariable("bottom", 1)]
     imagebutton auto "Assets/Bottom_3_%s.png" align(0.79, 0.60) action [Show("bottom2"), Hide("bottom0"), Hide("bottom1"), SetVariable("bottom", 2)]
+    imagebutton auto "Assets/Bottom_4_%s.png" align(0.93, 0.55) action [Show("bottom2"), Hide("bottom0"), Hide("bottom1"), SetVariable("bottom", 2)]
 
 #Shoes
-    imagebutton auto "Assets/Shoe_1_%s.png" align(0.50, 0.90) action [Show("shoe1"), Hide("shoe2"), Hide("shoe3"),SetVariable("shoe", 0)]
+    imagebutton auto "Assets/Shoe_4_%s.png" align(0.50, 0.90) action [Show("shoe1"), Hide("shoe2"), Hide("shoe3"),SetVariable("shoe", 0)]
     imagebutton auto "Assets/Shoe_2_%s.png" align(0.64, 0.90) action [Show("shoe2"), Hide("shoe1"), Hide("shoe3"),SetVariable("shoe", 1)]
     imagebutton auto "Assets/Shoe_3_%s.png" align(0.78, 0.88) action [Show("shoe3"), Hide("shoe1"), Hide("shoe2"),SetVariable("shoe", 2)]
+    imagebutton auto "Assets/Shoe_4_%s.png" align(0.93, 0.88) action [Show("shoe3"), Hide("shoe1"), Hide("shoe2"),SetVariable("shoe", 2)]
 
 
 #This image can be used for the rest of the game, or just as a final reveal.

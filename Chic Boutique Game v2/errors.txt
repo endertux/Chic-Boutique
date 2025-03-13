@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/prologue.rpy", line 1193: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    mc "Movie n-"
+File "game/prologue.rpy", line 165: Line is indented, but the preceding imagebutton statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    imagebutton auto "Assets/Shoe_3_%s.png" align(0.78, 0.88) action [Show("shoe3"), Hide("shoe1"), Hide("shoe2"),SetVariable("shoe", 2)]
     ^
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Wed Mar 12 21:30:35 2025
+Wed Mar 12 23:52:25 2025
