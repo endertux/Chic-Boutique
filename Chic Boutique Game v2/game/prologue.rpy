@@ -735,12 +735,12 @@ label garden:
 
     Addie "Hey, what are you talking about! I can tell a fellow fashionista when I see one."
 
-    scene building
+    scene temp path
 
     #ADDIE WINKS
     #SUDDENLY HER EYES WIDEN AS SHE STARES JUST ABOVE YOUR HEAD
 
-    show building with vpunch
+    show temp path with vpunch
 
     show Player:
         xpos 0.01
@@ -994,7 +994,7 @@ label path:
     #atp all choice options should have converged into the same main story where player is on the path outside
 
     #BG ART OF PATH
-    scene building
+    scene temp path
     with fade
 
     show Player:
@@ -1022,7 +1022,8 @@ label path:
     #FADE BRIGHT WHITE SCREEN
     #think it would be funny here to make it a scene where shes like i didnt think i would make it 😭 and the bright light is literally like her being like i see the light
 
-    show white bg
+    show temp path
+    #show white bg
     with fade
 
     show Player:
