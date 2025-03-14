@@ -376,131 +376,251 @@ label instructions:
             jump field
 
 
-label museum:
+    label museum:
     #BG ART OF SCHOOL MUSEUM
-    scene museum
-    with fade
-    show Player:
-        xpos 0.01
-        ypos 0.07
-    with dissolve
+        scene museum 4
+        with fade
+        show Player:
+            xpos 0.01
+            ypos 0.07
+        with dissolve
 
-    "Where am I!" 
-    #🥲
+        mc "Where am I!" 
+        #🥲
 
-    "I’m totally lost but…"
+        mc "I’m totally lost but…"
 
-    # Suprised Face
-    "This place is beautiful so I’m not complaining!"
+        # Suprised Face
+        mc "This place is beautiful so I’m not complaining!"
 
-    "I can’t believe that a school has a building like this."
+        mc "I can’t believe that a school has a building like this."
 
-    "As expected from a top university…"
+        mc "As expected from a top university…"
 
-    #INSERT OF AN ART PIECE 
-    #im referencing this one you can just take the pic and put a pixel filter over bc its public domain now (refer to google doc)
-    #"Virgin and Child with Canon van der Paele" Painting by Jan van Eyck
-    show madone painting
-    with fade
+    screen choice_menu():
+        modal True #prevents clicks outside buttons
 
-    "The colors on this are so vibrant!"
+        hbox:
+            align (0.5, 0.5)  # Center the menu
+            spacing 50
 
-    #(Felix)
-    anon "It’s amazing, right?"
+        # first choice: "Painting on the left": 
+            imagebutton: 
+                idle "ArtGuy/goya_redone.png" 
+                hover "ArtGuy/goya_redone.png" 
+                action Jump("goyascene")
+                xalign 0.5
+                yalign 0.5
 
-    # Confused Face
-    "!"
+        # second choice: painting on the left
+            imagebutton:
+                idle "ArtGuy/madrone_redone.png" 
+                hover "ArtGuy/madrone_redone.png" 
+                action Jump("madronescene")  
+                xalign 0.5
+                yalign 0.5
 
-    hide madone painting
-    #FELIX SPRITE
+    # menu call in script 
+    label paintings : 
+        scene black bg
+        show Player:
+            xpos 0.01
+            ypos 0.07
+        mc "Wow, these paintings are so cool! Which one should I look at?"
+        call screen choice_menu 
+
+    label goyascene :
+        scene black bg
+        show goya 
+        with fade 
+
+        #INSERT OF AN ART PIECE 
+        #im referencing this one you can just take the pic and put a pixel filter over bc its public domain now (refer to google doc)
+        #"Virgin and Child with Canon van der Paele" Painting by Jan van Eyck
+
+        "Wow, compared to the other one, this painting is so muted!"
+
+        #(Felix)
+        anon "It’s haunting, right?"
+
+        # Confused Face
+        "!"
+
+        hide goya 
+        #FELIX SPRITE
+        show Player:
+            xpos 0.01
+            ypos 0.6
+        with dissolve
+
+        show artguy normal
+
+        with dissolve
+
+        show artguy speak
+        #(Felix) Neutral Face
+        anon "Sorry! I didn’t mean to startle you."
+        # MC nerutal face
+
+        #(Felix)
+        anon "It’s just that I noticed you seemed lost in thought looking at this piece."
+
+        scene black bg
+        hide artguy normal
+        hide Player
+        show goya at Transform(xpos=0.5, ypos=0.25)
+        with fade
+
+        show artguy speak:
+            xpos 0.72
+            ypos 0.1
+
+        #(Felix) Intrested Face
+        anon "I feel the same way every time I see it."
+        hide artguy
+
+        show Player:
+            xpos 0.01
+            ypos 0.07
+
+        # Suprised Face
+        mc "The world is so mind-bending…I feel like I’m getting sucked into the painting just by looking at it."
+        hide Player
+
+        show artguy speak:
+            xpos 0.72
+            ypos 0.1
+
+        #(Felix) Intrested Face
+        anon "I get what you mean! The artist actually painted this directly on his walls."
+
+        #(Felix)
+        anon "After slowly becoming deaf, he isolated himself in his house to paint these large frescos that are now considered 'The Black Paintings.'"
+        anon "It's really quite tragic but it's a very beautiful painting."
+        anon "I didn't mean to get dark, but sometimes I just get lost in the painting myself."
+
+        hide goya
+        hide art guy speak
+        scene museum 4
+        with fade
+        jump artguyscene
+
+    label madronescene :
+        #INSERT OF AN ART PIECE 
+        #im referencing this one you can just take the pic and put a pixel filter over bc its public domain now (refer to google doc)
+        #"Virgin and Child with Canon van der Paele" Painting by Jan van Eyck
+        scene black bg
+        show madone painting
+        with fade
+
+        "The colors on this are so vibrant!"
+
+        #(Felix)
+        anon "It’s amazing, right?"
+
+        # Confused Face
+        "!"
+
+        hide madone painting
+        #FELIX SPRITE
+        show Player:
+            xpos 0.01
+            ypos 0.6
+        with dissolve
+
+        show artguy normal
+
+        with dissolve
+
+        show artguy speak
+        #(Felix) Neutral Face
+        anon "Sorry! I didn’t mean to startle you."
+        # MC nerutal face
+
+        #(Felix)
+        anon "It’s just that I noticed you seemed lost in thought looking at this piece."
+
+        scene black bg
+        hide artguy normal
+        hide Player
+        show madone painting
+        with fade
+
+        show artguy speak:
+            xpos 0.72
+            ypos 0.1
+
+        #(Felix) Intrested Face
+        anon "I feel the same way every time I see it."
+        hide artguy
+
+        show Player:
+            xpos 0.01
+            ypos 0.07
+
+        # Suprised Face
+        mc "The colors are so bright…I feel like I’m getting sucked into the painting just by looking at it."
+        hide Player
+
+        show artguy speak:
+            xpos 0.72
+            ypos 0.1
+
+        #(Felix) Intrested Face
+        anon "I get what you mean! The artist actually spent months meticulously making his own paints."
+
+        #(Felix)
+        anon "Back then, oil paints were made with eggs rather than oil, but then this guy came along and had the idea of using oil. So simple yet effective…"
+
+        hide madone painting
+        hide art guy speak
+        scene museum 4
+        with fade
+        jump artguyscene
+        
+
+    label artguyscene:
+        scene museum 4
+        show Player:
+            xpos 0.01
+            ypos 0.6
+
+        show artguy normal
+        with dissolve
+
+        mc "You seem to know a lot about this painting! I just thought it looked cool."
+        #😅 Nervous Sweat Drop Face
+
+        #(Felix) Shy Face - Looking down, slight turned away & blush
+        anon "Ah, I’m a fine arts major. I’m working on a project focusing on just the pieces we have at our campus museum."
+
+    scene museum 4
     show Player:
         xpos 0.01
         ypos 0.6
-    with dissolve
-
-    show artguy normal
-
-    with dissolve
-
-    show artguy speak
-    #(Felix) Neutral Face
-    anon "Sorry! I didn’t mean to startle you."
-    # MC nerutal face
-
-    #(Felix)
-    anon "It’s just that I noticed you seemed lost in thought looking at this piece."
-
-    scene black bg
-    hide artguy normal
-    hide Player
-    show madone painting
-    with fade
-
-    show artguy speak:
-        xpos 0.72
-        ypos 0.1
-
-    #(Felix) Intrested Face
-    anon "I feel the same way every time I see it."
-    hide artguy
-
-    show Player:
-        xpos 0.01
-        ypos 0.07
-
-    # Suprised Face
-    mc "The colors are so bright…I feel like I’m getting sucked into the painting just by looking at it."
-    hide Player
-
-    show artguy speak:
-        xpos 0.72
-        ypos 0.1
-
-    #(Felix) Intrested Face
-    anon "I get what you mean! The artist actually spent months meticulously making his own paints."
-
-    #(Felix)
-    anon "Back then, oil paints were made with eggs rather than oil, but then this guy came along and had the idea of using oil. So simple yet effective…"
-
-    hide madone painting
-    hide art guy speak
-    scene museum
-    with fade
-
-
-    scene museum
-    show Player:
-        xpos 0.01
-        ypos 0.6
-
-    show artguy normal
-    with dissolve
-
-    mc "You seem to know a lot about this painting! I just thought it looked cool."
-    #😅 Nervous Sweat Drop Face
-
-    #(Felix) Shy Face - Looking down, slight turned away & blush
-    anon "Ah, I’m a fine arts major. I’m working on a project focusing on just the pieces we have at our campus museum."
-
     show artguy normal
     
     # Surprised Face
-    mc "The fabric looks so real that I can tell exactly what they are. I can practically feel the soft velvety texture in my hands…"
+    #mc "The fabric looks so real that I can tell exactly what they are. I can practically feel the soft velvety texture in my hands…"
 
     show artguy speak
     
     #(Felix) Neutral Face
-    anon "It’s so intentional too! He built up thin layers of paint to make it more vibrant and textured. This artist is actually credited for coming up with the technique."
+    #anon "It’s so intentional too! He built up thin layers of paint to make it more vibrant and textured. This artist is actually credited for coming up with the technique."
 
     #FADE INSERT AWAY
 
     #(Felix)
-    anon "From your fabric comment, I’m guessing you’re here for fashion?"
+    #anon "From your fabric comment, I’m guessing you’re here for fashion?"
+
+    anon "I'm sure you're going to get this a ton, but what major are you?"
+    anon "Wait, let me guess."
+    anon "Are you fashion? I love your style."
 
     show artguy normal
 
     # Neutral/Happy Face
-    mc "Haha, so obvious right? I’m [povname]. It’s my first day on campus."
+    mc "Aww omg thank you! I am and my name is [povname]. It’s my first day on campus."
 
     show artguy speak
 
@@ -572,6 +692,7 @@ label museum:
 
     #INSERT OF SCHOOL MAP
     #map should look confusing and unclear still
+    scene map temp
 
     Felix "There’s a clear path riiiight here. Here, I’ll highlight it for you so you can’t miss it."
 

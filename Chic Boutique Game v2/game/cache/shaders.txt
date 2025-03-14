@@ -1,12 +1,12 @@
-renpy.dissolve renpy.dissolve
->>>>>>> parent of 4bba978 (New Main Menu & Dialogue Box)
-renpy.geometry renpy.solid
-renpy.dissolve renpy.geometry
-renpy.texture
-renpy.alpha renpy.texture
-=======
 renpy.alpha renpy.geometry renpy.texture
-renpy.solid
-renpy.ftl
+renpy.texture
+renpy.geometry renpy.solid
 <<<<<<< HEAD
+renpy.ftl
+renpy.alpha renpy.texture
+>>>>>>> parent of 4bba978 (New Main Menu & Dialogue Box)
+renpy.dissolve renpy.geometry
 renpy.geometry renpy.texture
+renpy.solid
+renpy.dissolve renpy.dissolve
+=======
