@@ -279,7 +279,7 @@ label instructions:
     # Determined Face
     "I have to make the most of this."
 
-    "I will make the most of this."
+    "I {i}will{/i} make the most of this."
 
     hide Player
 
@@ -328,9 +328,9 @@ label instructions:
     "Orientation materials are never any help when you can’t read maps!" 
     #😞 Sigh Face
 
-    "And an online orientation? At least include a tour!"
+    "And an {i}online{/i} orientation? At least include a tour!"
 
-    "If I had to figure this out right before classes I’d be totally screwed!"
+    "If I had to figure this out right before classes, I’d be totally screwed!"
 
     "…"
 
@@ -388,7 +388,7 @@ label instructions:
         mc "Where am I!" 
         #🥲
 
-        mc "I’m totally lost but…"
+        mc "I’m totally lost, but…"
 
         # Suprised Face
         mc "This place is beautiful so I’m not complaining!"
@@ -484,7 +484,7 @@ label instructions:
             ypos 0.07
 
         # Suprised Face
-        mc "The world is so mind-bending…I feel like I’m getting sucked into the painting just by looking at it."
+        mc "The world is so mind-bending… I feel like I’m getting sucked into the painting just by looking at it."
         hide Player
 
         show artguy speak:
@@ -559,7 +559,7 @@ label instructions:
             ypos 0.07
 
         # Suprised Face
-        mc "The colors are so bright…I feel like I’m getting sucked into the painting just by looking at it."
+        mc "The colors are so bright… I feel like I’m getting sucked into the painting just by looking at it."
         hide Player
 
         show artguy speak:
@@ -620,7 +620,7 @@ label instructions:
     show artguy normal
 
     # Neutral/Happy Face
-    mc "Aww omg thank you! I am and my name is [povname]. It’s my first day on campus."
+    mc "Aww omg thank you! I am. I'm [povname], by the way. It’s my first day on campus."
 
     show artguy speak
 
@@ -645,7 +645,7 @@ label instructions:
     show artguy speak
 
     # Neutral Face
-    Felix "I gotta say, the campus is nice but navigating it…not as great. Where are you headed? Maybe I can point you in the right direction."
+    Felix "I gotta say, the campus is nice, but navigating it… Not as great. Where are you headed? Maybe I can point you in the right direction."
 
     show artguy normal
    
@@ -658,7 +658,7 @@ label instructions:
     Felix "No wonder why you were so lost! The dorms are always impossible to get to."
 
     # Neutral Face 
-    Felix "Bad news is…it’s about a 25 minute walk."
+    Felix "Bad news is… it’s about a 25 minute walk."
 
     show artguy normal
 
@@ -684,11 +684,11 @@ label instructions:
     mc "If you’re researching right now, you should focus!"
 
     # Sweat Drop Face
-    mc "Plus if you walked me there I have a feeling I’d tune out my surroundings and never get the hang of the campus layout. I’ll be fine on my own, just point me in the right direction."
+    mc "Plus if you walked me there, I have a feeling I’d tune out my surroundings and never get the hang of the campus layout. I’ll be fine on my own, just point me in the right direction."
 
     show artguy speak
     
-    Felix "Alright, alright. just don’t get too lost and end up back in front of this painting again."
+    Felix "Alright, alright. Just don’t get too lost and end up back in front of this painting again."
 
     #INSERT OF SCHOOL MAP
     #map should look confusing and unclear still
@@ -720,7 +720,7 @@ label garden:
 
     "And now I’m really here in real life! It’s so pretty!"
 
-    "Seems like a nice place to study…maybe I should mark it on the map for later."
+    "Seems like a nice place to study… Maybe I should mark it on the map for later."
 
     # Confused Face
     "…"
@@ -797,7 +797,7 @@ label garden:
         anon "The lost look in your eyes told me. Don’t worry about it, this school is huge. We’ve all been there."
 
         # Sweat Drop Face
-        "Her gaze is making me a little nervous…it’s like I’m being studied."
+        "Her gaze is making me a little nervous… It’s like I’m being studied."
 
         #(Addie)
         anon "So where ya headin, babe?"
@@ -851,10 +851,10 @@ label garden:
     #😉
 
     # Sweat Drop Face
-    mc "Gotcha. It’s nice to meet someone so friendly right away. I was really concerned about making friends here to be honest…"
+    mc "Gotcha. It’s nice to meet someone so friendly right away. I was really concerned about making friends here, to be honest…"
 
     # Neutral Face
-    Addie "No I get it. I’m not gonna lie, you’re gonna meet some people here that are a little pretentious. It is Slaycademy, after all."
+    Addie "No, I get it. I’m not gonna lie, you’re gonna meet some people here that are a little pretentious. It {i}is{/i} Slaycademy, after all."
 
     # MC Confused Face
 
@@ -890,9 +890,9 @@ label garden:
     # Sweat Drop Face
     mc "I’m a fashion major!"
     
-    mc "I usually dress up a little more than this…I didn’t expect to meet anyone until the first day of classes."
+    mc "I usually dress up a little more than this… I didn’t expect to meet anyone until the first day of classes."
 
-    Addie "Hey, what are you talking about! I can tell a fellow fashionista when I see one."
+    Addie "Hey, what are you talking about!? I can tell a fellow fashionista when I see one."
 
     scene garden temp
 
@@ -918,7 +918,7 @@ label garden:
     menu: 
         "What is it?":
             jump bee
-        "Oh don't tell me..":
+        "Oh, don't tell me..":
             jump bee
 
     label bee : 
@@ -995,7 +995,7 @@ label garden:
         mc "Are you...scared of bees?"
 
         #Addie embarrassed face 
-        Addie "How could you not be!"
+        Addie "How could you not be!?"
 
         #mc closed eye smiling
         mc "Haha, I didn't expect you to be so afraid of something so small."
@@ -1094,7 +1094,7 @@ label field:
     #(Kyle)
     anon "Yah, you’re right, dude. My bad!"
 
-    "What’s with this guy!"
+    "What’s with this guy!?"
 
     #(Kyle)
     anon "So, you here to play?"
@@ -1128,14 +1128,14 @@ label field:
     anon "You know what they say!"
 
     # cry face
-    "No…I don’t…"
+    "No… I don’t…"
 
-    "Please! Someone…anyone! Get me out of this conversation!"
+    "Please! Someone… Anyone! Get me out of this conversation!"
 
-    "Ah…we’re the only ones on the field…"
+    "Ah… We’re the only ones on the field…"
 
     #(Kyle)
-    anon "Anyways, I’m gonna be attempting a 350 squat today. It’ll be hard but I think with an audience I’ll be hyped enough to do it."
+    anon "Anyways, I’m gonna be attempting a 350 squat today. It’ll be hard, but I think with an audience I’ll be hyped enough to do it."
 
     #(Kyle)
     anon "Maybe I should practice right now! Tell me how my form is, here-"
@@ -1300,11 +1300,11 @@ label path:
     mc "I’m sorry, I should’ve checked in before using the lounge!"
 
     # neutral face
-    ra "No worries! …did you really walk all that way?"
+    ra "No worries! …Did you really walk all that way?"
 
-    mc "...yes."
+    mc "...Yes."
 
-    ra "You know we have a shuttle system right?"
+    ra "You know we have a shuttle system, right?"
 
     # surprised face
     mc "Wait, WHAT?!"
@@ -1316,7 +1316,7 @@ label path:
 
     ra "Please, take a seat! You must be winded. I’ll get you checked in."
 
-    ra "Could you give me your name and ID number for check in?"
+    ra "Could you give me your name and ID number for check-in?"
 
     # neutral happy face
     mc "Yes, it’s [povname] and my ID number is 14399333."
@@ -1491,11 +1491,11 @@ label path:
     Nadia "HAHAHAHAHA"
 
     show bsf sad
-    Nadia "Did we really end up as roommates!"
+    Nadia "Did we really end up as roommates!?"
 
     # happy face
     show bsf normal
-    mc "What are the chances!"
+    mc "What are the chances!?"
 
     show bsf speak
     Nadia "Well it’s a good thing we got introductions out of the way."
@@ -1544,12 +1544,12 @@ label path:
 
     # sweat drop face
     show bsf normal
-    mc "A lot… the thrifting addiction is real…"
+    mc "A lot… The thrifting addiction is real…"
     
     show bsf speak
-    Nadia "I get it. I had to leave tons of boxes at my parent’s."
+    Nadia "I get it. I had to leave tons of boxes at my parents'."
 
-    Nadia "Hmm… well you don’t really wanna unpack now, do you?"
+    Nadia "Hmm… Well you don’t really wanna unpack now, do you?"
 
     # sweat drop face
     show bsf normal
