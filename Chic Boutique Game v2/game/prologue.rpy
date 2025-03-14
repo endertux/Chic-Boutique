@@ -151,28 +151,28 @@ screen outfits:
     imagebutton auto "Minigame/start_%s.png" align(0.5, 0.55) action [Show("outfits_ui"), Show("Body_Base"), Show("top0"), Show("bottom0")]
 #Minigame
 screen outfits_ui:
-    image "Minigame/bg.png"
+    image "Backgrounds/classroom bg.jpg"
     image "Minigame/ui_base.png" align(1.1, 1.0) size (1300, 1100) 
 
     imagebutton auto "Minigame/done_%s.png" align(0.02, 0.95) action Jump("instructions")
 
 # Tops
-    imagebutton auto "Assets/Top_1_%s.png" align(0.495, 0.22) action [Show("top0"), Hide("top1"), Hide("top2"), Hide("top3"), SetVariable("top", 0)]
-    imagebutton auto "Assets/Top_2_%s.png" align(0.66, 0.33) action [Show("top1"), Hide("top0"), Hide("top2"), Hide("top3"), SetVariable("top", 1)]
-    imagebutton auto "Assets/Top_3_%s.png" align(0.78, 0.24) action [Show("top2"), Hide("top0"), Hide("top1"), Hide("top3"), SetVariable("top", 2)]
-    imagebutton auto "Assets/Top_4_%s.png" align(0.923, 0.24) action [Show("top3"), Hide("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 3)]
+    imagebutton auto "Assets/Top_1_%s.png" align(0.495, 0.16) action [Show("top0"), Hide("top1"), Hide("top2"), Hide("top3"), SetVariable("top", 0)]
+    imagebutton auto "Assets/Top_2_%s.png" align(0.66, 0.18) action [Show("top1"), Hide("top0"), Hide("top2"), Hide("top3"), SetVariable("top", 1)]
+    imagebutton auto "Assets/Top_3_%s.png" align(0.78, 0.18) action [Show("top2"), Hide("top0"), Hide("top1"), Hide("top3"), SetVariable("top", 2)]
+    imagebutton auto "Assets/Top_4_%s.png" align(0.923, 0.18) action [Show("top3"), Hide("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 3)]
 
 # Bottoms
-    imagebutton auto "Assets/Bottom_1_%s.png" align(0.496, 0.61) action [Show("bottom0"), Hide("bottom1"), Hide("bottom2"), Hide("bottom3"), SetVariable("bottom", 0)]
+    imagebutton auto "Assets/Bottom_1_%s.png" align(0.496, 0.60) action [Show("bottom0"), Hide("bottom1"), Hide("bottom2"), Hide("bottom3"), SetVariable("bottom", 0)]
     imagebutton auto "Assets/Bottom_2_%s.png" align(0.64, 0.56) action [Show("bottom1"), Hide("bottom0"), Hide("bottom2"), Hide("bottom3"), SetVariable("bottom", 1)]
     imagebutton auto "Assets/Bottom_3_%s.png" align(0.79, 0.60) action [Show("bottom2"), Hide("bottom0"), Hide("bottom1"), Hide("bottom3"), SetVariable("bottom", 2)]
     imagebutton auto "Assets/Bottom_4_%s.png" align(0.93, 0.55) action [Show("bottom3"), Hide("bottom0"), Hide("bottom1"), Hide("bottom2"), SetVariable("bottom", 3)]
 
 # Shoes (Placed underneath bottoms)
     imagebutton auto "Assets/Shoe_1_%s.png" align(0.486, 0.88) action [Show("shoe0"), Hide("shoe1"), Hide("shoe2"), Hide("shoe3"), SetVariable("shoe", 0)]
-    imagebutton auto "Assets/Shoe_2_%s.png" align(0.63, 0.87) action [Show("shoe1"), Hide("shoe0"), Hide("shoe2"), Hide("shoe3"), SetVariable("shoe", 1)]
-    imagebutton auto "Assets/Shoe_3_%s.png" align(0.78, 0.90) action [Show("shoe2"), Hide("shoe0"), Hide("shoe1"), Hide("shoe3"), SetVariable("shoe", 2)]
-    imagebutton auto "Assets/Shoe_4_%s.png" align(0.93, 0.90) action [Show("shoe3"), Hide("shoe0"), Hide("shoe1"), Hide("shoe2"), SetVariable("shoe", 3)]
+    imagebutton auto "Assets/Shoe_2_%s.png" align(0.63, 0.86) action [Show("shoe1"), Hide("shoe0"), Hide("shoe2"), Hide("shoe3"), SetVariable("shoe", 1)]
+    imagebutton auto "Assets/Shoe_3_%s.png" align(0.78, 0.88) action [Show("shoe2"), Hide("shoe0"), Hide("shoe1"), Hide("shoe3"), SetVariable("shoe", 2)]
+    imagebutton auto "Assets/Shoe_4_%s.png" align(0.93, 0.88) action [Show("shoe3"), Hide("shoe0"), Hide("shoe1"), Hide("shoe2"), SetVariable("shoe", 3)]
 
 
 
@@ -1329,17 +1329,8 @@ label path:
     # sweat drop face
     mc "No, but what choice do I have?"
     #😭
-
-    Nadia "Just borrow something from my closet."
-
-    Nadia "Something casual, nothing too fancy!"
-
-    Nadia "Perfect! That works just fine!"
-
-    scene black bg
-    "End of Prototype"
-
-    #jump dress
+    
+    jump dress
     with fade
 
 return

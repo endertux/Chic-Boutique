@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/prologue.rpy", line 220: Indentation mismatch.
+File "game/chapterone.rpy", line 217: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    Nadia "Oh my gosh, you look better in those clothes than me!"
+    ^
 
-Ren'Py Version: Ren'Py 8.2.3.24061702
-Thu Mar 13 19:35:17 2025
+Ren'Py Version: Ren'Py 8.3.4.24120703
+Fri Mar 14 01:07:26 2025

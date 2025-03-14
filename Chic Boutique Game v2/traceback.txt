@@ -1,22 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/prologue.rpy", line 1342, in script
-    jump dress
-ScriptError: could not find label 'dress'.
+While loading <renpy.display.im.Image object ('gui/button/quick_hover_background.png') at 0x1066aab80>:
+  File "game/chapterone.rpy", line 169, in script
+    call screen outfits2
+ScriptError: could not find label 'scene black bg'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/prologue.rpy", line 1342, in script
-    jump dress
-  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1705, in execute
-    rv = renpy.game.script.lookup(target)
-  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\script.py", line 1103, in lookup
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/main.py", line 652, in main
+    run(restart)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/main.py", line 148, in run
+    renpy.execution.run_context(True)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/execution.py", line 958, in run_context
+    context.run()
+  File "game/chapterone.rpy", line 169, in script
+    call screen outfits2
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/script.py", line 1103, in lookup
     raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'dress'.
+ScriptError: could not find label 'scene black bg'.
 
-Windows-10-10.0.26100 AMD64
-Ren'Py 8.3.4.24120703
-Chic Boutique 1.0
-Thu Mar 13 23:32:47 2025
+macOS-15.0.1-arm64-arm-64bit arm64
+Ren'
