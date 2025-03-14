@@ -163,6 +163,7 @@ layeredimage Player:
 # PROMPT DRESS UP CHOICE
 label dress:
 
+    show bsf speak
     Nadia "Just borrow something from my closet."
 
     Nadia "Something casual, nothing too fancy!"
@@ -211,10 +212,13 @@ label end_scene:
     scene temp dorm
     with fade 
 
-    show bsf normal
+    show bsf speak
     Nadia "Oh my gosh, you look better in those clothes than me!"
 
     Nadia "Okay, let's get going now."
+
+    scene black bg
+    with fade
 
     "End Prototype"
     return

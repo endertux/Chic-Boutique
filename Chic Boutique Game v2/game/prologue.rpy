@@ -1388,14 +1388,18 @@ label path:
         ypos 0.6  
 
     show bsf normal
+    with dissolve
 
     #(Nadia)
+    show bsf sad
     anon "I lost a piece of jewelry that’s important to me earlier and the RA just called and told me that someone turned it in."
 
     #(Nadia)
+    show bsf speak
     anon "I guess thinking about it now… it’s not like it was gonna go anywhere."
 
     #(Nadia)
+    show bsf sad
     anon "But I was so desperate to get it back!"
 
     show Player:
@@ -1403,22 +1407,30 @@ label path:
         ypos 0.6
 
     # neutral happy face
+    show bsf normal
     mc "I’m guessing you’re a resident of this dorm?"
 
+    show bsf speak
     Nadia "Yup! Name’s Nadia."
 
+    show bsf normal
     mc "[povname]. You should probably go get that jewelry. Seems like it means a lot to you."
 
+    show bsf speak
     Nadia "Ah! The jewelry! I almost forgot…"
 
     # sweat drop face
+    show bsf normal
     "..."
 
+    show bsf speak
     Nadia "I’m sure we’ll see each other around a lot. Let’s hang out sometime!"
 
     # neutral happy face
+    show bsf normal
     mc "Sounds good! It’ll be nice to have a friend in the dorms."
 
+    show bsf speak
     Nadia "Oh, for sure. I gotta run but maybe I’ll see you at movie night!"
 
 
@@ -1469,19 +1481,26 @@ label path:
         ypos 0.6  
     with dissolve
 
+    show bsf speak
     Nadia "You’re…"
 
+    show bsf normal
     mc "From earlier…"
 
+    show bsf worried
     Nadia "HAHAHAHAHA"
 
+    show bsf sad
     Nadia "Did we really end up as roommates!"
 
     # happy face
+    show bsf normal
     mc "What are the chances!"
 
+    show bsf speak
     Nadia "Well it’s a good thing we got introductions out of the way."
 
+    show bsf normal
     mc "Yup, we’re practically old friends!"
 
     Nadia "..."
@@ -1492,19 +1511,24 @@ label path:
     mc "Nadia…?"
 
     #DOOM SOUND EFFECT
+    show bsf worried
     Nadia "I MADE SUCH A BAD FIRST IMPRESSION."
 
     # neutral happy face
     mc "Oh, come on stop worrying about that. You’re the one who ended up on the floor!"
 
     # surprised face
+    show bsf sad
     mc "Ah, but I was curious about what you meant by movie night."
 
+    show bsf speak
     Nadia "No one told you about movie night?"
 
     # confused face
+    show bsf sad
     mc "Not at all..."
 
+    show bsf speak
     Nadia "Oh, it’s just a little social event they’re holding for new students in the lounge tomorrow."
 
     Nadia "They’re having upperclassmen come in too so that we can meet people who have a bit more experience than us."
@@ -1512,18 +1536,23 @@ label path:
     Nadia "You have to come! It’ll be fun and you’ll make a ton of friends."
 
     # cry face
+    show bsf normal
     mc "I wish I knew about this earlier! I would’ve planned an outfit but now I gotta unpack first."
 
+    show bsf speak
     Nadia "There are wayyyy too many boxes. How many clothes do you have?"
 
     # sweat drop face
+    show bsf normal
     mc "A lot… the thrifting addiction is real…"
-
+    
+    show bsf speak
     Nadia "I get it. I had to leave tons of boxes at my parent’s."
 
     Nadia "Hmm… well you don’t really wanna unpack now, do you?"
 
     # sweat drop face
+    show bsf normal
     mc "No, but what choice do I have?"
     #😭
     
