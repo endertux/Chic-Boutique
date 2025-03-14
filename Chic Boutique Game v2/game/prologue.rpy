@@ -656,31 +656,58 @@ label garden:
     #(Addie)
     anon "You a freshman?"
 
-    # Neutral Face
-    mc "Did the map give it away?"
+    menu: 
+        #Neutral face
+        "Did the map give it away?":
+            jump addiechoiceone
+        "How'd you know?":
+            jump addiechoiceone
 
-    #(Addie)
-    anon "The lost look in your eyes told me. Don’t worry about it, this school is huge. We’ve all been there."
+    label addiechoiceone : 
+        scene garden temp
 
-    # Sweat Drop Face
-    "Her gaze is making me a little nervous…it’s like I’m being studied."
+        show Player:
+            xpos 0.01
+            ypos 0.6
 
-    #(Addie)
-    anon "So where ya headin, babe?"
+        show baddie normal
 
-    mc "I was trying to get to the student dorms, before I lost my map."
+        #(Addie)
+        anon "The lost look in your eyes told me. Don’t worry about it, this school is huge. We’ve all been there."
 
-    #(Addie) Excited Talking Face
-    anon "Ooh! I lived there last year! So many memories…"
+        # Sweat Drop Face
+        "Her gaze is making me a little nervous…it’s like I’m being studied."
 
-    #(Addie) Eager Face
-    anon "Hey, I don’t have anything going on right now if you want me to take you there?"
+        #(Addie)
+        anon "So where ya headin, babe?"
 
+        mc "I was trying to get to the student dorms, before I lost my map."
+
+        #(Addie) Excited Talking Face
+        anon "Ooh! I lived there last year! So many memories…"
+
+        #(Addie) Eager Face
+        anon "Hey, I don’t have anything going on right now if you want me to take you there?"
+
+        menu: 
+            "No, you really don't have to.":
+                jump notrouble 
+            "Is it far?":
+                jump notrouble
+
+       
     # Surprised Face
-    mc "Is it far? I don’t want to trouble you too much…"
+    label notrouble : 
+        scene garden temp
+        show Player:
+            xpos 0.01
+            ypos 0.6
 
-    #(Addie) Winking Face
-    anon "No, it’s no trouble at all. I can’t leave a cute girl lost in the garden like this!"
+        show baddie normal
+        mc "I don’t want to trouble you too much…"
+
+        #(Addie) Winking Face
+        anon "No, it’s no trouble at all. I can’t leave a cute girl lost in the garden like this!"
 
     #WALKING SOUND EFFECT THROUGHOUT SCENE
     #since they’re outside make it sound like they’re on a track; sound shouldn’t be too loud so it doesn’t distract from dialogue
@@ -716,9 +743,20 @@ label garden:
     # Excited Talking Face
     Addie "But don’t worry! Most of the people here are really nice. And for a girl as cute as you, you’ll have no problem making friends!"
 
-    mc "You think so?"
+    menu : 
+        "Haha... thanks!": 
+            jump ofcourse
+        "You think so?": 
+            jump ofcourse
 
-    Addie "Of course!"
+    label ofcourse : 
+        scene garden temp
+        show Player:
+            xpos 0.01
+            ypos 0.6
+
+        show baddie normal
+        Addie "Of course!"
 
     # Neutral Face
     Addie "So, what are you here for? Architecture? Film?"
@@ -756,53 +794,91 @@ label garden:
 
     Addie "Alright... DON’T freak out, okay..."
 
-    # Surprised Face
-    Addie "There-"
-    
-    Addie "There’s a bee"
+    menu: 
+        "What is it?":
+            jump bee
+        "Oh don't tell me..":
+            jump bee
 
-    #mc "AHHHH GET IT OFF!!!"
+    label bee : 
+        scene garden temp
+        show Player:
+            xpos 0.01
+            ypos 0.6
+
+        show baddie normal
+
+        # Surprised Face
+        Addie "There-"
+        Addie "There’s a bee!"
+
+    mc "AHHHH GET IT OFF!!!"
     # Put choice here
-        # Handle the Bee
-            #MC: "Ah..."
-            #MC: "That's no big deal."
-            #Addie sprite backing up
-            #show through visual/audio guides a bee to a flower
-            #Addie cry face
-            #Addie: "How were you so calm??"
-            #MC: "They're harmless as long as you leave them alone!"
-            #Addie distressed face
-            #Addie: "Ugh, I'm just glad that it's gone"
-            #MC: "No way..."
-            #MC: "Are you...scared of bees?"
-            #Addie: "How could you not be!"
-            #mc closed eye smiling
-            #MC: "Haha, I didn't expect you to be so afraid of something so small."
-            #Addie: "Well, at least it's been dealt with."
-        # Let Addie do it
-            #MC: ?!?!?
-            #MC: "Get it off!"
-            #addie distressed face
-            #Addie sprite backing up
-            #MC: ???
-            #MC: "Aren't you going to help me?"
-            #Addie: "I'm sorry! I just- ah!"
-            #Addie: "This is something I just can't deal with!"
-            #mc cry face
-            #MC: "Please..."
-            #MC: "I can feel it crawling on me..."
-            #Addie: "O-okay."
-            #Addie: "Just-just give me one second, okay?"
-            #hide Addie sprite
-            #show Addie sprite with notebook in hand
-            #woosh sfx and vfx
-            #Addie sigh face
-            #Addie: "Got it!"
-            #mc sigh face
-            #MC: "Thank you!"
-            #Addie: "Of course, babe!"
-            #Addie: "It was nothing, really."
+    menu: 
+        "Freak out": 
+            jump freakout 
+        "Act calm": 
+            jump actcalm
 
+    label freakout : 
+        scene garden temp
+        show Player:
+            xpos 0.01
+            ypos 0.6
+
+        show baddie normal
+        mc "AHHHH GET IT OFF!"
+        # mc in distress 
+        # addie in distress 
+        mc "???"
+        mc "Aren't you going to help me?"
+        Addie "I'm sorry! I just- ah!"
+        Addie "This is something I just can't deal with!"
+        # mc cry face
+        mc "Please..."
+        mc "I can feel it crawling on me..."
+    
+        Addie "O-okay."
+        Addie "Just-just give me one second, okay?"
+        #hide Addie sprite
+        #show Addie sprite with notebook in hand
+        #woosh sfx and vfx
+        #Addie sigh face
+        Addie "Got it!"
+        #mc sigh face
+        mc "Thank you!"
+        Addie "Of course, babe!"
+        Addie "It was nothing, really."
+
+    
+    label actcalm : 
+        scene garden temp
+        show Player:
+            xpos 0.01
+            ypos 0.6
+
+        show baddie normal
+        mc "Ah..."
+        mc "That's no big deal."
+        
+        #Addie sprite backing up
+        #show through visual/audio guides a bee to a flower
+        #Addie cry or shocked face
+
+        Addie "How were you so calm??"
+        mc "They're harmless as long as you leave them alone!"
+
+        #Addie distressed face
+        Addie "Ugh, I'm just glad that it's gone!"
+        mc "No way..."
+        mc "Are you...scared of bees?"
+
+        #Addie embarrassed face 
+        Addie "How could you not be!"
+
+        #mc closed eye smiling
+        mc "Haha, I didn't expect you to be so afraid of something so small."
+        Addie "Well, at least it's been dealt with."
 
     #addie hair flip sprite would require a new pose which idk if artists are willing to do
     #good substitute could just be addie wink face (or honestly just her neutral face)

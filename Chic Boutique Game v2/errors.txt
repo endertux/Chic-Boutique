@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/chapterone.rpy", line 217: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    Nadia "Oh my gosh, you look better in those clothes than me!"
-    ^
+File "game/prologue.rpy", line 695: Menu does not contain any choices.
+    menu: 
+          ^
 
-Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri Mar 14 01:07:26 2025
+Ren'Py Version: Ren'Py 8.2.3.24061702
+Fri Mar 14 01:52:52 2025
