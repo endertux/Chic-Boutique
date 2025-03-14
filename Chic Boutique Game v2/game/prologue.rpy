@@ -468,7 +468,7 @@ label instructions:
         scene black bg
         hide artguy normal
         hide Player
-        show goya at Transform(xpos=0.5, ypos=0.25)
+        show goya
         with fade
 
         show artguy speak:
