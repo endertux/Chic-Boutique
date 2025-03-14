@@ -5,6 +5,7 @@
 # dress up mini game by dicortesia --> https://www.youtube.com/watch?v=oZU0CmyuZHE&ab_channel=dicortesia
 
 
+
 #This is where we create a separate screen for each article of clothing, as well as the character base. Make sure they're all aligned!
 screen Body_Base:
     image "Assets/Body.Base.png":
@@ -126,37 +127,37 @@ layeredimage Player:
     group top:
         attribute 0 default:
             Null()
-    if top == 0:
-        "Assets/Top_1.png"
-    if top == 1:
-        "Assets/Top_2.png"
-    if top == 2:
-        "Assets/Top_3.png"
-    if top == 3:
-        "Assets/Top_4.png"
+    if top == 5:
+        "Assets/Top_5.png"
+    if top == 6:
+        "Assets/Top_6.png"
+    if top == 7:
+        "Assets/Top_7.png"
+    if top == 8:
+        "Assets/Top_8.png"
 
     group bottom:
         attribute 0 default:
             Null()
-    if bottom == 0:
-        "Assets/Bottom_1.png"
-    if bottom == 1:
-        "Assets/Bottom_2.png"
-    if bottom == 2:
-        "Assets/Bottom_3.png"
-    if bottom == 3:
+    if bottom == 5:
+        "Assets/Bottom_5.png"
+    if bottom == 6:
+        "Assets/Bottom_6.png"
+    if bottom == 7:
+        "Assets/Bottom_7.png"
+    if bottom == 8:
         "Assets/Bottom_4.png"
     
     group shoe:
         attribute 0 default:
             Null()
-    if shoe == 0: 
+    if shoe == 5: 
+        "Assets/Shoe_5.png"
+    if shoe == 6: 
         "Assets/Shoe_1.png"
-    if shoe == 1: 
-        "Assets/Shoe_2.png"
-    if shoe == 2: 
+    if shoe == 7: 
         "Assets/Shoe_3.png"
-    if shoe == 3: 
+    if shoe == 8: 
         "Assets/Shoe_4.png"
 
 ###############################################################
