@@ -1330,6 +1330,17 @@ label path:
     mc "No, but what choice do I have?"
     #😭
 
-    jump dress
+    Nadia "Just borrow something from my closet."
+
+    Nadia "Something casual, nothing too fancy!"
+
+    Nadia "Perfect! That works just fine!"
+
+    scene black bg
+    "End of Prototype"
+
+    #jump dress
     with fade
+
+return
     

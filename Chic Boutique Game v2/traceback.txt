@@ -1,32 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00start.rpy", line 193, in script
-    python:
-  File "renpy/common/00start.rpy", line 194, in <module>
-    renpy.execute_default_statement(True)
-  File "game/prologue.rpy", line 64, in execute_default
-    default bottom = 0
-Exception: store.bottom is being given a default a second time.
+  File "game/prologue.rpy", line 1342, in script
+    jump dress
+ScriptError: could not find label 'dress'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 193, in script
-    python:
-  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 827, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/00start.rpy", line 194, in <module>
-    renpy.execute_default_statement(True)
-  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\exports\statementexports.py", line 372, in execute_default_statement
-    i.execute_default(start)
-  File "game/prologue.rpy", line 64, in execute_default
-    default bottom = 0
-Exception: store.bottom is being given a default a second time.
+  File "game/prologue.rpy", line 1342, in script
+    jump dress
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1705, in execute
+    rv = renpy.game.script.lookup(target)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'dress'.
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.4.24120703
 Chic Boutique 1.0
-Thu Mar 13 21:44:09 2025
+Thu Mar 13 23:32:47 2025
