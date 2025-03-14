@@ -217,7 +217,7 @@ label end_scene:
 
     Nadia "Okay, let's get going now."
 
-    scene black bg
+    show black bg
     with fade
 
     "End Prototype"
