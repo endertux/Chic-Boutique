@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/chapterone.rpy", line 166: Line is indented, but the preceding hide screen statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    hide screen outfits_ui
+File "game/chapterone.rpy", line 128: Line is indented, but the preceding ATL statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    "Assets/Body.Base.png"
     ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Thu Mar 13 14:20:27 2025
+Thu Mar 13 19:05:26 2025

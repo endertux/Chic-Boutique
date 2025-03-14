@@ -113,12 +113,12 @@ screen bottom1 zorder 3:
         xpos 300
         ypos 0
 
-screen bottom2 zorder 4:
+screen bottom2 zorder 3:
     image "Assets/Bottom_3.png":
         xpos 300
         ypos 0
 
-screen bottom3 zorder 5:
+screen bottom3 zorder 3:
     image "Assets/Bottom_4.png":
         xpos 300
         ypos 0
@@ -154,7 +154,7 @@ screen outfits_ui:
     image "Minigame/bg.png"
     image "Minigame/ui_base.png" align(1.1, 1.0) size (1300, 1100) 
 
-    imagebutton auto "Minigame/done_%s.png" align(0.02, 0.05) action Jump("instructions")
+    imagebutton auto "Minigame/done_%s.png" align(0.02, 0.95) action Jump("instructions")
 
 # Tops
     imagebutton auto "Assets/Top_1_%s.png" align(0.495, 0.22) action [Show("top0"), Hide("top1"), Hide("top2"), Hide("top3"), SetVariable("top", 0)]

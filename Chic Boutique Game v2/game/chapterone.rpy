@@ -11,65 +11,75 @@ screen Body_Base:
         xpos 300
         ypos 0
 
+screen underwear1:
+    image "Assets/Underwear_1.PNG":
+        xpos 300
+        ypos 0
+
+screen underwear2:
+    image "Assets/Underwear_2.PNG":
+        xpos 300
+        ypos 0
+
 # Tops Define
-screen top0 zorder 2:
-    image "Assets/Top_1.png":
+screen top5 zorder 3:
+    image "Assets/Top_5.png":
         xpos 300
         ypos 0
 
-screen top1 zorder 2:
-    image "Assets/Top_2.png":
+screen top6 zorder 3:
+    image "Assets/Top_6.png":
         xpos 300
         ypos 0
 
-screen top2 zorder 3:
-    image "Assets/Top_3.png":
+screen top7 zorder 3:
+    image "Assets/Top_7.png":
         xpos 300
         ypos 0
 
-screen top3 zorder 4:
-    image "Assets/Top_4.png":
+screen top8 zorder 3:
+    image "Assets/Top_8.png":
         xpos 300
         ypos 0
 
 # Pants Define
-screen bottom0 zorder 3:
-    image "Assets/Bottom_1.png":
+screen bottom5 zorder 2:
+    image "Assets/Bottom_5.png":
         xpos 300
         ypos 0
 
-screen bottom1 zorder 3:
-    image "Assets/Bottom_2.png":
+screen bottom6 zorder 2:
+    image "Assets/Bottom_6.png":
         xpos 300
         ypos 0
 
-screen bottom2 zorder 4:
-    image "Assets/Bottom_3.png":
+screen bottom7 zorder 2:
+    image "Assets/Bottom_7.png":
         xpos 300
         ypos 0
 
-screen bottom3 zorder 5:
+screen bottom8 zorder 2:
     image "Assets/Bottom_4.png":
         xpos 300
         ypos 0
 
 # Shoes
-screen shoe0 zorder 1:
+screen shoe5 zorder 1:
+    image "Assets/Shoe_5.PNG":
+        xpos 300
+        ypos 0
+
+screen shoe6 zorder 1:
     image "Assets/Shoe_1.png":
         xpos 300
         ypos 0
 
-screen shoe1 zorder 1:
-    image "Assets/Shoe_2.png":
-        xpos 300
-        ypos 0
-
-screen shoe2 zorder 1:
+screen shoe7 zorder 1:
     image "Assets/Shoe_3.png":
         xpos 300
         ypos 0
 
-screen shoe3 zorder 1:
+screen shoe8 zorder 1:
     image "Assets/Shoe_4.png":
         xpos 300
         ypos 0
@@ -79,32 +89,32 @@ screen shoe3 zorder 1:
 #Start button
 screen outfits2:
     image "Minigame/bg.png"
-    imagebutton auto "Minigame/start_%s.png" align(0.5, 0.40) action [Show("outfits_ui2"), Show("Body_Base"), Show("top0"), Show("bottom0")]
+    imagebutton auto "Minigame/start_%s.png" align(0.5, 0.40) action [Show("outfits_ui2"), Show("Body_Base"), Show("underwear1"), Show("underwear2")]
 
 #Minigame
 screen outfits_ui2:
-    image "Minigame/bg.png"
+    image "Backgrounds/temp dorm.png" 
     image "Minigame/ui_base.png" align(1.1, 1.0) size (1300, 1100) 
 
-    imagebutton auto "Minigame/done_%s.png" align(0.02, 0.05) action Jump("instructions2")
+    imagebutton auto "Minigame/done_%s.png" align(0.02, 0.95) action Jump("instructions2") 
 
 # Tops
-    imagebutton auto "Assets/Top_1_%s.png" align(0.495, 0.22) action [Show("top0"), Hide("top1"), Hide("top2"), Hide("top3"), SetVariable("top", 0)]
-    imagebutton auto "Assets/Top_2_%s.png" align(0.66, 0.33) action [Show("top1"), Hide("top0"), Hide("top2"), Hide("top3"), SetVariable("top", 1)]
-    imagebutton auto "Assets/Top_3_%s.png" align(0.78, 0.24) action [Show("top2"), Hide("top0"), Hide("top1"), Hide("top3"), SetVariable("top", 2)]
-    imagebutton auto "Assets/Top_4_%s.png" align(0.923, 0.24) action [Show("top3"), Hide("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 3)]
+    imagebutton auto "Assets/Top_5_%s.png" align(0.50, 0.28) action [Show("top5"), Hide("underwear2"), Hide("top6"), Hide("top7"), Hide("top8"), SetVariable("top", 5)]
+    imagebutton auto "Assets/Top_6_%s.png" align(0.64, 0.28) action [Show("top6"), Hide("underwear2"), Hide("top5"), Hide("top7"), Hide("top8"), SetVariable("top", 6)]
+    imagebutton auto "Assets/Top_7_%s.png" align(0.78, 0.28) action [Show("top7"), Hide("underwear2"), Hide("top5"), Hide("top6"), Hide("top8"), SetVariable("top", 7)]
+    imagebutton auto "Assets/Top_8_%s.png" align(0.923, 0.28) action [Show("top8"), Hide("underwear2"), Hide("top5"), Hide("top6"), Hide("top7"), SetVariable("top", 8)]
 
 # Bottoms
-    imagebutton auto "Assets/Bottom_1_%s.png" align(0.496, 0.61) action [Show("bottom0"), Hide("bottom1"), Hide("bottom2"), Hide("bottom3"), SetVariable("bottom", 0)]
-    imagebutton auto "Assets/Bottom_2_%s.png" align(0.64, 0.56) action [Show("bottom1"), Hide("bottom0"), Hide("bottom2"), Hide("bottom3"), SetVariable("bottom", 1)]
-    imagebutton auto "Assets/Bottom_3_%s.png" align(0.79, 0.60) action [Show("bottom2"), Hide("bottom0"), Hide("bottom1"), Hide("bottom3"), SetVariable("bottom", 2)]
-    imagebutton auto "Assets/Bottom_4_%s.png" align(0.93, 0.55) action [Show("bottom3"), Hide("bottom0"), Hide("bottom1"), Hide("bottom2"), SetVariable("bottom", 3)]
+    imagebutton auto "Assets/Bottom_5_%s.png" align(0.51, 0.56) action [Show("bottom5"), Hide("underwear1"), Hide("bottom6"), Hide("bottom7"), Hide("bottom8"), SetVariable("bottom", 5)]
+    imagebutton auto "Assets/Bottom_6_%s.png" align(0.645, 0.55) action [Show("bottom6"), Hide("underwear1"), Hide("bottom5"), Hide("bottom7"), Hide("bottom8"), SetVariable("bottom", 6)]
+    imagebutton auto "Assets/Bottom_7_%s.png" align(0.78, 0.46) action [Show("bottom7"), Hide("underwear1"), Hide("bottom5"), Hide("bottom6"), Hide("bottom8"), SetVariable("bottom", 7)]
+    imagebutton auto "Assets/Bottom_4_%s.png" align(0.935, 0.55) action [Show("bottom8"), Hide("underwear1"), Hide("bottom5"), Hide("bottom6"), Hide("bottom7"), SetVariable("bottom", 8)]
 
 # Shoes (Placed underneath bottoms)
-    imagebutton auto "Assets/Shoe_1_%s.png" align(0.486, 0.88) action [Show("shoe0"), Hide("shoe1"), Hide("shoe2"), Hide("shoe3"), SetVariable("shoe", 0)]
-    imagebutton auto "Assets/Shoe_2_%s.png" align(0.63, 0.87) action [Show("shoe1"), Hide("shoe0"), Hide("shoe2"), Hide("shoe3"), SetVariable("shoe", 1)]
-    imagebutton auto "Assets/Shoe_3_%s.png" align(0.78, 0.90) action [Show("shoe2"), Hide("shoe0"), Hide("shoe1"), Hide("shoe3"), SetVariable("shoe", 2)]
-    imagebutton auto "Assets/Shoe_4_%s.png" align(0.93, 0.90) action [Show("shoe3"), Hide("shoe0"), Hide("shoe1"), Hide("shoe2"), SetVariable("shoe", 3)]
+    imagebutton auto "Assets/Shoe_5_%s.png" align(0.51, 0.85) action [Show("shoe5"), Hide("shoe6"), Hide("shoe7"), Hide("shoe8"), SetVariable("shoe", 5)]
+    imagebutton auto "Assets/Shoe_1_%s.png" align(0.635, 0.87) action [Show("shoe6"), Hide("shoe5"), Hide("shoe7"), Hide("shoe8"), SetVariable("shoe", 6)]
+    imagebutton auto "Assets/Shoe_3_%s.png" align(0.77, 0.83) action [Show("shoe7"), Hide("shoe5"), Hide("shoe6"), Hide("sho8"), SetVariable("shoe", 7)]
+    imagebutton auto "Assets/Shoe_4_%s.png" align(0.93, 0.86) action [Show("shoe8"), Hide("shoe5"), Hide("shoe6"), Hide("shoe7"), SetVariable("shoe", 8)]
 
 
 
@@ -158,27 +168,24 @@ label dress:
     Nadia "Just borrow something from my closet."
 
     Nadia "Something casual, nothing too fancy!"
-    
+
 call screen outfits2
 label instructions2:
     hide screen outfits2
     hide screen outfits_ui2
     hide screen Body_Base
-    hide screen top0
-    hide screen top1
-    hide screen top2
-    hide screen top3
-    hide screen top4
-    hide screen bottom0
-    hide screen bottom1
-    hide screen bottom2
-    hide screen bottom3
-    hide screen bottom4
-    hide screen shoe0
-    hide screen shoe1
-    hide screen shoe2
-    hide screen shoe3
-    hide screen shoe4
+    hide screen top5
+    hide screen top6
+    hide screen top7
+    hide screen top8
+    hide screen bottom5
+    hide screen bottom6
+    hide screen bottom7
+    hide screen bottom8
+    hide screen shoe5
+    hide screen shoe6
+    hide screen shoe7
+    hide screen shoe8
 
     scene bg
     show Player:

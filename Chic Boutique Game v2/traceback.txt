@@ -1,20 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-After initialization, but before game start.
-FileNotFoundError: [Errno 2] No such file or directory: '/Users/jennie/Documents/GitHub/Chic-Boutique/Chic Boutique Game v2/game/saves/navigation.json.new' -> '/Users/jennie/Documents/GitHub/Chic-Boutique/Chic Boutique Game v2/game/saves/navigation.json'
+While running game code:
+  File "renpy/common/00start.rpy", line 193, in script
+    python:
+  File "renpy/common/00start.rpy", line 194, in <module>
+    renpy.execute_default_statement(True)
+  File "game/screens.rpy", line 263, in execute_default
+    default quick_menu = True
+Exception: store.quick_menu is being given a default a second time.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/bootstrap.py", line 359, in bootstrap
-    renpy.main.main()
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/main.py", line 599, in main
-    renpy.dump.dump(False)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/dump.py", line 262, in dump
-    os.rename(new, filename)
-FileNotFoundError: [Errno 2] No such file or directory: '/Users/jennie/Documents/GitHub/Chic-Boutique/Chic Boutique Game v2/game/saves/navigation.json.new' -> '/Users/jennie/Documents/GitHub/Chic-Boutique/Chic Boutique Game v2/game/saves/navigation.json'
+  File "renpy/common/00start.rpy", line 193, in script
+    python:
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/ast.py", line 827, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 194, in <module>
+    renpy.execute_default_statement(True)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/exports/statementexports.py", line 372, in execute_default_statement
+    i.execute_default(start)
+  File "game/screens.rpy", line 263, in execute_default
+    default quick_menu = True
+Exception: store.quick_menu is being given a default a second time.
 
 macOS-15.0.1-arm64-arm-64bit arm64
 Ren'Py 8.3.4.24120703
 Chic Boutique 1.0
-Thu Mar 13 14:08:24 2025
+Thu Mar 13 19:11:55 2025
