@@ -735,12 +735,12 @@ label garden:
 
     Addie "Hey, what are you talking about! I can tell a fellow fashionista when I see one."
 
-    scene temp path
+    scene garden temp
 
     #ADDIE WINKS
     #SUDDENLY HER EYES WIDEN AS SHE STARES JUST ABOVE YOUR HEAD
 
-    show temp path with vpunch
+    show garden temp with vpunch
 
     show Player:
         xpos 0.01
@@ -1044,7 +1044,7 @@ label path:
     "I need to sit down…"
 
     #BG ART OF DORMS FRONT DESK
-    scene building
+    scene temp lounge
     with dissolve
 
     show Player:
@@ -1089,7 +1089,7 @@ label path:
     #  happy neutral face
     mc "Ah-yes!"
 
-    scene building 
+    scene temp lounge
     with dissolve
 
     show Player:
@@ -1143,7 +1143,7 @@ label path:
     #😭
 
     #BG ART OF DORM HALL
-    scene dorm hallway
+    scene temp hallway
     with fade
 
     show Player:
@@ -1160,7 +1160,7 @@ label path:
 
     #(Nadia)
     anon "AH-"
-    show dorm hallway with hpunch
+    show temp hallway with hpunch
 
     #CraSH EFFECT
 
@@ -1183,7 +1183,7 @@ label path:
     #(Nadia)
     anon "No, I’m good, I’m good."
 
-    scene dorm hallway
+    scene temp hallway
     with fade
 
     show Player:
