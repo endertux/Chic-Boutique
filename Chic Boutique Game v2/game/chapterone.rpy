@@ -186,6 +186,8 @@ label instructions2:
     hide screen shoe6
     hide screen shoe7
     hide screen shoe8
+    hide underwear1
+    hide underwear2
 
     scene bg
     show Player:
