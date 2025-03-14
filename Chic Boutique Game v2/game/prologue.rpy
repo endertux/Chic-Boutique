@@ -181,6 +181,18 @@ layeredimage Player:
     always:
         "Assets/Body.Base.png"
 
+    group shoe:
+        attribute 0 default:
+            Null()
+    if shoe == 0: 
+        "Assets/Shoe_1.png"
+    if shoe == 1: 
+        "Assets/Shoe_2.png"
+    if shoe == 2: 
+        "Assets/Shoe_3.png"
+    if shoe == 3: 
+        "Assets/Shoe_4.png"
+
     group top:
         attribute 0 default:
             Null()
@@ -204,18 +216,6 @@ layeredimage Player:
         "Assets/Bottom_3.png"
     if bottom == 3:
         "Assets/Bottom_4.png"
-    
-    group shoe:
-        attribute 0 default:
-            Null()
-    if shoe == 0: 
-        "Assets/Shoe_1.png"
-    if shoe == 1: 
-        "Assets/Shoe_2.png"
-    if shoe == 2: 
-        "Assets/Shoe_3.png"
-    if shoe == 3: 
-        "Assets/Shoe_4.png"
         
 ###############################################################
 #################### Gameplay: Prologue #######################

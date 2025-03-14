@@ -2,9 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/chapterone.rpy", line 128: Line is indented, but the preceding ATL statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    "Assets/Body.Base.png"
-    ^
+File "game/prologue.rpy", line 220: Indentation mismatch.
 
-Ren'Py Version: Ren'Py 8.3.4.24120703
-Thu Mar 13 19:05:26 2025
+Ren'Py Version: Ren'Py 8.2.3.24061702
+Thu Mar 13 19:35:17 2025
