@@ -150,30 +150,142 @@ screen outfits:
     image "Minigame/startmenu.png"
     imagebutton auto "Minigame/start_%s.png" align(0.5, 0.55) action [Show("outfits_ui"), Show("Body_Base"), Show("top0"), Show("bottom0")]
 #Minigame
+
+define gui.scrollbar_size = 24
+
+init python:
+    #an array of the items the player ownes, these are the unique names of the clothing items, just add an item to the list to give it to the player
+    owned_outfits = ["top0", "top1", "top2", "top3", "bottom0", "bottom1", "bottom2", "bottom3", "shoe0", "shoe1", "shoe2", "shoe3"]
+
+
+    #adding new outfit options:
+        #copy and paste one of the current outfits to the bottom of the list (all three items in the group of three: top, bottom, and shoe)
+        #chenge the first string path name in each item to the regular image of the item as it should apear if the player owns it
+        #change the second string path name in each item to the locked image of the item, as it should apear if the item is not owned (this image should be the same size as the other)
+        #you don't need to change the third string, that just defigns the types of the items
+        #change the fourth string to the unique name of the item i.e. top0, shue3
+        #change the first of the three numbers to the clouthing item number. this is the number that tells the game what the player is wearing outside of the dress up screen i.e if the player is weearing top number 0, 1, or 2
+        #the last two numbers are x and y offsets for the items, check that the items are aligned properly and adjust the offsets if needed
+        #change the xsize INSIDE the viewport to the current number of clothing options times the x_spacing for the grid (for each item you add, add x_spaceing to the xsize, again only in the viewport)
+
+    
+    #an array of clothing buttons(outfits are organised in groups of three items, the order is top, bottom, shoe. this order is required for the code to work)
+    outfit_buttons = [ #outfit buttons (path of normal clothing, path of lock clothing image, type (top, bottom, shoe), showname, item id number (saved clothing item number), offsetx, offsety)
+        #prologue outfits
+        ("Assets/Top_1_%s.png", "Assets/Top_1_%s.png",    "top",   "top0", 0,     0, 0),
+        ("Assets/Bottom_1_%s.png", "Assets/Bottom_1_%s.png", "bottom", "bottom0", 0, -20, 40),
+        ("Assets/Shoe_1_%s.png", "Assets/Shoe_1_%s.png",   "shoe",   "shoe0", 0,   0, 120),
+
+        ("Assets/Top_2_%s.png", "Assets/Top_2_%s.png",    "top",   "top1", 1,     -50, -30),
+        ("Assets/Bottom_2_%s.png", "Assets/Bottom_2_%s.png", "bottom", "bottom1", 1, 0, 50),
+        ("Assets/Shoe_2_%s.png", "Assets/Shoe_2_%s.png",   "shoe",   "shoe1", 1,   0, 100),
+
+        ("Assets/Top_3_%s.png", "Assets/Top_3_%s.png",    "top",   "top2", 2,     10, 60),
+        ("Assets/Bottom_3_%s.png", "Assets/Bottom_3_%s.png", "bottom", "bottom2", 2, 0, 50),
+        ("Assets/Shoe_3_%s.png", "Assets/Shoe_3_%s.png",   "shoe",   "shoe2", 2,   0, 50),
+
+        ("Assets/Top_4_%s.png", "Assets/Top_4_%s.png",    "top",   "top3", 3,     0, 60),
+        ("Assets/Bottom_4_%s.png", "Assets/Bottom_4_%s.png", "bottom", "bottom3", 3, 0, 50),
+        ("Assets/Shoe_4_%s.png", "Assets/Shoe_4_%s.png",   "shoe",   "shoe3", 3,   0, 100),
+
+
+        #TEST OUTFITS, these are chapter one outfits that are here to show the scroll bar
+        ("Assets/Top_5_%s.png", "Assets/Top_5_%s.png",    "top",   "top0", 0,     -20, 30),
+        ("Assets/Bottom_5_%s.png", "Assets/Bottom_5_%s.png", "bottom", "bottom0", 0, -20, 40),
+        ("Assets/Shoe_5_%s.png", "Assets/Shoe_5_%s.png",   "shoe",   "shoe0", 0,   0, 120),
+
+        ("Assets/Top_6_%s.png", "Assets/Top_6_%s.png",    "top",   "top1", 1,     0, 40),
+        ("Assets/Bottom_6_%s.png", "Assets/Bottom_6_%s.png", "bottom", "bottom1", 1, 0, 50),
+        ("Assets/Shoe_1_%s.png", "Assets/Shoe_1_%s.png",   "shoe",   "shoe1", 1,   0, 100),
+
+        ("Assets/Top_7_%s.png", "Assets/Top_7_%s.png",    "top",   "top2", 2,     10, 60),
+        ("Assets/Bottom_7_%s.png", "Assets/Bottom_7_%s.png", "bottom", "bottom2", 2, 0, 50),
+        ("Assets/Shoe_3_%s.png", "Assets/Shoe_3_%s.png",   "shoe",   "shoe2", 2,   0, 50),
+
+        ("Assets/Top_8_%s.png", "Assets/Top_8_%s.png",    "top",   "top3", 3,     0, 60),
+        ("Assets/Bottom_4_%s.png", "Assets/Bottom_4_%s.png", "bottom", "bottom3", 3, 0, 50),
+        ("Assets/Shoe_4_%s.png", "Assets/Shoe_4_%s.png",   "shoe",   "shoe3", 3,   0, 100),
+        #TEST OUTFITS, these are chapter one outfits that are here to show the scroll bar
+    ]
+
+    #these three arrays automatically fill themselfs with Hide() functions for every item of their respective types. when you press a button it uses these to first hide all items of that type on the character before showing the specific one clicked
+    tops = []
+    for i, (imagepath, imagepathmissing, Type, showname, setval, Xoffset, Yoffset) in enumerate(outfit_buttons):
+        if Type == "top":
+            tops.append(Hide(showname))
+    bottoms = []
+    for i, (imagepath, imagepathmissing, Type, showname, setval, Xoffset, Yoffset) in enumerate(outfit_buttons):
+        if Type == "bottom":
+            bottoms.append(Hide(showname))
+    shoes = []
+    for i, (imagepath, imagepathmissing, Type, showname, setval, Xoffset, Yoffset) in enumerate(outfit_buttons):
+        if Type == "shoe":
+            shoes.append(Hide(showname))
+
 screen outfits_ui:
     image "Backgrounds/classroom bg.jpg"
-    image "Minigame/ui_base.png" align(1.1, 1.0) size (1300, 1100) 
-
+    image "Minigame/ui_base.png" align(1.1, 1.0) size (1300, 1100)
     imagebutton auto "Minigame/done_%s.png" align(0.02, 0.95) action Jump("instructions")
+    
+    fixed:
+        #align the outfit window on screen
+        align(0.905, 0.45)
+        #the x size of the entire outfit window
+        xsize 1000
+        #the y size of the entire outfit window
+        ysize 900
+        vbox:
+            viewport id "outfit_viewport":
+                mousewheel True
+                draggable True
+                fixed:
+                    #x start of clothing item grid (shift all items horizontally)
+                    $ x_start = 40
+                    #y start of clothing item grid (shift all items vertically)
+                    $ y_start = 25
+                    #x spacing of clothing item grid (the horizontal seperation between outfits)
+                    $ x_spacing = 250
+                    #y spacing of clothing item grid (the vertical seperation between outfits)
+                    $ y_spacing = 250
 
-# Tops
-    imagebutton auto "Assets/Top_1_%s.png" align(0.495, 0.16) action [Show("top0"), Hide("top1"), Hide("top2"), Hide("top3"), SetVariable("top", 0)]
-    imagebutton auto "Assets/Top_2_%s.png" align(0.66, 0.18) action [Show("top1"), Hide("top0"), Hide("top2"), Hide("top3"), SetVariable("top", 1)]
-    imagebutton auto "Assets/Top_3_%s.png" align(0.78, 0.18) action [Show("top2"), Hide("top0"), Hide("top1"), Hide("top3"), SetVariable("top", 2)]
-    imagebutton auto "Assets/Top_4_%s.png" align(0.923, 0.18) action [Show("top3"), Hide("top0"), Hide("top1"), Hide("top2"), SetVariable("top", 3)]
+                    #x size of the clothing item grid (number of outfit options * x_spacing) this is the interier size of the scrolling space
+                    xsize 2000
+                    #y size of the clothing item grid (not really necesary, just use outfit offsets in the outfit_buttons array) this is the interier size of the scrolling space
+                    ysize 900
 
-# Bottoms
-    imagebutton auto "Assets/Bottom_1_%s.png" align(0.496, 0.60) action [Show("bottom0"), Hide("bottom1"), Hide("bottom2"), Hide("bottom3"), SetVariable("bottom", 0)]
-    imagebutton auto "Assets/Bottom_2_%s.png" align(0.64, 0.56) action [Show("bottom1"), Hide("bottom0"), Hide("bottom2"), Hide("bottom3"), SetVariable("bottom", 1)]
-    imagebutton auto "Assets/Bottom_3_%s.png" align(0.79, 0.60) action [Show("bottom2"), Hide("bottom0"), Hide("bottom1"), Hide("bottom3"), SetVariable("bottom", 2)]
-    imagebutton auto "Assets/Bottom_4_%s.png" align(0.93, 0.55) action [Show("bottom3"), Hide("bottom0"), Hide("bottom1"), Hide("bottom2"), SetVariable("bottom", 3)]
+                    #loop through clothing buttons
+                    for i, (imagepath, imagepathmissing, Type, showname, setval, Xoffset, Yoffset) in enumerate(outfit_buttons):
+                        imagebutton:
+                            #if you own an item (I.E. its in owned_outfits)
+                            if showname in owned_outfits:
+                                #set inage to the normal clothing image
+                                auto imagepath
+                                #set the items position on the grid
+                                pos (x_start + Xoffset + (i // 3) * x_spacing, y_start + Yoffset + (i % 3) * y_spacing)
 
-# Shoes (Placed underneath bottoms)
-    imagebutton auto "Assets/Shoe_1_%s.png" align(0.486, 0.88) action [Show("shoe0"), Hide("shoe1"), Hide("shoe2"), Hide("shoe3"), SetVariable("shoe", 0)]
-    imagebutton auto "Assets/Shoe_2_%s.png" align(0.63, 0.86) action [Show("shoe1"), Hide("shoe0"), Hide("shoe2"), Hide("shoe3"), SetVariable("shoe", 1)]
-    imagebutton auto "Assets/Shoe_3_%s.png" align(0.78, 0.88) action [Show("shoe2"), Hide("shoe0"), Hide("shoe1"), Hide("shoe3"), SetVariable("shoe", 2)]
-    imagebutton auto "Assets/Shoe_4_%s.png" align(0.93, 0.88) action [Show("shoe3"), Hide("shoe0"), Hide("shoe1"), Hide("shoe2"), SetVariable("shoe", 3)]
+                                #set up action to set clothing when pressed. for each option it hides all items of that type and then shows the specific one you clicked
+                                if Type == "top":
+                                    action [tops, Show(showname), SetVariable(Type, setval)]
+                                if Type == "bottom":
+                                    action [bottoms, Show(showname), SetVariable(Type, setval)]
+                                if Type == "shoe":
+                                    action [shoes, Show(showname), SetVariable(Type, setval)]
+                            #else if you don't own it (I.E. its not in owned_outfits)
+                            else:
+                                #set the items position on the grid
+                                pos (x_start + Xoffset + (i // 3) * x_spacing, y_start + Yoffset + (i % 3) * y_spacing)
+                                #set inage to the locked clothing image
+                                auto imagepathmissing
+            #create the scrollbar (its at the bottom of a vbox to it is stacked under the outfit window, to place it above, move it to the top of the vbox)
+            bar value XScrollValue("outfit_viewport") style "outfit_scrollbar"#set up scrollbar and style it (it's at the bottom of a vbox so its under the clothing buttons)
 
+#define the scrollbar style (art assets, size)     
+style outfit_scrollbar:#scrollbar style
+    ysize 80  # Height of your scrollbar (in pixels)
+    base_bar Frame("gui/scrollbar/horizontal_idle_bar.png", 10, 10, 10, 10)  # background art (track)
+    thumb "gui/scrollbar/horizontal_idle_thumb_large.png"  # thumb art (draggable part)
+    thumb_offset 45  #offset of thumb collider
+    
 
 
 #This image can be used for the rest of the game, or just as a final reveal.
