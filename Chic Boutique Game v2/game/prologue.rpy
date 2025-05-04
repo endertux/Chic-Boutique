@@ -476,6 +476,7 @@ label instructions:
     #"…Which way first?"
 
     #COMMON ROUTE CHOICE 1: [museum] [garden] [field]
+    show dim_bg
     menu:
         # Confused Face
         "…Which way first?"
