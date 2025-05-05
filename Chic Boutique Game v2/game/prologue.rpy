@@ -731,14 +731,64 @@ label instructions:
     anon "Are you fashion? I love your style."
 
     show artguy normal
+    show dim_bg
 
-    # Neutral/Happy Face
-    mc "Aww omg thank you! I am. I'm [povname], by the way. It’s my first day on campus."
+ 
+    menu:
+        "Yeah! How did you know?":
+            jump artguychoice1
 
+        "Aww thank you. I am a fashion major!":
+            jump artguychoice2
+
+        "Did you automatically assume that I'm in fashion?":
+            jump felixsurprised
+
+
+label artguychoice1:
+    scene museum
+    show Player:
+        xpos 0.01
+        ypos 0.6
+    show artguy normal
+
+    mc "Yeah! How did you know?"
+    jump felixtalking
+
+
+label artguychoice2:
+    scene museum 4
+    scene museum
+    show Player:
+        xpos 0.01
+        ypos 0.6
+    show artguy normal
+
+    mc "Aww thank you. I am a fashion major!"
+    jump felixtalking
+
+
+label felixsurprised:
+    scene museum
+    show Player:
+        xpos 0.01
+        ypos 0.6
     show artguy speak
 
+    mc "Did you automatically assume that I'm in fashion?"
+
+    Felix "Ohh I'm sorry... Are you not?"
+
+    mc "Just kidding, I'm just teasing you."
+
+    Felix "Oh really now?"
+
+    mc "Yes haha, fashion is totally my thing."
+    jump felixtalking
+
+label felixtalking:
     # Neutral Face
-    Felix "Felix. Fashion’s not an easy department to get into. You must be really good!"
+    Felix "Fashion’s not an easy department to get into. You must be really good!"
 
     show artguy normal
 
@@ -753,8 +803,17 @@ label instructions:
     show artguy normal
     
     # Sweat Drop Face
-    mc "More like just totally, utterly lost."
+    show dim_bg
+    menu:
+        "More like just totally, utterly lost.":
+            jump felixtalking2
 
+        "I don't know where I'm going..":
+            jump felixtalking2
+
+
+    label felixtalking2:
+    hide dim_bg
     show artguy speak
 
     # Neutral Face
@@ -786,6 +845,7 @@ label instructions:
 
     # Neutral Face
     mc "Are you sure? 25 minutes is a long ways away…"
+    
 
     show artguy speak
 
@@ -889,7 +949,7 @@ label garden:
 
     #(Addie)
     anon "You a freshman?"
-
+    show dim_bg
     menu: 
         #Neutral face
         "Did the map give it away?":
@@ -923,6 +983,7 @@ label garden:
         #(Addie) Eager Face
         anon "Hey, I don’t have anything going on right now if you want me to take you there?"
 
+        show dim_bg
         menu: 
             "No, you really don't have to.":
                 jump notrouble 
@@ -931,6 +992,7 @@ label garden:
 
        
     # Surprised Face
+    hide dim_bg
     label notrouble : 
         scene garden temp
         show Player:
@@ -977,6 +1039,7 @@ label garden:
     # Excited Talking Face
     Addie "But don’t worry! Most of the people here are really nice. And for a girl as cute as you, you’ll have no problem making friends!"
 
+    show dim_bg
     menu : 
         "Haha... thanks!": 
             jump ofcourse
@@ -984,6 +1047,7 @@ label garden:
             jump ofcourse
 
     label ofcourse : 
+        hide dim_bg
         scene garden temp
         show Player:
             xpos 0.01
@@ -1028,6 +1092,7 @@ label garden:
 
     Addie "Alright... DON’T freak out, okay..."
 
+    show dim_bg
     menu: 
         "What is it?":
             jump bee
@@ -1048,6 +1113,7 @@ label garden:
 
     mc "AHHHH GET IT OFF!!!"
     # Put choice here
+    show dim_bg 
     menu: 
         "Freak out": 
             jump freakout 
@@ -1212,19 +1278,46 @@ label field:
     #(Kyle)
     anon "So, you here to play?"
 
-    # confused face
-    mc "Huh?"
+    show dim_bg
+    menu : 
+        "What?": 
+            jump confused
 
+        "Umm. I got lost here.":
+            jump confused2
+
+    label confused:
+    hide dim_bg
     # neutral face
-    mc "Oh! No, no I was just wandering around and got a little lost."
+    mc "What?"
+
+    mc "I'm not in the sports department, I'm just lost."
 
     #(Kyle)
     anon "That’s a shame, man. We could really use more students in the sports department."
 
-    mc "Are you a sports major?"
+    label confused2:
+    hide dim_bg
+    # neutral face
+    mc "Umm. I got lost here."
 
     #(Kyle)
-    anon "Yeah, bro. Can’t you tell I lift??"
+    anon "That’s a shame, man. We could really use more students in the sports department."
+
+    show dim_bg
+    menu : 
+        "So... are you a sports major?": 
+            jump confused3
+        "So are you? I'm not really into sports. ": 
+            jump confused3
+        "Im guessing that you're a sports major..":
+            jump confused3
+
+    label confused3:
+    hide dim_bg
+
+    #(Kyle)
+    anon "Yeah, bro. Can’t you tell I lift? This is art, not athletics."
 
     mc "I just didn’t know that Slaycademy had a sports department."
 
@@ -1254,9 +1347,18 @@ label field:
     anon "Maybe I should practice right now! Tell me how my form is, here-"
 
     # sweat drop face
-    mc "Actually, I really gotta get going."
+    show dim_bg
+    menu:
+        "Actually, I really should be going.": 
+            jump calvintalk
 
+        "Ew stop! I'm leaving now.":
+            jump calvintalk
     #(Kyle)
+
+    label calvintalk:
+    hide dim_bg
+
     anon "Aw man, that’s a shame! We were really vibing!"
 
     "Were we?"
@@ -1392,30 +1494,23 @@ label path:
         xpos 0.70
         ypos 0.4
 
-    with dissolve   
-    # concerned face
-    ra "Are you a student here?" 
-
-    #  happy neutral face
-    mc "Ah-yes!"
-
-    scene temp lounge
-    with dissolve
-
-    show Player:
-        xpos 0.01
-        ypos 0.6  
-
-    show ra normal
-    with dissolve
-
     # distressed face
     mc "I’m sorry, I should’ve checked in before using the lounge!"
 
     # neutral face
     ra "No worries! …Did you really walk all that way?"
 
-    mc "...Yes."
+    show dim_bg
+    menu:
+        "...Yes": 
+            jump rameet
+
+        "Why? Is there another way?":
+            jump rameet
+    #(Kyle)
+
+    label rameet:
+    hide dim_bg
 
     ra "You know we have a shuttle system, right?"
 
@@ -1432,11 +1527,22 @@ label path:
     ra "Could you give me your name and ID number for check-in?"
 
     # neutral happy face
-    mc "Yes, it’s [povname] and my ID number is 14399333."
+    show dim_bg
+    menu:
+        "My ID number is 14399333.":
+            jump rameet2
 
-    ra "Wonderful! You’re all checked in."
+        "Here's my ID card!":
+            jump rameet2
+
+    label rameet2:
+    hide dim_bg
 
     #INSERT OF ACCESS CARD
+
+    mc  "And my name is [povname]."
+
+    ra "Wonderful! You’re all checked in."
 
     ra "This will give you access to the dorm building and all amenities. The number in the corner is the PIN for your room’s lock."
 
@@ -1482,13 +1588,23 @@ label path:
     anon "Ow ow ow ow ow"
 
     # distressed face
-    mc "Are you alright?!"
+    show dim_bg
+    menu:
+        "Are you alright?!":
+            jump bestiemeet
+
+        "Hey! Watch where you're going!":
+            jump bestiemeet
+
+    label bestiemeet:
+    hide dim_bg
 
     #(Nadia)
     anon "Oh my god! I’m so sorry! I totally wasn’t looking where I was going…"
 
+    anon "Did you get hurt?"
 
-    mc "Don’t worry about it! Are you hurt? Do you need help getting up?"
+    mc "That was also my bad... Are you hurt? Do you need help getting up?"
 
     #(Nadia)
     anon "No, I’m good, I’m good."
@@ -1505,7 +1621,7 @@ label path:
 
     #(Nadia)
     show bsf sad
-    anon "I lost a piece of jewelry that’s important to me earlier and the RA just called and told me that someone turned it in."
+    anon "Sorry... it's just that I lost a piece of jewelry that’s important to me earlier and the RA just called and told me that someone turned it in."
 
     #(Nadia)
     show bsf speak
@@ -1527,25 +1643,31 @@ label path:
     Nadia "Yup! Name’s Nadia."
 
     show bsf normal
-    mc "[povname]. You should probably go get that jewelry. Seems like it means a lot to you."
+    mc "You should probably go get that jewelry. Seems like it means a lot to you."
 
     show bsf speak
     Nadia "Ah! The jewelry! I almost forgot…"
 
-    # sweat drop face
-    show bsf normal
-    "..."
+    show dim_bg
+    menu:
+        "...":
+            jump forgetten
 
+        "Did you just forget?":
+            jump forgetten
+
+    label forgetten:
+    hide dim_bg
+    
     show bsf speak
-    Nadia "I’m sure we’ll see each other around a lot. Let’s hang out sometime!"
+    Nadia "Ahhh sorry I gotta run! I’m sure we’ll see each other around a lot. Let’s hang out sometime!"
 
     # neutral happy face
     show bsf normal
     mc "Sounds good! It’ll be nice to have a friend in the dorms."
 
     show bsf speak
-    Nadia "Oh, for sure. I gotta run but maybe I’ll see you at movie night!"
-
+    Nadia "Oh, for sure. Maybe I’ll see you at movie night!"
 
     show bsf normal at Move((0.35, 0), (0.7  , 0), 2.0)
     pause 1.2
@@ -1603,8 +1725,16 @@ label path:
     show bsf worried
     Nadia "HAHAHAHAHA"
 
-    show bsf sad
-    Nadia "Did we really end up as roommates!?"
+    show dim_bg
+    menu:
+        "Did we end up as roomates?":
+            jump bestiemeet2
+
+        "No way, you're my roomate!":
+            jump bestiemeet2
+
+    label bestiemeet2:
+    hide dim_bg
 
     # happy face
     show bsf normal
@@ -1650,9 +1780,21 @@ label path:
 
     # cry face
     show bsf normal
-    mc "I wish I knew about this earlier! I would’ve planned an outfit but now I gotta unpack first."
+
+    show dim_bg
+    menu:
+        "Ahh I wish. I would’ve planned an outfit but now I gotta unpack first.":
+            jump bestiemeet3
+
+        "Seems fun! I'm down to go." :
+            jump bestiemeet3
+
+    label bestiemeet3:
+    hide dim_bg
 
     show bsf speak
+    Nadia "Don't worry I can help you unpack!"
+
     Nadia "There are wayyyy too many boxes. How many clothes do you have?"
 
     # sweat drop face
@@ -1660,15 +1802,16 @@ label path:
     mc "A lot… The thrifting addiction is real…"
     
     show bsf speak
-    Nadia "I get it. I had to leave tons of boxes at my parents'."
+    Nadia "I get it. I had to leave tons of boxes at my parents."
 
     Nadia "Hmm… Well you don’t really wanna unpack now, do you?"
 
     # sweat drop face
     show bsf normal
     mc "No, but what choice do I have?"
-    #😭
     
+    show bsf speak
+    #😭
     jump dress
     with fade
 

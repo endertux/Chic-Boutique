@@ -2,9 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/prologue.rpy", line 472: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    xpos 0.5
-    ^
+The label bestiemeet3 is defined twice, at File "game/prologue.rpy", line 1666:
+    label bestiemeet3:
+and File "game/prologue.rpy", line 1798:
+    label bestiemeet3:
 
-Ren'Py Version: Ren'Py 8.2.3.24061702
-Fri Mar 14 05:28:58 2025
+
+Ren'Py Version: Ren'Py 8.3.4.24120703
+Sun May  4 19:19:34 2025
