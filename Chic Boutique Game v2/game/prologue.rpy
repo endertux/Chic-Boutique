@@ -460,7 +460,7 @@ label instructions:
     "WHY AM I SO NERVOUS?!"
 
     # Determined Face
-    "Aright, one foot in front of the other…"
+    "Alright, one foot in front of the other…"
 
     scene map temp 
     with fade 
@@ -1658,7 +1658,7 @@ label path:
 
     label forgetten:
     hide dim_bg
-    
+
     show bsf speak
     Nadia "Ahhh sorry I gotta run! I’m sure we’ll see each other around a lot. Let’s hang out sometime!"
 
