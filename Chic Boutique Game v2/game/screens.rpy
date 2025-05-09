@@ -299,7 +299,10 @@ screen navigation():
 
         if main_menu:
 
-            textbutton _("Start") action Start()
+            #textbutton _("Start") action Start()
+            imagebutton:
+                auto "menuUI/start_%s.png"
+                action Start()
 
         else:
 
