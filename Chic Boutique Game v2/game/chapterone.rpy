@@ -6,7 +6,7 @@
 
 # This is where we create a separate screen for each article of clothing, as well as the character base. Make sure they're all aligned!
 screen Body_Base:
-    image "Assets/Body.Base.png":
+    image "Assets/newMCSprite.png":
         xpos 300
         ypos 0
 
@@ -160,7 +160,7 @@ init python:
 screen outfits_ui2:
     image "Backgrounds/classroom bg.jpg"
     image "Minigame/ui_base.png" align(1.1, 1.0) size (1300, 1100)
-    imagebutton auto "Minigame/done_%s.png" align(0.02, 0.95) action Jump("instructions2")
+    imagebutton auto "Minigame/done_%s.png" align(0.02, 0.95) action Jump("end_scene")
     
     fixed:
         #align the outfit window on screen
@@ -267,7 +267,7 @@ label dress:
 
     Nadia "Something casual, nothing too fancy!"
 
-    call screen outfits2
+    call screen outfits_ui2
 
 label instructions2:
     hide screen outfits2
