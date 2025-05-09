@@ -76,8 +76,8 @@ define ra = Character("RA", color = "#a84480")
 define Nadia = Character("Nadia", color = "#9b33c6")
 
 #This is where we create a separate screen for each article of clothing, as well as the character base. Make sure they're all aligned!
-screen Body_Base:
-    image "Assets/Body.Base.png":
+screen MC_Base:
+    image "Assets/newMCSprite.png":
         xpos 300
         ypos 0
 
@@ -148,7 +148,7 @@ screen shoe3 zorder 1:
 #Start button
 screen outfits:
     image "Minigame/startmenu.png"
-    imagebutton auto "Minigame/start_%s.png" align(0.5, 0.55) action [Show("outfits_ui"), Show("Body_Base"), Show("top0"), Show("bottom0")]
+    imagebutton auto "Minigame/start_%s.png" align(0.5, 0.55) action [Show("outfits_ui"), Show("MC_Base"), Show("top0"), Show("bottom0")]
 #Minigame
 
 define gui.scrollbar_size = 24
@@ -340,7 +340,7 @@ label instructions:
     hide screen outfits
     hide screen outfits_ui
 
-    hide screen Body_Base
+    hide screen MC_Base
     hide screen top0
     hide screen top1
     hide screen top2
