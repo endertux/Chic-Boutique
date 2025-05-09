@@ -160,7 +160,7 @@ init python:
 screen outfits_ui2:
     image "Backgrounds/classroom bg.jpg"
     image "Minigame/ui_base.png" align(1.1, 1.0) size (1300, 1100)
-    imagebutton auto "Minigame/done_%s.png" align(0.02, 0.95) action Jump("instructions")
+    imagebutton auto "Minigame/done_%s.png" align(0.02, 0.95) action Jump("instructions2")
     
     fixed:
         #align the outfit window on screen
@@ -217,7 +217,7 @@ screen outfits_ui2:
 # This image can be used for the rest of the game, or just as a final reveal.
 layeredimage Player:
     always:
-        "Assets/Body.Base.png"
+        "Assets/newMCSprite.png"
 
     group top:
         attribute 0 default:
