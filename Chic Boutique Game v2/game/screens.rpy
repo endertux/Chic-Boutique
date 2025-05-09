@@ -246,7 +246,7 @@ screen quick_menu():
         hbox:
             style_prefix "quick"
 
-            xalign 0.86
+            xalign 0.80
             yalign 0.975
 
             textbutton _("Save") action ShowMenu('save')
@@ -288,8 +288,8 @@ screen navigation():
 
         if renpy.get_screen("main_menu"):
 
-            xalign 0.5
-            yalign 0.8
+            xalign 0.90
+            yalign 0.6
         else:
             xoffset 60
             yalign 0.5
@@ -299,10 +299,7 @@ screen navigation():
 
         if main_menu:
 
-            #textbutton _("Start") action Start()
-            imagebutton:
-                auto "menuUI/start_%s.png"
-                action Start()
+            textbutton _("Start") action Start()
 
         else:
 

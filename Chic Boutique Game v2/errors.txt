@@ -2,11 +2,9 @@
 errors listed below, and try again.
 
 
-The label bestiemeet3 is defined twice, at File "game/prologue.rpy", line 1666:
-    label bestiemeet3:
-and File "game/prologue.rpy", line 1798:
-    label bestiemeet3:
-
+File "game/screens.rpy", line 300: vbox expects a non-empty block.
+    if main_menu:
+                 ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Sun May  4 19:19:34 2025
+Fri May  9 03:50:47 2025

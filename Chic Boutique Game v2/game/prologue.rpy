@@ -1284,22 +1284,13 @@ label field:
             jump confused
 
         "Umm. I got lost here.":
-            jump confused2
+            jump confused
 
     label confused:
     hide dim_bg
     # neutral face
-    mc "What?"
 
     mc "I'm not in the sports department, I'm just lost."
-
-    #(Kyle)
-    anon "That’s a shame, man. We could really use more students in the sports department."
-
-    label confused2:
-    hide dim_bg
-    # neutral face
-    mc "Umm. I got lost here."
 
     #(Kyle)
     anon "That’s a shame, man. We could really use more students in the sports department."
