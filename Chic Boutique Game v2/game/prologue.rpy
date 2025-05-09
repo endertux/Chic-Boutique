@@ -291,7 +291,7 @@ style outfit_scrollbar:#scrollbar style
 #This image can be used for the rest of the game, or just as a final reveal.
 layeredimage Player:
     always:
-        "Assets/Body.Base.png"
+        "Assets/newMCSprite.png"
 
     group shoe:
         attribute 0 default:
@@ -431,11 +431,6 @@ label instructions:
 
     scene map temp 
     with fade 
-    
-    show Player:
-        xpos 0.01
-        ypos 0.07 
-    with dissolve
 
     "Orientation materials are never any help when you can’t read maps!" 
     #😞 Sigh Face
