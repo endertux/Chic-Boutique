@@ -1,20 +1,34 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-After initialization, but before game start.
-FileNotFoundError: [Errno 2] No such file or directory: '/Users/jennie/Documents/GitHub/Chic-Boutique/Chic Boutique Game v2/game/saves/navigation.json.new' -> '/Users/jennie/Documents/GitHub/Chic-Boutique/Chic Boutique Game v2/game/saves/navigation.json'
+While loading <renpy.display.im.Image object ('gui/button/quick_hover_background.png') at 0x000000000500fb80>:
+  File "game/chapterone.rpy", line 273, in script
+    call screen outfits_ui2
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+Exception: Screen outfits_ui2 is not known.
+
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/bootstrap.py", line 359, in bootstrap
-    renpy.main.main()
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/main.py", line 599, in main
-    renpy.dump.dump(False)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/dump.py", line 262, in dump
-    os.rename(new, filename)
-FileNotFoundError: [Errno 2] No such file or directory: '/Users/jennie/Documents/GitHub/Chic-Boutique/Chic Boutique Game v2/game/saves/navigation.json.new' -> '/Users/jennie/Documents/GitHub/Chic-Boutique/Chic Boutique Game v2/game/saves/navigation.json'
+  File "game/chapterone.rpy", line 273, in script
+    call screen outfits_ui2
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1980, in execute
+    self.call("execute")
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1959, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\statements.py", line 374, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\exports\statementexports.py", line 331, in call_screen
+    renpy.exports.show_screen(_screen_name, *args, _transient=True, **kwargs)
+  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 1325, in show_screen
+    raise Exception("Screen %s is not known.\n" % (name[0],))
+Exception: Screen outfits_ui2 is not known.
 
-macOS-15.0.1-arm64-arm-64bit arm64
+
+Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.4.24120703
 Chic Boutique 1.0
-Fri May  9 03:59:18 2025
+Sun May 18 02:42:55 2025

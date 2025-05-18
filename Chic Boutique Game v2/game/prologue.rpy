@@ -1,56 +1,7 @@
-﻿###############################################################
-######################### Text Sound ##########################
-###############################################################
-
-# code by Aquapaulo --> https://github.com/aquapaulo/renpy-typewriter-sounds
-
-##regular taps, medium intervals
-#define sounds = ['audio/A1.ogg', 'audio/A2.ogg', 'audio/A3.ogg', 'audio/A4.ogg', 'audio/A5.ogg']
-
-#init python:
-    #def type_sound(event, interact=True, **kwargs):
-        #if not interact:
-            #return
-
-#if text's being written by character, spam typing sounds until the text ends
-        #if event == "show":
-            #renpy.sound.play(renpy.random.choice(sounds))
-            #renpy.sound.queue(renpy.random.choice(sounds))
-            #renpy.sound.queue(renpy.random.choice(sounds))
-            #renpy.sound.queue(renpy.random.choice(sounds))
-            #renpy.sound.queue(renpy.random.choice(sounds))
-            #renpy.sound.queue(renpy.random.choice(sounds))
-            #renpy.sound.queue(renpy.random.choice(sounds))
-            #renpy.sound.queue(renpy.random.choice(sounds))
-            #renpy.sound.queue(renpy.random.choice(sounds))
-            #renpy.sound.queue(renpy.random.choice(sounds))
-            #renpy.sound.queue(renpy.random.choice(sounds))
-            #renpy.sound.queue(renpy.random.choice(sounds))
-            #renpy.sound.queue(renpy.random.choice(sounds))
-            #renpy.sound.queue(renpy.random.choice(sounds))
-            #renpy.sound.queue(renpy.random.choice(sounds))
-            #renpy.sound.queue(renpy.random.choice(sounds))
-            #renpy.sound.queue(renpy.random.choice(sounds))
-            #renpy.sound.queue(renpy.random.choice(sounds))
-            #renpy.sound.queue(renpy.random.choice(sounds))
-            #renpy.sound.queue(renpy.random.choice(sounds))
-            #renpy.sound.queue(renpy.random.choice(sounds))
-            #renpy.sound.queue(renpy.random.choice(sounds))
-            #renpy.sound.queue(renpy.random.choice(sounds))
-            #renpy.sound.queue(renpy.random.choice(sounds))
-            #renpy.sound.queue(renpy.random.choice(sounds))
-            #renpy.sound.queue(renpy.random.choice(sounds))
-            #renpy.sound.queue(renpy.random.choice(sounds))
-            #renpy.sound.queue(renpy.random.choice(sounds))
-            #renpy.sound.queue(renpy.random.choice(sounds))
-            #renpy.sound.queue(renpy.random.choice(sounds))
-            #renpy.sound.queue(renpy.random.choice(sounds))
-            #dumb way to do it but it works, dunno if it causes memory leaks but it's almost 6AM :v (from Aquapaulo)
-
-
-
-        #elif event == "slow_done" or event == "end":
-            #renpy.sound.stop()
+﻿# play intro
+label splashscreen:
+    $ renpy.movie_cutscene('splash.webm')
+    return
 
 ###############################################################
 ######################### Dress Up ############################
@@ -172,39 +123,39 @@ init python:
     #an array of clothing buttons(outfits are organised in groups of three items, the order is top, bottom, shoe. this order is required for the code to work)
     outfit_buttons = [ #outfit buttons (path of normal clothing, path of lock clothing image, type (top, bottom, shoe), showname, item id number (saved clothing item number), offsetx, offsety)
         #prologue outfits
-        ("Assets/Top_1_%s.png", "Assets/Top_1_%s.png",    "top",   "top0", 0,     0, 0),
+        ("Assets/Top_1_%s.png", "Assets/Top_1_%s.png",    "top",   "top0", 0, -40, 0),
         ("Assets/Bottom_1_%s.png", "Assets/Bottom_1_%s.png", "bottom", "bottom0", 0, -20, 40),
-        ("Assets/Shoe_1_%s.png", "Assets/Shoe_1_%s.png",   "shoe",   "shoe0", 0,   0, 120),
+        ("Assets/Shoe_1_%s.png", "Assets/Shoe_1_%s.png",   "shoe",   "shoe0", 0, 0, 200),
 
-        ("Assets/Top_2_%s.png", "Assets/Top_2_%s.png",    "top",   "top1", 1,     -50, -30),
+        ("Assets/Top_2_%s.png", "Assets/Top_2_%s.png",    "top",   "top1", 1, -20, -40),
         ("Assets/Bottom_2_%s.png", "Assets/Bottom_2_%s.png", "bottom", "bottom1", 1, 0, 50),
-        ("Assets/Shoe_2_%s.png", "Assets/Shoe_2_%s.png",   "shoe",   "shoe1", 1,   0, 100),
+        ("Assets/Shoe_2_%s.png", "Assets/Shoe_2_%s.png",   "shoe",   "shoe1", 1, 0, 200),
 
-        ("Assets/Top_3_%s.png", "Assets/Top_3_%s.png",    "top",   "top2", 2,     10, 60),
+        ("Assets/Top_3_%s.png", "Assets/Top_3_%s.png",    "top",   "top2", 2, 0, 60),
         ("Assets/Bottom_3_%s.png", "Assets/Bottom_3_%s.png", "bottom", "bottom2", 2, 0, 50),
-        ("Assets/Shoe_3_%s.png", "Assets/Shoe_3_%s.png",   "shoe",   "shoe2", 2,   0, 50),
+        ("Assets/Shoe_3_%s.png", "Assets/Shoe_3_%s.png",   "shoe",   "shoe2", 2, 0, 200),
 
-        ("Assets/Top_4_%s.png", "Assets/Top_4_%s.png",    "top",   "top3", 3,     0, 60),
-        ("Assets/Bottom_4_%s.png", "Assets/Bottom_4_%s.png", "bottom", "bottom3", 3, 0, 50),
-        ("Assets/Shoe_4_%s.png", "Assets/Shoe_4_%s.png",   "shoe",   "shoe3", 3,   0, 100),
+        ("Assets/Top_4_%s.png", "Assets/Top_4_%s.png",    "top",   "top3", 3, 0, 60),
+        ("Assets/Bottom_4_%s.png", "Assets/Bottom_4_%s.png", "bottom", "bottom3", 2, 0, 50),
+        ("Assets/Shoe_4_%s.png", "Assets/Shoe_4_%s.png",   "shoe",   "shoe3", 3, 0, 200),
 
 
         #TEST OUTFITS, these are chapter one outfits that are here to show the scroll bar
         ("Assets/Top_5_%s.png", "Assets/Top_5_%s.png",    "top",   "top0", 0,     -20, 30),
         ("Assets/Bottom_5_%s.png", "Assets/Bottom_5_%s.png", "bottom", "bottom0", 0, -20, 40),
-        ("Assets/Shoe_5_%s.png", "Assets/Shoe_5_%s.png",   "shoe",   "shoe0", 0,   0, 120),
+        ("Assets/Shoe_5_%s.png", "Assets/Shoe_5_%s.png",   "shoe",   "shoe0", 0,   0, 200),
 
-        ("Assets/Top_6_%s.png", "Assets/Top_6_%s.png",    "top",   "top1", 1,     0, 40),
-        ("Assets/Bottom_6_%s.png", "Assets/Bottom_6_%s.png", "bottom", "bottom1", 1, 0, 50),
-        ("Assets/Shoe_1_%s.png", "Assets/Shoe_1_%s.png",   "shoe",   "shoe1", 1,   0, 100),
+        #("Assets/Top_6_%s.png", "Assets/Top_6_%s.png",    "top",   "top1", 1,     0, 40),
+        #("Assets/Bottom_6_%s.png", "Assets/Bottom_6_%s.png", "bottom", "bottom1", 1, 0, 50),
+        #("Assets/Shoe_1_%s.png", "Assets/Shoe_1_%s.png",   "shoe",   "shoe1", 1,   0, 100),
 
-        ("Assets/Top_7_%s.png", "Assets/Top_7_%s.png",    "top",   "top2", 2,     10, 60),
-        ("Assets/Bottom_7_%s.png", "Assets/Bottom_7_%s.png", "bottom", "bottom2", 2, 0, 50),
-        ("Assets/Shoe_3_%s.png", "Assets/Shoe_3_%s.png",   "shoe",   "shoe2", 2,   0, 50),
+        #("Assets/Top_7_%s.png", "Assets/Top_7_%s.png",    "top",   "top2", 2,     10, 60),
+        #("Assets/Bottom_7_%s.png", "Assets/Bottom_7_%s.png", "bottom", "bottom2", 2, 0, 50),
+        #("Assets/Shoe_3_%s.png", "Assets/Shoe_3_%s.png",   "shoe",   "shoe2", 2,   0, 50),
 
-        ("Assets/Top_8_%s.png", "Assets/Top_8_%s.png",    "top",   "top3", 3,     0, 60),
-        ("Assets/Bottom_4_%s.png", "Assets/Bottom_4_%s.png", "bottom", "bottom3", 3, 0, 50),
-        ("Assets/Shoe_4_%s.png", "Assets/Shoe_4_%s.png",   "shoe",   "shoe3", 3,   0, 100),
+        #("Assets/Top_8_%s.png", "Assets/Top_8_%s.png",    "top",   "top3", 3,     0, 60),
+        #("Assets/Bottom_4_%s.png", "Assets/Bottom_4_%s.png", "bottom", "bottom3", 3, 0, 50),
+        #("Assets/Shoe_4_%s.png", "Assets/Shoe_4_%s.png",   "shoe",   "shoe3", 3,   0, 100),
         #TEST OUTFITS, these are chapter one outfits that are here to show the scroll bar
     ]
 

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 300: vbox expects a non-empty block.
-    if main_menu:
-                 ^
+File "game/prologue.rpy", line 3: invalid syntax
+    renpy.movie_cutscene('splash.webm') with Dissolve(.3, alpha=True)
+                                         ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri May  9 03:50:47 2025
+Sat May 17 20:13:53 2025
