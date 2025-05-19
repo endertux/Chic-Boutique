@@ -4,6 +4,13 @@
 
 # Dress up mini-game by dicortesia --> https://www.youtube.com/watch?v=oZU0CmyuZHE&ab_channel=dicortesia
 
+#saved outfit for the second outfit choosing scene. They are copies of bottom, shoe, and top where the current outfit is stored
+default secondBottom = 0
+default secondShoe = 0
+default secondTop = 0
+
+
+
 #This is where we create a separate screen for each article of clothing, as well as the character base. Make sure they're all aligned!
 screen MC_Base:
     image "Assets/newMCSprite.png":
@@ -114,7 +121,7 @@ init python:
         ("Assets/Shoe_3_%s.png", "Assets/Shoe_3_%s.png",   "shoe",   "shoe2", 2, 0, 200),
 
         ("Assets/Top_4_%s.png", "Assets/Top_4_%s.png",    "top",   "top3", 3, 0, 60),
-        ("Assets/Bottom_4_%s.png", "Assets/Bottom_4_%s.png", "bottom", "bottom3", 2, 0, 50),
+        ("Assets/Bottom_4_%s.png", "Assets/Bottom_4_%s.png", "bottom", "bottom3", 3, 0, 50),
         ("Assets/Shoe_4_%s.png", "Assets/Shoe_4_%s.png",   "shoe",   "shoe3", 3, 0, 200),
 
 
@@ -154,8 +161,19 @@ init python:
 screen outfits_ui2:
     image "Backgrounds/classroom bg.jpg"
     image "Minigame/ui_base.png" align(1.1, 1.0) size (1300, 1100)
-    imagebutton auto "Minigame/done_%s.png" align(0.02, 0.95) action Jump("instructions")
-    
+    imagebutton auto "Minigame/done_%s.png" align(0.02, 0.95) action Jump("instructions2")
+    on "show" action [Show("MC_Base")]
+
+    for i, (imagepath, imagepathmissing, Type, showname, setval, Xoffset, Yoffset) in enumerate(outfit_buttons):
+        if Type == "top" and top == setval:
+            on "show" action [tops, Show(showname)]
+        if Type == "bottom" and bottom == setval:
+            on "show" action [bottoms, Show(showname)]
+        if Type == "shoe" and shoe == setval:
+            on "show" action [shoes, Show(showname)]
+
+    #on "hide" action Hide("MC_Base")
+
     fixed:
         #align the outfit window on screen
         align(0.905, 0.45)
@@ -194,11 +212,11 @@ screen outfits_ui2:
 
                                 #set up action to set clothing when pressed. for each option it hides all items of that type and then shows the specific one you clicked
                                 if Type == "top":
-                                    action [tops, Show(showname), SetVariable(Type, setval)]
+                                    action [tops, Show(showname), SetVariable(Type, setval), SetVariable("secondTop", setval)]
                                 if Type == "bottom":
-                                    action [bottoms, Show(showname), SetVariable(Type, setval)]
+                                    action [bottoms, Show(showname), SetVariable(Type, setval), SetVariable("secondBottom", setval)]
                                 if Type == "shoe":
-                                    action [shoes, Show(showname), SetVariable(Type, setval)]
+                                    action [shoes, Show(showname), SetVariable(Type, setval), SetVariable("secondShoe", setval)]
                             #else if you don't own it (I.E. its not in owned_outfits)
                             else:
                                 #set the items position on the grid
@@ -269,55 +287,79 @@ label dress:
     Nadia "Just borrow something from my closet."
 
     Nadia "Something casual, nothing too fancy!"
-
     call screen outfits_ui2
 
 label instructions2:
+    #instantly set scene so fade below works (without this the fade would start from the bedroom)
+    scene bg
+    with None
+
     hide screen outfits2
     hide screen outfits_ui2
-    hide screen Body_Base
-    hide screen top5
-    hide screen top6
-    hide screen top7
-    hide screen top8
-    hide screen bottom5
-    hide screen bottom6
-    hide screen bottom7
-    hide screen bottom8
-    hide screen shoe5
-    hide screen shoe6
-    hide screen shoe7
-    hide screen shoe8
-    hide underwear1
-    hide underwear2
 
-    scene bg
+    hide screen MC_Base
+    hide screen top0
+    hide screen top1
+    hide screen top2
+    hide screen top3
+    hide screen top4
+    hide screen bottom0
+    hide screen bottom1
+    hide screen bottom2
+    hide screen bottom3
+    hide screen bottom4
+    hide screen shoe0
+    hide screen shoe1
+    hide screen shoe2
+    hide screen shoe3
+    hide screen shoe4
+
+    show screen ViewOutfitButton
     show Player:
         xpos 0.38
         ypos 0
-    with dissolve
+    #fade out outfit screen and in the results screen
+    with fade
+
+    #pause for 2 seconds because no input to pause like in prologue
+    pause 2
 
 label end_scene:
     hide screen outfits2
     hide screen outfits_ui2
-    hide screen Body_Base
-    hide screen top5
-    hide screen top6
-    hide screen top7
-    hide screen top8
-    hide screen bottom5
-    hide screen bottom6
-    hide screen bottom7
-    hide screen bottom8
-    hide screen shoe5
-    hide screen shoe6
-    hide screen shoe7
-    hide screen shoe8
+
+    hide screen MC_Base
+    hide screen top0
+    hide screen top1
+    hide screen top2
+    hide screen top3
+    hide screen top4
+    hide screen bottom0
+    hide screen bottom1
+    hide screen bottom2
+    hide screen bottom3
+    hide screen bottom4
+    hide screen shoe0
+    hide screen shoe1
+    hide screen shoe2
+    hide screen shoe3
+    hide screen shoe4
     scene temp dorm
+
+    show Player:
+        xpos 0.01
+        ypos 0.1
     with fade 
 
     show bsf speak
     Nadia "Oh my gosh, you look better in those clothes than me!"
+
+
+    #Test Code: this resets the current outfit to the first one choosen
+    $top = firstTop
+    $bottom = firstBottom
+    $shoe = firstShoe
+    #Test Code
 
     Nadia "Okay, let's get going now."
 

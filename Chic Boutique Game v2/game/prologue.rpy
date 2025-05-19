@@ -16,6 +16,11 @@ default bottom = 0
 default shoe = 0
 default top = 0
 
+#saved outfit for the first outfit choosing scene. They are copies of bottom, shoe, and top where the current outfit is stored
+default firstBottom = 0
+default firstShoe = 0
+default FirstTop = 0
+
 define mc = Character("[povname]")
 define anon = Character("???")
 
@@ -136,7 +141,7 @@ init python:
         ("Assets/Shoe_3_%s.png", "Assets/Shoe_3_%s.png",   "shoe",   "shoe2", 2, 0, 200),
 
         ("Assets/Top_4_%s.png", "Assets/Top_4_%s.png",    "top",   "top3", 3, 0, 60),
-        ("Assets/Bottom_4_%s.png", "Assets/Bottom_4_%s.png", "bottom", "bottom3", 2, 0, 50),
+        ("Assets/Bottom_4_%s.png", "Assets/Bottom_4_%s.png", "bottom", "bottom3", 3, 0, 50),
         ("Assets/Shoe_4_%s.png", "Assets/Shoe_4_%s.png",   "shoe",   "shoe3", 3, 0, 200),
 
 
@@ -216,11 +221,11 @@ screen outfits_ui:
 
                                 #set up action to set clothing when pressed. for each option it hides all items of that type and then shows the specific one you clicked
                                 if Type == "top":
-                                    action [tops, Show(showname), SetVariable(Type, setval)]
+                                    action [tops, Show(showname), SetVariable(Type, setval), SetVariable("firstTop", setval)]
                                 if Type == "bottom":
-                                    action [bottoms, Show(showname), SetVariable(Type, setval)]
+                                    action [bottoms, Show(showname), SetVariable(Type, setval), SetVariable("firstBottom", setval)]
                                 if Type == "shoe":
-                                    action [shoes, Show(showname), SetVariable(Type, setval)]
+                                    action [shoes, Show(showname), SetVariable(Type, setval), SetVariable("firstShoe", setval)]
                             #else if you don't own it (I.E. its not in owned_outfits)
                             else:
                                 #set the items position on the grid
@@ -236,8 +241,29 @@ style outfit_scrollbar:#scrollbar style
     base_bar Frame("gui/scrollbar/horizontal_idle_bar.png", 10, 10, 10, 10)  # background art (track)
     thumb "gui/scrollbar/horizontal_idle_thumb_large.png"  # thumb art (draggable part)
     thumb_offset 45  #offset of thumb collider
-    
 
+#define outfit button currently it uses the confirm outfit button art
+screen ViewOutfitButton():
+    imagebutton:
+        auto "Minigame/done_%s.png"#image
+        align (0.98, 0.02)#Allign to top right
+        action ShowMenu("ViewOutfitMenu")#show view outfit screen on click
+
+#defign view outfit screen
+screen ViewOutfitMenu():
+    tag menu
+    modal True
+    image "Backgrounds/classroom bg.jpg"#background image
+    add "Player":#show player in the middle
+        xpos 0.5
+        xanchor 0.5
+        ypos 0.0
+        yanchor 0.0
+    #back button
+    imagebutton:
+        auto "Minigame/done_%s.png"#image
+        align (0.98, 0.02)#align to top right
+        action Return()#return to game
 
 #This image can be used for the rest of the game, or just as a final reveal.
 layeredimage Player:
@@ -308,6 +334,7 @@ label instructions:
     hide screen shoe3
     hide screen shoe4
 
+    show screen ViewOutfitButton
     show Player:
         xpos 0.38
         ypos 0
