@@ -854,7 +854,7 @@ label felixtalking:
 
 label garden:
     #BG ART OF SCHOOL GARDEN
-    scene garden temp
+    scene garden bg
 
     show Player:
         xpos 0.01
@@ -901,7 +901,7 @@ label garden:
     #RUNNING SOUND EFFECT
     #ADDIE SPRITE APPEARS CLOSER
 
-    scene garden temp
+    scene garden bg
     with dissolve
 
     show Player:
@@ -931,7 +931,7 @@ label garden:
             jump addiechoiceone
 
     label addiechoiceone : 
-        scene garden temp
+        scene garden bg
 
         show Player:
             xpos 0.01
@@ -967,7 +967,7 @@ label garden:
     # Surprised Face
     hide dim_bg
     label notrouble : 
-        scene garden temp
+        scene garden bg
         show Player:
             xpos 0.01
             ypos 0.6
@@ -1021,7 +1021,7 @@ label garden:
 
     label ofcourse : 
         hide dim_bg
-        scene garden temp
+        scene garden bg
         show Player:
             xpos 0.01
             ypos 0.6
@@ -1044,12 +1044,12 @@ label garden:
 
     Addie "Hey, what are you talking about!? I can tell a fellow fashionista when I see one."
 
-    scene garden temp
+    scene garden bg
 
     #ADDIE WINKS
     #SUDDENLY HER EYES WIDEN AS SHE STARES JUST ABOVE YOUR HEAD
 
-    show garden temp with vpunch
+    show garden bg with vpunch
 
     show Player:
         xpos 0.01
@@ -1073,7 +1073,7 @@ label garden:
             jump bee
 
     label bee : 
-        scene garden temp
+        scene garden bg
         show Player:
             xpos 0.01
             ypos 0.6
@@ -1094,7 +1094,7 @@ label garden:
             jump actcalm
 
     label freakout : 
-        scene garden temp
+        scene garden bg
         show Player:
             xpos 0.01
             ypos 0.6
@@ -1125,7 +1125,7 @@ label garden:
 
     
     label actcalm : 
-        scene garden temp
+        scene garden bg
         show Player:
             xpos 0.01
             ypos 0.6
