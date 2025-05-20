@@ -27,6 +27,7 @@ define anon = Character("???")
 define Felix = Character("Felix", color = "#3f7d2d" )
 define Addie = Character("Addison", color = "#32327c" )
 define Kyle = Character("Kyle", color = "#b72417")
+define Riya = Character("Riya", color = "#470b1b")
 
 define ra = Character("RA", color = "#a84480")
 define Nadia = Character("Nadia", color = "#9b33c6")
@@ -358,7 +359,7 @@ label instructions:
 
     show Player:
         xpos 0.01
-        ypos 0.1
+        ypos 0.6
     with dissolve
     
     # Neutral/Happy Face
@@ -390,7 +391,7 @@ label instructions:
 
     show Player:
         xpos 0.01
-        ypos 0.07 
+        ypos 0.6
     with dissolve
     
     #play music
@@ -454,12 +455,14 @@ label instructions:
         # Confused Face
         "…Which way first?"
 
-        "Museum":
+        "Head over to the Museum":
             jump museum
-        "Garden":
+        "Walk to the Garden":
             jump garden
-        "Field":
+        "Go over to the Field":
             jump field
+        "Check out the Music Studio":
+            jump music
 
 
     label museum:
@@ -1395,6 +1398,122 @@ label field:
     with fade
 
     jump path
+
+label music:
+
+    scene music studio bg
+    with fade
+
+    # MUSIC STUDIO SCENE - RIYA INTRODUCTION
+
+    show Player:
+        xpos 0.01
+        ypos 0.6
+    with dissolve
+
+    mc "Whoa…"
+
+    # awe, wide eyes
+    mc "I didn’t know this school had a recording studio."
+
+    mc "There’s a band playing right now. It looks like they’re in the middle of a set."
+
+    mc "They’re playing an upbeat rock song. The electric guitar is cutting through the air like a knife, the drums are sending the tempo crashing toward me, the bass is washing over me like waves. And the singer…"
+
+    show riya normal
+    with dissolve
+
+    # CG of Riya singing into the mic
+    # (CG asset should be shown here if available)
+    # show cg riya_singing with dissolve
+
+    # Riya CG description for artist reference:
+    # Main details: Riya singing into a microphone, playing guitar. This CG can be moved to a later scene (concert date?) if needed.
+
+    mc "She’s so cool! She’s clearly the leader of the band. Everyone is looking to her for cues."
+
+    mc "Her voice is clear and controlled. I feel like she’s sharing a piece of her soul with me with every note."
+
+    mc "Her clear tone, and that jet-black hair… She looks a little familiar. Maybe I met her at orientation?"
+
+    mc "Oh, they finished. Everyone’s cheering and putting up their instruments. Maybe I should leave before they see me."
+
+    anon "Last one to the car is paying for drinks tonight!"
+
+    mc "The guitarist runs past me, followed by the other two band members."
+
+    mc "Hey, watch it! They nearly knocked me over."
+
+    anon "You idiots! I’m going to kill you all if you don’t come back here for your instruments!"
+
+    anon "Ugh. Hey Mike, thanks for helping us out today. Sorry I forced you to work with these dumbasses."
+
+    mc "Aha… She’s not as elegant in person as when she’s singing."
+
+    anon "Hey, show’s not for free, you know. This is a private practice. How are we supposed to focus on our music when we’ve got fangirls like you barging in every five minutes?"
+
+    mc "Jeez, I just got lost. But her guttermouth, and those bad manners… I definitely know her from somewhere."
+
+    mc "Sorry, I’m lost. If you just point me in the right direction, I’ll get out of your hair."
+
+    anon "Oh my god...[povname]!?"
+
+    mc "Does she know me…?"
+
+    anon "What the hell are you doing here!? It’s me, Riya!"
+
+    mc "Riya!? Oh my god, it’s been so long!"
+
+    mc "No wonder why she looked familiar! Riya and I were friends in middle school, and she always talked about wanting to start a band. She would practice guitar in front of me for hours, and god, she was so bad! It’s making me laugh just thinking about it."
+
+    # Hug visual cue could be added here
+    mc "Riya goes in for a hug and squeezes me tight. When she pulls away and holds me by the shoulders, I feel like we’re back in middle school again."
+
+    mc "I just got accepted into Slaycademy! I was trying to find the dorms, but I got lost. What are you doing here?"
+
+    Riya "Of course you got lost already. I started last year, Music major. I drag my bandmates with me everywhere, and we play shows around here. You’ve gotta come see us sometime!"
+
+    mc "Wow, that’s so cool. I’d love to! But would you mind helping me find my dorm first? I have no idea where to go."
+
+    Riya "Don’t worry, I’ve got you. Lemme see your map."
+
+    show dim_bg
+    menu:
+        "Lean in":
+            jump lean_in
+        "Back away a little":
+            jump back_away
+
+label lean_in:
+    hide dim_bg
+    mc "So close… She smells like cherries and cigarettes. Her hand is touching mine…"
+    Riya "See this right here? You made a right instead of a left. Just go straight back and you’ll find it. Even you can’t screw that up."
+    jump music_continue
+
+label back_away:
+    hide dim_bg
+    mc "I instinctively shift a bit back as she reaches for my map."
+    Riya "Here, look. You made a right when you should’ve gone left. Just double back and go straight. Even you can’t mess that up."
+    jump music_continue
+
+label music_continue:
+    mc "When she moves away, I let out a breath. I didn’t realize I was holding it this whole time."
+
+    mc "What? Oh, right. Sorry. It’s been a long day."
+
+    Riya "Oh—my bad, it was a joke. You doing okay?"
+
+    mc "Of course it was a joke. Why am I acting so weird? It’s just Riya. It’s just, things feel different for some reason."
+
+    mc "Yeah, thanks. Hey, I’ll catch you later, okay? I’m running late for something."
+
+    Riya "Oh, uh, okay. Hope to see you soon?"
+
+    scene black bg
+    with fade
+
+    jump path
+
 
 label path:
     #FADE TO SCENE OUTSIDE ON PATH

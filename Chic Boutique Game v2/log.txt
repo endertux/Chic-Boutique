@@ -483,3 +483,3078 @@ Version: b'2.1 Metal - 89.3'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
 Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1400.95s
+Loading error handling took 0.01s
+Loading script took 0.11s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.09s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1415.96s
+Loading error handling took 1.75s
+Loading script took 21.46s
+Loading save slot metadata took 2.31s
+Loading persistent took 0.00s
+ - Init at game/gui.rpy:11 took 1.38984 s.
+Running init code took 1.43s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.09s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1444.20s
+Loading error handling took 2.68s
+Loading script took 13.36s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Music Studio"
+                  ^
+DPI scale factor: 1.000000
+Interface start took 0.85s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1462.48s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Music Studio"
+                  ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1464.20s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Music Studio"
+                  ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1468.92s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Music Studio"
+                  ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1473.62s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1475.35s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1617.13s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+DPI scale factor: 1.000000
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1620.36s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1622.05s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1661.45s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+DPI scale factor: 1.000000
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1663.14s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1821.58s
+Loading error handling took 0.02s
+Loading script took 0.10s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+DPI scale factor: 1.000000
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1827.80s
+Loading error handling took 0.01s
+Loading script took 0.13s
+Loading save slot metadata took 0.05s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+DPI scale factor: 1.000000
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1921.46s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+DPI scale factor: 1.000000
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2000.03s
+Loading error handling took 0.02s
+Loading script took 0.10s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+DPI scale factor: 1.000000
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2170.44s
+Loading error handling took 0.02s
+Loading script took 0.10s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+DPI scale factor: 1.000000
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2172.10s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2187.32s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2192.03s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2193.76s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2195.44s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1407: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1409: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2198.68s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2201.87s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2205.11s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2208.30s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2210.00s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2214.71s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2216.40s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2218.09s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2219.81s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2226.03s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2227.73s
+Loading error handling took 0.01s
+Loading script took 0.05s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 1435: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a ` at the end of the first line.)
+    `with dissolve
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2229.42s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2232.65s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2252.49s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2254.19s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2255.92s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2257.60s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2259.32s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.04s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+
+File "game/prologue.rpy", line 1435: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    "‘Last one to the car is paying for drinks tonight!’"
+    ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2261.00s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+
+File "game/prologue.rpy", line 1435: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    "Last one to the car is paying for drinks tonight!’"
+    ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2264.19s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+
+File "game/prologue.rpy", line 1435: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    "Last one to the car is paying for drinks tonight!"
+    ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2267.40s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2273.66s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2275.35s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2277.03s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2278.74s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2280.42s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2283.61s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2285.33s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2287.01s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2288.73s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2290.45s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2292.14s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2293.81s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2295.49s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2297.18s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2298.93s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.04s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2300.66s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2303.86s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2305.52s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2308.76s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2328.61s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2330.31s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2348.60s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.12s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2360.86s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.10s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2362.58s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2364.26s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2365.99s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2432.51s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+
+File "game/prologue.rpy", line 1420: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    show gymbro normal
+    ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2434.22s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2440.43s
+Loading error handling took 0.02s
+Loading script took 0.09s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2487.16s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+
+File "game/prologue.rpy", line 1406: show statement expects a non-empty block.
+    show Player:
+                ^
+
+File "game/prologue.rpy", line 1407: expected statement.
+    xpos 0.01
+          ^
+
+File "game/prologue.rpy", line 1408: expected statement.
+    ypos 0.6
+          ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2558.22s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2572.59s
+Loading error handling took 0.01s
+Loading script took 0.11s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Resetting cache.
+Early init took 2667.07s
+Loading error handling took 0.01s
+Loading script took 0.12s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2670.43s
+Loading error handling took 2.29s
+Loading script took 26.24s
+Loading save slot metadata took 2.48s
+Loading persistent took 0.00s
+ - Init at game/gui.rpy:11 took 1.87665 s.
+Running init code took 1.93s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.09s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2708.36s
+Loading error handling took 0.78s
+Loading script took 13.30s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/prologue.rpy", line 1473, in script
+    Riya "Of course you got lost already. I started last year, Music major. I drag my bandmates with me everywhere, and we play shows around here. You’ve gotta come see us sometime!"
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/ast.py", line 2579, in execute
+    Say.execute(self)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/ast.py", line 581, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/ast.py", line 470, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'Riya' is not defined.
+
+While running game code:
+  File "game/prologue.rpy", line 1473, in script
+    Riya "Of course you got lost already. I started last year, Music major. I drag my bandmates with me everywhere, and we play shows around here. You’ve gotta come see us sometime!"
+Exception: Sayer 'Riya' is not defined.
+Resetting cache.
+Early init took 2924.89s
+Loading error handling took 0.01s
+Loading script took 0.11s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/prologue.rpy", line 1473, in script
+    riya "Of course you got lost already. I started last year, Music major. I drag my bandmates with me everywhere, and we play shows around here. You’ve gotta come see us sometime!"
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/ast.py", line 2579, in execute
+    Say.execute(self)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/ast.py", line 581, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/ast.py", line 470, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'riya' is not defined.
+
+While running game code:
+  File "game/prologue.rpy", line 1473, in script
+    riya "Of course you got lost already. I started last year, Music major. I drag my bandmates with me everywhere, and we play shows around here. You’ve gotta come see us sometime!"
+Exception: Sayer 'riya' is not defined.
+Resetting cache.
+Early init took 2940.33s
+Loading error handling took 0.01s
+Loading script took 0.11s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 3002.62s
+Loading error handling took 0.01s
+Loading script took 0.12s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 3005.99s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 3010.80s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.01s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 3015.63s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.01s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 3017.48s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Resetting cache.
+Early init took 3122.30s
+Loading error handling took 0.01s
+Loading script took 0.14s
+Loading save slot metadata took 0.05s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 3124.04s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.01s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 3142.69s
+Loading error handling took 0.01s
+Loading script took 0.11s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 3473.32s
+Loading error handling took 0.01s
+Loading script took 0.12s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 3485.67s
+Loading error handling took 0.01s
+Loading script took 0.11s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1445, 813) drawable=(2890, 1626)
+Maximum texture size: 4096x4096

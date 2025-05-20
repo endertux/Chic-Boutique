@@ -2,9 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/prologue.rpy", line 3: invalid syntax
-    renpy.movie_cutscene('splash.webm') with Dissolve(.3, alpha=True)
-                                         ^
+File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Check out the Music Studio"
+                                ^
 
-Ren'Py Version: Ren'Py 8.3.4.24120703
-Sat May 17 20:13:53 2025
+Ren'Py Versio
