@@ -1420,7 +1420,13 @@ label music:
 
     mc "They’re playing an upbeat rock song. The electric guitar is cutting through the air like a knife, the drums are sending the tempo crashing toward me, the bass is washing over me like waves. And the singer…"
 
-    show riya normal
+    show riya normal:
+        xpos 0.45
+        xanchor 0.5
+        ypos 0.93
+        yanchor 1.0
+
+
     with dissolve
 
     # CG of Riya singing into the mic
@@ -1438,42 +1444,66 @@ label music:
 
     mc "Oh, they finished. Everyone’s cheering and putting up their instruments. Maybe I should leave before they see me."
 
+    show riya talking
     anon "Last one to the car is paying for drinks tonight!"
 
     mc "The guitarist runs past me, followed by the other two band members."
 
     mc "Hey, watch it! They nearly knocked me over."
 
+    show riya judging
+
     anon "You idiots! I’m going to kill you all if you don’t come back here for your instruments!"
+
+    show riya talking
 
     anon "Ugh. Hey Mike, thanks for helping us out today. Sorry I forced you to work with these dumbasses."
 
     mc "Aha… She’s not as elegant in person as when she’s singing."
 
+    show riya talking
+
     anon "Hey, show’s not for free, you know. This is a private practice. How are we supposed to focus on our music when we’ve got fangirls like you barging in every five minutes?"
+
+    show riya judging
 
     mc "Jeez, I just got lost. But her guttermouth, and those bad manners… I definitely know her from somewhere."
 
     mc "Sorry, I’m lost. If you just point me in the right direction, I’ll get out of your hair."
 
+    show riya smiling
+
     anon "Oh my god...[povname]!?"
 
     mc "Does she know me…?"
+
+    show riya talking
 
     anon "What the hell are you doing here!? It’s me, Riya!"
 
     mc "Riya!? Oh my god, it’s been so long!"
 
+    show riya smiling
+
     mc "No wonder why she looked familiar! Riya and I were friends in middle school, and she always talked about wanting to start a band. She would practice guitar in front of me for hours, and god, she was so bad! It’s making me laugh just thinking about it."
 
     # Hug visual cue could be added here
+
+    show riya normal
+
     mc "Riya goes in for a hug and squeezes me tight. When she pulls away and holds me by the shoulders, I feel like we’re back in middle school again."
 
     mc "I just got accepted into Slaycademy! I was trying to find the dorms, but I got lost. What are you doing here?"
 
+    show riya smiling
+
     Riya "Of course you got lost already. I started last year, Music major. I drag my bandmates with me everywhere, and we play shows around here. You’ve gotta come see us sometime!"
 
+    show riya normal
+
     mc "Wow, that’s so cool. I’d love to! But would you mind helping me find my dorm first? I have no idea where to go."
+
+    show riya talking
 
     Riya "Don’t worry, I’ve got you. Lemme see your map."
 
@@ -1487,12 +1517,16 @@ label music:
 label lean_in:
     hide dim_bg
     mc "So close… She smells like cherries and cigarettes. Her hand is touching mine…"
+
+    show riya smiling
+
     Riya "See this right here? You made a right instead of a left. Just go straight back and you’ll find it. Even you can’t screw that up."
     jump music_continue
 
 label back_away:
     hide dim_bg
     mc "I instinctively shift a bit back as she reaches for my map."
+    show riya talking
     Riya "Here, look. You made a right when you should’ve gone left. Just double back and go straight. Even you can’t mess that up."
     jump music_continue
 
@@ -1501,11 +1535,19 @@ label music_continue:
 
     mc "What? Oh, right. Sorry. It’s been a long day."
 
+    show riya talking
+
     Riya "Oh—my bad, it was a joke. You doing okay?"
+
+    show riya normal
 
     mc "Of course it was a joke. Why am I acting so weird? It’s just Riya. It’s just, things feel different for some reason."
 
+    show riya judging
+
     mc "Yeah, thanks. Hey, I’ll catch you later, okay? I’m running late for something."
+
+    show riya talking
 
     Riya "Oh, uh, okay. Hope to see you soon?"
 

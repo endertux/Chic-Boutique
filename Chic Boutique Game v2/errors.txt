@@ -2,8 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/prologue.rpy", line 463: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Check out the Music Studio"
-                                ^
+File "game/prologue.rpy", line 1430: expected 'comma or end of line' not found.
+    with dissolve
+    ^
 
-Ren'Py Versio
+Ren'Py Version: Ren'Py 8.3.4.24120703
+Mon May 19 20:01:18 2025
