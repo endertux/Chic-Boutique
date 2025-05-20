@@ -888,7 +888,7 @@ label garden:
     # Confused Face
     "Is she talking to me?"
 
-    show baddie normal:
+    show baddie small:
         xpos 0.75
         ypos 0.3
     with dissolve
@@ -908,18 +908,20 @@ label garden:
         xpos 0.01
         ypos 0.6
 
-    show baddie normal
+    show baddie big
     with dissolve
 
     mc "Thank you so much! I didn’t even notice that I had dropped it."
     #😞 Cry Face
 
-    # Suprised Face
+    show baddie happy
     "Wow she’s so pretty… and her outfit is so put-together yet effortless."
 
     #(Addie)
+    show baddie tease
     anon "No probs."
 
+    show baddie happy
     #(Addie)
     anon "You a freshman?"
     show dim_bg
@@ -937,22 +939,24 @@ label garden:
             xpos 0.01
             ypos 0.6
 
-        show baddie normal
+        show baddie tease
 
         #(Addie)
         anon "The lost look in your eyes told me. Don’t worry about it, this school is huge. We’ve all been there."
 
         # Sweat Drop Face
         "Her gaze is making me a little nervous… It’s like I’m being studied."
-
+        show baddie happy
         #(Addie)
         anon "So where ya headin, babe?"
 
         mc "I was trying to get to the student dorms, before I lost my map."
 
         #(Addie) Excited Talking Face
+        show baddie tease
         anon "Ooh! I lived there last year! So many memories…"
 
+        show baddie happy
         #(Addie) Eager Face
         anon "Hey, I don’t have anything going on right now if you want me to take you there?"
 
@@ -972,9 +976,10 @@ label garden:
             xpos 0.01
             ypos 0.6
 
-        show baddie normal
+        show baddie big
         mc "I don’t want to trouble you too much…"
 
+        show baddie happy
         #(Addie) Winking Face
         anon "No, it’s no trouble at all. I can’t leave a cute girl lost in the garden like this!"
 
@@ -984,7 +989,7 @@ label garden:
         xpos 0.01
         ypos 0.6
 
-    show baddie normal
+    show baddie tease
     with dissolve
 
     #(Addie) Neutral Face
@@ -994,21 +999,25 @@ label garden:
     # Neutral Face
     mc "[povname]. And you’re…?"
 
+    show baddie happy
     #(Addie) Winking Face
     Addie "Addison. But my friends call me Addie!"
     #😉
-
+    show baddie big
     # Sweat Drop Face
     mc "Gotcha. It’s nice to meet someone so friendly right away. I was really concerned about making friends here, to be honest…"
 
+    show baddie happy
     # Neutral Face
     Addie "No, I get it. I’m not gonna lie, you’re gonna meet some people here that are a little pretentious. It {i}is{/i} Slaycademy, after all."
 
     # MC Confused Face
 
     # Notice Face
-    Addie "?"
+    show baddie tease
+    Addie "..."
 
+    show baddie happy
     # Excited Talking Face
     Addie "But don’t worry! Most of the people here are really nice. And for a girl as cute as you, you’ll have no problem making friends!"
 
@@ -1026,10 +1035,11 @@ label garden:
             xpos 0.01
             ypos 0.6
 
-        show baddie normal
+        show baddie happy
         Addie "Of course!"
 
     # Neutral Face
+    show baddie tease
     Addie "So, what are you here for? Architecture? Film?"
 
     # Cry Face
@@ -1039,8 +1049,12 @@ label garden:
 
     # Sweat Drop Face
     mc "I’m a fashion major!"
+
+    show baddie big
     
     mc "I usually dress up a little more than this… I didn’t expect to meet anyone until the first day of classes."
+
+    show baddie happy
 
     Addie "Hey, what are you talking about!? I can tell a fellow fashionista when I see one."
 
@@ -1056,12 +1070,13 @@ label garden:
         ypos 0.6
 
     # Surprised Face
+    show baddie concerned
     Addie "Umm..."
 
     # Confused Face
     mc "What??"
 
-    show baddie normal
+    show baddie disgusted
 
     Addie "Alright... DON’T freak out, okay..."
 
@@ -1078,7 +1093,7 @@ label garden:
             xpos 0.01
             ypos 0.6
 
-        show baddie normal
+        show baddie scared
 
         # Surprised Face
         Addie "There-"
@@ -1099,28 +1114,35 @@ label garden:
             xpos 0.01
             ypos 0.6
 
-        show baddie normal
+        show baddie concerned
         mc "AHHHH GET IT OFF!"
         # mc in distress 
         # addie in distress 
         mc "???"
         mc "Aren't you going to help me?"
+
+        show baddie scared
         Addie "I'm sorry! I just- ah!"
         Addie "This is something I just can't deal with!"
         # mc cry face
         mc "Please..."
+        show baddie concerned
         mc "I can feel it crawling on me..."
-    
+        show baddie scared
         Addie "O-okay."
         Addie "Just-just give me one second, okay?"
         #hide Addie sprite
         #show Addie sprite with notebook in hand
         #woosh sfx and vfx
         #Addie sigh face
+        show baddie big
         Addie "Got it!"
+        show baddie tease
         #mc sigh face
         mc "Thank you!"
+        show baddie happy
         Addie "Of course, babe!"
+        show baddie tease
         Addie "It was nothing, really."
 
     
@@ -1130,59 +1152,69 @@ label garden:
             xpos 0.01
             ypos 0.6
 
-        show baddie normal
+        show baddie happy
         mc "Ah..."
         mc "That's no big deal."
         
         #Addie sprite backing up
         #show through visual/audio guides a bee to a flower
         #Addie cry or shocked face
-
+        show baddie concerned
         Addie "How were you so calm??"
         mc "They're harmless as long as you leave them alone!"
-
+        show baddie scared
         #Addie distressed face
         Addie "Ugh, I'm just glad that it's gone!"
         mc "No way..."
         mc "Are you...scared of bees?"
 
         #Addie embarrassed face 
+        show baddie concerned
         Addie "How could you not be!?"
 
         #mc closed eye smiling
         mc "Haha, I didn't expect you to be so afraid of something so small."
+        show baddie happy
         Addie "Well, at least it's been dealt with."
 
     #addie hair flip sprite would require a new pose which idk if artists are willing to do
     #good substitute could just be addie wink face (or honestly just her neutral face)
 
+    show baddie tease
     "Oh, she's returned to normal."
 
     # wink face
+    show baddie happy
     Addie "It probably just thought you were a flower! Easy mistake."
 
+    show baddie concerned
     #(Student)
     anon "Addison!"
 
+    show baddie scared
     # surprised face
     Addie "Shoot!" 
     #😨
 
+    show baddie concerned
     #(Student)
     anon "You told me you’d meet me at the quad 20 minutes ago!"
 
+    show baddie happy
     # wink face
     Addie "Sorry babe, I gotta run."
 
+    show baddie big
     # neutral face
     Addie "Luckily it’s super easy to get to the dorms from here. Just follow this path to the end, ‘kay?"
+    show baddie happy
 
     # neutral happy face
     mc "Thank you so much! For everything. I’ll see you around then!"
       
-    show baddie normal at Move((0.33, 0), (0.8, 0), 2.0)
+    show baddie big at Move((0.33, 0), (0.8, 0), 2.0)
     pause 1.3
-    show baddie normal at Alpha(1.0, 0.0, 1.0)
+    show baddie big at Alpha(1.0, 0.0, 1.0)
 
     Addie "See ya!"
 

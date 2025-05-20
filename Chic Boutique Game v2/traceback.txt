@@ -1,34 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Image object ('gui/button/quick_hover_background.png') at 0x000000000500fb80>:
-  File "game/chapterone.rpy", line 273, in script
-    call screen outfits_ui2
-  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-Exception: Screen outfits_ui2 is not known.
-
+While loading the script.
+UnboundLocalError: local variable 'lastfn' referenced before assignment
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/chapterone.rpy", line 273, in script
-    call screen outfits_ui2
-  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1980, in execute
-    self.call("execute")
-  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\ast.py", line 1959, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\statements.py", line 374, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\exports\statementexports.py", line 331, in call_screen
-    renpy.exports.show_screen(_screen_name, *args, _transient=True, **kwargs)
-  File "C:\Users\hhall\Documents\apps\Setups\renpy-8.2.3-sdk\renpy\display\screen.py", line 1325, in show_screen
-    raise Exception("Screen %s is not known.\n" % (name[0],))
-Exception: Screen outfits_ui2 is not known.
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/main.py", line 470, in main
+    renpy.game.script.load_script() # sets renpy.game.script.
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/script.py", line 359, in load_script
+    self.load_appropriate_file(".rpyc", [ "_ren.py", ".rpy" ], dir, fn, initcode)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/script.py", line 949, in load_appropriate_file
+    raise Exception("Could not load file %s." % lastfn) # type: ignore
+UnboundLocalError: local variable 'lastfn' referenced before assignment
 
-
-Windows-10-10.0.26100 AMD64
+macOS-15.0.1-arm64-arm-64bit arm64
 Ren'Py 8.3.4.24120703
 Chic Boutique 1.0
-Sun May 18 02:42:55 2025
+Mon May 19 18:38:42 2025
