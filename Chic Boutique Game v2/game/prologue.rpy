@@ -246,7 +246,7 @@ style outfit_scrollbar:#scrollbar style
 #define outfit button currently it uses the confirm outfit button art
 screen ViewOutfitButton():
     imagebutton:
-        auto "Minigame/done_%s.png"#image
+        auto "Minigame/clothes_%s.png"#image
         align (0.98, 0.02)#Allign to top right
         action ShowMenu("ViewOutfitMenu")#show view outfit screen on click
 
@@ -262,7 +262,7 @@ screen ViewOutfitMenu():
         yanchor 0.0
     #back button
     imagebutton:
-        auto "Minigame/done_%s.png"#image
+        auto "Minigame/clothes_%s.png"#image
         align (0.98, 0.02)#align to top right
         action Return()#return to game
 
