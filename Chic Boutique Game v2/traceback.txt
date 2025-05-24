@@ -1,24 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/prologue.rpy", line 1473, in script
-    riya "Of course you got lost already. I started last year, Music major. I drag my bandmates with me everywhere, and we play shows around here. You’ve gotta come see us sometime!"
-Exception: Sayer 'riya' is not defined.
+While loading the script.
+UnboundLocalError: local variable 'lastfn' referenced before assignment
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/prologue.rpy", line 1473, in script
-    riya "Of course you got lost already. I started last year, Music major. I drag my bandmates with me everywhere, and we play shows around here. You’ve gotta come see us sometime!"
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/ast.py", line 2579, in execute
-    Say.execute(self)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/ast.py", line 581, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/ast.py", line 470, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'riya' is not defined.
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/main.py", line 470, in main
+    renpy.game.script.load_script() # sets renpy.game.script.
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/script.py", line 359, in load_script
+    self.load_appropriate_file(".rpyc", [ "_ren.py", ".rpy" ], dir, fn, initcode)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/script.py", line 949, in load_appropriate_file
+    raise Exception("Could not load file %s." % lastfn) # type: ignore
+UnboundLocalError: local variable 'lastfn' referenced before assignment
 
 macOS-15.0.1-arm64-arm-64bit arm64
 Ren'Py 8.3.4.24120703
 Chic Boutique 1.0
-Mon May 19 19:29:09 2025
+Fri May 23 20:07:59 2025

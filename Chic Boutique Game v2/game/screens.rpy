@@ -246,7 +246,7 @@ screen quick_menu():
         hbox:
             style_prefix "quick"
 
-            xalign 0.80
+            xalign 0.85
             yalign 0.975
 
             textbutton _("Save") action ShowMenu('save')
