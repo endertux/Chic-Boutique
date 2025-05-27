@@ -105,7 +105,7 @@ screen shoe3 zorder 1:
 #Start button
 screen outfits:
     image "Minigame/startmenu.png"
-    imagebutton auto "Minigame/start_%s.png" align(0.5, 0.45) action [Show("outfits_ui"), Show("MC_Base"), Show("top0"), Show("bottom0")]
+    imagebutton auto "Minigame/start_%s.png" align(0.53, 0.45) action [Show("outfits_ui"), Show("MC_Base"), Show("top0"), Show("bottom0")]
 #Minigame
 
 define gui.scrollbar_size = 24

@@ -39,4 +39,4 @@ Exception: Couldn't find a place to stop rolling back. Perhaps the script change
 macOS-15.0.1-arm64-arm-64bit arm64
 Ren'Py 8.3.4.24120703
 Chic Boutique 1.0
-Mon May 26 18:52:38 2025
+Mon May 26 19:11:35 2025
