@@ -38,26 +38,81 @@ screen MC_Base:
         xpos 300
         ypos 0
 
-# Tops Define
+# Tops Define -- Tops Define -- Tops Define -- Tops Define -- Tops Define -- Tops Define -- Tops Define
+
+# (1T)-- Felix Top 1, second dressup
 screen top0 zorder 2:
     image "Assets/Top_1.png":
         xpos 300
         ypos 0
 
+# (2T)-- Regular Top, first dressup
 screen top1 zorder 2:
     image "Assets/Top_2.png":
         xpos 300
         ypos 0
 
+# (3T)-- Regular Top, first dressup
 screen top2 zorder 3:
     image "Assets/Top_3.png":
         xpos 300
         ypos 0
 
+# (4T)-- Riya Top 1, second dressup
 screen top3 zorder 4:
     image "Assets/Top_4.png":
         xpos 300
         ypos 0
+
+# (5T)-- Regular Top, first dressup
+screen top4 zorder 4:
+    image "Assets/Top_5.png":
+        xpos 300
+        ypos 0
+
+# (6T)-- Addie Top 1, second dressup
+screen top5 zorder 4:
+    image "Assets/Top_6.png":
+        xpos 300
+        ypos 0
+
+# (7T)-- Riya Top 2, second dressup
+screen top6 zorder 4:
+    image "Assets/rTop_7.png":
+        xpos 300
+        ypos 0
+
+# (8T)-- Addie Top 1, second dressup
+screen top7 zorder 4:
+    image "Assets/aTop_8.png":
+        xpos 300
+        ypos 0
+
+# (9T)-- Regular Top, first dressup
+screen top8 zorder 4:
+    image "Assets/Top_9.png":
+        xpos 300
+        ypos 0
+
+# (10T)-- Regular Top, first dressup
+screen top9 zorder 4:
+    image "Assets/Top_10.png":
+        xpos 300
+        ypos 0
+
+# (11T)-- Regular Top, first dressup
+screen top10 zorder 4:
+    image "Assets/Top_11.png":
+        xpos 300
+        ypos 0
+
+# (12T)-- Felix Top 1, second dressup
+screen top11 zorder 4:
+    image "Assets/fTop_12.png":
+        xpos 300
+        ypos 0
+
+
 
 # Pants Define
 screen bottom0 zorder 3:
@@ -105,14 +160,14 @@ screen shoe3 zorder 1:
 #Start button
 screen outfits:
     image "Minigame/startmenu.png"
-    imagebutton auto "Minigame/start_%s.png" align(0.53, 0.45) action [Show("outfits_ui"), Show("MC_Base"), Show("top0"), Show("bottom0")]
+    imagebutton auto "Minigame/start_%s.png" align(0.5, 0.45) action [Show("outfits_ui"), Show("MC_Base"), Show("top8"), Show("bottom0")]
 #Minigame
 
 define gui.scrollbar_size = 24
 
 init python:
     #an array of the items the player ownes, these are the unique names of the clothing items, just add an item to the list to give it to the player
-    owned_outfits = ["top0", "top1", "top2", "top3", "bottom0", "bottom1", "bottom2", "bottom3", "shoe0", "shoe1", "shoe2", "shoe3"]
+    owned_outfits = ["top8", "top1", "top2", "top3", "bottom0", "bottom1", "bottom2", "bottom3", "shoe0", "shoe1", "shoe2", "shoe3"]
 
 
     #adding new outfit options:
@@ -129,7 +184,7 @@ init python:
     #an array of clothing buttons(outfits are organised in groups of three items, the order is top, bottom, shoe. this order is required for the code to work)
     outfit_buttons = [ #outfit buttons (path of normal clothing, path of lock clothing image, type (top, bottom, shoe), showname, item id number (saved clothing item number), offsetx, offsety)
         #prologue outfits
-        ("Assets/Top_1_%s.png", "Assets/Top_1_%s.png",    "top",   "top0", 0, -40, 0),
+        ("Assets/Top_9_%s.png", "Assets/Top_9_%s.png",    "top",   "top8", 0, -20, 60),
         ("Assets/Bottom_1_%s.png", "Assets/Bottom_1_%s.png", "bottom", "bottom0", 0, -20, 40),
         ("Assets/Shoe_1_%s.png", "Assets/Shoe_1_%s.png",   "shoe",   "shoe0", 0, 0, 200),
 
@@ -147,7 +202,7 @@ init python:
 
 
         #TEST OUTFITS, these are chapter one outfits that are here to show the scroll bar
-        ("Assets/Top_5_%s.png", "Assets/Top_5_%s.png",    "top",   "top0", 0,     -20, 30),
+        ("Assets/Top_5_%s.png", "Assets/Top_5_%s.png",    "top",   "top8", 0,     -20, 30),
         ("Assets/Bottom_5_%s.png", "Assets/Bottom_5_%s.png", "bottom", "bottom0", 0, -20, 40),
         ("Assets/Shoe_5_%s.png", "Assets/Shoe_5_%s.png",   "shoe",   "shoe0", 0,   0, 200),
 
@@ -287,7 +342,7 @@ layeredimage Player:
         attribute 0 default:
             Null()
     if top == 0:
-        "Assets/Top_1.png"
+        "Assets/Top_8.png"
     if top == 1:
         "Assets/Top_2.png"
     if top == 2:
@@ -326,6 +381,7 @@ label instructions:
     hide screen top2
     hide screen top3
     hide screen top4
+    hide screen top8
     hide screen bottom0
     hide screen bottom1
     hide screen bottom2
