@@ -290,6 +290,7 @@ label dress:
     call screen outfits_ui2
 
 label instructions2:
+    $quick_menu = True
     #instantly set scene so fade below works (without this the fade would start from the bedroom)
     scene bg
     with None
