@@ -287,52 +287,64 @@ screen navigation():
         style_prefix "navigation"
 
         if renpy.get_screen("main_menu"):
-
-            xalign 0.90
-            yalign 0.6
+            xalign 0.91
+            yalign 0.55
         else:
             xoffset 60
             yalign 0.5
-
 
         spacing gui.navigation_spacing
 
         if main_menu:
 
-            textbutton _("Start") action Start()
+            imagebutton:
+                auto "menuUI/start_%s.png"
+                action Start()
+                size_group "main_menu"
+
+            imagebutton:
+                auto "menuUI/load_%s.png"
+                action ShowMenu("load")
+                size_group "main_menu"
+
+            imagebutton:
+                auto "menuUI/options_%s.png"
+                action ShowMenu("preferences")
+                size_group "main_menu"
+
+            imagebutton:
+                auto "menuUI/about_%s.png"
+                action ShowMenu("about")
+                size_group "main_menu"
+
+            imagebutton:
+                auto "menuUI/help_%s.png"
+                action ShowMenu("help")
+                size_group "main_menu"
+
+            imagebutton:
+                auto "menuUI/quit_%s.png"
+                action Quit(confirm=True)
+                size_group "main_menu"
 
         else:
-
             textbutton _("History") action ShowMenu("history")
-
             textbutton _("Back") action ShowMenu("back")
-
             textbutton _("Save") action ShowMenu("save")
+            textbutton _("Options") action ShowMenu("preferences")
 
-        textbutton _("Load") action ShowMenu("load")
+            if _in_replay:
+                textbutton _("End Replay") action EndReplay(confirm=True)
+            else:
+                textbutton _("Main Menu") action MainMenu()
 
-        textbutton _("Options") action ShowMenu("preferences")
+            textbutton _("About") action ShowMenu("about")
 
-        if _in_replay:
+            if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+                textbutton _("Help") action ShowMenu("help")
 
-            textbutton _("End Replay") action EndReplay(confirm=True)
-
-        elif not main_menu:
-
-            textbutton _("Main Menu") action MainMenu()
-
-        textbutton _("About") action ShowMenu("about")
-
-        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
-
-            ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
-
-        if renpy.variant("pc"):
-
-            ## The quit button is banned on iOS and unnecessary on Android and
-            ## Web.
-            textbutton _("Quit") action Quit(confirm=not main_menu)
+            if renpy.variant("pc"):
+                textbutton _("Quit") action Quit(confirm=True)
 
 
 style navigation_button is gui_button
