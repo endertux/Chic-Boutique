@@ -156,6 +156,9 @@ screen shoe3 zorder 1:
         xpos 300
         ypos 0
 
+
+
+
 #Dress up menu screen
 #Start button
 screen outfits:
