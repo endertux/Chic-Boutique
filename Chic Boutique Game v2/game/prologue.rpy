@@ -255,7 +255,7 @@ init python:
         ("Assets/Shoe_3_%s.png", "Assets/Shoe_3_%s.png",   "shoe",   "shoe2", 2, 0, 200),
 
         ("Assets/Top_4_%s.png", "Assets/Top_4_%s.png",    "top",   "top3", 3, 0, 60),
-        ("Assets/Bottom_8_%s.png", "Assets/Bottom_8_%s.png", "bottom", "bottom7", 3, 0, 50),
+        ("Assets/Bottom_9_%s.png", "Assets/Bottom_9_%s.png", "bottom", "bottom7", 3, 0, 50),
         ("Assets/Shoe_4_%s.png", "Assets/Shoe_4_%s.png",   "shoe",   "shoe3", 3, 0, 200),
 
 
