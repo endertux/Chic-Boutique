@@ -19,7 +19,7 @@ default top = 0
 #saved outfit for the first outfit choosing scene. They are copies of bottom, shoe, and top where the current outfit is stored
 default firstBottom = 0
 default firstShoe = 0
-default FirstTop = 0
+default firstTop = 0
 
 define mc = Character("[povname]")
 define anon = Character("???")
@@ -311,8 +311,10 @@ layeredimage Player:
 #################### Gameplay: Prologue #######################
 ###############################################################
 label start:
+    $quick_menu = False
 call screen outfits
 label instructions:
+    $quick_menu = True
     scene bg with dissolve
 
     hide screen outfits
@@ -1968,6 +1970,7 @@ label path:
     mc "No, but what choice do I have?"
     
     show bsf speak
+    $quick_menu = False
     #😭
     jump dress
     with fade
