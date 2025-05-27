@@ -225,7 +225,7 @@ define gui.scrollbar_size = 24
 
 init python:
     #an array of the items the player ownes, these are the unique names of the clothing items, just add an item to the list to give it to the player
-    owned_outfits = ["top8", "top1", "top2", "top3", "bottom4", "bottom1", "bottom6", "bottom7", "bottom8", "bottom11", "shoe0", "shoe1", "shoe2", "shoe3"]
+    owned_outfits = ["top8", "top1", "top2", "top4", "top8", "top9", "top10", "bottom4", "bottom1", "bottom6", "bottom7", "bottom8", "bottom11", "shoe0", "shoe1", "shoe2", "shoe3"]
 
 
     #adding new outfit options:
@@ -254,19 +254,19 @@ init python:
         ("Assets/Bottom_8_%s.png", "Assets/Bottom_8_%s.png", "bottom", "bottom6", 2, 0, 50),
         ("Assets/Shoe_3_%s.png", "Assets/Shoe_3_%s.png",   "shoe",   "shoe2", 2, 0, 200),
 
-        ("Assets/Top_4_%s.png", "Assets/Top_4_%s.png",    "top",   "top3", 3, 0, 60),
-        ("Assets/Bottom_9_%s.png", "Assets/Bottom_9_%s.png", "bottom", "bottom7", 3, 0, 50),
+        ("Assets/Top_5_%s.png", "Assets/Top_5_%s.png",    "top",   "top4", 3, 0, 60),
+        ("Assets/Bottom_9_%s.png", "Assets/Bottom_9_%s.png", "bottom", "bottom7", 3, 0, 40),
         ("Assets/Shoe_4_%s.png", "Assets/Shoe_4_%s.png",   "shoe",   "shoe3", 3, 0, 200),
 
 
         #TEST OUTFITS, these are chapter one outfits that are here to show the scroll bar
-        ("Assets/Top_5_%s.png", "Assets/Top_5_%s.png",    "top",   "top8", 0,     -20, 30),
+        ("Assets/Top_10_%s.png", "Assets/Top_10_%s.png",    "top",   "top9", 0, -20, 30),
         ("Assets/Bottom_10_%s.png", "Assets/Bottom_10_%s.png", "bottom", "bottom8", 0, -20, 40),
         ("Assets/Shoe_5_%s.png", "Assets/Shoe_5_%s.png",   "shoe",   "shoe0", 0,   0, 200),
 
-        #("Assets/Top_5_%s.png", "Assets/Top_5_%s.png",    "top",   "top8", 0,     -20, 30),
-        #("Assets/Bottom_13_%s.png", "Assets/Bottom_13_%s.png", "bottom", "bottom11", 0, -20, 40),
-        #("Assets/Shoe_5_%s.png", "Assets/Shoe_5_%s.png",   "shoe",   "shoe0", 0,   0, 200),
+        ("Assets/Top_11_%s.png", "Assets/Top_11_%s.png",    "top",   "top10", 0, -20, 30),
+        ("Assets/Bottom_13_%s.png", "Assets/Bottom_13_%s.png", "bottom", "bottom11", 0, -20, 40),
+        ("Assets/Shoe_1_%s.png", "Assets/Shoe_1_%s.png",   "shoe",   "shoe0", 0, 0, 200),
 
         #("Assets/Top_6_%s.png", "Assets/Top_6_%s.png",    "top",   "top1", 1,     0, 40),
         #("Assets/Bottom_6_%s.png", "Assets/Bottom_6_%s.png", "bottom", "bottom1", 1, 0, 50),
@@ -403,16 +403,32 @@ layeredimage Player:
 
 
     group top:
-        attribute 0 default:
+        attribute 8 default:
             Null()
     if top == 0:
-        "Assets/Top_8.png"
+        "Assets/Top_1.png"
     if top == 1:
         "Assets/Top_2.png"
     if top == 2:
         "Assets/Top_3.png"
     if top == 3:
         "Assets/Top_4.png"
+    if top == 4:
+        "Assets/Top_5.png"
+    if top == 5:
+        "Assets/aTop_6.png"
+    if top == 6:
+        "Assets/rTop_7.png"
+    if top == 7:
+        "Assets/aTop_8.png"
+    if top == 8:
+        "Assets/Top_9.png"
+    if top == 9:
+        "Assets/Top_10.png"
+    if top == 10:
+        "Assets/Top_11.png"
+    if top == 11:
+        "Assets/fTop_12.png"
 
     group bottom:
         attribute 4 default:
@@ -456,12 +472,22 @@ label instructions:
     hide screen outfits_ui
 
     hide screen MC_Base
+
+    #hide screen tops
     hide screen top0
     hide screen top1
     hide screen top2
     hide screen top3
     hide screen top4
+    hide screen top5
+    hide screen top6
+    hide screen top7
     hide screen top8
+    hide screen top9
+    hide screen top10
+    hide screen top11
+
+    #hide sceen bottoms
     hide screen bottom0
     hide screen bottom1
     hide screen bottom2
@@ -474,6 +500,8 @@ label instructions:
     hide screen bottom9
     hide screen bottom10
     hide screen bottom11
+
+    #hide screen shoes
     hide screen shoe0
     hide screen shoe1
     hide screen shoe2
