@@ -299,7 +299,7 @@ init python:
 screen outfits_ui:
     image "Backgrounds/classroom bg.jpg"
     image "Minigame/ui_base.png" align(1.1, 1.0) size (1300, 1100)
-    imagebutton auto "Minigame/done_%s.png" align(0.02, 0.95) action Jump("instructions")
+    imagebutton auto "Minigame/done_%s.png" align(0.02, 0.97) action Jump("instructions")
     
     fixed:
         #align the outfit window on screen
@@ -743,7 +743,7 @@ label instructions:
 
         show Player:
             xpos 0.01
-            ypos 0.07
+            ypos 0.25
 
         # Suprised Face
         mc "The world is so mind-bending… I feel like I’m getting sucked into the painting just by looking at it."
@@ -1034,7 +1034,7 @@ label garden:
 
     show Player:
         xpos 0.01
-        ypos 0.07
+        ypos 0.35
     with dissolve
 
     # Surprised Face
@@ -1055,10 +1055,6 @@ label garden:
 
     "?"
     #ADDIE SPRITE
-    show Player:
-        xpos 0.01
-        ypos 0.07
-    with dissolve
     #should be kind of far away on the screen
 
     # Confused Face
@@ -1066,7 +1062,7 @@ label garden:
 
     show baddie small:
         xpos 0.75
-        ypos 0.3
+        ypos 0.35
     with dissolve
 
     anon "Yes, you! Cutie with the cute fit! You dropped your map!"
@@ -1387,13 +1383,10 @@ label garden:
 
     # neutral happy face
     mc "Thank you so much! For everything. I’ll see you around then!"
-      
-    show baddie big at Move((0.33, 0), (0.8, 0), 2.0)
-    pause 1.3
-    show baddie big at Alpha(1.0, 0.0, 1.0)
 
     Addie "See ya!"
-
+    
+    hide baddie with fade
     #RUNNING SOUND
     #ADDIE SPRITE HIDE
 
@@ -1437,8 +1430,10 @@ label field:
 
     #KYLE SPRITE
 
-    show gymbro normal
-    with dissolve 
+    show gymbro normal:
+        xpos 0.32
+        ypos 0.15
+    with dissolve
 
     # yelling face
     #(Kyle)
@@ -1812,17 +1807,17 @@ label path:
     "Should I do it?"
 
     # concerned face
-    ra "Um…"
+    anon "Um…"
 
     "?"
-    show Player:
+    show Player with fade:
         xpos 0.01
         ypos 0.6
 
     #ra SPRITE
-    show ra normal:
-        xpos 0.70
-        ypos 0.4
+    show ra normal with dissolve:
+        xpos 0.38
+        ypos 0.20
 
     # distressed face
     mc "I’m sorry, I should’ve checked in before using the lounge!"
@@ -1998,11 +1993,9 @@ label path:
 
     show bsf speak
     Nadia "Oh, for sure. Maybe I’ll see you at movie night!"
-
-    show bsf normal at Move((0.35, 0), (0.7  , 0), 2.0)
-    pause 1.2
-    show bsf normal at Alpha(1.0, 0.0, 1.0)
-
+    
+    hide bsf with fade
+    
     # confused face
     mc "Movie n-"
 

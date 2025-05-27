@@ -2,4 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 320: Line is indented, but the preceding size_group statement does not expect a block. Please check this line's indentation. You may have 
+File "game/prologue.rpy", line 1822: show statement expects a non-empty block.
+    show ra normal:
+                   ^
+
+Ren'Py Version: Ren'Py 8.3.4.24120703
+Tue May 27 14:01:30 2025

@@ -1,16 +1,16 @@
-renpy.geometry renpy.imagedissolve
-renpy.dissolve renpy.geometry
-renpy.geometry renpy.solid
-<<<<<<< HEAD
-renpy.ftl
-renpy.geometry renpy.texture
 renpy.imagedissolve renpy.imagedissolve
-=======
-renpy.dissolve renpy.dissolve
->>>>>>> parent of 4bba978 (New Main Menu & Dialogue Box)
-renpy.alpha renpy.texture
-renpy.matrixcolor renpy.texture
-renpy.geometry renpy.matrixcolor renpy.texture
-renpy.solid
-renpy.alpha renpy.geometry renpy.texture
+renpy.geometry renpy.solid
 renpy.texture
+<<<<<<< HEAD
+renpy.dissolve renpy.geometry
+renpy.matrixcolor renpy.texture
+renpy.ftl
+renpy.geometry renpy.imagedissolve
+>>>>>>> parent of 4bba978 (New Main Menu & Dialogue Box)
+renpy.geometry renpy.texture
+renpy.geometry renpy.matrixcolor renpy.texture
+renpy.alpha renpy.geometry renpy.texture
+renpy.alpha renpy.texture
+renpy.dissolve renpy.dissolve
+renpy.solid
+=======

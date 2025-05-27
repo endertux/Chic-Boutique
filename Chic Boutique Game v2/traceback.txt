@@ -1,26 +1,20 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/prologue.rpy", line 226, in script
-    init python:
-  File "game/prologue.rpy", line 269, in <module>
-    x("Assets/Shoe_1_%s.png", "Assets/Shoe_1_%s.png",   "shoe",   "shoe0", 0,   0, 200),
-NameError: name 'x' is not defined
+After initialization, but before game start.
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jennie/Documents/GitHub/Chic-Boutique/Chic Boutique Game v2/game/saves/navigation.json'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/prologue.rpy", line 226, in script
-    init python:
-  File "/Applications/renpy-8.2.3-sdk/renpy/ast.py", line 823, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "/Applications/renpy-8.2.3-sdk/renpy/python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/prologue.rpy", line 269, in <module>
-    x("Assets/Shoe_1_%s.png", "Assets/Shoe_1_%s.png",   "shoe",   "shoe0", 0,   0, 200),
-NameError: name 'x' is not defined
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/main.py", line 599, in main
+    renpy.dump.dump(False)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/dump.py", line 260, in dump
+    os.unlink(filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jennie/Documents/GitHub/Chic-Boutique/Chic Boutique Game v2/game/saves/navigation.json'
 
-macOS-13.5-arm64-arm-64bit arm64
-Ren'Py 8.2.3.24061702
+macOS-15.0.1-arm64-arm-64bit arm64
+Ren'Py 8.3.4.24120703
 Chic Boutique 1.0
-Tue May 27 01:14:48 2025
+Tue May 27 13:41:16 2025
