@@ -192,25 +192,83 @@ screen bottom11 zorder 3:
 
 
 # Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes
+# (1S)-- Addison Shoe 1, second dressup
 screen shoe0 zorder 1:
     image "Assets/Shoe_1.png":
         xpos 300
         ypos 0
 
+# (2S)-- Regular Shoe, first dressup
 screen shoe1 zorder 1:
     image "Assets/Shoe_2.png":
         xpos 300
         ypos 0
 
+# (3S)-- Regular Shoe, first dressup
 screen shoe2 zorder 1:
     image "Assets/Shoe_3.png":
         xpos 300
         ypos 0
 
+# (4S)-- Regular Shoe, first dressup
 screen shoe3 zorder 1:
     image "Assets/Shoe_4.png":
         xpos 300
         ypos 0
+
+# (5S)-- Felix Shoe 1, second dressup
+screen shoe4 zorder 1:
+    image "Assets/fShoe_5.png":
+        xpos 300
+        ypos 0
+
+# (6S)-- Addison Shoe 2, second dressup
+screen shoe5 zorder 1:
+    image "Assets/aShoe_6.png":
+        xpos 300
+        ypos 0
+
+# (7S)-- Riya Shoe 1, second dressup
+screen shoe6 zorder 1:
+    image "Assets/rShoe_7.png":
+        xpos 300
+        ypos 0
+
+# (8S)-- Riya Shoe 2, second dressup
+screen shoe7 zorder 1:
+    image "Assets/rShoe_8.png":
+        xpos 300
+        ypos 0
+
+# (9S)-- Regular Shoe, first dressup
+screen shoe8 zorder 1:
+    image "Assets/Shoe_9.png":
+        xpos 300
+        ypos 0
+
+# (10S)-- Regular Shoe, first dressup
+screen shoe9 zorder 1:
+    image "Assets/Shoe_10.png":
+        xpos 300
+        ypos 0
+
+# (11S)-- Felix Shoe 2, first dressup
+screen shoe10 zorder 1:
+    image "Assets/fShoe_11.png":
+        xpos 300
+        ypos 0
+
+# (10S)-- Regular Shoe, first dressup
+screen shoe11 zorder 1:
+    image "Assets/Shoe_12.png":
+        xpos 300
+        ypos 0
+
+
+
+
+
+
 
 
 
@@ -219,14 +277,14 @@ screen shoe3 zorder 1:
 #Start button
 screen outfits:
     image "Minigame/startmenu.png"
-    imagebutton auto "Minigame/start_%s.png" align(0.5, 0.45) action [Show("outfits_ui"), Show("MC_Base"), Show("top8"), Show("bottom4"), Show("shoe0")]
+    imagebutton auto "Minigame/start_%s.png" align(0.5, 0.45) action [Show("outfits_ui"), Show("MC_Base"), Show("top8"), Show("bottom4"), Show("shoe1")]
 #Minigame
 
 define gui.scrollbar_size = 24
 
 init python:
     #an array of the items the player ownes, these are the unique names of the clothing items, just add an item to the list to give it to the player
-    owned_outfits = ["top8", "top1", "top2", "top4", "top8", "top9", "top10", "bottom4", "bottom1", "bottom6", "bottom7", "bottom8", "bottom11", "shoe0", "shoe1", "shoe2", "shoe3"]
+    owned_outfits = ["top8", "top1", "top2", "top4", "top8", "top9", "top10", "bottom4", "bottom1", "bottom6", "bottom7", "bottom8", "bottom11", "shoe1", "shoe2", "shoe3", "shoe8", "shoe9", "shoe11"]
 
 
     #adding new outfit options:
@@ -245,29 +303,29 @@ init python:
         #prologue outfits
         ("Assets/Top_9_%s.png", "Assets/Top_9_%s.png",    "top",   "top8", 0, -20, 60),
         ("Assets/Bottom_5_%s.png", "Assets/Bottom_5_%s.png", "bottom", "bottom4", 0, -20, 40),
-        ("Assets/Shoe_1_%s.png", "Assets/Shoe_1_%s.png",   "shoe",   "shoe0", 0, 0, 200),
+        ("Assets/Shoe_2_%s.png", "Assets/Shoe_2_%s.png",   "shoe",   "shoe1", 0, 0, 200),
 
         ("Assets/Top_2_%s.png", "Assets/Top_2_%s.png",    "top",   "top1", 1, -20, -40),
         ("Assets/Bottom_2_%s.png", "Assets/Bottom_2_%s.png", "bottom", "bottom1", 1, 0, 50),
-        ("Assets/Shoe_2_%s.png", "Assets/Shoe_2_%s.png",   "shoe",   "shoe1", 1, 0, 200),
+        ("Assets/Shoe_3_%s.png", "Assets/Shoe_3_%s.png",   "shoe",   "shoe2", 1, 0, 200),
 
         ("Assets/Top_3_%s.png", "Assets/Top_3_%s.png",    "top",   "top2", 2, 0, 60),
         ("Assets/Bottom_8_%s.png", "Assets/Bottom_8_%s.png", "bottom", "bottom6", 2, 0, 50),
-        ("Assets/Shoe_3_%s.png", "Assets/Shoe_3_%s.png",   "shoe",   "shoe2", 2, 0, 200),
+        ("Assets/Shoe_4_%s.png", "Assets/Shoe_4_%s.png",   "shoe",   "shoe3", 2, 0, 200),
 
         ("Assets/Top_5_%s.png", "Assets/Top_5_%s.png",    "top",   "top4", 3, 0, 60),
         ("Assets/Bottom_9_%s.png", "Assets/Bottom_9_%s.png", "bottom", "bottom7", 3, 0, 40),
-        ("Assets/Shoe_4_%s.png", "Assets/Shoe_4_%s.png",   "shoe",   "shoe3", 3, 0, 200),
+        ("Assets/Shoe_9_%s.png", "Assets/Shoe_9_%s.png",   "shoe",   "shoe8", 3, 0, 100),
 
 
         #TEST OUTFITS, these are chapter one outfits that are here to show the scroll bar
         ("Assets/Top_10_%s.png", "Assets/Top_10_%s.png",    "top",   "top9", 0, -20, 30),
         ("Assets/Bottom_10_%s.png", "Assets/Bottom_10_%s.png", "bottom", "bottom8", 0, -20, 40),
-        ("Assets/Shoe_5_%s.png", "Assets/Shoe_5_%s.png",   "shoe",   "shoe0", 0,   0, 200),
+        ("Assets/Shoe_10_%s.png", "Assets/Shoe_10_%s.png",   "shoe",   "shoe9", 0,   0, 100),
 
         ("Assets/Top_11_%s.png", "Assets/Top_11_%s.png",    "top",   "top10", 0, -20, 30),
         ("Assets/Bottom_13_%s.png", "Assets/Bottom_13_%s.png", "bottom", "bottom11", 0, -20, 40),
-        ("Assets/Shoe_1_%s.png", "Assets/Shoe_1_%s.png",   "shoe",   "shoe0", 0, 0, 200),
+        ("Assets/Shoe_12_%s.png", "Assets/Shoe_12_%s.png",   "shoe",   "shoe11", 0, 0, 100),
 
         #("Assets/Top_6_%s.png", "Assets/Top_6_%s.png",    "top",   "top1", 1,     0, 40),
         #("Assets/Bottom_6_%s.png", "Assets/Bottom_6_%s.png", "bottom", "bottom1", 1, 0, 50),
