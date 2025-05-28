@@ -48,7 +48,7 @@ screen top0 zorder 2:
         ypos 0
 
 # (2T)-- Regular Top, first dressup
-screen top1 zorder 2:
+screen top1 zorder 4:
     image "Assets/Top_2.png":
         xpos 300
         ypos 0
@@ -219,7 +219,7 @@ screen shoe3 zorder 1:
 #Start button
 screen outfits:
     image "Minigame/startmenu.png"
-    imagebutton auto "Minigame/start_%s.png" align(0.5, 0.45) action [Show("outfits_ui"), Show("MC_Base"), Show("top8"), Show("bottom4")]
+    imagebutton auto "Minigame/start_%s.png" align(0.5, 0.45) action [Show("outfits_ui"), Show("MC_Base"), Show("top8"), Show("bottom4"), Show("shoe0")]
 #Minigame
 
 define gui.scrollbar_size = 24
@@ -368,7 +368,7 @@ screen ViewOutfitButton():
         align (0.98, 0.02)#Allign to top right
         action ShowMenu("ViewOutfitMenu")#show view outfit screen on click
 
-#defign view outfit screen
+#design view outfit screen
 screen ViewOutfitMenu():
     tag menu
     modal True
