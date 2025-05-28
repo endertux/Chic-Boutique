@@ -40,10 +40,9 @@ screen MC_Base:
         ypos 0
 
 # Tops Define -- Tops Define -- Tops Define -- Tops Define -- Tops Define -- Tops Define -- Tops Define
-
-# (1T)-- Felix Top 1, second dressup
-screen top0 zorder 2:
-    image "Assets/Top_1.png":
+# (1T)-- Regular Top, first dressup
+screen top0 zorder 4:
+    image "Assets/Top_9.png":
         xpos 300
         ypos 0
 
@@ -59,131 +58,60 @@ screen top2 zorder 3:
         xpos 300
         ypos 0
 
-# (4T)-- Riya Top 1, second dressup
+# (4T)-- Regular Top, first dressup
 screen top3 zorder 4:
-    image "Assets/Top_4.png":
+    image "Assets/Top_5.png":
         xpos 300
         ypos 0
 
 # (5T)-- Regular Top, first dressup
 screen top4 zorder 4:
-    image "Assets/Top_5.png":
-        xpos 300
-        ypos 0
-
-# (6T)-- Addie Top 1, second dressup
-screen top5 zorder 4:
-    image "Assets/Top_6.png":
-        xpos 300
-        ypos 0
-
-# (7T)-- Riya Top 2, second dressup
-screen top6 zorder 4:
-    image "Assets/rTop_7.png":
-        xpos 300
-        ypos 0
-
-# (8T)-- Addie Top 1, second dressup
-screen top7 zorder 4:
-    image "Assets/aTop_8.png":
-        xpos 300
-        ypos 0
-
-# (9T)-- Regular Top, first dressup
-screen top8 zorder 4:
-    image "Assets/Top_9.png":
-        xpos 300
-        ypos 0
-
-# (10T)-- Regular Top, first dressup
-screen top9 zorder 4:
     image "Assets/Top_10.png":
         xpos 300
         ypos 0
 
-# (11T)-- Regular Top, first dressup
-screen top10 zorder 4:
+# (6T)-- Regular Top, first dressup
+screen top5 zorder 4:
     image "Assets/Top_11.png":
         xpos 300
         ypos 0
 
-# (12T)-- Felix Top 1, second dressup
-screen top11 zorder 4:
-    image "Assets/fTop_12.png":
-        xpos 300
-        ypos 0
 
 
 
 # Pants Define -- Pants Define -- Pants Define -- Pants Define -- Pants Define -- Pants Define -- Pants Define -- Pants Define
-# (1B)-- Addison Bottom 1, second dressup
+# (1B)-- Regular Bottom, first dressup
 screen bottom0 zorder 3:
-    image "Assets/Bottom_1.png":
+    image "Assets/Bottom_2.png":
         xpos 300
         ypos 0
 
 # (2B)-- Regular Bottom, first dressup
 screen bottom1 zorder 3:
-    image "Assets/Bottom_2.png":
+    image "Assets/Bottom_5.png":
         xpos 300
         ypos 0
 
-# (3B)-- Felix Bottom 1, first dressup
+# (3B)-- Regular Bottom, first dressup
 screen bottom2 zorder 3:
-    image "Assets/Bottom_3.png":
+    image "Assets/Bottom_8.png":
         xpos 300
         ypos 0
 
-# (4B)-- Riya Bottom 1, first dressup
+# (4B)-- Regular Bottom, first dressup
 screen bottom3 zorder 3:
-    image "Assets/Bottom_4.png":
+    image "Assets/Bottom_9.png":
         xpos 300
         ypos 0
 
 # (5B)-- Regular Bottom, first dressup
 screen bottom4 zorder 3:
-    image "Assets/Bottom_5.png":
-        xpos 300
-        ypos 0
-
-# (6B)-- Addison Bottom 2, second dressup
-screen bottom5 zorder 3:
-    image "Assets/aBottom_7.png":
-        xpos 300
-        ypos 0
-
-# (7B)-- Regular Bottom, first dressup
-screen bottom6 zorder 3:
-    image "Assets/Bottom_8.png":
-        xpos 300
-        ypos 0
-
-# (8B)-- Regular Bottom, first dressup
-screen bottom7 zorder 3:
-    image "Assets/Bottom_9.png":
-        xpos 300
-        ypos 0
-
-# (9B)-- Regular Bottom, first dressup
-screen bottom8 zorder 3:
     image "Assets/Bottom_10.png":
         xpos 300
         ypos 0
 
-# (10B)-- Riya Bottom 2, second dressup
-screen bottom9 zorder 3:
-    image "Assets/rBottom_11.png":
-        xpos 300
-        ypos 0
-
-# (11B)-- Felix Bottom 2, second dressup
-screen bottom10 zorder 3:
-    image "Assets/fBottom_12.png":
-        xpos 300
-        ypos 0
-
-# (12B)-- Regular Bottom, first dressup
-screen bottom11 zorder 3:
+# (6B)-- Regular Bottom, first dressup
+screen bottom5 zorder 3:
     image "Assets/Bottom_13.png":
         xpos 300
         ypos 0
@@ -192,99 +120,54 @@ screen bottom11 zorder 3:
 
 
 # Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes
-# (1S)-- Addison Shoe 1, second dressup
+# (1S)-- Regular Shoe, first dressup
 screen shoe0 zorder 1:
-    image "Assets/Shoe_1.png":
+    image "Assets/Shoe_2.png":
         xpos 300
         ypos 0
 
 # (2S)-- Regular Shoe, first dressup
 screen shoe1 zorder 1:
-    image "Assets/Shoe_2.png":
+    image "Assets/Shoe_3.png":
         xpos 300
         ypos 0
 
 # (3S)-- Regular Shoe, first dressup
 screen shoe2 zorder 1:
-    image "Assets/Shoe_3.png":
+    image "Assets/Shoe_4.png":
         xpos 300
         ypos 0
 
 # (4S)-- Regular Shoe, first dressup
 screen shoe3 zorder 1:
-    image "Assets/Shoe_4.png":
-        xpos 300
-        ypos 0
-
-# (5S)-- Felix Shoe 1, second dressup
-screen shoe4 zorder 1:
-    image "Assets/fShoe_5.png":
-        xpos 300
-        ypos 0
-
-# (6S)-- Addison Shoe 2, second dressup
-screen shoe5 zorder 1:
-    image "Assets/aShoe_6.png":
-        xpos 300
-        ypos 0
-
-# (7S)-- Riya Shoe 1, second dressup
-screen shoe6 zorder 1:
-    image "Assets/rShoe_7.png":
-        xpos 300
-        ypos 0
-
-# (8S)-- Riya Shoe 2, second dressup
-screen shoe7 zorder 1:
-    image "Assets/rShoe_8.png":
-        xpos 300
-        ypos 0
-
-# (9S)-- Regular Shoe, first dressup
-screen shoe8 zorder 1:
     image "Assets/Shoe_9.png":
         xpos 300
         ypos 0
 
-# (10S)-- Regular Shoe, first dressup
-screen shoe9 zorder 1:
+# (5S)-- Regular Shoe, first dressup
+screen shoe4 zorder 1:
     image "Assets/Shoe_10.png":
         xpos 300
         ypos 0
 
-# (11S)-- Felix Shoe 2, first dressup
-screen shoe10 zorder 1:
-    image "Assets/fShoe_11.png":
-        xpos 300
-        ypos 0
-
 # (10S)-- Regular Shoe, first dressup
-screen shoe11 zorder 1:
+screen shoe5 zorder 1:
     image "Assets/Shoe_12.png":
         xpos 300
         ypos 0
-
-
-
-
-
-
-
-
-
 
 #Dress up menu screen
 #Start button
 screen outfits:
     image "Minigame/startmenu.png"
-    imagebutton auto "Minigame/start_%s.png" align(0.5, 0.45) action [Show("outfits_ui"), Show("MC_Base"), Show("top8"), Show("bottom4"), Show("shoe1")]
+    imagebutton auto "Minigame/start_%s.png" align(0.5, 0.45) action [Show("outfits_ui"), Show("MC_Base"), Show("top0"), Show("bottom0"), Show("shoe0")]
 #Minigame
 
 define gui.scrollbar_size = 24
 
 init python:
     #an array of the items the player ownes, these are the unique names of the clothing items, just add an item to the list to give it to the player
-    owned_outfits = ["top8", "top1", "top2", "top4", "top8", "top9", "top10", "bottom4", "bottom1", "bottom6", "bottom7", "bottom8", "bottom11", "shoe1", "shoe2", "shoe3", "shoe8", "shoe9", "shoe11"]
+    owned_outfits = ["top0", "top1", "top2", "top3", "top4", "top5", "bottom0", "bottom1", "bottom2", "bottom3", "bottom4", "bottom5", "shoe0", "shoe1", "shoe2", "shoe3", "shoe4", "shoe5"]
 
 
     #adding new outfit options:
@@ -301,31 +184,31 @@ init python:
     #an array of clothing buttons(outfits are organised in groups of three items, the order is top, bottom, shoe. this order is required for the code to work)
     outfit_buttons = [ #outfit buttons (path of normal clothing, path of lock clothing image, type (top, bottom, shoe), showname, item id number (saved clothing item number), offsetx, offsety)
         #prologue outfits
-        ("Assets/Top_9_%s.png", "Assets/Top_9_%s.png",    "top",   "top8", 0, -20, 60),
-        ("Assets/Bottom_5_%s.png", "Assets/Bottom_5_%s.png", "bottom", "bottom4", 0, -20, 40),
-        ("Assets/Shoe_2_%s.png", "Assets/Shoe_2_%s.png",   "shoe",   "shoe1", 0, 0, 200),
+        ("Assets/Top_9_%s.png", "Assets/Top_9_%s.png",    "top",   "top0", 0, -20, 60),
+        ("Assets/Bottom_2_%s.png", "Assets/Bottom_2_%s.png", "bottom", "bottom0", 0, -20, 40),
+        ("Assets/Shoe_2_%s.png", "Assets/Shoe_2_%s.png",   "shoe",   "shoe0", 0, 0, 200),
 
         ("Assets/Top_2_%s.png", "Assets/Top_2_%s.png",    "top",   "top1", 1, -20, -40),
-        ("Assets/Bottom_2_%s.png", "Assets/Bottom_2_%s.png", "bottom", "bottom1", 1, 0, 50),
-        ("Assets/Shoe_3_%s.png", "Assets/Shoe_3_%s.png",   "shoe",   "shoe2", 1, 0, 200),
+        ("Assets/Bottom_5_%s.png", "Assets/Bottom_5_%s.png", "bottom", "bottom1", 1, 0, 50),
+        ("Assets/Shoe_3_%s.png", "Assets/Shoe_3_%s.png",   "shoe",   "shoe1", 1, 0, 200),
 
         ("Assets/Top_3_%s.png", "Assets/Top_3_%s.png",    "top",   "top2", 2, 0, 60),
-        ("Assets/Bottom_8_%s.png", "Assets/Bottom_8_%s.png", "bottom", "bottom6", 2, 0, 50),
-        ("Assets/Shoe_4_%s.png", "Assets/Shoe_4_%s.png",   "shoe",   "shoe3", 2, 0, 200),
+        ("Assets/Bottom_8_%s.png", "Assets/Bottom_8_%s.png", "bottom", "bottom2", 2, 0, 50),
+        ("Assets/Shoe_4_%s.png", "Assets/Shoe_4_%s.png",   "shoe",   "shoe2", 2, 0, 200),
 
-        ("Assets/Top_5_%s.png", "Assets/Top_5_%s.png",    "top",   "top4", 3, 0, 60),
-        ("Assets/Bottom_9_%s.png", "Assets/Bottom_9_%s.png", "bottom", "bottom7", 3, 0, 40),
-        ("Assets/Shoe_9_%s.png", "Assets/Shoe_9_%s.png",   "shoe",   "shoe8", 3, 0, 100),
+        ("Assets/Top_5_%s.png", "Assets/Top_5_%s.png",    "top",   "top3", 3, 0, 60),
+        ("Assets/Bottom_9_%s.png", "Assets/Bottom_9_%s.png", "bottom", "bottom3", 3, 0, 40),
+        ("Assets/Shoe_9_%s.png", "Assets/Shoe_9_%s.png",   "shoe",   "shoe3", 3, 0, 100),
 
 
         #TEST OUTFITS, these are chapter one outfits that are here to show the scroll bar
-        ("Assets/Top_10_%s.png", "Assets/Top_10_%s.png",    "top",   "top9", 0, -20, 30),
-        ("Assets/Bottom_10_%s.png", "Assets/Bottom_10_%s.png", "bottom", "bottom8", 0, -20, 40),
-        ("Assets/Shoe_10_%s.png", "Assets/Shoe_10_%s.png",   "shoe",   "shoe9", 0,   0, 100),
+        ("Assets/Top_10_%s.png", "Assets/Top_10_%s.png",    "top",   "top4", 0, -20, 30),
+        ("Assets/Bottom_10_%s.png", "Assets/Bottom_10_%s.png", "bottom", "bottom4", 0, -20, 40),
+        ("Assets/Shoe_10_%s.png", "Assets/Shoe_10_%s.png",   "shoe",   "shoe4", 0,   0, 100),
 
-        ("Assets/Top_11_%s.png", "Assets/Top_11_%s.png",    "top",   "top10", 0, -20, 30),
-        ("Assets/Bottom_13_%s.png", "Assets/Bottom_13_%s.png", "bottom", "bottom11", 0, -20, 40),
-        ("Assets/Shoe_12_%s.png", "Assets/Shoe_12_%s.png",   "shoe",   "shoe11", 0, 0, 100),
+        ("Assets/Top_11_%s.png", "Assets/Top_11_%s.png",    "top",   "top5", 0, -20, 30),
+        ("Assets/Bottom_13_%s.png", "Assets/Bottom_13_%s.png", "bottom", "bottom5", 0, -20, 40),
+        ("Assets/Shoe_12_%s.png", "Assets/Shoe_12_%s.png",   "shoe",   "shoe5", 0, 0, 100),
 
         #("Assets/Top_6_%s.png", "Assets/Top_6_%s.png",    "top",   "top1", 1,     0, 40),
         #("Assets/Bottom_6_%s.png", "Assets/Bottom_6_%s.png", "bottom", "bottom1", 1, 0, 50),
@@ -448,73 +331,51 @@ layeredimage Player:
         "Assets/newMCSprite.png"
 
     group shoe:
-        attribute 0 default:
+        attribute 1 default:
             Null()
     if shoe == 0: 
-        "Assets/Shoe_1.png"
-    if shoe == 1: 
         "Assets/Shoe_2.png"
-    if shoe == 2: 
+    if shoe == 1: 
         "Assets/Shoe_3.png"
-    if shoe == 3: 
+    if shoe == 2: 
         "Assets/Shoe_4.png"
-        
-
+    if shoe == 3: 
+        "Assets/Shoe_9.png"
+    if shoe == 4: 
+        "Assets/fShoe_10.png"
+    if shoe == 5: 
+        "Assets/aShoe_12.png"
 
     group top:
         attribute 8 default:
             Null()
     if top == 0:
-        "Assets/Top_1.png"
+        "Assets/Top_9.png"
     if top == 1:
         "Assets/Top_2.png"
     if top == 2:
         "Assets/Top_3.png"
     if top == 3:
-        "Assets/Top_4.png"
-    if top == 4:
         "Assets/Top_5.png"
-    if top == 5:
-        "Assets/aTop_6.png"
-    if top == 6:
-        "Assets/rTop_7.png"
-    if top == 7:
-        "Assets/aTop_8.png"
-    if top == 8:
-        "Assets/Top_9.png"
-    if top == 9:
+    if top == 4:
         "Assets/Top_10.png"
-    if top == 10:
+    if top == 5:
         "Assets/Top_11.png"
-    if top == 11:
-        "Assets/fTop_12.png"
-
+   
     group bottom:
         attribute 4 default:
             Null()
     if bottom == 0:
-        "Assets/Bottom_1.png"
-    if bottom == 1:
         "Assets/Bottom_2.png"
-    if bottom == 2:
-        "Assets/Bottom_3.png"
-    if bottom == 3:
-        "Assets/Bottom_4.png"
-    if bottom == 4:
+    if bottom == 1:
         "Assets/Bottom_5.png"
-    if bottom == 5:
-        "Assets/Bottom_7.png"
-    if bottom == 6:
+    if bottom == 2:
         "Assets/Bottom_8.png"
-    if bottom == 7:
+    if bottom == 3:
         "Assets/Bottom_9.png"
-    if bottom == 8:
+    if bottom == 4:
         "Assets/Bottom_10.png"
-    if bottom == 9:
-        "Assets/rBottom_11.png"
-    if bottom == 10:
-        "Assets/fBottom_12.png"
-    if bottom == 11:
+    if bottom == 5:
         "Assets/Bottom_13.png"
         
 ###############################################################
@@ -539,12 +400,6 @@ label instructions:
     hide screen top3
     hide screen top4
     hide screen top5
-    hide screen top6
-    hide screen top7
-    hide screen top8
-    hide screen top9
-    hide screen top10
-    hide screen top11
 
     #hide sceen bottoms
     hide screen bottom0
@@ -553,12 +408,6 @@ label instructions:
     hide screen bottom3
     hide screen bottom4
     hide screen bottom5
-    hide screen bottom6
-    hide screen bottom7
-    hide screen bottom8
-    hide screen bottom9
-    hide screen bottom10
-    hide screen bottom11
 
     #hide screen shoes
     hide screen shoe0
@@ -566,6 +415,8 @@ label instructions:
     hide screen shoe2
     hide screen shoe3
     hide screen shoe4
+    hide screen shoe5
+
 
     show screen ViewOutfitButton
     show Player:
