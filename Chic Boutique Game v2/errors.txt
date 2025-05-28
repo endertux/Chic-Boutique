@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/prologue.rpy", line 1822: show statement expects a non-empty block.
-    show ra normal:
-                   ^
+File "game/prologue.rpy", line 1992: invalid syntax
+    mc_line "Seems fun! I'm down to go."
+             ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Tue May 27 14:01:30 2025
+Tue May 27 17:45:45 2025

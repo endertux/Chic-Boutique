@@ -23,10 +23,11 @@ default firstTop = 0
 
 define mc = Character("[povname]")
 define anon = Character("???")
+default mc_line = ""
 
 define Felix = Character("Felix", color = "#3f7d2d" )
 define Addie = Character("Addison", color = "#32327c" )
-define Kyle = Character("Kyle", color = "#b72417")
+define Kalvin = Character("Kalvin", color = "#b72417")
 define Riya = Character("Riya", color = "#470b1b")
 
 define ra = Character("RA", color = "#a84480")
@@ -622,21 +623,20 @@ label instructions:
 
     #"…Which way first?"
 
-    #COMMON ROUTE CHOICE 1: [museum] [garden] [field]
+    #COMMON ROUTE CHOICE 1: [museum] [garden] [field] [music studio]
     show dim_bg
     menu:
         # Confused Face
         "…Which way first?"
 
-        "Head over to the Museum":
+        "Head over to the museum.":
             jump museum
-        "Walk to the Garden":
+        "Walk to the garden.":
             jump garden
-        "Go over to the Field":
+        "Go over to the field.":
             jump field
-        "Check out the Music Studio":
+        "Check out the music studio.":
             jump music
-
 
     label museum:
     #BG ART OF SCHOOL MUSEUM
@@ -647,17 +647,17 @@ label instructions:
             ypos 0.07
         with dissolve
 
-        mc "Where am I!" 
+        "Where am I!" 
         #🥲
 
-        mc "I’m totally lost, but…"
+        "I’m totally lost, but…"
 
         # Suprised Face
-        mc "This place is beautiful so I’m not complaining!"
+        "This place is beautiful so I’m not complaining!"
 
-        mc "I can’t believe that a school has a building like this."
+        "I can’t believe that a school has a building like this."
 
-        mc "As expected from a top university…"
+        "As expected from a top university…"
 
     screen choice_menu():
         modal True #prevents clicks outside buttons
@@ -688,7 +688,7 @@ label instructions:
         show Player:
             xpos 0.01
             ypos 0.07
-        mc "Wow, these paintings are so cool! Which one should I look at?"
+        "Wow, these paintings are so cool! Which one should I look at?"
         call screen choice_menu 
 
     label goyascene :
@@ -700,181 +700,150 @@ label instructions:
         #im referencing this one you can just take the pic and put a pixel filter over bc its public domain now (refer to google doc)
         #"Virgin and Child with Canon van der Paele" Painting by Jan van Eyck
 
-        "Wow, compared to the other one, this painting is so muted!"
+    "({i}Compared to the other one, this painting is so muted!{i})"
 
-        #(Felix)
-        anon "It’s haunting, right?"
+    #(Felix)
+    anon "It’s haunting, right?"
 
-        # Confused Face
-        "!"
+    # Confused Face
+    "!"
 
-        hide goya 
-        #FELIX SPRITE
-        show Player:
-            xpos 0.01
-            ypos 0.6
-        with dissolve
+    hide goya 
+    #FELIX SPRITE
+    show Player:
+        xpos 0.01
+        ypos 0.6
+    with dissolve
 
-        show artguy normal
+    show artguy normal
+    with dissolve
 
-        with dissolve
+    show artguy speak
+    #(Felix) Neutral Face
+    anon "Sorry! I didn’t mean to startle you."
 
-        show artguy speak
-        #(Felix) Neutral Face
-        anon "Sorry! I didn’t mean to startle you."
-        # MC nerutal face
+    #(Felix)
+    anon "It’s just that I noticed you seemed lost in thought looking at this piece."
 
-        #(Felix)
-        anon "It’s just that I noticed you seemed lost in thought looking at this piece."
+    scene black bg
+    hide artguy normal
+    hide Player
+    show goya
+    with fade
 
-        scene black bg
-        hide artguy normal
-        hide Player
-        show goya
-        with fade
+    show artguy speak:
+        xpos 0.72
+        ypos 0.1
 
-        show artguy speak:
-            xpos 0.72
-            ypos 0.1
+    #(Felix) Interested Face
+    anon "I feel the same way every time I see it."
+    hide artguy
 
-        #(Felix) Intrested Face
-        anon "I feel the same way every time I see it."
-        hide artguy
+    show Player:
+        xpos 0.01
+        ypos 0.25
 
-        show Player:
-            xpos 0.01
-            ypos 0.25
+    # Surprised Face
+    mc "The world is so mind-bending… I feel like I’m getting sucked into the painting just by looking at it."
+    hide Player
 
-        # Suprised Face
-        mc "The world is so mind-bending… I feel like I’m getting sucked into the painting just by looking at it."
-        hide Player
+    show artguy speak:
+        xpos 0.72
+        ypos 0.1
 
-        show artguy speak:
-            xpos 0.72
-            ypos 0.1
+    #(Felix) Interested Face
+    anon "I get what you mean! The artist actually painted this directly on his walls."
+    anon "After slowly becoming deaf, he isolated himself in his house to paint these large frescos that are now considered 'The Black Paintings.'"
+    anon "It's really quite tragic but it's a very beautiful painting."
+    anon "I didn't mean to get dark, but sometimes I just get lost in the painting myself."
 
-        #(Felix) Intrested Face
-        anon "I get what you mean! The artist actually painted this directly on his walls."
+    hide goya
+    hide art guy speak
+    scene museum 4
+    with fade
+    jump artguyscene
 
-        #(Felix)
-        anon "After slowly becoming deaf, he isolated himself in his house to paint these large frescos that are now considered 'The Black Paintings.'"
-        anon "It's really quite tragic but it's a very beautiful painting."
-        anon "I didn't mean to get dark, but sometimes I just get lost in the painting myself."
+label madronescene:
+    scene black bg
+    show madone painting
+    with fade
 
-        hide goya
-        hide art guy speak
-        scene museum 4
-        with fade
-        jump artguyscene
+    "The colors on this are so vibrant!"
 
-    label madronescene :
-        #INSERT OF AN ART PIECE 
-        #im referencing this one you can just take the pic and put a pixel filter over bc its public domain now (refer to google doc)
-        #"Virgin and Child with Canon van der Paele" Painting by Jan van Eyck
-        scene black bg
-        show madone painting
-        with fade
+    #(Felix)
+    anon "It’s amazing, right?"
 
-        "The colors on this are so vibrant!"
+    # Confused Face
+    mc "!"
 
-        #(Felix)
-        anon "It’s amazing, right?"
+    hide madone painting
+    show Player:
+        xpos 0.01
+        ypos 0.6
+    with dissolve
 
-        # Confused Face
-        "!"
+    show artguy normal
+    with dissolve
 
-        hide madone painting
-        #FELIX SPRITE
-        show Player:
-            xpos 0.01
-            ypos 0.6
-        with dissolve
+    show artguy speak
+    anon "Sorry! I didn’t mean to startle you."
 
-        show artguy normal
+    anon "It’s just that I noticed you seemed lost in thought looking at this piece."
 
-        with dissolve
+    scene black bg
+    hide artguy normal
+    hide Player
+    show madone painting
+    with fade
 
-        show artguy speak
-        #(Felix) Neutral Face
-        anon "Sorry! I didn’t mean to startle you."
-        # MC nerutal face
+    show artguy speak:
+        xpos 0.72
+        ypos 0.1
 
-        #(Felix)
-        anon "It’s just that I noticed you seemed lost in thought looking at this piece."
+    anon "I feel the same way every time I see it."
+    hide artguy
 
-        scene black bg
-        hide artguy normal
-        hide Player
-        show madone painting
-        with fade
+    show Player:
+        xpos 0.01
+        ypos 0.07
 
-        show artguy speak:
-            xpos 0.72
-            ypos 0.1
+    mc "The colors are so bright… I feel like I’m getting sucked into the painting just by looking at it."
+    hide Player
 
-        #(Felix) Intrested Face
-        anon "I feel the same way every time I see it."
-        hide artguy
+    show artguy speak:
+        xpos 0.72
+        ypos 0.1
 
-        show Player:
-            xpos 0.01
-            ypos 0.07
+    anon "I get what you mean! The artist actually spent months meticulously making his own paints."
+    anon "Back then, oil paints were made with eggs rather than oil, but then this guy came along and had the idea of using oil. So simple yet effective…"
 
-        # Suprised Face
-        mc "The colors are so bright… I feel like I’m getting sucked into the painting just by looking at it."
-        hide Player
+    hide madone painting
+    hide art guy speak
+    scene museum 4
+    with fade
+    jump artguyscene
 
-        show artguy speak:
-            xpos 0.72
-            ypos 0.1
+label artguyscene:
+    scene museum 4
+    show Player:
+        xpos 0.01
+        ypos 0.6
 
-        #(Felix) Intrested Face
-        anon "I get what you mean! The artist actually spent months meticulously making his own paints."
+    show artguy normal
+    with dissolve
 
-        #(Felix)
-        anon "Back then, oil paints were made with eggs rather than oil, but then this guy came along and had the idea of using oil. So simple yet effective…"
+    mc "You seem to know a lot about this painting! I just thought it looked cool."
 
-        hide madone painting
-        hide art guy speak
-        scene museum 4
-        with fade
-        jump artguyscene
-        
-
-    label artguyscene:
-        scene museum 4
-        show Player:
-            xpos 0.01
-            ypos 0.6
-
-        show artguy normal
-        with dissolve
-
-        mc "You seem to know a lot about this painting! I just thought it looked cool."
-        #😅 Nervous Sweat Drop Face
-
-        #(Felix) Shy Face - Looking down, slight turned away & blush
-        anon "Ah, I’m a fine arts major. I’m working on a project focusing on just the pieces we have at our campus museum."
+    anon "Ah, I’m a fine arts major. I’m working on a project focusing on just the pieces we have at our campus museum."
 
     scene museum 4
     show Player:
         xpos 0.01
         ypos 0.6
     show artguy normal
-    
-    # Surprised Face
-    #mc "The fabric looks so real that I can tell exactly what they are. I can practically feel the soft velvety texture in my hands…"
 
     show artguy speak
-    
-    #(Felix) Neutral Face
-    #anon "It’s so intentional too! He built up thin layers of paint to make it more vibrant and textured. This artist is actually credited for coming up with the technique."
-
-    #FADE INSERT AWAY
-
-    #(Felix)
-    #anon "From your fabric comment, I’m guessing you’re here for fashion?"
-
+            
     anon "I'm sure you're going to get this a ton, but what major are you?"
     anon "Wait, let me guess."
     anon "Are you fashion? I love your style."
@@ -882,40 +851,28 @@ label instructions:
     show artguy normal
     show dim_bg
 
- 
-    menu:
-        "Yeah! How did you know?":
-            jump artguychoice1
+menu:
+    "Yeah! How did you know?":
+        $ mc_line = "Yeah! How did you know?"
+        jump artguychoice
 
-        "Aww thank you. I am a fashion major!":
-            jump artguychoice2
+    "Aww thank you. I am a fashion major!":
+        $ mc_line = "Aww thank you. I am a fashion major!"
+        jump artguychoice
 
-        "Did you automatically assume that I'm in fashion?":
-            jump felixsurprised
+    "Did you automatically assume that I'm in fashion?":
+        $ mc_line = "Did you automatically assume that I'm in fashion?"
+        jump felixsurprised
 
 
-label artguychoice1:
+label artguychoice:
     scene museum
     show Player:
         xpos 0.01
         ypos 0.6
     show artguy normal
 
-    mc "Yeah! How did you know?"
     jump felixtalking
-
-
-label artguychoice2:
-    scene museum 4
-    scene museum
-    show Player:
-        xpos 0.01
-        ypos 0.6
-    show artguy normal
-
-    mc "Aww thank you. I am a fashion major!"
-    jump felixtalking
-
 
 label felixsurprised:
     scene museum
@@ -924,7 +881,7 @@ label felixsurprised:
         ypos 0.6
     show artguy speak
 
-    mc "Did you automatically assume that I'm in fashion?"
+    mc "[mc_line]"
 
     Felix "Ohh I'm sorry... Are you not?"
 
@@ -933,98 +890,71 @@ label felixsurprised:
     Felix "Oh really now?"
 
     mc "Yes haha, fashion is totally my thing."
-    jump felixtalking
+    jump felixtalking2
 
 label felixtalking:
-    # Neutral Face
+
+    mc "[mc_line]"
+
+label felixtalking2:
     Felix "Fashion’s not an easy department to get into. You must be really good!"
 
     show artguy normal
-
     mc "I wouldn’t say all that. It’s just hard work."
 
     show artguy speak
-
-    # Sly/Smerking Face
-    Felix "I don’t usually see fashion majors in this building. Thinking of switching majors?" 
-    #this is just said playfully hes not actually asking so maybe put a playful expression
+    Felix "I don’t usually see fashion majors in this building. Thinking of switching majors?"
 
     show artguy normal
-    
-    # Sweat Drop Face
     show dim_bg
+
     menu:
         "More like just totally, utterly lost.":
-            jump felixtalking2
+            $ mc_line = "More like just totally, utterly lost."
+            jump felixtalking3
 
         "I don't know where I'm going..":
-            jump felixtalking2
-
-
-    label felixtalking2:
+            $ mc_line = "I don't know where I'm going.."
+            jump felixtalking3
+label felixtalking3:
     hide dim_bg
     show artguy speak
+    mc "[mc_line]"
 
-    # Neutral Face
     Felix "I gotta say, the campus is nice, but navigating it… Not as great. Where are you headed? Maybe I can point you in the right direction."
 
     show artguy normal
-   
-    # Neutral Face
     mc "I guess freshman dorms? I should check in before exploring around a bit more."
 
     show artguy speak
-
-    # Suprised Face (little bit, eyebrow raise)
     Felix "No wonder why you were so lost! The dorms are always impossible to get to."
-
-    # Neutral Face 
     Felix "Bad news is… it’s about a 25 minute walk."
 
     show artguy normal
-
-    # Cry Face
     mc "25 minutes?!"
 
     show artguy speak
-
     Felix "But wait! The good news is that I can walk you there."
 
     show artguy normal
-
-    # Neutral Face
     mc "Are you sure? 25 minutes is a long ways away…"
-    
 
     show artguy speak
-
     Felix "It’s no problem. Research can wait."
 
     show artguy normal
-
-    # Determined Face
     mc "If you’re researching right now, you should focus!"
-
-    # Sweat Drop Face
     mc "Plus if you walked me there, I have a feeling I’d tune out my surroundings and never get the hang of the campus layout. I’ll be fine on my own, just point me in the right direction."
 
     show artguy speak
-    
     Felix "Alright, alright. Just don’t get too lost and end up back in front of this painting again."
 
-    #INSERT OF SCHOOL MAP
-    #map should look confusing and unclear still
     scene map temp
-
     Felix "There’s a clear path riiiight here. Here, I’ll highlight it for you so you can’t miss it."
 
     with dissolve
-
-    #INSERT OF SCHOOL MAP
-    #map should now have a highlighted path on it
     scene black bg
     with fade
-    #FADE SCENE TO OUTSIDE ON PATH
     jump path
 
 
@@ -1058,7 +988,7 @@ label garden:
     #should be kind of far away on the screen
 
     # Confused Face
-    "Is she talking to me?"
+    mc "{i}(Is she talking to me?){i}"
 
     show baddie small:
         xpos 0.75
@@ -1067,12 +997,10 @@ label garden:
 
     anon "Yes, you! Cutie with the cute fit! You dropped your map!"
 
-    # Suprised Face
+    # Surprised Face
     mc "Oh!"
 
-    #RUNNING SOUND EFFECT
-    #ADDIE SPRITE APPEARS CLOSER
-
+    # RUNNING SOUND EFFECT
     scene garden bg
     with dissolve
 
@@ -1084,314 +1012,252 @@ label garden:
     with dissolve
 
     mc "Thank you so much! I didn’t even notice that I had dropped it."
-    #😞 Cry Face
 
-    show baddie happy
-    "Wow she’s so pretty… and her outfit is so put-together yet effortless."
+    mc "{i}(Wow she’s so pretty… and her outfit is so put-together yet effortless.){/i}"
 
-    #(Addie)
     show baddie tease
     anon "No probs."
 
     show baddie happy
-    #(Addie)
     anon "You a freshman?"
+
     show dim_bg
-    menu: 
-        #Neutral face
+    menu:
         "Did the map give it away?":
+            $ mc_line = "Did the map give it away?"
             jump addiechoiceone
         "How'd you know?":
+            $ mc_line = "How'd you know?"
             jump addiechoiceone
 
-    label addiechoiceone : 
-        scene garden bg
-
-        show Player:
-            xpos 0.01
-            ypos 0.6
-
-        show baddie tease
-
-        #(Addie)
-        anon "The lost look in your eyes told me. Don’t worry about it, this school is huge. We’ve all been there."
-
-        # Sweat Drop Face
-        "Her gaze is making me a little nervous… It’s like I’m being studied."
-        show baddie happy
-        #(Addie)
-        anon "So where ya headin, babe?"
-
-        mc "I was trying to get to the student dorms, before I lost my map."
-
-        #(Addie) Excited Talking Face
-        show baddie tease
-        anon "Ooh! I lived there last year! So many memories…"
-
-        show baddie happy
-        #(Addie) Eager Face
-        anon "Hey, I don’t have anything going on right now if you want me to take you there?"
-
-        show dim_bg
-        menu: 
-            "No, you really don't have to.":
-                jump notrouble 
-            "Is it far?":
-                jump notrouble
-
-       
-    # Surprised Face
-    hide dim_bg
-    label notrouble : 
-        scene garden bg
-        show Player:
-            xpos 0.01
-            ypos 0.6
-
-        show baddie big
-        mc "I don’t want to trouble you too much…"
-
-        show baddie happy
-        #(Addie) Winking Face
-        anon "No, it’s no trouble at all. I can’t leave a cute girl lost in the garden like this!"
-
-    #WALKING SOUND EFFECT THROUGHOUT SCENE
-    #since they’re outside make it sound like they’re on a track; sound shouldn’t be too loud so it doesn’t distract from dialogue
+label addiechoiceone:
+    scene garden bg
     show Player:
         xpos 0.01
         ypos 0.6
+    show baddie tease
 
+    mc "[mc_line]"
+
+    anon "The lost look in your eyes told me. Don’t worry about it, this school is huge. We’ve all been there."
+
+    mc "{i}(Her gaze is making me a little nervous… It’s like I’m being studied.){/i}"
+
+    show baddie happy
+    anon "So where ya headin, babe?"
+
+    mc "I was trying to get to the student dorms, before I lost my map."
+
+    show baddie tease
+    anon "Ooh! I lived there last year! So many memories…"
+
+    show baddie happy
+    anon "Hey, I don’t have anything going on right now if you want me to take you there?"
+
+    show dim_bg
+    menu:
+        "No, you really don't have to.":
+            $ mc_line = "No, you really don't have to."
+            jump notrouble
+        "Is it far?":
+            $ mc_line = "Is it far?"
+            jump notrouble
+
+label notrouble:
+    hide dim_bg
+    scene garden bg
+    show Player:
+        xpos 0.01
+        ypos 0.6
+    show baddie big
+
+    mc "[mc_line]"
+    mc "I don’t want to trouble you too much…"
+
+    show baddie happy
+    anon "No, it’s no trouble at all. I can’t leave a cute girl lost in the garden like this!"
+
+    show Player:
+        xpos 0.01
+        ypos 0.6
     show baddie tease
     with dissolve
 
-    #(Addie) Neutral Face
     anon "So, what’s your name?"
 
-
-    # Neutral Face
     mc "[povname]. And you’re…?"
 
     show baddie happy
-    #(Addie) Winking Face
     Addie "Addison. But my friends call me Addie!"
-    #😉
+
     show baddie big
-    # Sweat Drop Face
     mc "Gotcha. It’s nice to meet someone so friendly right away. I was really concerned about making friends here, to be honest…"
 
     show baddie happy
-    # Neutral Face
     Addie "No, I get it. I’m not gonna lie, you’re gonna meet some people here that are a little pretentious. It {i}is{/i} Slaycademy, after all."
 
-    # MC Confused Face
-
-    # Notice Face
     show baddie tease
     Addie "..."
 
     show baddie happy
-    # Excited Talking Face
     Addie "But don’t worry! Most of the people here are really nice. And for a girl as cute as you, you’ll have no problem making friends!"
 
     show dim_bg
-    menu : 
-        "Haha... thanks!": 
+    menu:
+        "Haha... thanks!":
+            $ mc_line = "Haha... thanks!"
             jump ofcourse
-        "You think so?": 
+        "You think so?":
+            $ mc_line = "You think so?"
             jump ofcourse
 
-    label ofcourse : 
-        hide dim_bg
-        scene garden bg
-        show Player:
-            xpos 0.01
-            ypos 0.6
-
-        show baddie happy
-        Addie "Of course!"
-
-    # Neutral Face
-    show baddie tease
-    Addie "So, what are you here for? Architecture? Film?"
-
-    # Cry Face
-    "Ah-"
-
-    "I should’ve dressed a little nicer…"
-
-    # Sweat Drop Face
-    mc "I’m a fashion major!"
-
-    show baddie big
-    
-    mc "I usually dress up a little more than this… I didn’t expect to meet anyone until the first day of classes."
-
-    show baddie happy
-
-    Addie "Hey, what are you talking about!? I can tell a fellow fashionista when I see one."
-
+label ofcourse:
+    hide dim_bg
     scene garden bg
-
-    #ADDIE WINKS
-    #SUDDENLY HER EYES WIDEN AS SHE STARES JUST ABOVE YOUR HEAD
-
-    show garden bg with vpunch
-
     show Player:
         xpos 0.01
         ypos 0.6
+    show baddie happy
+    mc "[mc_line]"
+    Addie "Of course!"
 
-    # Surprised Face
+    show baddie tease
+    Addie "So, what are you here for? Architecture? Film?"
+
+    mc "{i}(Ah—I should’ve dressed a little nicer…){/i}"
+
+    mc "I’m a fashion major!"
+
+    show baddie big
+    mc "I usually dress up a little more than this… I didn’t expect to meet anyone until the first day of classes."
+
+    show baddie happy
+    Addie "Hey, what are you talking about!? I can tell a fellow fashionista when I see one."
+
+    scene garden bg
+    show garden bg with vpunch
+    show Player:
+        xpos 0.01
+        ypos 0.6
     show baddie concerned
     Addie "Umm..."
 
-    # Confused Face
     mc "What??"
 
     show baddie disgusted
-
     Addie "Alright... DON’T freak out, okay..."
 
     show dim_bg
-    menu: 
+    menu:
         "What is it?":
+            $ mc_line = "What is it?"
             jump bee
-        "Oh, don't tell me..":
+        "Oh, don't tell me...":
+            $ mc_line = "Oh, don't tell me..."
             jump bee
 
-    label bee : 
-        scene garden bg
-        show Player:
-            xpos 0.01
-            ypos 0.6
+label bee:
+    hide dim_bg
+    scene garden bg
+    show Player:
+        xpos 0.01
+        ypos 0.6
+    show baddie scared
 
-        show baddie scared
+    mc "[mc_line]"
 
-        # Surprised Face
-        Addie "There-"
-        Addie "There’s a bee!"
+    Addie "There—There’s a bee!"
 
-    mc "AHHHH GET IT OFF!!!"
-    # Put choice here
-    show dim_bg 
-    menu: 
-        "Freak out": 
-            jump freakout 
-        "Act calm": 
+    show dim_bg
+    menu:
+        "Freak out":
+            $ mc_line = "AHHHH GET IT OFF!"
+            jump freakout
+        "Act calm":
+            $ mc_line = "Ah... That's no big deal."
             jump actcalm
 
-    label freakout : 
-        scene garden bg
-        show Player:
-            xpos 0.01
-            ypos 0.6
+label freakout:
+    hide dim_bg
+    scene garden bg
+    show Player:
+        xpos 0.01
+        ypos 0.6
+    show baddie scared
 
-        show baddie concerned
-        mc "AHHHH GET IT OFF!"
-        # mc in distress 
-        # addie in distress 
-        mc "???"
-        mc "Aren't you going to help me?"
+    mc "[mc_line]"
+    mc "???"
+    mc "Aren’t you going to help me!?"
 
-        show baddie scared
-        Addie "I'm sorry! I just- ah!"
-        Addie "This is something I just can't deal with!"
-        # mc cry face
-        mc "Please..."
-        show baddie concerned
-        mc "I can feel it crawling on me..."
-        show baddie scared
-        Addie "O-okay."
-        Addie "Just-just give me one second, okay?"
-        #hide Addie sprite
-        #show Addie sprite with notebook in hand
-        #woosh sfx and vfx
-        #Addie sigh face
-        show baddie big
-        Addie "Got it!"
-        show baddie tease
-        #mc sigh face
-        mc "Thank you!"
-        show baddie happy
-        Addie "Of course, babe!"
-        show baddie tease
-        Addie "It was nothing, really."
+    Addie "I'm sorry! I just—ah! This is something I just can't deal with!"
 
-    
-    label actcalm : 
-        scene garden bg
-        show Player:
-            xpos 0.01
-            ypos 0.6
+    mc "Oh my gosh! I can feel it crawling on me!"
 
-        show baddie happy
-        mc "Ah..."
-        mc "That's no big deal."
-        
-        #Addie sprite backing up
-        #show through visual/audio guides a bee to a flower
-        #Addie cry or shocked face
-        show baddie concerned
-        Addie "How were you so calm??"
-        mc "They're harmless as long as you leave them alone!"
-        show baddie scared
-        #Addie distressed face
-        Addie "Ugh, I'm just glad that it's gone!"
-        mc "No way..."
-        mc "Are you...scared of bees?"
+    Addie "O-okay. Just—just give me one second, okay?"
 
-        #Addie embarrassed face 
-        show baddie concerned
-        Addie "How could you not be!?"
+    show baddie big
+    Addie "Got it!"
+    show baddie tease
+    mc "Oh thank god..."
+    mc "Thank you!."
+    show baddie happy
+    Addie "Of course, babe!"
+    show baddie tease
+    Addie "It was nothing, really."
 
-        #mc closed eye smiling
-        mc "Haha, I didn't expect you to be so afraid of something so small."
-        show baddie happy
-        Addie "Well, at least it's been dealt with."
+label actcalm:
+    hide dim_bg
+    scene garden bg
+    show Player:
+        xpos 0.01
+        ypos 0.6
+    show baddie concerned
 
-    #addie hair flip sprite would require a new pose which idk if artists are willing to do
-    #good substitute could just be addie wink face (or honestly just her neutral face)
+    mc "[mc_line]"
+
+    Addie "How were you so calm??"
+    mc "They're harmless as long as you leave them alone!"
+
+    show baddie scared
+    Addie "Ugh, I’m just glad that it’s gone!"
+
+    mc "No way... Are you... scared of bees?"
+
+    show baddie concerned
+    Addie "How could you not be!?"
+
+    mc "Haha, I didn’t expect you to be so afraid of something so small."
+    show baddie happy
+    Addie "Well, at least it's been dealt with."
 
     show baddie tease
-    "Oh, she's returned to normal."
+    mc "{i}(Oh, she's returned to normal.){/i}"
 
-    # wink face
     show baddie happy
     Addie "It probably just thought you were a flower! Easy mistake."
 
     show baddie concerned
-    #(Student)
     anon "Addison!"
 
     show baddie scared
-    # surprised face
-    Addie "Shoot!" 
-    #😨
+    Addie "Shoot!"
 
     show baddie concerned
-    #(Student)
     anon "You told me you’d meet me at the quad 20 minutes ago!"
 
     show baddie happy
-    # wink face
     Addie "Sorry babe, I gotta run."
 
     show baddie big
-    # neutral face
     Addie "Luckily it’s super easy to get to the dorms from here. Just follow this path to the end, ‘kay?"
-    show baddie happy
 
-    # neutral happy face
+    show baddie happy
     mc "Thank you so much! For everything. I’ll see you around then!"
 
     Addie "See ya!"
-    
     hide baddie with fade
-    #RUNNING SOUND
-    #ADDIE SPRITE HIDE
 
-    # sweat drop face
-    "Wait a minute… Didn't she say she had nothing to do?"
+    mc "{i}(Wait a minute… Didn't she say she had nothing to do?){/i}"
 
     #FADE SCENE TO OUTSIDE ON PATH
     scene black bg
@@ -1417,14 +1283,14 @@ label field:
     "Maybe that’s just the kind of crazy budget that they h-"
 
     # surprised face
-    mc "AHH-"
+    "AHH-"
 
     #SHAKE SCREEN EFFECT
     #CraSH NOISE
     show field with hpunch
 
     # cry face
-    mc "Ow…"
+    mc "Ow!!!"
 
     #maybe put some sort of screen movement here to indicate that she stood back up after falling
 
@@ -1440,7 +1306,7 @@ label field:
     anon "You’re blocking the field, bro!!!!!"
 
     # confused face
-    "No apology?"
+    "({i}No apology?{i})"
 
     # determined face
     mc "If you saw me then you didn’t have to barrel right into me!"
@@ -1449,41 +1315,42 @@ label field:
     #(Kyle)
     anon "Yah, you’re right, dude. My bad!"
 
-    "What’s with this guy!?"
+    mc "{i}(What’s with this guy!?){i}"
 
     #(Kyle)
     anon "So, you here to play?"
 
     show dim_bg
-    menu : 
-        "What?": 
+    menu:
+        "What?":
+            $ mc_line = "What?"
             jump confused
 
         "Umm. I got lost here.":
+            $ mc_line = "Umm. I got lost here."
             jump confused
 
     label confused:
     hide dim_bg
-    # neutral face
-
-    mc "I'm not in the sports department, I'm just lost."
+    mc "[mc_line]"
 
     #(Kyle)
     anon "That’s a shame, man. We could really use more students in the sports department."
 
     show dim_bg
-    menu : 
-        "So... are you a sports major?": 
+    menu:
+        "So... are you a sports major?":
+            $ mc_line = "So... are you a sports major?"
             jump confused3
-        "So are you? I'm not really into sports. ": 
-            jump confused3
-        "Im guessing that you're a sports major..":
+
+        "I'm guessing that you're a sports major..":
+            $ mc_line = "I'm guessing that you're a sports major.."
             jump confused3
 
     label confused3:
     hide dim_bg
+    mc "[mc_line]"
 
-    #(Kyle)
     anon "Yeah, bro. Can’t you tell I lift? This is art, not athletics."
 
     mc "I just didn’t know that Slaycademy had a sports department."
@@ -1493,74 +1360,73 @@ label field:
     # confused face
     mc "What? Then how are you-"
 
-
-    #(Kyle)
     anon "Look, man. Rome wasn’t built in a day, alright?"
 
-    #(Kyle)
     anon "You know what they say!"
 
     # cry face
-    "No… I don’t…"
+    mc "No… I don’t…"
 
-    "Please! Someone… Anyone! Get me out of this conversation!"
+    "({i}Please! Someone… Anyone! Get me out of this conversation!){i}"
 
-    "Ah… We’re the only ones on the field…"
+    Kalvin "Anyways, the name is Kalvin."
 
-    #(Kyle)
-    anon "Anyways, I’m gonna be attempting a 350 squat today. It’ll be hard, but I think with an audience I’ll be hyped enough to do it."
+    Kalvin "I’ll be attempting a 350 squat today. It’ll be hard, but I think with an audience I’ll be hyped enough to do it."
 
-    #(Kyle)
-    anon "Maybe I should practice right now! Tell me how my form is, here-"
+    Kalvin "Maybe I should practice right now! Tell me how my form is, here-"
 
     # sweat drop face
     show dim_bg
     menu:
-        "Actually, I really should be going.": 
-            jump calvintalk
+        "Actually, I really should be going.":
+            $ mc_line = "Actually, I really should be going." 
+            jump kalvintalk
 
         "Ew stop! I'm leaving now.":
-            jump calvintalk
-    #(Kyle)
+            $ mc_line = "Ew stop! I'm leaving now."
+            jump kalvintalk
 
-    label calvintalk:
+    label kalvintalk:
+
     hide dim_bg
+     
+    mc "[mc_line]"
 
-    anon "Aw man, that’s a shame! We were really vibing!"
+    Kalvin "Aw man, that’s a shame! We were really vibing!"
 
-    "Were we?"
+    "({i}Were we?{i})"
 
     # neutral face
     mc "Would you mind pointing me in the direction of the freshman dorms?"
 
     # cry face
-    "Please respond normally!"
+    "({i}Please respond normally!{i})"
 
     #(Kyle)
-    anon "Down near the tennis courts over there, follow the dirt path."
+    Kalvin "Down near the tennis courts over there, follow the dirt path."
 
     # sigh face
-    "Oh, thank god…"
+    "({i}Oh, thank god…{i})"
 
     #(Kyle)
-    anon "Haha, that reminds me of a movie I watched. Follow the yellow brick road!"
+    Kalvin "Haha, that reminds me of a movie I watched. Follow the yellow brick road!"
 
     #(Kyle)
-    anon "The movie’s super underground. Sorry for the obscure reference!"
+    Kalvin "The movie’s super underground. Sorry for the obscure reference!"
 
     # flat face
-    "..."
+    mc "..."
 
     mc "Yeah… Thanks for the directions."
 
     #(Kyle)
-    anon "No prob, bro. Gotta get back to running my laps. Good luck finding the cafeteria or wherever you wanted to go!"
+    Kalvin "No prob, bro. Gotta get back to running my laps. Good luck finding the cafeteria or wherever you wanted to go!"
 
     hide gymbro
     with dissolve
 
     # sweat drop face
-    mc "Did this guy really give me the right directions??"
+    "({i}Did this guy really give me the right directions?{i})"
 
     scene black bg
     with fade
@@ -1604,18 +1470,18 @@ label music:
     # Riya CG description for artist reference:
     # Main details: Riya singing into a microphone, playing guitar. This CG can be moved to a later scene (concert date?) if needed.
 
-    mc "She’s so cool! She’s clearly the leader of the band. Everyone is looking to her for cues."
+    "{i}(She’s so cool! She’s clearly the leader of the band. Everyone is looking to her for cues.{i})"
 
-    mc "Her voice is clear and controlled. I feel like she’s sharing a piece of her soul with me with every note."
+    "{i}(Her voice is clear and controlled. I feel like she’s sharing a piece of her soul with me with every note.{i})"
 
-    mc "Her clear tone, and that jet-black hair… She looks a little familiar. Maybe I met her at orientation?"
+    "{i}(Her clear tone, and that jet-black hair… She looks a little familiar. Maybe I met her at orientation?{i})"
 
-    mc "Oh, they finished. Everyone’s cheering and putting up their instruments. Maybe I should leave before they see me."
+    "{i}(Oh, they finished. Everyone’s cheering and putting up their instruments. Maybe I should leave before they see me.{i})"
 
     show riya talking
     anon "Last one to the car is paying for drinks tonight!"
 
-    mc "The guitarist runs past me, followed by the other two band members."
+    "({i}The guitarist runs past me, followed by the other two band members.{i})"
 
     mc "Hey, watch it! They nearly knocked me over."
 
@@ -1627,15 +1493,13 @@ label music:
 
     anon "Ugh. Hey Mike, thanks for helping us out today. Sorry I forced you to work with these dumbasses."
 
-    mc "Aha… She’s not as elegant in person as when she’s singing."
-
-    show riya talking
-
-    anon "Hey, show’s not for free, you know. This is a private practice. How are we supposed to focus on our music when we’ve got fangirls like you barging in every five minutes?"
+    "({i}Aha… She’s not as elegant in person as when she’s singing.{i})"
 
     show riya judging
 
-    mc "Jeez, I just got lost. But her guttermouth, and those bad manners… I definitely know her from somewhere."
+    anon "Hey, show’s not for free, you know. This is a private practice. How are we supposed to focus on our music when we’ve got fangirls like you barging in every five minutes?"
+
+    "({i}Jeez, I just got lost. But her guttermouth, and those bad manners… I definitely know her from somewhere.{i})"
 
     mc "Sorry, I’m lost. If you just point me in the right direction, I’ll get out of your hair."
 
@@ -1643,7 +1507,7 @@ label music:
 
     anon "Oh my god...[povname]!?"
 
-    mc "Does she know me…?"
+    "({i}Does she know me…?{i})"
 
     show riya talking
 
@@ -1653,13 +1517,13 @@ label music:
 
     show riya smiling
 
-    mc "No wonder why she looked familiar! Riya and I were friends in middle school, and she always talked about wanting to start a band. She would practice guitar in front of me for hours, and god, she was so bad! It’s making me laugh just thinking about it."
+    "({i}No wonder why she looked familiar! Riya and I were friends in middle school, and she always talked about wanting to start a band. She would practice guitar in front of me for hours, and god, she was so bad! It’s making me laugh just thinking about it.{i})"
 
     # Hug visual cue could be added here
 
     show riya normal
 
-    mc "Riya goes in for a hug and squeezes me tight. When she pulls away and holds me by the shoulders, I feel like we’re back in middle school again."
+    "({i}Riya goes in for a hug and squeezes me tight. When she pulls away and holds me by the shoulders, I feel like we’re back in middle school again.{i})"
 
     mc "I just got accepted into Slaycademy! I was trying to find the dorms, but I got lost. What are you doing here?"
 
@@ -1677,14 +1541,14 @@ label music:
 
     show dim_bg
     menu:
-        "Lean in":
+        "Lean in.":
             jump lean_in
-        "Back away a little":
+        "Back away a little.":
             jump back_away
 
 label lean_in:
     hide dim_bg
-    mc "So close… She smells like cherries and cigarettes. Her hand is touching mine…"
+    "({i}So close… She smells like cherries and cigarettes. Her hand is touching mine…{i})"
 
     show riya smiling
 
@@ -1693,13 +1557,13 @@ label lean_in:
 
 label back_away:
     hide dim_bg
-    mc "I instinctively shift a bit back as she reaches for my map."
+    "({i}I instinctively shift a bit back as she reaches for my map.{i})"
     show riya talking
     Riya "Here, look. You made a right when you should’ve gone left. Just double back and go straight. Even you can’t mess that up."
     jump music_continue
 
 label music_continue:
-    mc "When she moves away, I let out a breath. I didn’t realize I was holding it this whole time."
+    "({i}When she moves away, I let out a breath. I didn’t realize I was holding it this whole time.{i})"
 
     mc "What? Oh, right. Sorry. It’s been a long day."
 
@@ -1709,7 +1573,7 @@ label music_continue:
 
     show riya normal
 
-    mc "Of course it was a joke. Why am I acting so weird? It’s just Riya. It’s just, things feel different for some reason."
+    "({i}Of course it was a joke. Why am I acting so weird? It’s just Riya. It’s just, things feel different for some reason.{i})"
 
     show riya judging
 
@@ -1769,9 +1633,9 @@ label path:
     with dissolve
 
     # distressed face
-    mc "Did-"
+    "Did-"
 
-    mc "Did I really make it?"
+    "Did I really make it?"
 
     # determined face (if artists draw it vaguely enough, it can serve as upset face)
     "Who had the bright idea of building this school on a bunch of hills?!"
@@ -1789,7 +1653,7 @@ label path:
         ypos 0.07 
     with dissolve
 
-    mc "Hah…"
+    "({i}Hah…{i})"
     #😓
 
     #SOUND AND SCREEN EFFECT TO INDICATE THAT PLAYER IS NOW SITTING
@@ -1827,15 +1691,17 @@ label path:
 
     show dim_bg
     menu:
-        "...Yes": 
+        "...Yes":
+            $ mc_line = "...Yes"
             jump rameet
 
         "Why? Is there another way?":
+            $ mc_line = "Why? Is there another way?"
             jump rameet
-    #(Kyle)
 
     label rameet:
     hide dim_bg
+    mc "[mc_line]"
 
     ra "You know we have a shuttle system, right?"
 
@@ -1855,13 +1721,17 @@ label path:
     show dim_bg
     menu:
         "My ID number is 14399333.":
+            $ mc_line = "My ID number is 14399333."
             jump rameet2
 
         "Here's my ID card!":
+            $ mc_line = "Here's my ID card!"
             jump rameet2
 
     label rameet2:
     hide dim_bg
+    
+    mc "[mc_line]"
 
     #INSERT OF ACCESS CARD
 
@@ -1910,20 +1780,22 @@ label path:
     #CG NADIA ON FLOOR
 
     #(Nadia)
-    anon "Ow ow ow ow ow"
+    anon "Ow ow ow ow ow."
 
     # distressed face
     show dim_bg
     menu:
         "Are you alright?!":
+            $ mc_line = "Are you alright?!"
             jump bestiemeet
 
         "Hey! Watch where you're going!":
+            $ mc_line = "Hey! Watch where you're going!"
             jump bestiemeet
 
     label bestiemeet:
     hide dim_bg
-
+    mc "[mc_line]"
     #(Nadia)
     anon "Oh my god! I’m so sorry! I totally wasn’t looking where I was going…"
 
@@ -1976,13 +1848,16 @@ label path:
     show dim_bg
     menu:
         "...":
+            $ mc_line = "..."
             jump forgetten
 
         "Did you just forget?":
+            $ mc_line = "Did you just forget?"
             jump forgetten
 
     label forgetten:
     hide dim_bg
+    mc "[mc_line]"
 
     show bsf speak
     Nadia "Ahhh sorry I gotta run! I’m sure we’ll see each other around a lot. Let’s hang out sometime!"
@@ -2051,13 +1926,16 @@ label path:
     show dim_bg
     menu:
         "Did we end up as roomates?":
+            $ mc_line = "Did we end up as roomates?"
             jump bestiemeet2
 
         "No way, you're my roomate!":
+            $ mc_line = "No way, you're my roomate!"
             jump bestiemeet2
 
     label bestiemeet2:
     hide dim_bg
+    mc "[mc_line]"
 
     # happy face
     show bsf normal
@@ -2106,17 +1984,19 @@ label path:
 
     show dim_bg
     menu:
-        "Ahh I wish. I would’ve planned an outfit but now I gotta unpack first.":
+        "No, I gotta unpack first.":
+            $ mc_line = "No, I gotta unpack first."
             jump bestiemeet3
 
         "Seems fun! I'm down to go." :
+            $ mc_line = "Seems fun! I'm down to go."
             jump bestiemeet3
 
     label bestiemeet3:
     hide dim_bg
-
+    mc "[mc_line]"
     show bsf speak
-    Nadia "Don't worry I can help you unpack!"
+    Nadia "I can also help you unpack!"
 
     Nadia "There are wayyyy too many boxes. How many clothes do you have?"
 
