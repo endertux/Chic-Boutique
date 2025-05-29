@@ -1,13 +1,13 @@
-2025-05-29 04:36:53 UTC
+2025-05-29 07:36:35 UTC
 macOS-15.0.1-arm64-arm-64bit
 Ren'Py 8.3.4.24120703
 
-Early init took 0.04s
+Early init took 0.03s
 Loading error handling took 0.02s
-Loading script took 0.18s
+Loading script took 0.14s
 Loading save slot metadata took 0.04s
 Loading persistent took 0.00s
-Running init code took 0.03s
+Running init code took 0.02s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.02s
@@ -27,9 +27,9 @@ Analyze screens took 0.01s
 Save screen analysis took 0.01s
 Prepare screens took 0.03s
 Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
+Save bytecode. took 0.02s
 Running _start took 0.00s
-Interface start took 0.24s
+Interface start took 2.21s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1470, 956)
@@ -39,9 +39,9 @@ Vendor: "b'Apple'"
 Renderer: b'Apple M3'
 Version: b'2.1 Metal - 89.3'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
 Maximum texture size: 4096x4096
 Cleaning stores took 0.00s
 Init translation took 0.00s
@@ -50,608 +50,24 @@ Load screen analysis took 0.02s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s
-Resetting cache.
-Early init took 52.11s
-Loading error handling took 0.02s
-Loading script took 0.11s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.02s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
-Dump and make backups took 0.02s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.03s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.07s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M3'
-Version: b'2.1 Metal - 89.3'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s
-Load screen analysis took 0.03s
+Load screen analysis took 0.02s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s
 Resetting cache.
-Early init took 111.51s
-Loading error handling took 0.01s
-Loading script took 0.12s
-Loading save slot metadata took 0.04s
+Early init took 448.85s
+Loading error handling took 5.38s
+Loading script took 27.11s
+Loading save slot metadata took 2.56s
 Loading persistent took 0.00s
-Running init code took 0.02s
+ - Init at game/gui.rpy:11 took 2.31930 s.
+Running init code took 2.36s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
-Dump and make backups took 0.02s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.03s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M3'
-Version: b'2.1 Metal - 89.3'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 113.31s
-Loading error handling took 0.01s
-Loading script took 0.08s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-
-File "game/prologue.rpy", line 307: imagebutton expects a non-empty block.
-    imagebutton:
-                ^
-DPI scale factor: 1.000000
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M3'
-Version: b'2.1 Metal - 89.3'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 115.00s
-Loading error handling took 0.01s
-Loading script took 0.08s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-
-File "game/prologue.rpy", line 308: 'Play' is not a keyword argument or valid child of the imagebutton statement.
-    Play("sound", "mouseclick.mp3"),
-        ^
-DPI scale factor: 1.000000
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M3'
-Version: b'2.1 Metal - 89.3'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 121.19s
-Loading error handling took 0.01s
-Loading script took 0.11s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.02s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
-Dump and make backups took 0.02s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.02s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.01s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M3'
-Version: b'2.1 Metal - 89.3'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 124.52s
-Loading error handling took 0.01s
-Loading script took 0.05s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-
-File "game/prologue.rpy", line 310: is not terminated with a newline. (Check strings and parenthesis.)
-            action [Play("sound", "mouseclick.mp3"),ShowMenu("ViewOutfitMenu")
-DPI scale factor: 1.000000
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M3'
-Version: b'2.1 Metal - 89.3'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 126.21s
-Loading error handling took 0.01s
-Loading script took 0.11s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.01s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.02s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M3'
-Version: b'2.1 Metal - 89.3'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 252.20s
-Loading error handling took 0.02s
-Loading script took 0.07s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-
-File "game/screens.rpy", line 1538: is not terminated with a newline. (Check strings and parenthesis.)
-                textbutton _("Back") action [Play("sound", "mouseclick.mp3") Rollback()
-DPI scale factor: 1.000000
-Interface start took 0.08s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M3'
-Version: b'2.1 Metal - 89.3'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 255.40s
-Loading error handling took 0.01s
-Loading script took 0.04s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-
-File "game/screens.rpy", line 1538: is not terminated with a newline. (Check strings and parenthesis.)
-                textbutton _("Back") action [Play("sound", "mouseclick.mp3") Rollback()
-DPI scale factor: 1.000000
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M3'
-Version: b'2.1 Metal - 89.3'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 258.62s
-Loading error handling took 0.01s
-Loading script took 0.07s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-
-File "game/screens.rpy", line 1538: 'Rollback' is not a keyword argument or valid child of the textbutton statement.
-    textbutton _("Back") action [Play("sound", "mouseclick.mp3")] Rollback()
-                                                                          ^
-DPI scale factor: 1.000000
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M3'
-Version: b'2.1 Metal - 89.3'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 269.46s
-Loading error handling took 0.03s
-Loading script took 0.17s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.02s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
-Dump and make backups took 0.02s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.02s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.13s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M3'
-Version: b'2.1 Metal - 89.3'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 326.12s
-Loading error handling took 0.01s
-Loading script took 0.12s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.02s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
-Dump and make backups took 0.02s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.02s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.07s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M3'
-Version: b'2.1 Metal - 89.3'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 335.47s
-Loading error handling took 0.01s
-Loading script took 0.09s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-
-File "game/screens.rpy", line 252: 'ShowMenu' is not a keyword argument or valid child of the textbutton statement.
-    textbutton _("Save") action action [Play("sound", "mouseclick.mp3"), Rollback()]ShowMenu('save')
-                                                                                            ^
-DPI scale factor: 1.000000
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M3'
-Version: b'2.1 Metal - 89.3'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 341.70s
-Loading error handling took 0.01s
-Loading script took 0.07s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-
-File "game/screens.rpy", line 252: 'ShowMenu' is not a keyword argument or valid child of the textbutton statement.
-    textbutton _("Save") action action [Play("sound", "mouseclick.mp3"), ]ShowMenu('save')
-                                                                                  ^
-DPI scale factor: 1.000000
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M3'
-Version: b'2.1 Metal - 89.3'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 344.90s
-Loading error handling took 0.01s
-Loading script took 0.04s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-
-File "game/screens.rpy", line 252: is not terminated with a newline. (Check strings and parenthesis.)
-                textbutton _("Save") action action [Play("sound", "mouseclick.mp3"),ShowMenu('save')
-DPI scale factor: 1.000000
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M3'
-Version: b'2.1 Metal - 89.3'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 348.12s
-Loading error handling took 0.01s
-Loading script took 0.11s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.02s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
-Dump and make backups took 0.02s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.02s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M3'
-Version: b'2.1 Metal - 89.3'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/prologue.rpy", line 487, in script
-    "One of the most prestigious art schools in the world and I’m here!"
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/ast.py", line 2579, in execute
-    Say.execute(self)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/ast.py", line 621, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/exports/sayexports.py", line 132, in say
-    who(what, *args, **kwargs)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/character.py", line 1455, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/character.py", line 1106, in do_display
-    display_say(who,
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/character.py", line 803, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/core.py", line 2215, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/core.py", line 2745, in interact_core
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/screen.py", line 480, in visit_all
-    callback(self)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/core.py", line 2745, in <lambda>
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/screen.py", line 491, in per_interact
-    self.update()
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/screen.py", line 697, in update
-    self.screen.function(**self.scope)
-  File "game/screens.rpy", line 239, in execute
-    screen quick_menu():
-  File "game/screens.rpy", line 239, in execute
-    screen quick_menu():
-  File "game/screens.rpy", line 244, in execute
-    if quick_menu:
-  File "game/screens.rpy", line 246, in execute
-    hbox:
-  File "game/screens.rpy", line 252, in execute
-    textbutton _("Save") action action [Play("sound", "mouseclick.mp3"),ShowMenu('save')]
-  File "game/screens.rpy", line 252, in keywords
-    textbutton _("Save") action action [Play("sound", "mouseclick.mp3"),ShowMenu('save')]
-  File "game/screens.rpy", line 252, in <module>
-    textbutton _("Save") action action [Play("sound", "mouseclick.mp3"),ShowMenu('save')]
-NameError: name 'action' is not defined
-
-While running game code:
-  File "game/prologue.rpy", line 487, in script
-    "One of the most prestigious art schools in the world and I’m here!"
-  File "game/screens.rpy", line 239, in execute
-    screen quick_menu():
-  File "game/screens.rpy", line 239, in execute
-    screen quick_menu():
-  File "game/screens.rpy", line 244, in execute
-    if quick_menu:
-  File "game/screens.rpy", line 246, in execute
-    hbox:
-  File "game/screens.rpy", line 252, in execute
-    textbutton _("Save") action action [Play("sound", "mouseclick.mp3"),ShowMenu('save')]
-  File "game/screens.rpy", line 252, in keywords
-    textbutton _("Save") action action [Play("sound", "mouseclick.mp3"),ShowMenu('save')]
-  File "game/screens.rpy", line 252, in <module>
-    textbutton _("Save") action action [Play("sound", "mouseclick.mp3"),ShowMenu('save')]
-NameError: name 'action' is not defined
-Resetting cache.
-Early init took 356.55s
-Loading error handling took 0.05s
-Loading script took 0.13s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.02s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
 Index archives took 0.00s
 Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
 Dump and make backups took 0.02s
@@ -680,84 +96,522 @@ Vendor: "b'Apple'"
 Renderer: b'Apple M3'
 Version: b'2.1 Metal - 89.3'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
 Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/prologue.rpy", line 487, in script
-    "One of the most prestigious art schools in the world and I’m here!"
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/ast.py", line 2579, in execute
-    Say.execute(self)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/ast.py", line 621, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/exports/sayexports.py", line 132, in say
-    who(what, *args, **kwargs)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/character.py", line 1455, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/character.py", line 1106, in do_display
-    display_say(who,
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/character.py", line 803, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/core.py", line 2215, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/core.py", line 2745, in interact_core
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/screen.py", line 480, in visit_all
-    callback(self)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/core.py", line 2745, in <lambda>
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/screen.py", line 491, in per_interact
-    self.update()
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/screen.py", line 697, in update
-    self.screen.function(**self.scope)
-  File "game/screens.rpy", line 239, in execute
-    screen quick_menu():
-  File "game/screens.rpy", line 239, in execute
-    screen quick_menu():
-  File "game/screens.rpy", line 244, in execute
-    if quick_menu:
-  File "game/screens.rpy", line 246, in execute
-    hbox:
-  File "game/screens.rpy", line 252, in execute
-    textbutton _("Save") action action [Play("sound", "mouseclick.mp3"), ShowMenu('save')]
-  File "game/screens.rpy", line 252, in keywords
-    textbutton _("Save") action action [Play("sound", "mouseclick.mp3"), ShowMenu('save')]
-  File "game/screens.rpy", line 252, in <module>
-    textbutton _("Save") action action [Play("sound", "mouseclick.mp3"), ShowMenu('save')]
-NameError: name 'action' is not defined
-
-While running game code:
-  File "game/prologue.rpy", line 487, in script
-    "One of the most prestigious art schools in the world and I’m here!"
-  File "game/screens.rpy", line 239, in execute
-    screen quick_menu():
-  File "game/screens.rpy", line 239, in execute
-    screen quick_menu():
-  File "game/screens.rpy", line 244, in execute
-    if quick_menu:
-  File "game/screens.rpy", line 246, in execute
-    hbox:
-  File "game/screens.rpy", line 252, in execute
-    textbutton _("Save") action action [Play("sound", "mouseclick.mp3"), ShowMenu('save')]
-  File "game/screens.rpy", line 252, in keywords
-    textbutton _("Save") action action [Play("sound", "mouseclick.mp3"), ShowMenu('save')]
-  File "game/screens.rpy", line 252, in <module>
-    textbutton _("Save") action action [Play("sound", "mouseclick.mp3"), ShowMenu('save')]
-NameError: name 'action' is not defined
 Resetting cache.
-Early init took 367.45s
+Early init took 497.55s
+Loading error handling took 0.01s
+Loading script took 0.06s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.01s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 547.99s
 Loading error handling took 0.01s
 Loading script took 0.12s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 560.52s
+Loading error handling took 0.02s
+Loading script took 0.18s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 568.33s
+Loading error handling took 0.01s
+Loading script took 0.05s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.01s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 595.86s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 1831: Line is indented, but the preceding play sound statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    "?"
+    ^
+DPI scale factor: 1.000000
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 599.08s
+Loading error handling took 0.01s
+Loading script took 0.13s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 683.53s
+Loading error handling took 0.01s
+Loading script took 0.06s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.01s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 703.54s
+Loading error handling took 0.03s
+Loading script took 0.32s
+Loading save slot metadata took 0.10s
+Loading persistent took 0.00s
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.08s
+Index archives took 0.01s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 706.89s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 1831: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    play sound "doorknock.mp3" volume 0.8
+    ^
+DPI scale factor: 1.000000
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 708.58s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.01s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 711.94s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata took 0.05s
+Loading persistent took 0.00s
+Running init code took 0.01s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 715.26s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.01s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 735.23s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 740.10s
+Loading error handling took 0.02s
+Loading script took 0.24s
 Loading save slot metadata took 0.04s
 Loading persistent took 0.00s
 Running init code took 0.02s
@@ -779,6 +633,90 @@ Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.01s
 Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 977.79s
+Loading error handling took 0.02s
+Loading script took 0.11s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.01s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 981.25s
+Loading error handling took 0.01s
+Loading script took 0.14s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.09s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
 Save pyanalysis. took 0.01s
 Save bytecode. took 0.01s
 Running _start took 0.00s
@@ -792,21 +730,39 @@ Vendor: "b'Apple'"
 Renderer: b'Apple M3'
 Version: b'2.1 Metal - 89.3'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 384.38s
-Loading error handling took 0.01s
-Loading script took 0.06s
+Early init took 1063.72s
+Loading error handling took 0.05s
+Loading script took 0.26s
 Loading save slot metadata took 0.04s
 Loading persistent took 0.00s
-
-File "game/screens.rpy", line 253: is not terminated with a newline. (Check strings and parenthesis.)
-                textbutton _("History") action [Play("sound", "mouseclick.mp3"), ShowMenu('history')
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
 DPI scale factor: 1.000000
-Interface start took 0.06s
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.08s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1470, 956)
@@ -816,17 +772,101 @@ Vendor: "b'Apple'"
 Renderer: b'Apple M3'
 Version: b'2.1 Metal - 89.3'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 387.58s
+Early init took 1082.18s
 Loading error handling took 0.01s
 Loading script took 0.11s
-Loading save slot metadata took 0.03s
+Loading save slot metadata took 0.04s
 Loading persistent took 0.00s
 Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1083.98s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.01s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1091.84s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.01s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.02s
@@ -845,6 +885,115 @@ Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.01s
 Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1095.18s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.01s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1100.02s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 1828: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    stop music
+    ^
+DPI scale factor: 1.000000
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1101.71s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.01s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
 Save pyanalysis. took 0.01s
 Save bytecode. took 0.01s
 Running _start took 0.00s
@@ -858,36 +1007,12 @@ Vendor: "b'Apple'"
 Renderer: b'Apple M3'
 Version: b'2.1 Metal - 89.3'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 390.94s
-Loading error handling took 0.01s
-Loading script took 0.05s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-
-File "game/screens.rpy", line 254: is not terminated with a newline. (Check strings and parenthesis.)
-                textbutton _("Auto") action [Play("sound", "mouseclick.mp3"), Preference("auto-forward", "toggle")
-DPI scale factor: 1.000000
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M3'
-Version: b'2.1 Metal - 89.3'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 392.67s
+Early init took 1105.07s
 Loading error handling took 0.01s
 Loading script took 0.10s
 Loading save slot metadata took 0.03s
@@ -914,7 +1039,7 @@ Prepare screens took 0.03s
 Save pyanalysis. took 0.01s
 Save bytecode. took 0.01s
 Running _start took 0.00s
-Interface start took 0.04s
+Interface start took 0.05s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1470, 956)
@@ -924,15 +1049,124 @@ Vendor: "b'Apple'"
 Renderer: b'Apple M3'
 Version: b'2.1 Metal - 89.3'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 397.58s
-Loading error handling took 0.07s
-Loading script took 0.14s
+Early init took 1111.39s
+Loading error handling took 0.02s
+Loading script took 0.13s
+Loading save slot metadata took 0.08s
+Loading persistent took 0.00s
+Running init code took 0.01s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.06s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1143.39s
+Loading error handling took 0.01s
+Loading script took 0.12s
 Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1146.71s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 1825: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    stop music
+    ^
+DPI scale factor: 1.000000
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1148.41s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata took 0.03s
 Loading persistent took 0.00s
 Running init code took 0.02s
 Loading analysis data took 0.01s
@@ -952,9 +1186,427 @@ Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.01s
-Prepare screens took 0.05s
+Prepare screens took 0.03s
 Save pyanalysis. took 0.01s
 Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1171.40s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 1825: expected end of line
+    stop music with fade
+               ^
+DPI scale factor: 1.000000
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1176.14s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 1825: expected end of line
+    stop music with fadeout
+               ^
+DPI scale factor: 1.000000
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1180.85s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 1825: expected simple expression
+    stop music fadeout
+                      ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1188.62s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 1825: expected end of line
+    stop music with fadeout
+               ^
+DPI scale factor: 1.000000
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1194.82s
+Loading error handling took 0.01s
+Loading script took 0.04s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.01s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1217.81s
+Loading error handling took 0.01s
+Loading script took 0.12s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1236.34s
+Loading error handling took 0.01s
+Loading script took 0.11s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1248.76s
+Loading error handling took 0.01s
+Loading script took 0.11s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1298.94s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/prologue.rpy", line 1852: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    play music "RAtheme.mp3" fadein 1.0 volume 0.5 
+    ^
+DPI scale factor: 1.000000
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1300.66s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.01s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1304.00s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.01s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1308.91s
+Loading error handling took 0.01s
+Loading script took 0.11s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.01s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
 Running _start took 0.00s
 Interface start took 0.07s
 
@@ -966,17 +1618,93 @@ Vendor: "b'Apple'"
 Renderer: b'Apple M3'
 Version: b'2.1 Metal - 89.3'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1470, 815) drawable=(2940, 1630)
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
 Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1313.70s
+Loading error handling took 0.01s
+Loading script took 0.06s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.01s
-Load screen analysis took 0.02s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.01s
 Analyze screens took 0.00s
-Prepare screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
 Running _start took 0.00s
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1336.82s
+Loading error handling took 0.01s
+Loading script took 0.12s
+Loading save slot metadata took 0.05s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to '/Users/jennie/Library/RenPy/backups/Chic Boutique Game v2':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M3'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 817) drawable=(2940, 1634)
+Maximum texture size: 4096x4096
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s

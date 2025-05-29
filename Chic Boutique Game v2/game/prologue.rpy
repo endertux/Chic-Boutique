@@ -241,7 +241,7 @@ init python:
 screen outfits_ui:
     image "Backgrounds/classroom bg.jpg"
     image "Minigame/ui_base.png" align(1.1, 1.0) size (1300, 1100)
-    imagebutton auto "Minigame/done_%s.png" align(0.02, 0.97) action [Play("sound", "mouseclick.mp3"), Jump("instructions")]
+    imagebutton auto "Minigame/done_%s.png" align(0.02, 0.97) action [Play("sound", "dressup.mp3"), Jump("instructions")]
     
     fixed:
         #align the outfit window on screen
@@ -548,6 +548,7 @@ label instructions:
             jump music
 
     label museum:
+        play music "felixtheme.mp3" fadein 1.0 volume 0.5
     #BG ART OF SCHOOL MUSEUM
         scene museum 4
         with fade
@@ -868,6 +869,7 @@ label felixtalking3:
 
 
 label garden:
+    play music "addietheme.mp3" fadein 1.0 volume 0.5
     #BG ART OF SCHOOL GARDEN
     scene garden bg
 
@@ -1184,6 +1186,7 @@ label actcalm:
     jump path
 
 label field:
+    play music "kalvintheme.mp3" fadein 1.0 volume 0.5
     #BG ART OF SCHOOL FOOTBALL FIELD
     scene field
     with fade
@@ -1352,6 +1355,7 @@ label field:
     jump path
 
 label music:
+    play music "riyatheme.mp3" fadein 1.0 volume 0.5
 
     scene music studio bg
     with fade
@@ -1508,6 +1512,7 @@ label music_continue:
 
 
 label path:
+    play music "RAtheme.mp3" fadein 1.0 volume 0.5 
     #FADE TO SCENE OUTSIDE ON PATH
 
     #atp all choice options should have converged into the same main story where player is on the path outside
@@ -1711,7 +1716,7 @@ label path:
             $ mc_line = "Hey! Watch where you're going!"
             jump bestiemeet
 
-    label bestiemeet:
+    label bestiemeet: 
     hide dim_bg
     mc "[mc_line]"
     #(Nadia)
@@ -1817,12 +1822,17 @@ label path:
 
     "It’s so much bigger than I thought it would be! Let’s see…"
 
+    stop music fadeout 3.5
+    play sound "doorbell.mp3" volume 1.0
+
     "I could set up a mannequin here… sewing machine in this corner…"
 
     #DOOR BEEPING SOUND EFFECT
 
     # surprised face
-    "?"
+    "? (What was that?)"
+
+    
 
     #NADIA SPRITE
     show bsf normal
@@ -1839,6 +1849,8 @@ label path:
     mc "From earlier…"
 
     show bsf worried
+    
+    play music "bestietheme.wav" fadein 1.0 volume 0.5 
     Nadia "HAHAHAHAHA"
 
     show dim_bg

@@ -211,7 +211,7 @@ init python:
 screen outfits_ui2:
     image "Backgrounds/classroom bg.jpg"
     image "Minigame/ui_base.png" align(1.1, 1.0) size (1300, 1100)
-    imagebutton auto "Minigame/done_%s.png" align(0.02, 0.95) action Jump("instructions2")
+    imagebutton auto "Minigame/done_%s.png" align(0.02, 0.95) action [Play("sound", "dressup.mp3"), Jump("instructions2")]
     on "show" action [Show("MC_Base")]
 
     for i, (imagepath, imagepathmissing, Type, showname, setval, Xoffset, Yoffset) in enumerate(outfit_buttons):

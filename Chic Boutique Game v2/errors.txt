@@ -2,8 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 254: is not terminated with a newline. (Check strings and parenthesis.)
-                textbutton _("Auto") action [Play("sound", "mouseclick.mp3"), Preference("auto-forward", "toggle")
+File "game/prologue.rpy", line 1852: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    play music "RAtheme.mp3" fadein 1.0 volume 0.5 
+    ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Wed May 28 21:43:24 2025
+Thu May 29 00:58:14 2025

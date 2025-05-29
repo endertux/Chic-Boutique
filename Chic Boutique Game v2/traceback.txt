@@ -1,78 +1,48 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/prologue.rpy", line 487, in script
-    "One of the most prestigious art schools in the world and I’m here!"
-  File "game/screens.rpy", line 239, in execute
-    screen quick_menu():
-  File "game/screens.rpy", line 239, in execute
-    screen quick_menu():
-  File "game/screens.rpy", line 244, in execute
-    if quick_menu:
-  File "game/screens.rpy", line 246, in execute
-    hbox:
-  File "game/screens.rpy", line 252, in execute
-    textbutton _("Save") action action [Play("sound", "mouseclick.mp3"), ShowMenu('save')]
-  File "game/screens.rpy", line 252, in keywords
-    textbutton _("Save") action action [Play("sound", "mouseclick.mp3"), ShowMenu('save')]
-  File "game/screens.rpy", line 252, in <module>
-    textbutton _("Save") action action [Play("sound", "mouseclick.mp3"), ShowMenu('save')]
-NameError: name 'action' is not defined
+After initialization, but before game start.
+  File "game/chapterone.rpy", line 211, in prepare_screen
+    screen outfits_ui2:
+  File "game/chapterone.rpy", line 211, in prepare
+    screen outfits_ui2:
+  File "game/chapterone.rpy", line 214, in prepare
+    imagebutton auto "Minigame/done_%s.png" align(0.02, 0.95) action [Play("sound", "dressup.mp3") Jump("instructions2")]
+  File "game/chapterone.rpy", line 214, in prepare
+    imagebutton auto "Minigame/done_%s.png" align(0.02, 0.95) action [Play("sound", "dressup.mp3") Jump("instructions2")]
+SyntaxError: invalid syntax (chapterone.rpy, line 214)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/prologue.rpy", line 487, in script
-    "One of the most prestigious art schools in the world and I’m here!"
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/ast.py", line 2579, in execute
-    Say.execute(self)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/ast.py", line 621, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/exports/sayexports.py", line 132, in say
-    who(what, *args, **kwargs)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/character.py", line 1455, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/character.py", line 1106, in do_display
-    display_say(who,
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/character.py", line 803, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/core.py", line 2215, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/core.py", line 2745, in interact_core
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/screen.py", line 480, in visit_all
-    callback(self)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/core.py", line 2745, in <lambda>
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/screen.py", line 491, in per_interact
-    self.update()
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/screen.py", line 697, in update
-    self.screen.function(**self.scope)
-  File "game/screens.rpy", line 239, in execute
-    screen quick_menu():
-  File "game/screens.rpy", line 239, in execute
-    screen quick_menu():
-  File "game/screens.rpy", line 244, in execute
-    if quick_menu:
-  File "game/screens.rpy", line 246, in execute
-    hbox:
-  File "game/screens.rpy", line 252, in execute
-    textbutton _("Save") action action [Play("sound", "mouseclick.mp3"), ShowMenu('save')]
-  File "game/screens.rpy", line 252, in keywords
-    textbutton _("Save") action action [Play("sound", "mouseclick.mp3"), ShowMenu('save')]
-  File "game/screens.rpy", line 252, in <module>
-    textbutton _("Save") action action [Play("sound", "mouseclick.mp3"), ShowMenu('save')]
-NameError: name 'action' is not defined
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/main.py", line 652, in main
+    run(restart)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/main.py", line 94, in run
+    renpy.display.screen.prepare_screens()
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/screen.py", line 1024, in prepare_screens
+    s.ast.prepare_screen()
+  File "game/chapterone.rpy", line 211, in prepare_screen
+    screen outfits_ui2:
+  File "game/chapterone.rpy", line 211, in prepare
+    screen outfits_ui2:
+  File "game/chapterone.rpy", line 214, in prepare
+    imagebutton auto "Minigame/done_%s.png" align(0.02, 0.95) action [Play("sound", "dressup.mp3") Jump("instructions2")]
+  File "game/chapterone.rpy", line 214, in prepare
+    imagebutton auto "Minigame/done_%s.png" align(0.02, 0.95) action [Play("sound", "dressup.mp3") Jump("instructions2")]
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/py3analysis.py", line 803, in ast_eval
+    return self.ast_eval_literal(expr)[0]
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/py3analysis.py", line 785, in ast_eval_literal
+    expr = py_compile(expr, 'eval', ast_node=True)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/python.py", line 1144, in py_compile
+    raise e
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/python.py", line 1081, in py_compile
+    raise orig_e
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/python.py", line 1073, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
+SyntaxError: invalid syntax (chapterone.rpy, line 214)
 
 macOS-15.0.1-arm64-arm-64bit arm64
 Ren'Py 8.3.4.24120703
 Chic Boutique 1.0
-Wed May 28 21:42:51 2025
+Thu May 29 00:35:51 2025
