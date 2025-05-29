@@ -160,7 +160,7 @@ screen shoe5 zorder 1:
 #Start button
 screen outfits:
     image "Minigame/startmenu.png"
-    imagebutton auto "Minigame/start_%s.png" align(0.5, 0.45) action [Show("outfits_ui"), Show("MC_Base"), Show("top0"), Show("bottom0"), Show("shoe0")]
+    imagebutton auto "Minigame/start_%s.png" align(0.5, 0.45) action [Play("sound", "mouseclick.mp3"), Show("outfits_ui"), Show("MC_Base"), Show("top0"), Show("bottom0"), Show("shoe0")]
 #Minigame
 
 define gui.scrollbar_size = 24
@@ -241,7 +241,7 @@ init python:
 screen outfits_ui:
     image "Backgrounds/classroom bg.jpg"
     image "Minigame/ui_base.png" align(1.1, 1.0) size (1300, 1100)
-    imagebutton auto "Minigame/done_%s.png" align(0.02, 0.97) action Jump("instructions")
+    imagebutton auto "Minigame/done_%s.png" align(0.02, 0.97) action [Play("sound", "mouseclick.mp3"), Jump("instructions")]
     
     fixed:
         #align the outfit window on screen
@@ -307,7 +307,7 @@ screen ViewOutfitButton():
     imagebutton:
         auto "Minigame/clothes_%s.png"#image
         align (0.98, 0.02)#Allign to top right
-        action ShowMenu("ViewOutfitMenu")#show view outfit screen on click
+        action [Play("sound", "mouseclick.mp3"),ShowMenu("ViewOutfitMenu")]#show view outfit screen on click
 
 #design view outfit screen
 screen ViewOutfitMenu():
@@ -1108,11 +1108,12 @@ label freakout:
     Addie "Got it!"
     show baddie tease
     mc "Oh thank god..."
-    mc "Thank you!."
+    mc "Thank you!"
     show baddie happy
     Addie "Of course, babe!"
     show baddie tease
     Addie "It was nothing, really."
+    jump flower
 
 label actcalm:
     hide dim_bg
@@ -1142,6 +1143,14 @@ label actcalm:
     show baddie tease
     mc "{i}(Oh, she's returned to normal.){/i}"
 
+    label flower:
+    hide dim_bg
+    scene garden bg
+    show Player:
+        xpos 0.01
+        ypos 0.6
+    show baddie tease
+
     show baddie happy
     Addie "It probably just thought you were a flower! Easy mistake."
 
@@ -1167,7 +1176,7 @@ label actcalm:
     hide baddie with fade
 
     mc "{i}(Wait a minute… Didn't she say she had nothing to do?){/i}"
-
+    
     #FADE SCENE TO OUTSIDE ON PATH
     scene black bg
     with fade

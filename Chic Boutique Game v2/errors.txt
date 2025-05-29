@@ -2,9 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/prologue.rpy", line 1992: invalid syntax
-    mc_line "Seems fun! I'm down to go."
-             ^
+File "game/screens.rpy", line 254: is not terminated with a newline. (Check strings and parenthesis.)
+                textbutton _("Auto") action [Play("sound", "mouseclick.mp3"), Preference("auto-forward", "toggle")
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Tue May 27 17:45:45 2025
+Wed May 28 21:43:24 2025

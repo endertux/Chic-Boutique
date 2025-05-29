@@ -249,10 +249,10 @@ screen quick_menu():
             xalign 0.85
             yalign 0.975
 
-            textbutton _("Save") action ShowMenu('save')
-            textbutton _("History") action ShowMenu('history')
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Options") action ShowMenu('preferences')
+            textbutton _("Save") action [Play("sound", "mouseclick.mp3"), ShowMenu('save')]
+            textbutton _("History") action [Play("sound", "mouseclick.mp3"), ShowMenu('history')]
+            textbutton _("Auto") action [Play("sound", "mouseclick.mp3"), Preference("auto-forward", "toggle")]
+            textbutton _("Options") action [Play("sound", "mouseclick.mp3"), ShowMenu('preferences')]
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -299,27 +299,27 @@ screen navigation():
 
             imagebutton:
                 auto "menuUI/start_%s.png"
-                action Start()
+                action [Play("sound", "mouseclick.mp3"), Start()]
                 size_group "main_menu"
 
             imagebutton:
                 auto "menuUI/load_%s.png"
-                action ShowMenu("load")
+                action [Play("sound", "mouseclick.mp3"), ShowMenu("load")]
                 size_group "main_menu"
 
             imagebutton:
                 auto "menuUI/options_%s.png"
-                action ShowMenu("preferences")
+                action [Play("sound", "mouseclick.mp3"), ShowMenu("preferences")]
                 size_group "main_menu"
 
             imagebutton:
                 auto "menuUI/about_%s.png"
-                action ShowMenu("about")
+                action [Play("sound", "mouseclick.mp3"), ShowMenu("about")]
                 size_group "main_menu"
 
             imagebutton:
                 auto "menuUI/help_%s.png"
-                action ShowMenu("help")
+                action [Play("sound", "mouseclick.mp3"), ShowMenu("help")]
                 size_group "main_menu"
 
             imagebutton:
