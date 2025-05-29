@@ -173,7 +173,7 @@ init python:
     shoes2 = []
     for i, (imagepath, imagepathmissing, Type, showname, setval, Xoffset, Yoffset) in enumerate(outfit_buttons2):
         if Type == "shoe":
-            shoes.append(Hide(showname))
+            shoes2.append(Hide(showname))
 
 screen outfits_ui2:
     image "Backgrounds/classroom bg.jpg"
