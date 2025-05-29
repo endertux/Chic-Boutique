@@ -30,7 +30,7 @@ define Addie = Character("Addison", color = "#32327c" )
 define Kalvin = Character("Kalvin", color = "#b72417")
 define Riya = Character("Riya", color = "#470b1b")
 
-define ra = Character("RA", color = "#a84480")
+define ra  = Character("RA Olivia", color = "#a84480")
 define Nadia = Character("Nadia", color = "#9b33c6")
 
 #This is where we create a separate screen for each article of clothing, as well as the character base. Make sure they're all aligned!
@@ -158,7 +158,6 @@ screen shoe5 zorder 1:
 
 #Dress up menu screen
 #Start button
-label start_dressup:
 screen outfits:
     image "Minigame/startmenu.png"
     imagebutton auto "Minigame/start_%s.png" align(0.5, 0.45) action [Play("sound", "mouseclick.mp3"), Show("outfits_ui"), Show("MC_Base"), Show("top0"), Show("bottom0"), Show("shoe0")]
@@ -1577,7 +1576,7 @@ label path:
         ypos 0.07 
     with dissolve
 
-    "({i}Hah…{i})"
+    "Hah…"
     #😓
 
     #SOUND AND SCREEN EFFECT TO INDICATE THAT PLAYER IS NOW SITTING
@@ -1608,15 +1607,17 @@ label path:
         ypos 0.20
 
     # distressed face
-    mc "I’m sorry, I should’ve checked in before using the lounge!"
+    anon "Hello, are you a student here?"
+
+    mc "Oh I’m sorry, I should’ve checked in before using the lounge!"
 
     # neutral face
-    ra "No worries! …Did you really walk all that way?"
+    anon "No worries! …Did you really walk all that way?"
 
     show dim_bg
     menu:
-        "...Yes":
-            $ mc_line = "...Yes"
+        "Yeah, I couldn’t find the main entrance. I think I took the long way around...":
+            $ mc_line = "Yeah, I couldn’t find the main entrance. I think I took the long way around..."
             jump rameet
 
         "Why? Is there another way?":
@@ -1627,7 +1628,7 @@ label path:
     hide dim_bg
     mc "[mc_line]"
 
-    ra "You know we have a shuttle system, right?"
+    anon "You know we have a shuttle system, right?"
 
     # surprised face
     mc "Wait, WHAT?!"
@@ -1635,31 +1636,49 @@ label path:
     # cry face
     mc "You mean I didn’t have to walk all that way?!"
 
-    ra "Haha don’t worry, you’re not the only one who’s made that mistake. It’s kind of an unofficial freshman tradition."
+    anon "Haha don’t worry, you’re not the only one who’s made that mistake. It’s kind of an unofficial freshman tradition."
 
-    ra "Please, take a seat! You must be winded. I’ll get you checked in."
+    anon "This campus is a maze if you don’t have someone to guide you."
 
-    ra "Could you give me your name and ID number for check-in?"
+    anon "Please, take a seat! You must be winded. I’ll get you checked in."
+
+    ra "I’m Olivia, the RA for this building. Just doing my rounds and saw someone who looked a little lost."
+
+    ra "Could you give me your ID number for check-in?"
 
     # neutral happy face
     show dim_bg
     menu:
         "My ID number is 14399333.":
             $ mc_line = "My ID number is 14399333."
-            jump rameet2
+            jump idcard2
 
-        "Here's my ID card!":
-            $ mc_line = "Here's my ID card!"
-            jump rameet2
+        "Uhhh.. I actually don't know my number.":
+            $ mc_line = "Uhhh.. I actually don't know my number."
+            jump lostid
 
-    label rameet2:
+    label lostid:
+    
+    hide dim_bg
+
+    mc  "[mc_line]"
+
+    ra "That's fine! Just tell me your name and your major."
+
+    jump major
+
+    label idcard2:
+
     hide dim_bg
     
     mc "[mc_line]"
 
-    #INSERT OF ACCESS CARD
+    ra "Okay nice! Can you tell me your name and your major?"
 
-    mc  "And my name is [povname]."
+    #INSERT OF ACCESS CARD
+    label major:
+        
+    mc  "My name is [povname] and my major is Fashion."
 
     ra "Wonderful! You’re all checked in."
 
@@ -1851,7 +1870,7 @@ label path:
 
     show bsf worried
     
-    play music "bestietheme.wav" fadein 1.0 volume 0.5 
+    play music "bestietheme.mp3" fadein 1.0 volume 0.5 
     Nadia "HAHAHAHAHA"
 
     show dim_bg
