@@ -19,40 +19,7 @@ screen MC_Base:
 
 # -- Tops Define -- Tops Define -- Tops Define -- Tops Define -- Tops Define -- Tops Define -- Tops Define -- Tops Define --
 # (1T)-- Felix Top 1, second dressup
-screen top0 zorder 2:
-    image "Assets/Top_1.png":
-        xpos 300
-        ypos 0
 
-# (2T)-- Riya Top 1, second dressup
-screen top1 zorder 4:
-    image "Assets/Top_4.png":
-        xpos 300
-        ypos 0
-
-# (3T)-- Addie Top 1, second dressup
-screen top2 zorder 4:
-    image "Assets/Top_6.png":
-        xpos 300
-        ypos 0
-
-# (4T)-- Riya Top 2, second dressup
-screen top3 zorder 4:
-    image "Assets/rTop_7.png":
-        xpos 300
-        ypos 0
-
-# (5T)-- Addie Top 2, second dressup
-screen top4 zorder 4:
-    image "Assets/aTop_8.png":
-        xpos 300
-        ypos 0
-
-# (6T)-- Felix Top 2, second dressup
-screen top5 zorder 4:
-    image "Assets/fTop_12.png":
-        xpos 300
-        ypos 0
 
 
 # -- Pants Define -- Pants Define -- Pants Define -- Pants Define -- Pants Define -- Pants Define -- Pants Define -- Pants Define -- Pants Define -- 
@@ -141,7 +108,7 @@ define gui.scrollbar_size = 24
 
 init python:
     #an array of the items the player ownes, these are the unique names of the clothing items, just add an item to the list to give it to the player
-    owned_outfits = ["top0", "top1", "top2", "top3", "top4", "top5", "bottom0", "bottom1", "bottom2", "bottom3", "bottom4", "bottom5","shoe0", "shoe1", "shoe2", "shoe3", "shoe4", "shoe5"]
+    owned_outfits2 = ["top6", "top7", "top8", "top9", "top10", "top11", "bottom0", "bottom1", "bottom2", "bottom3", "bottom4", "bottom5","shoe0", "shoe1", "shoe2", "shoe3", "shoe4", "shoe5"]
 
 
     #adding new outfit options:
@@ -156,31 +123,31 @@ init python:
 
     
     #an array of clothing buttons(outfits are organised in groups of three items, the order is top, bottom, shoe. this order is required for the code to work)
-    outfit_buttons = [ #outfit buttons (path of normal clothing, path of lock clothing image, type (top, bottom, shoe), showname, item id number (saved clothing item number), offsetx, offsety)
+    outfit_buttons2 = [ #outfit buttons (path of normal clothing, path of lock clothing image, type (top, bottom, shoe), showname, item id number (saved clothing item number), offsetx, offsety)
         #prologue outfits
-        ("Assets/Top_1_%s.png", "Assets/Top_1_%s.png",    "top",   "top0", 0, -40, 0),
+        ("Assets/Top_1_%s.png", "Assets/Top_1_%s.png",    "top",   "top6", 0, -40, 0),
         ("Assets/Bottom_1_%s.png", "Assets/Bottom_1_%s.png", "bottom", "bottom0", 0, -20, 40),
-        ("Assets/Shoe_1_%s.png", "Assets/Shoe_1_%s.png",   "shoe",   "shoe0", 0, 0, 200),
+        ("Assets/Shoe_1_%s.png", "Assets/Shoe_1_%s.png",   "shoe",   "shoe7", 0, 0, 200),
 
-        ("Assets/Top_4_%s.png", "Assets/Top_4_%s.png",    "top",   "top1", 1, -20, -40),
+        ("Assets/Top_4_%s.png", "Assets/Top_4_%s.png",    "top",   "top7", 1, -20, -40),
         ("Assets/Bottom_3_%s.png", "Assets/Bottom_3_%s.png", "bottom", "bottom1", 1, 0, 50),
         ("Assets/fShoe_5_%s.png", "Assets/fShoe_5_%s.png",   "shoe",   "shoe1", 1, 0, 200),
 
-        ("Assets/Top_6_%s.png", "Assets/Top_6_%s.png",    "top",   "top2", 2, 0, 60),
+        ("Assets/Top_6_%s.png", "Assets/Top_6_%s.png",    "top",   "top8", 2, 0, 60),
         ("Assets/Bottom_4_%s.png", "Assets/Bottom_4_%s.png", "bottom", "bottom2", 2, 0, 50),
         ("Assets/aShoe_6_%s.png", "Assets/aShoe_6_%s.png",   "shoe",   "shoe2", 2, 0, 200),
 
-        ("Assets/rTop_7_%s.png", "Assets/rTop_7_%s.png",    "top",   "top3", 3, 0, 60),
+        ("Assets/rTop_7_%s.png", "Assets/rTop_7_%s.png",    "top",   "top9", 3, 0, 60),
         ("Assets/aBottom_7_%s.png", "Assets/aBottom_7_%s.png", "bottom", "bottom3", 3, 0, 50),
         ("Assets/rShoe_7_%s.png", "Assets/rShoe_7_%s.png",   "shoe",   "shoe3", 3, 0, 200),
 
 
         #TEST OUTFITS, these are chapter one outfits that are here to show the scroll bar
-        ("Assets/aTop_8_%s.png", "Assets/aTop_8_%s.png",    "top",   "top4", 0,     -20, 30),
+        ("Assets/aTop_8_%s.png", "Assets/aTop_8_%s.png",    "top",   "top10", 0,     -20, 30),
         ("Assets/rBottom_11_%s.png", "Assets/rBottom_11_%s.png", "bottom", "bottom4", 0, -20, 40),
         ("Assets/rShoe_8_%s.png", "Assets/rShoe_8_%s.png",   "shoe",   "shoe4", 0,   0, 200),
 
-        ("Assets/fTop_12_%s.png", "Assets/fTop_12_%s.png",    "top",   "top5", 1,     0, 40),
+        ("Assets/fTop_12_%s.png", "Assets/fTop_12_%s.png",    "top",   "top11", 1,     0, 40),
         ("Assets/fBottom_12_%s.png", "Assets/fBottom_12_%s.png", "bottom", "bottom5", 1, 0, 50),
         ("Assets/fShoe_11_%s.png", "Assets/fShoe_11_%s.png",   "shoe",   "shoe5", 1,   0, 100),
 
@@ -195,16 +162,16 @@ init python:
     ]
 
     #these three arrays automatically fill themselfs with Hide() functions for every item of their respective types. when you press a button it uses these to first hide all items of that type on the character before showing the specific one clicked
-    tops = []
-    for i, (imagepath, imagepathmissing, Type, showname, setval, Xoffset, Yoffset) in enumerate(outfit_buttons):
+    tops2 = []
+    for i, (imagepath, imagepathmissing, Type, showname, setval, Xoffset, Yoffset) in enumerate(outfit_buttons2):
         if Type == "top":
-            tops.append(Hide(showname))
-    bottoms = []
-    for i, (imagepath, imagepathmissing, Type, showname, setval, Xoffset, Yoffset) in enumerate(outfit_buttons):
+            tops2.append(Hide(showname))
+    bottoms2 = []
+    for i, (imagepath, imagepathmissing, Type, showname, setval, Xoffset, Yoffset) in enumerate(outfit_buttons2):
         if Type == "bottom":
-            bottoms.append(Hide(showname))
-    shoes = []
-    for i, (imagepath, imagepathmissing, Type, showname, setval, Xoffset, Yoffset) in enumerate(outfit_buttons):
+            bottoms2.append(Hide(showname))
+    shoes2 = []
+    for i, (imagepath, imagepathmissing, Type, showname, setval, Xoffset, Yoffset) in enumerate(outfit_buttons2):
         if Type == "shoe":
             shoes.append(Hide(showname))
 
@@ -214,13 +181,13 @@ screen outfits_ui2:
     imagebutton auto "Minigame/done_%s.png" align(0.02, 0.95) action [Play("sound", "dressup.mp3"), Jump("instructions2")]
     on "show" action [Show("MC_Base")]
 
-    for i, (imagepath, imagepathmissing, Type, showname, setval, Xoffset, Yoffset) in enumerate(outfit_buttons):
+    for i, (imagepath, imagepathmissing, Type, showname, setval, Xoffset, Yoffset) in enumerate(outfit_buttons2):
         if Type == "top" and top == setval:
-            on "show" action [tops, Show(showname)]
+            on "show" action [tops2, Show(showname)]
         if Type == "bottom" and bottom == setval:
-            on "show" action [bottoms, Show(showname)]
+            on "show" action [bottoms2, Show(showname)]
         if Type == "shoe" and shoe == setval:
-            on "show" action [shoes, Show(showname)]
+            on "show" action [shoes2, Show(showname)]
 
     #on "hide" action Hide("MC_Base")
 
@@ -247,14 +214,14 @@ screen outfits_ui2:
 
                     #x size of the clothing item grid (number of outfit options * x_spacing) this is the interier size of the scrolling space
                     xsize 2000
-                    #y size of the clothing item grid (not really necesary, just use outfit offsets in the outfit_buttons array) this is the interier size of the scrolling space
+                    #y size of the clothing item grid (not really necesary, just use outfit offsets in the outfit_buttons2 array) this is the interier size of the scrolling space
                     ysize 900
 
                     #loop through clothing buttons
-                    for i, (imagepath, imagepathmissing, Type, showname, setval, Xoffset, Yoffset) in enumerate(outfit_buttons):
+                    for i, (imagepath, imagepathmissing, Type, showname, setval, Xoffset, Yoffset) in enumerate(outfit_buttons2):
                         imagebutton:
                             #if you own an item (I.E. its in owned_outfits)
-                            if showname in owned_outfits:
+                            if showname in owned_outfits2:
                                 #set inage to the normal clothing image
                                 auto imagepath
                                 #set the items position on the grid
@@ -262,11 +229,11 @@ screen outfits_ui2:
 
                                 #set up action to set clothing when pressed. for each option it hides all items of that type and then shows the specific one you clicked
                                 if Type == "top":
-                                    action [tops, Show(showname), SetVariable(Type, setval), SetVariable("secondTop", setval)]
+                                    action [tops2, Show(showname), SetVariable(Type, setval), SetVariable("secondTop", setval)]
                                 if Type == "bottom":
-                                    action [bottoms, Show(showname), SetVariable(Type, setval), SetVariable("secondBottom", setval)]
+                                    action [bottoms2, Show(showname), SetVariable(Type, setval), SetVariable("secondBottom", setval)]
                                 if Type == "shoe":
-                                    action [shoes, Show(showname), SetVariable(Type, setval), SetVariable("secondShoe", setval)]
+                                    action [shoes2, Show(showname), SetVariable(Type, setval), SetVariable("secondShoe", setval)]
                             #else if you don't own it (I.E. its not in owned_outfits)
                             else:
                                 #set the items position on the grid
@@ -286,22 +253,22 @@ style outfit_scrollbar:#scrollbar style
 
 
 #This image can be used for the rest of the game, or just as a final reveal.
-layeredimage Player:
+layeredimage Player2:
     always:
         "Assets/newMCSprite.png"
 
     group shoe:
         attribute 0 default:
             Null()
-    if shoe == 0: 
+    if shoe == 0:
         "Assets/Shoe_1.png"
-    if shoe == 1: 
+    if shoe == 1:
         "Assets/fShoe_5.png"
-    if shoe == 2: 
+    if shoe == 2:
         "Assets/aShoe_6.png"
-    if shoe == 3: 
+    if shoe == 3:
         "Assets/rShoe_7.png"
-    if shoe == 4: 
+    if shoe == 4:
         "Assets/rShoe_8.png"
     if shoe == 5: 
         "Assets/fShoe_11.png"
@@ -310,17 +277,17 @@ layeredimage Player:
         attribute 0 default:
             Null()
     if top == 0:
-        "Assets/Top_1.png"
-    if top == 1:
-        "Assets/Top_4.png"
-    if top == 2:
         "Assets/Top_6.png"
+    if top == 1:
+        "Assets/Top_7.png"
+    if top == 2:
+        "Assets/Top_8.png"
     if top == 3:
-        "Assets/rTop_7.png"
+        "Assets/rTop_9.png"
     if top == 4:
-        "Assets/aTop_8.png"
+        "Assets/aTop_10.png"
     if top == 5:
-        "Assets/fTop_12.png"
+        "Assets/fTop_11.png"
 
     group bottom:
         attribute 0 default:
@@ -345,6 +312,30 @@ layeredimage Player:
 # PROMPT DRESS UP CHOICE
 label dress:
 
+    hide screen top0
+    hide screen top1
+    hide screen top2
+    hide screen top3
+    hide screen top4
+    hide screen top5
+
+    # hide screen bottoms
+    # hide screen bottom0
+    # hide screen bottom1
+    # hide screen bottom2
+    # hide screen bottom3
+    # hide screen bottom4
+    # hide screen bottom5
+
+    #hide screen shoes
+    # hide screen shoe0
+    # hide screen shoe1
+    # hide screen shoe2
+    # hide screen shoe3
+    # hide screen shoe4
+    # hide screen shoe5
+
+    hide Player
     show bsf speak
     Nadia "Just borrow something from my closet."
 
@@ -387,7 +378,7 @@ label instructions2:
     hide screen shoe5
 
     show screen ViewOutfitButton
-    show Player:
+    show Player2:
         xpos 0.38
         ypos 0
     #fade out outfit screen and in the results screen
@@ -429,7 +420,7 @@ label end_scene:
 
     scene temp dorm
 
-    show Player:
+    show Player2:
         xpos 0.01
         ypos 0.1
     with fade 

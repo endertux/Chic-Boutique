@@ -76,6 +76,41 @@ screen top5 zorder 4:
         xpos 300
         ypos 0
 
+screen top6 zorder 2:
+    image "Assets/Top_1.png":
+        xpos 300
+        ypos 0
+
+# (2T)-- Riya Top 1, second dressup
+screen top7 zorder 4:
+    image "Assets/Top_4.png":
+        xpos 300
+        ypos 0
+
+# (3T)-- Addie Top 1, second dressup
+screen top8 zorder 4:
+    image "Assets/Top_6.png":
+        xpos 300
+        ypos 0
+
+# (4T)-- Riya Top 2, second dressup
+screen top9 zorder 4:
+    image "Assets/rTop_7.png":
+        xpos 300
+        ypos 0
+
+# (5T)-- Addie Top 2, second dressup
+screen top10 zorder 4:
+    image "Assets/aTop_8.png":
+        xpos 300
+        ypos 0
+
+# (6T)-- Felix Top 2, second dressup
+screen top11 zorder 4:
+    image "Assets/fTop_12.png":
+        xpos 300
+        ypos 0
+
 
 
 
