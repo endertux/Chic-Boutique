@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/prologue.rpy", line 1852: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    play music "RAtheme.mp3" fadein 1.0 volume 0.5 
-    ^
+File "game/screens.rpy", line 374: 'play' is not a keyword argument or valid child of the screen statement.
+    play music "chicboutique.mp3" loop
+        ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Thu May 29 00:58:14 2025
+Thu May 29 01:25:19 2025

@@ -158,6 +158,7 @@ screen shoe5 zorder 1:
 
 #Dress up menu screen
 #Start button
+label start_dressup:
 screen outfits:
     image "Minigame/startmenu.png"
     imagebutton auto "Minigame/start_%s.png" align(0.5, 0.45) action [Play("sound", "mouseclick.mp3"), Show("outfits_ui"), Show("MC_Base"), Show("top0"), Show("bottom0"), Show("shoe0")]

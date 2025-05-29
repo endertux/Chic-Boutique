@@ -1,48 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-After initialization, but before game start.
-  File "game/chapterone.rpy", line 211, in prepare_screen
-    screen outfits_ui2:
-  File "game/chapterone.rpy", line 211, in prepare
-    screen outfits_ui2:
-  File "game/chapterone.rpy", line 214, in prepare
-    imagebutton auto "Minigame/done_%s.png" align(0.02, 0.95) action [Play("sound", "dressup.mp3") Jump("instructions2")]
-  File "game/chapterone.rpy", line 214, in prepare
-    imagebutton auto "Minigame/done_%s.png" align(0.02, 0.95) action [Play("sound", "dressup.mp3") Jump("instructions2")]
-SyntaxError: invalid syntax (chapterone.rpy, line 214)
+After loading the script.
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jennie/Documents/GitHub/Chic-Boutique/Chic Boutique Game v2/game/saves/navigation.json.new' -> '/Users/jennie/Documents/GitHub/Chic-Boutique/Chic Boutique Game v2/game/saves/navigation.json'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/bootstrap.py", line 359, in bootstrap
     renpy.main.main()
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/main.py", line 652, in main
-    run(restart)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/main.py", line 94, in run
-    renpy.display.screen.prepare_screens()
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/screen.py", line 1024, in prepare_screens
-    s.ast.prepare_screen()
-  File "game/chapterone.rpy", line 211, in prepare_screen
-    screen outfits_ui2:
-  File "game/chapterone.rpy", line 211, in prepare
-    screen outfits_ui2:
-  File "game/chapterone.rpy", line 214, in prepare
-    imagebutton auto "Minigame/done_%s.png" align(0.02, 0.95) action [Play("sound", "dressup.mp3") Jump("instructions2")]
-  File "game/chapterone.rpy", line 214, in prepare
-    imagebutton auto "Minigame/done_%s.png" align(0.02, 0.95) action [Play("sound", "dressup.mp3") Jump("instructions2")]
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/py3analysis.py", line 803, in ast_eval
-    return self.ast_eval_literal(expr)[0]
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/py3analysis.py", line 785, in ast_eval_literal
-    expr = py_compile(expr, 'eval', ast_node=True)
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/python.py", line 1144, in py_compile
-    raise e
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/python.py", line 1081, in py_compile
-    raise orig_e
-  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/python.py", line 1073, in py_compile
-    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
-SyntaxError: invalid syntax (chapterone.rpy, line 214)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/main.py", line 529, in main
+    if renpy.parser.report_parse_errors():
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/parser.py", line 1800, in report_parse_errors
+    renpy.display.error.report_parse_errors(full_text, error_fn)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/error.py", line 177, in report_parse_errors
+    error_dump()
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/display/error.py", line 86, in error_dump
+    renpy.dump.dump(True)
+  File "/Users/jennie/Desktop/renpy-8.3.4-sdk/renpy/dump.py", line 262, in dump
+    os.rename(new, filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jennie/Documents/GitHub/Chic-Boutique/Chic Boutique Game v2/game/saves/navigation.json.new' -> '/Users/jennie/Documents/GitHub/Chic-Boutique/Chic Boutique Game v2/game/saves/navigation.json'
 
 macOS-15.0.1-arm64-arm-64bit arm64
 Ren'Py 8.3.4.24120703
 Chic Boutique 1.0
-Thu May 29 00:35:51 2025
+Thu May 29 01:24:43 2025
