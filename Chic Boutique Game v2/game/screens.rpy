@@ -93,11 +93,14 @@ style frame:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#say
 
+# Make sure povname is defaulted somewhere, e.g.
+default povname = "Player"  # Will be overwritten by player input
+
+default screen_width = 1080
 
 screen say(who, what):
     style_prefix "say"
 
-screen say(who, what):
     window:
         id "window"
 
@@ -105,10 +108,22 @@ screen say(who, what):
             window:
                 id "namebox"
                 style "namebox"
-                background Frame("gui/namebox.png", 20, 20)  # Adjust padding for scaling
+                background Frame("gui/namebox.png", 15, 10)
+
+                if who == povname:
+                    xpos 570
+                    xanchor 1.0
+                else:
+                    xpos 1295  # moved closer to right, tweak as you want
+                    xanchor 0.0
+
                 text who id "who"
 
         text what id "what"
+
+
+
+
 
 
     ## If there's a side image, display it above the text. Do not display on the
@@ -150,8 +165,8 @@ style namebox:
 
 style say_label:
     properties gui.text_properties("name", accent=True)
-    xalign gui.name_xalign
-    yalign 0.5
+    xalign 0.46
+    yalign 0.45
 
 style say_dialogue:
     properties gui.text_properties("dialogue")

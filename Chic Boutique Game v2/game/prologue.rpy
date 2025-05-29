@@ -424,11 +424,18 @@ label instructions:
         ypos 0
     with dissolve
 
-    # Ask player for their custom name
-    $ povname = renpy.input("Before you make your grand debut, what is your name?", default="").strip()
+# Ask player for their custom name with clearer instructions
+    label ask_name:
 
-    # Ensure the first letter is capitalized
+    $ povname = ""
+    while not povname:
+        $ povname = renpy.input(" What is your name? (Type and press Enter)").strip()
+        if not povname:
+            "Please enter a name before continuing."
+
     $ povname = povname.capitalize()
+
+    "Nice to meet you, [povname]!"
 
     scene congratsnew
     with dissolve
@@ -1653,7 +1660,7 @@ label path:
             $ mc_line = "My ID number is 14399333."
             jump idcard2
 
-        "Uhhh.. I actually don't know my number.":
+        "Uhhh I don't know where I put it...":
             $ mc_line = "Uhhh.. I actually don't know my number."
             jump lostid
 
