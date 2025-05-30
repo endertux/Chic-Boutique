@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 110: The if statement is not a valid child of the window statement.
-    xpos 10 if who != mc_name else 900
-              ^
+File "game/prologue.rpy", line 643: expected statement.
+    ypos 0.6
+          ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Thu May 29 13:48:08 2025
+Fri May 30 00:24:55 2025
