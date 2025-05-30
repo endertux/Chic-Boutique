@@ -1,6 +1,6 @@
 ﻿# play intro
 label splashscreen:
-    $ renpy.movie_cutscene('splash.webm')
+    $ renpy.movie_cutscene('intro.webm')
     return
 
 ###############################################################
@@ -688,25 +688,25 @@ label goyascene:
     show goya
     with fade
 
-    show artguy speak:
+    show artguy small:
         xpos 0.72
-        ypos 0.1
+        ypos 0.25
 
     #(Felix) Interested Face
     anon "I feel the same way every time I see it."
-    hide artguy
+    hide artguy small
 
     show Player:
         xpos 0.01
-        ypos 0.25
+        ypos 0.33
 
     # Surprised Face
     mc "The world is so mind-bending… I feel like I’m getting sucked into the painting just by looking at it."
     hide Player
 
-    show artguy speak:
+    show artguy small:
         xpos 0.72
-        ypos 0.1
+        ypos 0.3
 
     #(Felix) Interested Face
     anon "I get what you mean! The artist actually painted this directly on his walls."
@@ -715,7 +715,7 @@ label goyascene:
     anon "I didn't mean to get dark, but sometimes I just get lost in the painting myself."
 
     hide goya
-    hide art guy speak
+    hide art guy small
     scene museum 4
     with fade
     jump artguyscene
@@ -755,29 +755,29 @@ label madronescene:
     show madone painting
     with fade
 
-    show artguy speak:
+    show artguy small:
         xpos 0.72
-        ypos 0.1
+        ypos 0.3
 
     anon "I feel the same way every time I see it."
     hide artguy
 
     show Player:
         xpos 0.01
-        ypos 0.07
+        ypos 0.33
 
     mc "The colors are so bright… I feel like I’m getting sucked into the painting just by looking at it."
     hide Player
 
-    show artguy speak:
+    show artguy small:
         xpos 0.72
-        ypos 0.1
+        ypos 0.3
 
     anon "I get what you mean! The artist actually spent months meticulously making his own paints."
     anon "Back then, oil paints were made with eggs rather than oil, but then this guy came along and had the idea of using oil. So simple yet effective…"
 
     hide madone painting
-    hide art guy speak
+    hide art guy small
     scene museum 4
     with fade
     jump artguyscene
