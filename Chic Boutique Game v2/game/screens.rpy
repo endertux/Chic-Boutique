@@ -151,7 +151,7 @@ style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    background Image("gui/textbox.png", xalign=1.0, yalign=1.0)
 
 style namebox:
     xpos gui.name_xpos 
@@ -166,7 +166,7 @@ style namebox:
 style say_label:
     properties gui.text_properties("name", accent=True)
     xalign 0.46
-    yalign 0.45
+    yalign 0.49
 
 style say_dialogue:
     properties gui.text_properties("dialogue")

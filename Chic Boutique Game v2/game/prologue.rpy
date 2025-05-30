@@ -1,6 +1,6 @@
 ﻿# play intro
 label splashscreen:
-    $ renpy.movie_cutscene('splash.webm')
+    $ renpy.movie_cutscene('intro.webm')
     return
 
 ###############################################################
@@ -25,24 +25,21 @@ define mc = Character("[povname]")
 define anon = Character("???")
 default mc_line = ""
 
-define Felix = Character("Felix", color = "#3f7d2d" )
-define Addie = Character("Addison", color = "#32327c" )
-define Kalvin = Character("Kalvin", color = "#b72417")
+define Felix = Character("Felix", color = "#88b790" )
+define Addie = Character("Addison", color = "#92b9d6" )
+define Kalvin = Character("Kalvin", color = "#c17779")
 define Riya = Character("Riya", color = "#470b1b")
 
-define ra  = Character("RA Olivia", color = "#a84480")
-define Nadia = Character("Nadia", color = "#9b33c6")
+define ra  = Character("RA Olivia", color = "#e6b076")
+define Nadia = Character("Nadia", color = "#b5a7df")
 
 #This is where we create a separate screen for each article of clothing, as well as the character base. Make sure they're all aligned!
 screen MC_Base:
     image "Assets/newMCSprite.png":
         xpos 300
         ypos 0
-##############################################################################################################################
-# Tops Define -- Tops Define -- Tops Define -- Tops Define -- Tops Define -- Tops Define -- Tops Define
-##############################################################################################################################
 
-# -- PROLOGUE OUTFITS -- PROLOGUE OUTFITS -- PROLOGUE OUTFITS -- PROLOGUE OUTFITS -- PROLOGUE OUTFITS -- PROLOGUE OUTFITS
+# Tops Define -- Tops Define -- Tops Define -- Tops Define -- Tops Define -- Tops Define -- Tops Define
 # (1T)-- Regular Top, first dressup
 screen top0 zorder 4:
     image "Assets/Top_9.png":
@@ -79,7 +76,6 @@ screen top5 zorder 4:
         xpos 300
         ypos 0
 
-# -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS
 screen top6 zorder 2:
     image "Assets/Top_1.png":
         xpos 300
@@ -117,11 +113,8 @@ screen top11 zorder 4:
 
 
 
-##############################################################################################################################
-# Pants Define -- Pants Define -- Pants Define -- Pants Define -- Pants Define -- Pants Define -- Pants Define -- Pants Define
-##############################################################################################################################
 
-# -- PROLOGUE OUTFITS -- PROLOGUE OUTFITS -- PROLOGUE OUTFITS -- PROLOGUE OUTFITS -- PROLOGUE OUTFITS -- PROLOGUE OUTFITS
+# Pants Define -- Pants Define -- Pants Define -- Pants Define -- Pants Define -- Pants Define -- Pants Define -- Pants Define
 # (1B)-- Regular Bottom, first dressup
 screen bottom0 zorder 3:
     image "Assets/Bottom_2.png":
@@ -158,48 +151,10 @@ screen bottom5 zorder 3:
         xpos 300
         ypos 0
 
-# -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS
-# (1B)-- Addison Bottom 1, second dressup
-screen bottom6 zorder 3:
-    image "Assets/Bottom_1.png":
-        xpos 300
-        ypos 0
 
-# (2B)-- Felix Bottom 1, first dressup
-screen bottom7 zorder 3:
-    image "Assets/Bottom_3.png":
-        xpos 300
-        ypos 0
 
-# (3B)-- Riya Bottom 1, first dressup
-screen bottom8 zorder 3:
-    image "Assets/Bottom_4.png":
-        xpos 300
-        ypos 0
 
-# (4B)-- Addison Bottom 2, second dressup
-screen bottom9 zorder 3:
-    image "Assets/aBottom_7.png":
-        xpos 300
-        ypos 0
-
-# (5B)-- Riya Bottom 2, second dressup
-screen bottom10 zorder 3:
-    image "Assets/rBottom_11.png":
-        xpos 300
-        ypos 0
-
-# (6B)-- Felix Bottom 2, second dressup
-screen bottom11 zorder 3:
-    image "Assets/fBottom_12.png":
-        xpos 300
-        ypos 0
-
-##############################################################################################################################
 # Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes
-##############################################################################################################################
-
-# -- PROLOGUE OUTFITS -- PROLOGUE OUTFITS -- PROLOGUE OUTFITS -- PROLOGUE OUTFITS -- PROLOGUE OUTFITS -- PROLOGUE OUTFITS
 # (1S)-- Regular Shoe, first dressup
 screen shoe0 zorder 1:
     image "Assets/Shoe_2.png":
@@ -233,43 +188,6 @@ screen shoe4 zorder 1:
 # (10S)-- Regular Shoe, first dressup
 screen shoe5 zorder 1:
     image "Assets/Shoe_12.png":
-        xpos 300
-        ypos 0
-
-# # -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS
-# (1S)-- Addison Shoe 1, second dressup
-screen shoe6 zorder 1:
-    image "Assets/Shoe_1.png":
-        xpos 300
-        ypos 0
-
-# (2S)-- Felix Shoe 1, second dressup
-screen shoe7 zorder 1:
-    image "Assets/fShoe_5.png":
-        xpos 300
-        ypos 0
-
-# (3S)-- Addison Shoe 2, second dressup
-screen shoe8 zorder 1:
-    image "Assets/aShoe_6.png":
-        xpos 300
-        ypos 0
-
-# (4S)-- Riya Shoe 1, second dressup
-screen shoe9 zorder 1:
-    image "Assets/rShoe_7.png":
-        xpos 300
-        ypos 0
-
-# (5S)-- Riya Shoe 2, second dressup
-screen shoe10 zorder 1:
-    image "Assets/rShoe_8.png":
-        xpos 300
-        ypos 0
-
-# (11S)-- Felix Shoe 2, first dressup
-screen shoe11 zorder 1:
-    image "Assets/fShoe_11.png":
         xpos 300
         ypos 0
 
@@ -319,11 +237,11 @@ init python:
 
 
         #TEST OUTFITS, these are chapter one outfits that are here to show the scroll bar
-        ("Assets/Top_10_%s.png", "Assets/Top_10_%s.png",    "top",   "top4", 4, -20, 30),
+        ("Assets/Top_10_%s.png", "Assets/Top_10_%s.png",    "top",   "top4", 0, -20, 30),
         ("Assets/Bottom_10_%s.png", "Assets/Bottom_10_%s.png", "bottom", "bottom4", 0, -20, 40),
         ("Assets/Shoe_10_%s.png", "Assets/Shoe_10_%s.png",   "shoe",   "shoe4", 0,   0, 100),
 
-        ("Assets/Top_11_%s.png", "Assets/Top_11_%s.png",    "top",   "top5", 5, -20, 30),
+        ("Assets/Top_11_%s.png", "Assets/Top_11_%s.png",    "top",   "top5", 0, -20, 30),
         ("Assets/Bottom_13_%s.png", "Assets/Bottom_13_%s.png", "bottom", "bottom5", 0, -20, 40),
         ("Assets/Shoe_12_%s.png", "Assets/Shoe_12_%s.png",   "shoe",   "shoe5", 0, 0, 100),
 
@@ -718,17 +636,21 @@ label instructions:
 
     # menu call in script 
     label paintings : 
-        scene black bg
+        scene museum 4
+        show dim_bg
         show Player:
             xpos 0.01
-            ypos 0.07
+            ypos 0.6
+        with dissolve
         "Wow, these paintings are so cool! Which one should I look at?"
         call screen choice_menu 
 
-    label goyascene :
-        scene black bg
-        show goya 
-        with fade 
+label goyascene:
+    scene museum 4
+    show dim_bg
+    show goya:
+        ypos 0.05
+    with dissolve
 
         #INSERT OF AN ART PIECE 
         #im referencing this one you can just take the pic and put a pixel filter over bc its public domain now (refer to google doc)
@@ -759,31 +681,32 @@ label instructions:
     #(Felix)
     anon "It’s just that I noticed you seemed lost in thought looking at this piece."
 
-    scene black bg
+    scene museum 4
+    show dim_bg
     hide artguy normal
     hide Player
     show goya
     with fade
 
-    show artguy speak:
+    show artguy small:
         xpos 0.72
-        ypos 0.1
+        ypos 0.25
 
     #(Felix) Interested Face
     anon "I feel the same way every time I see it."
-    hide artguy
+    hide artguy small
 
     show Player:
         xpos 0.01
-        ypos 0.25
+        ypos 0.33
 
     # Surprised Face
     mc "The world is so mind-bending… I feel like I’m getting sucked into the painting just by looking at it."
     hide Player
 
-    show artguy speak:
+    show artguy small:
         xpos 0.72
-        ypos 0.1
+        ypos 0.3
 
     #(Felix) Interested Face
     anon "I get what you mean! The artist actually painted this directly on his walls."
@@ -792,13 +715,14 @@ label instructions:
     anon "I didn't mean to get dark, but sometimes I just get lost in the painting myself."
 
     hide goya
-    hide art guy speak
+    hide art guy small
     scene museum 4
     with fade
     jump artguyscene
 
 label madronescene:
-    scene black bg
+    scene museum 4
+    show dim_bg
     show madone painting
     with fade
 
@@ -824,35 +748,36 @@ label madronescene:
 
     anon "It’s just that I noticed you seemed lost in thought looking at this piece."
 
-    scene black bg
+    scene museum 4
+    show dim_bg
     hide artguy normal
     hide Player
     show madone painting
     with fade
 
-    show artguy speak:
+    show artguy small:
         xpos 0.72
-        ypos 0.1
+        ypos 0.3
 
     anon "I feel the same way every time I see it."
     hide artguy
 
     show Player:
         xpos 0.01
-        ypos 0.07
+        ypos 0.33
 
     mc "The colors are so bright… I feel like I’m getting sucked into the painting just by looking at it."
     hide Player
 
-    show artguy speak:
+    show artguy small:
         xpos 0.72
-        ypos 0.1
+        ypos 0.3
 
     anon "I get what you mean! The artist actually spent months meticulously making his own paints."
     anon "Back then, oil paints were made with eggs rather than oil, but then this guy came along and had the idea of using oil. So simple yet effective…"
 
     hide madone painting
-    hide art guy speak
+    hide art guy small
     scene museum 4
     with fade
     jump artguyscene
@@ -882,14 +807,14 @@ label artguyscene:
     anon "Wait, let me guess."
     anon "Are you fashion? I love your style."
 
+    scene museum 4
+    show Player:
+        xpos 0.01
+        ypos 0.6
     show artguy normal
     show dim_bg
 
 menu:
-    "Yeah! How did you know?":
-        $ mc_line = "Yeah! How did you know?"
-        jump artguychoice
-
     "Aww thank you. I am a fashion major!":
         $ mc_line = "Aww thank you. I am a fashion major!"
         jump artguychoice
@@ -900,7 +825,7 @@ menu:
 
 
 label artguychoice:
-    scene museum
+    scene museum 4
     show Player:
         xpos 0.01
         ypos 0.6
@@ -909,7 +834,7 @@ label artguychoice:
     jump felixtalking
 
 label felixsurprised:
-    scene museum
+    scene museum 4
     show Player:
         xpos 0.01
         ypos 0.6
@@ -917,11 +842,11 @@ label felixsurprised:
 
     mc "[mc_line]"
 
-    Felix "Ohh I'm sorry... Are you not?"
+    anon "Ohh I'm sorry... Are you not?"
 
     mc "Just kidding, I'm just teasing you."
 
-    Felix "Oh really now?"
+    anon "Oh really now?"
 
     mc "Yes haha, fashion is totally my thing."
     jump felixtalking2
@@ -931,10 +856,21 @@ label felixtalking:
     mc "[mc_line]"
 
 label felixtalking2:
-    Felix "Fashion’s not an easy department to get into. You must be really good!"
+    show artguy speak
+
+    anon "Fashion’s not an easy department to get into. You must be really good!"
 
     show artguy normal
     mc "I wouldn’t say all that. It’s just hard work."
+
+    show artguy speak
+
+    Felix "Oh—sorry, I just realized I never introduced myself. I’m Felix."
+
+    mc "Haha, no worries. I’m [povname]."
+
+    show artguy normal
+    Felix "[povname], huh? That’s a nice name. Fits you."
 
     show artguy speak
     Felix "I don’t usually see fashion majors in this building. Thinking of switching majors?"
@@ -1061,8 +997,8 @@ label garden:
         "Did the map give it away?":
             $ mc_line = "Did the map give it away?"
             jump addiechoiceone
-        "How'd you know?":
-            $ mc_line = "How'd you know?"
+        "Maybe..":
+            $ mc_line = "Maybe.."
             jump addiechoiceone
 
 label addiechoiceone:
@@ -1348,27 +1284,27 @@ label field:
 
     # yelling face
     #(Kyle)
-    anon "You’re blocking the field, bro!!!!!"
+    anon "Bruh, you’re blocking the field!!!"
 
     # confused face
-    "({i}No apology?{i})"
+    "({i}What the hell, he bumped into me! No apology?{i})"
 
     # determined face
-    mc "If you saw me then you didn’t have to barrel right into me!"
+    mc "If you saw me then you didn’t have to run right into me!"
 
     # neutral face
     #(Kyle)
-    anon "Yah, you’re right, dude. My bad!"
+    anon "Yah, you’re right, dude! That was on me."
 
     mc "{i}(What’s with this guy!?){i}"
 
     #(Kyle)
-    anon "So, you here to play?"
+    anon "So, you here to lift or what?"
 
     show dim_bg
     menu:
-        "What?":
-            $ mc_line = "What?"
+        "No, I don't lift.":
+            $ mc_line = "No, I don't lift."
             jump confused
 
         "Umm. I got lost here.":
@@ -1384,8 +1320,8 @@ label field:
 
     show dim_bg
     menu:
-        "So... are you a sports major?":
-            $ mc_line = "So... are you a sports major?"
+        "Do you even go here?":
+            $ mc_line = "Do you even go here?"
             jump confused3
 
         "I'm guessing that you're a sports major..":
@@ -1465,7 +1401,7 @@ label field:
     mc "Yeah… Thanks for the directions."
 
     #(Kyle)
-    Kalvin "No prob, bro. Gotta get back to running my laps. Good luck finding the cafeteria or wherever you wanted to go!"
+    Kalvin "No prob, bro. I gotta lock in getting my gains. Good luck finding the cafeteria or wherever you wanted to go!"
 
     hide gymbro
     with dissolve
@@ -1500,13 +1436,12 @@ label music:
 
     mc "They’re playing an upbeat rock song. The electric guitar is cutting through the air like a knife, the drums are sending the tempo crashing toward me, the bass is washing over me like waves. And the singer…"
 
-    show riya normal:
+    show riya talking:
         xpos 0.45
         xanchor 0.5
-        ypos 0.93
+        ypos 1.0
         yanchor 1.0
-
-
+    
     with dissolve
 
     # CG of Riya singing into the mic
@@ -1524,7 +1459,6 @@ label music:
 
     "{i}(Oh, they finished. Everyone’s cheering and putting up their instruments. Maybe I should leave before they see me.{i})"
 
-    show riya talking
     anon "Last one to the car is paying for drinks tonight!"
 
     "({i}The guitarist runs past me, followed by the other two band members.{i})"
@@ -1547,7 +1481,20 @@ label music:
 
     "({i}Jeez, I just got lost. But her guttermouth, and those bad manners… I definitely know her from somewhere.{i})"
 
-    mc "Sorry, I’m lost. If you just point me in the right direction, I’ll get out of your hair."
+    show dim_bg
+    menu:
+        "Sorry, I’m lost. If you just point me in the right direction, I’ll get out of your hair.":
+            $ mc_line = "Sorry, I’m lost. If you just point me in the right direction, I’ll get out of your hair." 
+            jump riyamemory
+
+        "Fine, I'll just leave then.":
+            $ mc_line = "Fine, I'll just leave then."
+            jump riyamemory
+
+    label riyamemory:
+    hide dim_bg
+
+    mc "[mc_line]"
 
     show riya smiling
 
@@ -1777,7 +1724,7 @@ label path:
             $ mc_line = "My ID number is 14399333."
             jump idcard2
 
-        "Uhhh I don't know where I put it...":
+        "Uhhh.. I actually don't know my number.":
             $ mc_line = "Uhhh.. I actually don't know my number."
             jump lostid
 
@@ -1914,8 +1861,8 @@ label path:
 
     show dim_bg
     menu:
-        "...":
-            $ mc_line = "..."
+        "You were just talking about it 2 seconds ago...":
+            $ mc_line = "You were just talking about it 2 seconds ago...."
             jump forgetten
 
         "Did you just forget?":
@@ -1945,7 +1892,6 @@ label path:
     "She left…"
 
     # neutral happy face
-    "Well, I’m bound to see her again sometime soon."
 
     #BG ART DORM ROOM
     scene temp dorm
@@ -1967,7 +1913,7 @@ label path:
     "It’s so much bigger than I thought it would be! Let’s see…"
 
     stop music fadeout 3.5
-    play sound "doorbell.mp3" volume 1.0
+    play sound "doorbell.mp3" volume 2.0
 
     "I could set up a mannequin here… sewing machine in this corner…"
 
@@ -1976,7 +1922,6 @@ label path:
     # surprised face
     "? (What was that?)"
 
-    
 
     #NADIA SPRITE
     show bsf normal
@@ -2003,8 +1948,8 @@ label path:
             $ mc_line = "Did we end up as roomates?"
             jump bestiemeet2
 
-        "No way, you're my roomate!":
-            $ mc_line = "No way, you're my roomate!"
+        "You're the jewerly girl!":
+            $ mc_line = "You're the jewerly girl!"
             jump bestiemeet2
 
     label bestiemeet2:
