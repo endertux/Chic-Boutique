@@ -39,7 +39,11 @@ screen MC_Base:
         xpos 300
         ypos 0
 
+##############################################################################################################################
 # Tops Define -- Tops Define -- Tops Define -- Tops Define -- Tops Define -- Tops Define -- Tops Define
+##############################################################################################################################
+
+# -- PROLOGUE OUTFITS -- PROLOGUE OUTFITS -- PROLOGUE OUTFITS -- PROLOGUE OUTFITS -- PROLOGUE OUTFITS -- PROLOGUE OUTFITS
 # (1T)-- Regular Top, first dressup
 screen top0 zorder 4:
     image "Assets/Top_9.png":
@@ -76,6 +80,7 @@ screen top5 zorder 4:
         xpos 300
         ypos 0
 
+# -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS
 screen top6 zorder 2:
     image "Assets/Top_1.png":
         xpos 300
@@ -111,10 +116,11 @@ screen top11 zorder 4:
         xpos 300
         ypos 0
 
-
-
-
+##############################################################################################################################
 # Pants Define -- Pants Define -- Pants Define -- Pants Define -- Pants Define -- Pants Define -- Pants Define -- Pants Define
+##############################################################################################################################
+
+# -- PROLOGUE OUTFITS -- PROLOGUE OUTFITS -- PROLOGUE OUTFITS -- PROLOGUE OUTFITS -- PROLOGUE OUTFITS -- PROLOGUE OUTFITS
 # (1B)-- Regular Bottom, first dressup
 screen bottom0 zorder 3:
     image "Assets/Bottom_2.png":
@@ -151,10 +157,48 @@ screen bottom5 zorder 3:
         xpos 300
         ypos 0
 
+# -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS
+# (1B)-- Addison Bottom 1, second dressup
+screen bottom6 zorder 3:
+    image "Assets/Bottom_1.png":
+        xpos 300
+        ypos 0
 
+# (2B)-- Felix Bottom 1, first dressup
+screen bottom7 zorder 3:
+    image "Assets/Bottom_3.png":
+        xpos 300
+        ypos 0
 
+# (3B)-- Riya Bottom 1, first dressup
+screen bottom8 zorder 3:
+    image "Assets/Bottom_4.png":
+        xpos 300
+        ypos 0
 
+# (4B)-- Addison Bottom 2, second dressup
+screen bottom9 zorder 3:
+    image "Assets/aBottom_7.png":
+        xpos 300
+        ypos 0
+
+# (5B)-- Riya Bottom 2, second dressup
+screen bottom10 zorder 3:
+    image "Assets/rBottom_11.png":
+        xpos 300
+        ypos 0
+
+# (6B)-- Felix Bottom 2, second dressup
+screen bottom11 zorder 3:
+    image "Assets/fBottom_12.png":
+        xpos 300
+        ypos 0
+
+##############################################################################################################################
 # Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes
+##############################################################################################################################
+
+# -- PROLOGUE OUTFITS -- PROLOGUE OUTFITS -- PROLOGUE OUTFITS -- PROLOGUE OUTFITS -- PROLOGUE OUTFITS -- PROLOGUE OUTFITS
 # (1S)-- Regular Shoe, first dressup
 screen shoe0 zorder 1:
     image "Assets/Shoe_2.png":
@@ -188,6 +232,43 @@ screen shoe4 zorder 1:
 # (10S)-- Regular Shoe, first dressup
 screen shoe5 zorder 1:
     image "Assets/Shoe_12.png":
+        xpos 300
+        ypos 0
+
+# # -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS
+# (1S)-- Addison Shoe 1, second dressup
+screen shoe6 zorder 1:
+    image "Assets/Shoe_1.png":
+        xpos 300
+        ypos 0
+
+# (2S)-- Felix Shoe 1, second dressup
+screen shoe7 zorder 1:
+    image "Assets/fShoe_5.png":
+        xpos 300
+        ypos 0
+
+# (3S)-- Addison Shoe 2, second dressup
+screen shoe8 zorder 1:
+    image "Assets/aShoe_6.png":
+        xpos 300
+        ypos 0
+
+# (4S)-- Riya Shoe 1, second dressup
+screen shoe9 zorder 1:
+    image "Assets/rShoe_7.png":
+        xpos 300
+        ypos 0
+
+# (5S)-- Riya Shoe 2, second dressup
+screen shoe10 zorder 1:
+    image "Assets/rShoe_8.png":
+        xpos 300
+        ypos 0
+
+# (11S)-- Felix Shoe 2, first dressup
+screen shoe11 zorder 1:
+    image "Assets/fShoe_11.png":
         xpos 300
         ypos 0
 
