@@ -17,85 +17,7 @@ screen MC_Base:
         xpos 300
         ypos 0
 
-# -- Tops Define -- Tops Define -- Tops Define -- Tops Define -- Tops Define -- Tops Define -- Tops Define -- Tops Define --
-# (1T)-- Felix Top 1, second dressup
-
-
-
-# -- Pants Define -- Pants Define -- Pants Define -- Pants Define -- Pants Define -- Pants Define -- Pants Define -- Pants Define -- Pants Define -- 
-# (1B)-- Addison Bottom 1, second dressup
-screen bottom0 zorder 3:
-    image "Assets/Bottom_1.png":
-        xpos 300
-        ypos 0
-
-# (2B)-- Felix Bottom 1, first dressup
-screen bottom1 zorder 3:
-    image "Assets/Bottom_3.png":
-        xpos 300
-        ypos 0
-
-# (3B)-- Riya Bottom 1, first dressup
-screen bottom2 zorder 3:
-    image "Assets/Bottom_4.png":
-        xpos 300
-        ypos 0
-
-# (4B)-- Addison Bottom 2, second dressup
-screen bottom3 zorder 3:
-    image "Assets/aBottom_7.png":
-        xpos 300
-        ypos 0
-
-# (5B)-- Riya Bottom 2, second dressup
-screen bottom4 zorder 3:
-    image "Assets/rBottom_11.png":
-        xpos 300
-        ypos 0
-
-# (6B)-- Felix Bottom 2, second dressup
-screen bottom5 zorder 3:
-    image "Assets/fBottom_12.png":
-        xpos 300
-        ypos 0
-
-
-# -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- Shoes -- 
-# (1S)-- Addison Shoe 1, second dressup
-screen shoe0 zorder 1:
-    image "Assets/Shoe_1.png":
-        xpos 300
-        ypos 0
-
-# (2S)-- Felix Shoe 1, second dressup
-screen shoe1 zorder 1:
-    image "Assets/fShoe_5.png":
-        xpos 300
-        ypos 0
-
-# (3S)-- Addison Shoe 2, second dressup
-screen shoe2 zorder 1:
-    image "Assets/aShoe_6.png":
-        xpos 300
-        ypos 0
-
-# (4S)-- Riya Shoe 1, second dressup
-screen shoe3 zorder 1:
-    image "Assets/rShoe_7.png":
-        xpos 300
-        ypos 0
-
-# (5S)-- Riya Shoe 2, second dressup
-screen shoe4 zorder 1:
-    image "Assets/rShoe_8.png":
-        xpos 300
-        ypos 0
-
-# (11S)-- Felix Shoe 2, first dressup
-screen shoe5 zorder 1:
-    image "Assets/fShoe_11.png":
-        xpos 300
-        ypos 0
+# All the outfit declarations are in the prologue
 
 #Dress up menu screen
 #Start button
@@ -108,7 +30,7 @@ define gui.scrollbar_size = 24
 
 init python:
     #an array of the items the player ownes, these are the unique names of the clothing items, just add an item to the list to give it to the player
-    owned_outfits2 = ["top6", "top7", "top8", "top9", "top10", "top11", "bottom0", "bottom1", "bottom2", "bottom3", "bottom4", "bottom5","shoe0", "shoe1", "shoe2", "shoe3", "shoe4", "shoe5"]
+    owned_outfits2 = ["top6", "top7", "top8", "top9", "top10", "top11", "bottom6", "bottom7", "bottom8", "bottom9", "bottom10", "bottom11","shoe6", "shoe7", "shoe8", "shoe9", "shoe10", "shoe11"]
 
 
     #adding new outfit options:
@@ -126,30 +48,30 @@ init python:
     outfit_buttons2 = [ #outfit buttons (path of normal clothing, path of lock clothing image, type (top, bottom, shoe), showname, item id number (saved clothing item number), offsetx, offsety)
         #prologue outfits
         ("Assets/Top_1_%s.png", "Assets/Top_1_%s.png",    "top",   "top6", 0, -40, 0),
-        ("Assets/Bottom_1_%s.png", "Assets/Bottom_1_%s.png", "bottom", "bottom0", 0, -20, 40),
-        ("Assets/Shoe_1_%s.png", "Assets/Shoe_1_%s.png",   "shoe",   "shoe7", 0, 0, 200),
+        ("Assets/Bottom_1_%s.png", "Assets/Bottom_1_%s.png", "bottom", "bottom6", 0, -20, 40),
+        ("Assets/Shoe_1_%s.png", "Assets/Shoe_1_%s.png",   "shoe",   "shoe6", 0, 0, 200),
 
         ("Assets/Top_4_%s.png", "Assets/Top_4_%s.png",    "top",   "top7", 1, -20, -40),
-        ("Assets/Bottom_3_%s.png", "Assets/Bottom_3_%s.png", "bottom", "bottom1", 1, 0, 50),
-        ("Assets/fShoe_5_%s.png", "Assets/fShoe_5_%s.png",   "shoe",   "shoe1", 1, 0, 200),
+        ("Assets/Bottom_3_%s.png", "Assets/Bottom_3_%s.png", "bottom", "bottom7", 1, 0, 50),
+        ("Assets/fShoe_5_%s.png", "Assets/fShoe_5_%s.png",   "shoe",   "shoe7", 1, 0, 200),
 
         ("Assets/Top_6_%s.png", "Assets/Top_6_%s.png",    "top",   "top8", 2, 0, 60),
-        ("Assets/Bottom_4_%s.png", "Assets/Bottom_4_%s.png", "bottom", "bottom2", 2, 0, 50),
-        ("Assets/aShoe_6_%s.png", "Assets/aShoe_6_%s.png",   "shoe",   "shoe2", 2, 0, 200),
+        ("Assets/Bottom_4_%s.png", "Assets/Bottom_4_%s.png", "bottom", "bottom8", 2, 0, 50),
+        ("Assets/aShoe_6_%s.png", "Assets/aShoe_6_%s.png",   "shoe",   "shoe8", 2, 0, 200),
 
         ("Assets/rTop_7_%s.png", "Assets/rTop_7_%s.png",    "top",   "top9", 3, 0, 60),
-        ("Assets/aBottom_7_%s.png", "Assets/aBottom_7_%s.png", "bottom", "bottom3", 3, 0, 50),
-        ("Assets/rShoe_7_%s.png", "Assets/rShoe_7_%s.png",   "shoe",   "shoe3", 3, 0, 200),
+        ("Assets/aBottom_7_%s.png", "Assets/aBottom_7_%s.png", "bottom", "bottom9", 3, 0, 50),
+        ("Assets/rShoe_7_%s.png", "Assets/rShoe_7_%s.png",   "shoe",   "shoe9", 3, 0, 200),
 
 
         #TEST OUTFITS, these are chapter one outfits that are here to show the scroll bar
         ("Assets/aTop_8_%s.png", "Assets/aTop_8_%s.png",    "top",   "top10", 0,     -20, 30),
-        ("Assets/rBottom_11_%s.png", "Assets/rBottom_11_%s.png", "bottom", "bottom4", 0, -20, 40),
-        ("Assets/rShoe_8_%s.png", "Assets/rShoe_8_%s.png",   "shoe",   "shoe4", 0,   0, 200),
+        ("Assets/rBottom_11_%s.png", "Assets/rBottom_11_%s.png", "bottom", "bottom10", 0, -20, 40),
+        ("Assets/rShoe_8_%s.png", "Assets/rShoe_8_%s.png",   "shoe",   "shoe10", 0,   0, 200),
 
         ("Assets/fTop_12_%s.png", "Assets/fTop_12_%s.png",    "top",   "top11", 1,     0, 40),
-        ("Assets/fBottom_12_%s.png", "Assets/fBottom_12_%s.png", "bottom", "bottom5", 1, 0, 50),
-        ("Assets/fShoe_11_%s.png", "Assets/fShoe_11_%s.png",   "shoe",   "shoe5", 1,   0, 100),
+        ("Assets/fBottom_12_%s.png", "Assets/fBottom_12_%s.png", "bottom", "bottom11", 1, 0, 50),
+        ("Assets/fShoe_11_%s.png", "Assets/fShoe_11_%s.png",   "shoe",   "shoe11", 1,   0, 100),
 
         #("Assets/Top_7_%s.png", "Assets/Top_7_%s.png",    "top",   "top2", 2,     10, 60),
         #("Assets/Bottom_7_%s.png", "Assets/Bottom_7_%s.png", "bottom", "bottom2", 2, 0, 50),
@@ -361,21 +283,42 @@ label instructions2:
     hide screen top4
     hide screen top5
 
+    hide screen top6
+    hide screen top7
+    hide screen top8
+    hide screen top9
+    hide screen top10
+    hide screen top11
+
     # hide screen bottoms
-    hide screen bottom0
-    hide screen bottom1
-    hide screen bottom2
-    hide screen bottom3
-    hide screen bottom4
-    hide screen bottom5
+    #hide screen bottom0
+    #hide screen bottom1
+    #hide screen bottom2
+    #hide screen bottom3
+    #hide screen bottom4
+    #hide screen bottom5
+
+    hide screen bottom6
+    hide screen bottom7
+    hide screen bottom8
+    hide screen bottom9
+    hide screen bottom10
+    hide screen bottom11
 
     #hide screen shoes
-    hide screen shoe0
-    hide screen shoe1
-    hide screen shoe2
-    hide screen shoe3
-    hide screen shoe4
-    hide screen shoe5
+    #hide screen shoe0
+    #hide screen shoe1
+    #hide screen shoe2
+    #hide screen shoe3
+    #hide screen shoe4
+    #hide screen shoe5
+
+    hide screen shoe6
+    hide screen shoe7
+    hide screen shoe8
+    hide screen shoe9
+    hide screen shoe10
+    hide screen shoe11
 
     show screen ViewOutfitButton
     show Player2:
@@ -400,6 +343,13 @@ label end_scene:
     hide screen top3
     hide screen top4
     hide screen top5
+
+    hide screen top6
+    hide screen top7
+    hide screen top8
+    hide screen top9
+    hide screen top10
+    hide screen top11
 
     # hide screen bottoms
     hide screen bottom0
