@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/prologue.rpy", line 643: expected statement.
-    ypos 0.6
-          ^
+File "game/chapterone.rpy", line 300: end of line expected.
+    hide screen bottom5|
+                       ^
 
-Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri May 30 00:24:55 2025
+Ren'Py Version: Ren'Py 8.2.3.24061702
+Fri May 30 09:55:30 2025

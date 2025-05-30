@@ -66,13 +66,13 @@ init python:
 
 
         #TEST OUTFITS, these are chapter one outfits that are here to show the scroll bar
-        ("Assets/aTop_8_%s.png", "Assets/aTop_8_%s.png",    "top",   "top10", 0,     -20, 30),
-        ("Assets/rBottom_11_%s.png", "Assets/rBottom_11_%s.png", "bottom", "bottom10", 0, -20, 40),
-        ("Assets/rShoe_8_%s.png", "Assets/rShoe_8_%s.png",   "shoe",   "shoe10", 0,   0, 200),
+        ("Assets/aTop_8_%s.png", "Assets/aTop_8_%s.png",    "top",   "top10", 4,     -20, 30),
+        ("Assets/rBottom_11_%s.png", "Assets/rBottom_11_%s.png", "bottom", "bottom10", 4, -20, 40),
+        ("Assets/rShoe_8_%s.png", "Assets/rShoe_8_%s.png",   "shoe",   "shoe10", 4,   0, 200),
 
-        ("Assets/fTop_12_%s.png", "Assets/fTop_12_%s.png",    "top",   "top11", 1,     0, 40),
-        ("Assets/fBottom_12_%s.png", "Assets/fBottom_12_%s.png", "bottom", "bottom11", 1, 0, 50),
-        ("Assets/fShoe_11_%s.png", "Assets/fShoe_11_%s.png",   "shoe",   "shoe11", 1,   0, 100),
+        ("Assets/fTop_12_%s.png", "Assets/fTop_12_%s.png",    "top",   "top11", 5,     0, 40),
+        ("Assets/fBottom_12_%s.png", "Assets/fBottom_12_%s.png", "bottom", "bottom11", 5, 0, 50),
+        ("Assets/fShoe_11_%s.png", "Assets/fShoe_11_%s.png",   "shoe",   "shoe11", 5,   0, 100),
 
         #("Assets/Top_7_%s.png", "Assets/Top_7_%s.png",    "top",   "top2", 2,     10, 60),
         #("Assets/Bottom_7_%s.png", "Assets/Bottom_7_%s.png", "bottom", "bottom2", 2, 0, 50),
@@ -200,17 +200,17 @@ layeredimage Player2:
         attribute 0 default:
             Null()
     if top == 0:
-        "Assets/Top_6.png"
+        "Assets/Top_1.png"
     if top == 1:
-        "Assets/Top_7.png"
+        "Assets/Top_4.png"
     if top == 2:
-        "Assets/Top_8.png"
+        "Assets/Top_6.png"
     if top == 3:
-        "Assets/rTop_9.png"
+        "Assets/rTop_7.png"
     if top == 4:
-        "Assets/aTop_10.png"
+        "Assets/aTop_8.png"
     if top == 5:
-        "Assets/fTop_11.png"
+        "Assets/fTop_12.png"
 
     group bottom:
         attribute 0 default:
@@ -234,13 +234,61 @@ layeredimage Player2:
 
 # PROMPT DRESS UP CHOICE
 label dress:
+    #### test 
 
+# hide screen tops 
     hide screen top0
     hide screen top1
     hide screen top2
     hide screen top3
     hide screen top4
     hide screen top5
+
+    hide screen top6
+    hide screen top7
+    hide screen top8
+    hide screen top9
+    hide screen top10
+    hide screen top11
+
+    # hide screen bottoms
+    hide screen bottom0
+    hide screen bottom1
+    hide screen bottom2
+    hide screen bottom3
+    hide screen bottom4
+    hide screen bottom5
+
+    hide screen bottom6
+    hide screen bottom7
+    hide screen bottom8
+    hide screen bottom9
+    hide screen bottom10
+    hide screen bottom11
+
+    #hide screen shoes
+    hide screen shoe0
+    hide screen shoe1
+    hide screen shoe2
+    hide screen shoe3
+    hide screen shoe4
+    hide screen shoe5
+
+    hide screen shoe6
+    hide screen shoe7
+    hide screen shoe8
+    hide screen shoe9
+    hide screen shoe10
+    hide screen shoe11
+
+    #### test 
+
+    #hide screen top0
+    #hide screen top1
+    #hide screen top2
+    #hide screen top3
+    #hide screen top4
+    #hide screen top5
 
     # hide screen bottoms
     # hide screen bottom0
@@ -284,6 +332,13 @@ label instructions2:
     hide screen top4
     hide screen top5
 
+    hide screen top6
+    hide screen top7
+    hide screen top8
+    hide screen top9
+    hide screen top10
+    hide screen top11
+
     # hide screen bottoms
     hide screen bottom0
     hide screen bottom1
@@ -292,6 +347,13 @@ label instructions2:
     hide screen bottom4
     hide screen bottom5
 
+    hide screen bottom6
+    hide screen bottom7
+    hide screen bottom8
+    hide screen bottom9
+    hide screen bottom10
+    hide screen bottom11
+
     #hide screen shoes
     hide screen shoe0
     hide screen shoe1
@@ -299,6 +361,13 @@ label instructions2:
     hide screen shoe3
     hide screen shoe4
     hide screen shoe5
+
+    hide screen shoe6
+    hide screen shoe7
+    hide screen shoe8
+    hide screen shoe9
+    hide screen shoe10
+    hide screen shoe11
 
     show screen ViewOutfitButton
     show Player2:
@@ -324,6 +393,14 @@ label end_scene:
     hide screen top4
     hide screen top5
 
+    hide screen top6
+    hide screen top7
+    hide screen top8
+    hide screen top9
+    hide screen top10
+    hide screen top11
+
+
     # hide screen bottoms
     hide screen bottom0
     hide screen bottom1
@@ -332,6 +409,13 @@ label end_scene:
     hide screen bottom4
     hide screen bottom5
 
+    hide screen bottom6
+    hide screen bottom7
+    hide screen bottom8
+    hide screen bottom9
+    hide screen bottom10
+    hide screen bottom11
+
     #hide screen shoes
     hide screen shoe0
     hide screen shoe1
@@ -339,6 +423,13 @@ label end_scene:
     hide screen shoe3
     hide screen shoe4
     hide screen shoe5
+
+    hide screen bottom6
+    hide screen bottom7
+    hide screen bottom8
+    hide screen bottom9
+    hide screen bottom10
+    hide screen bottom11
 
 
     scene temp dorm
