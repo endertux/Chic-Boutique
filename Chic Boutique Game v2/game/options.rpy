@@ -14,6 +14,11 @@
 
 define config.name = _("Chic Boutique")
 
+#For a console log
+define config.developer = True
+define config.console = True
+define config.debug = True
+
 
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.

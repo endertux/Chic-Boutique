@@ -402,7 +402,7 @@ screen outfits_ui:
                                     action [bottoms, Show(showname), SetVariable(Type, setval), SetVariable("firstBottom", setval)]
                                 if Type == "shoe":
                                     action [shoes, Show(showname), SetVariable(Type, setval), SetVariable("firstShoe", setval)]
-                            #else if you don't own it (I.E. its not in owned_outfits)
+                            #else if you don't own it (I.E. its not in its)
                             else:
                                 #set the items position on the grid
                                 pos (x_start + Xoffset + (i // 3) * x_spacing, y_start + Yoffset + (i % 3) * y_spacing)
