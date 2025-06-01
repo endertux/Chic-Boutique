@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/chapterone.rpy", line 459: expected statement.
-    centered ("Thank You For Playing", color = "#92b9d6")
-                                                         ^
+File "game/chapterone.rpy", line 114: 'action' is not a keyword argument or valid child of the screen statement.
+    action [tops2,Show(showname)]
+          ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri May 30 19:46:55 2025
+Sun Jun  1 15:02:23 2025

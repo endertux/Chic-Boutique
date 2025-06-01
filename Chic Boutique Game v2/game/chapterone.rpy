@@ -111,6 +111,7 @@ screen outfits_ui2:
             on "show" action [bottoms2, Show(showname)]
         if Type == "shoe" and shoe == setval:
             on "show" action [shoes2, Show(showname)]
+    #on "show" action [tops2,Show(showname)]
 
     #on "hide" action Hide("MC_Base")
 

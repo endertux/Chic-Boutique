@@ -1,45 +1,149 @@
-2025-06-01 21:42:39 UTC
-macOS-13.5-arm64-arm-64bit
-Ren'Py 8.2.3.24061702
+2025-06-01 22:00:09 UTC
+Windows-10-10.0.26100
+Ren'Py 8.3.4.24120703
 
-Early init took 0.05s
-Loading error handling took 0.03s
-Loading script took 0.26s
-Loading save slot metadata took 0.08s
+Early init took 0.10s
+Loading error handling took 0.12s
+Loading script took 0.95s
+Loading save slot metadata took 0.26s
 Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to '/Users/rubyhirsch/Library/RenPy/backups/Chic Boutique Game v2':
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.03s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.03s
-Running _start took 0.00s
+
+File "game/chapterone.rpy", line 108: 'print' is not a keyword argument or valid child of the for statement.
+    print showname
+         ^
+DPI scale factor: 1.750000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b'Initialize() = -6.' (can be ignored)
+Interface start took 0.37s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 32.0.101.6556'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1676) drawable=(2880, 1676)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2884, 1684) drawable=(2884, 1684)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 127.67s
+Loading error handling took 0.06s
+Loading script took 0.71s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+
+File "game/chapterone.rpy", line 114: 'action' is not a keyword argument or valid child of the screen statement.
+    action [tops2,Show(showname)]
+          ^
+DPI scale factor: 1.750000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b'Initialize() = -6.' (can be ignored)
 Interface start took 0.27s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1710, 1107)
+primary display bounds: (0, 0, 2880, 1800)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M2'
-Version: b'2.1 Metal - 83.1'
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 32.0.101.6556'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1710, 991) drawable=(3420, 1982)
+Screen sizes: virtual=(1920, 1080) physical=(2778, 1563) drawable=(2778, 1563)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1710, 991) drawable=(3420, 1982)
+Resetting cache.
+Early init took 131.02s
+Loading error handling took 0.05s
+Loading script took 0.70s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/chapterone.rpy", line 114: 'action' is not a keyword argument or valid child of the screen statement.
+    action [tops2,Show(showname)]
+          ^
+DPI scale factor: 1.750000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b'Initialize() = -6.' (can be ignored)
+Interface start took 0.25s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 32.0.101.6556'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2778, 1563) drawable=(2778, 1563)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 133.61s
+Loading error handling took 0.05s
+Loading script took 0.74s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+
+File "game/chapterone.rpy", line 114: 'action' is not a keyword argument or valid child of the screen statement.
+    action [tops2,Show(showname)]
+          ^
+DPI scale factor: 1.750000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b'Initialize() = -6.' (can be ignored)
+Interface start took 0.25s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 32.0.101.6556'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2778, 1563) drawable=(2778, 1563)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 175.25s
+Loading error handling took 0.04s
+Loading script took 0.78s
+Loading save slot metadata took 0.09s
+Loading persistent took 0.00s
+Running init code took 0.18s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.14s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\hhall\\AppData\\Roaming/RenPy/backups\\Chic Boutique Game v2':
+Dump and make backups took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.750000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b'Initialize() = -6.' (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.01s
+Analyze screens took 0.02s
+Save screen analysis took 0.02s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.26s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 32.0.101.6556'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1941, 1092) drawable=(1941, 1092)
 Maximum texture size: 4096x4096
