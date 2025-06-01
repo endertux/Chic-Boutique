@@ -81,6 +81,8 @@ screen top5 zorder 4:
         ypos 0
 
 # -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS -- CH1 OUTFITS
+
+# (1T)-- Addie Top 1, second dressup 
 screen top6 zorder 2:
     image "Assets/Top_1.png":
         xpos 300
