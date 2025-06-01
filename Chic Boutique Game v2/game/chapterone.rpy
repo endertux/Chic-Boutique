@@ -99,7 +99,7 @@ init python:
             shoes2.append(Hide(showname))
 
 screen outfits_ui2:
-    image "Backgrounds/classroom bg.jpg"
+    image "Backgrounds/temp dorm.png"
     image "Minigame/ui_base.png" align(1.1, 1.0) size (1300, 1100)
     imagebutton auto "Minigame/done_%s.png" align(0.02, 0.95) action [Play("sound", "dressup.mp3"), Jump("instructions2")]
     on "show" action [Show("MC_Base")]
@@ -434,25 +434,29 @@ label end_scene:
 
     scene temp dorm
 
-    show Player2:
-        xpos 0.01
-        ypos 0.1
+    #show Player2:
+        #xpos 0.01
+        #ypos 0.1
     with fade 
 
     show bsf speak
+    hide Player2
     Nadia "Oh my gosh, you look better in those clothes than me!"
 
 
-    #Test Code: this resets the current outfit to the first one choosen
-    $top = firstTop
-    $bottom = firstBottom
-    $shoe = firstShoe
-    #Test Code
+#Test Code: this resets the current outfit to the first one choosen
+    # $top = firstTop
+    # $bottom = firstBottom
+    # $shoe = firstShoe
+#Test Code
 
     Nadia "Okay, let's get going now."
 
+    hide bsf normal
     show black bg
     with fade
+    
 
-    "End Prototype"
+    centered "{color=#ffffff}Thank You For Playing{/color}"
+
     return

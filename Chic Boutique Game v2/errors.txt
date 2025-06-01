@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/chapterone.rpy", line 300: end of line expected.
-    hide screen bottom5|
-                       ^
+File "game/chapterone.rpy", line 459: expected statement.
+    centered ("Thank You For Playing", color = "#92b9d6")
+                                                         ^
 
-Ren'Py Version: Ren'Py 8.2.3.24061702
-Fri May 30 09:55:30 2025
+Ren'Py Version: Ren'Py 8.3.4.24120703
+Fri May 30 19:46:55 2025
