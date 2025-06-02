@@ -1672,7 +1672,7 @@ label path:
     #atp all choice options should have converged into the same main story where player is on the path outside
 
     #BG ART OF PATH
-    scene temp path
+    scene transition path
     with fade
 
     show Player:
@@ -1700,7 +1700,7 @@ label path:
     #FADE BRIGHT WHITE SCREEN
     #think it would be funny here to make it a scene where shes like i didnt think i would make it 😭 and the bright light is literally like her being like i see the light
 
-    show temp path
+    show transition path
     #show white bg
     with fade
 
@@ -1722,7 +1722,7 @@ label path:
     "I need to sit down…"
 
     #BG ART OF DORMS FRONT DESK
-    scene temp lounge
+    scene lounge
     with dissolve
 
     show Player:
