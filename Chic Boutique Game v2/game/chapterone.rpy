@@ -139,11 +139,11 @@ init python:
         print("FelixCount is", FelixCount, "   RiyaCount is", RiyaCount, "   AddieCount is", AddieCount)
         #check who had the majority of the items, breaking the tie with the default variable. the value returned is the label to jump to
         if FelixCount >= 2 or default == "Felix":
-            return "FelixTest"
+            return "felixMovie"
         if RiyaCount >= 2 or default == "Riya":
-            return "RiyaTest"
+            return "riyaMovie"
         if AddieCount >= 2 or default == "Addie":
-            return "AddiaTest"
+            return "addieMovie"
 
 
 
@@ -295,21 +295,6 @@ layeredimage Player2:
 ###############################################################
 #################### Gameplay: Chapter 1 ######################
 ###############################################################
-
-label FelixTest:
-    Felix "Love interest is Felix"
-    centered "{color=#ffffff}Thank You For Playing{/color}"
-    return
-
-label RiyaTest:
-    Riya "Love interest is Riya"
-    centered "{color=#ffffff}Thank You For Playing{/color}"
-    return
-
-label AddiaTest:
-    Addie "Love interest is Addia"
-    centered "{color=#ffffff}Thank You For Playing{/color}"
-    return
 
 # PROMPT DRESS UP CHOICE
 label dress:
@@ -538,8 +523,3 @@ label end_scene:
     hide bsf normal
     show black bg
     with fade
-    
-
-    centered "{color=#ffffff}Thank You For Playing{/color}"
-
-    return
