@@ -34,8 +34,8 @@ label felixMovie:
     mc "Felix…"
 
     show artguy normal:
-        xpos 1.0
-        ypos 0.5
+        xpos .5
+        ypos 1.0
     show bsf speak:
         xpos 1.0
         ypos 0.5

@@ -34,9 +34,9 @@ init python:
 
 
     #these attach the outfits to the love interests (I'm not sure why felix only has one for tops)
-    FelixTops = ["top11"]
+    FelixTops = ["top11", "top6"]
     RiyaTops = ["top7", "top9"]
-    AddieTops = ["top6", "top8", "top10"]
+    AddieTops = ["top8", "top10"]
 
     FelixBottoms = ["bottom7", "bottom11"]
     RiyaBottoms = ["bottom8", "bottom10"]
