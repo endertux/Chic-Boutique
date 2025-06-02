@@ -1,26 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/prologue.rpy", line 284, in script
-    init python:
-  File "game/prologue.rpy", line 285, in <module>
-    xvar = random()
-NameError: name 'random' is not defined
+  File "game/movienight.rpy", line 95, in script
+    Naida "Hey, more beanbag space for me! I’m not complaining!"
+Exception: Sayer 'Naida' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/prologue.rpy", line 284, in script
-    init python:
-  File "/Applications/renpy-8.2.3-sdk/renpy/ast.py", line 823, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "/Applications/renpy-8.2.3-sdk/renpy/python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/prologue.rpy", line 285, in <module>
-    xvar = random()
-NameError: name 'random' is not defined
+  File "game/movienight.rpy", line 95, in script
+    Naida "Hey, more beanbag space for me! I’m not complaining!"
+  File "/Applications/renpy-8.2.3-sdk/renpy/ast.py", line 2560, in execute
+    Say.execute(self)
+  File "/Applications/renpy-8.2.3-sdk/renpy/ast.py", line 575, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "/Applications/renpy-8.2.3-sdk/renpy/ast.py", line 464, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'Naida' is not defined.
 
 macOS-13.5-arm64-arm-64bit arm64
 Ren'Py 8.2.3.24061702
 Chic Boutique 1.0
-Sun Jun  1 14:41:52 2025
+Mon Jun  2 16:10:20 2025

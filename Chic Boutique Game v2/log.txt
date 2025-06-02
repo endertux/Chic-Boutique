@@ -1,4 +1,4 @@
-2025-06-02 17:11:03 UTC
+2025-06-02 22:59:04 UTC
 macOS-13.5-arm64-arm-64bit
 Ren'Py 8.2.3.24061702
 
@@ -28,7 +28,7 @@ Prepare screens took 0.05s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
 Running _start took 0.00s
-Interface start took 0.25s
+Interface start took 0.24s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1710, 1107)
@@ -42,3 +42,20 @@ Screen sizes: virtual=(1920, 1080) physical=(1710, 991) drawable=(3420, 1982)
 Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1710, 991) drawable=(3420, 1982)
 Maximum texture size: 4096x4096
+FelixCount is 2    RiyaCount is 0    AddieCount is 1
+
+Full traceback:
+  File "game/movienight.rpy", line 95, in script
+    Naida "Hey, more beanbag space for me! I’m not complaining!"
+  File "/Applications/renpy-8.2.3-sdk/renpy/ast.py", line 2560, in execute
+    Say.execute(self)
+  File "/Applications/renpy-8.2.3-sdk/renpy/ast.py", line 575, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "/Applications/renpy-8.2.3-sdk/renpy/ast.py", line 464, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'Naida' is not defined.
+
+While running game code:
+  File "game/movienight.rpy", line 95, in script
+    Naida "Hey, more beanbag space for me! I’m not complaining!"
+Exception: Sayer 'Naida' is not defined.

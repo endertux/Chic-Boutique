@@ -92,7 +92,7 @@ label felixMovie2:
 
 label felixSit:
     mc "I think I wanted to catch up with Felix a little bit. Mind if I come sit a little later?"
-    Naida "Hey, more beanbag space for me! I’m not complaining!"
+    Nadia "Hey, more beanbag space for me! I’m not complaining!"
     Nadia "Have fun…alone together…"
     mc "There’s that grin again!"
     #Nadia sprite hide
