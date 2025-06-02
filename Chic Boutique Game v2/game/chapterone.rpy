@@ -33,6 +33,20 @@ init python:
     owned_outfits2 = ["top6", "top7", "top8", "top9", "top10", "top11", "bottom6", "bottom7", "bottom8", "bottom9", "bottom10", "bottom11","shoe6", "shoe7", "shoe8", "shoe9", "shoe10", "shoe11"]
 
 
+    #these attach the outfits to the love interests (I'm not sure why felix only has one for tops)
+    FelixTops = ["top11"]
+    RiyaTops = ["top7", "top9"]
+    AddieTops = ["top6", "top8", "top10"]
+
+    FelixBottoms = ["bottom7", "bottom11"]
+    RiyaBottoms = ["bottom8", "bottom10"]
+    AddieBottoms = ["bottom6", "bottom9"]
+
+    FelixShoes = ["shoe7", "shoe11"]
+    RiyaShoes = ["shoe9", "shoe10"]
+    AddieShoes = ["shoe6", "shoe8"]
+
+
     #adding new outfit options:
         #copy and paste one of the current outfits to the bottom of the list (all three items in the group of three: top, bottom, and shoe)
         #chenge the first string path name in each item to the regular image of the item as it should apear if the player owns it
@@ -83,6 +97,55 @@ init python:
         #("Assets/Shoe_4_%s.png", "Assets/Shoe_4_%s.png",   "shoe",   "shoe3", 3,   0, 100),
         #TEST OUTFITS, these are chapter one outfits that are here to show the scroll bar
     ]
+
+    #figures out what the main love interest of an outfit is
+    def getOutfitLoveInterest():
+        #variables for the number of each lov interests items you have
+        FelixCount = 0
+        RiyaCount = 0
+        AddieCount = 0
+        #a variable for breaking ties
+        default = "Felix"
+        #loop through outfit buttons
+        for i, (imagepath, imagepathmissing, Type, showname, setval, Xoffset, Yoffset) in enumerate(outfit_buttons2):
+            #if button data is a top, check if felix, riya, or addie own it and add to their counts if they do
+            if Type == "top" and top == setval:
+                if showname in FelixTops:
+                    FelixCount += 1
+                    default = "Felix"
+                if showname in RiyaTops:
+                    RiyaCount += 1
+                    default = "Riya"
+                if showname in AddieTops:
+                    AddieCount += 1
+                    default = "Addie"
+            #if button data is a bottom, check if felix, riya, or addie own it and add to their counts if they do
+            if Type == "bottom" and bottom == setval:
+                if showname in FelixBottoms:
+                    FelixCount += 1
+                if showname in RiyaBottoms:
+                    RiyaCount += 1
+                if showname in AddieBottoms:
+                    AddieCount += 1
+            #if button data is a shoe, check if felix, riya, or addie own it and add to their counts if they do
+            if Type == "shoe" and shoe == setval:
+                if showname in FelixShoes:
+                    FelixCount += 1
+                if showname in RiyaShoes:
+                    RiyaCount += 1
+                if showname in AddieShoes:
+                    AddieCount += 1
+        #dfebug log counts (use shift O to see this)
+        print("FelixCount is", FelixCount, "   RiyaCount is", RiyaCount, "   AddieCount is", AddieCount)
+        #check who had the majority of the items, breaking the tie with the default variable. the value returned is the label to jump to
+        if FelixCount >= 2 or default == "Felix":
+            return "FelixTest"
+        if RiyaCount >= 2 or default == "Riya":
+            return "RiyaTest"
+        if AddieCount >= 2 or default == "Addie":
+            return "AddiaTest"
+
+
 
     #these three arrays automatically fill themselfs with Hide() functions for every item of their respective types. when you press a button it uses these to first hide all items of that type on the character before showing the specific one clicked
     tops2 = []
@@ -232,6 +295,21 @@ layeredimage Player2:
 ###############################################################
 #################### Gameplay: Chapter 1 ######################
 ###############################################################
+
+label FelixTest:
+    Felix "Love interest is Felix"
+    centered "{color=#ffffff}Thank You For Playing{/color}"
+    return
+
+label RiyaTest:
+    Riya "Love interest is Riya"
+    centered "{color=#ffffff}Thank You For Playing{/color}"
+    return
+
+label AddiaTest:
+    Addie "Love interest is Addia"
+    centered "{color=#ffffff}Thank You For Playing{/color}"
+    return
 
 # PROMPT DRESS UP CHOICE
 label dress:
@@ -451,8 +529,12 @@ label end_scene:
     # $shoe = firstShoe
 #Test Code
 
+
+
     Nadia "Okay, let's get going now."
 
+    #jump to the label of the love interest the outfit is primarily made of
+    jump expression getOutfitLoveInterest()
     hide bsf normal
     show black bg
     with fade
