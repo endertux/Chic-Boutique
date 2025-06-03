@@ -358,22 +358,25 @@ label credits:
     show text "{color=#f5188a}Credits{/color}" at truecenter with dissolve
     pause 2
 
-    show text "{color=#f5188a}Producers:\n- Ruby Hirsch\n- Jennie Le\n- Helwa Halloum{/color}"
+    show text "{color=#f5188a}{i}Producers{/i}{/color} {color=#ffffff}\n Ruby Hirsch\n Jennie Le\n Helwa Halloum{/color}" at truecenter with dissolve
     pause 3
 
-    show text "{color=#f5188a}Programmers: \n- Aidan Sterling\n- Helwa Halloum\n- Ruby Hirsch\n- Jennie Le{/color}"
+    show text "{color=#f5188a}{i}Programming{/i}{/color} {color=#ffffff}\n Aidan Sterling\n Helwa Halloum\n Ruby Hirsch\n Jennie Le{/color}" at truecenter with dissolve
     pause 3
 
-    show text "{color=#f5188a}UX/UI: \n- Jennie Le\n- Ruby Hirsch{/color}"
+    show text "{color=#f5188a}{i}UX/UI{/i}{/color} {color=#ffffff}\n Jennie Le\n Ruby Hirsch{/color}" at truecenter with dissolve
     pause 3
 
-    show text "{color=#f5188a}Artists:\n- Stephanie Lipe\n- Jennie Le\n- Helwa Halloum\n- Ruby Hirsch{/color}" at truecenter with dissolve
+    show text "{color=#f5188a}{i}Art{/i}{/color} {color=#ffffff}\n Stephanie Lipe\n Jennie Le\n Helwa Halloum\n Ruby Hirsch \nJasper Siem \nHalle Fouche \nAlona Rees-Ramirez{/color}" at truecenter with dissolve
     pause 3
 
-    show text "{color=#f5188a}Writers:\n- Stephanie Lipe\n- Noel Kim\n- Hailey Phipps{/color}" at truecenter with dissolve
+    show text "{color=#f5188a}{i}Narrative Design{/i}{/color} {color=#ffffff}\n Stephanie Lipe\n Noel Kim\n Hailey Phipps{/color}" at truecenter with dissolve
     pause 3
 
-    show text "{color=#f5188a}Editor:\n- Hailey Phipps{/color}" at truecenter with dissolve
+    show text "{color=#f5188a}{i}Editor{/i}{/color} {color=#ffffff}\n Hailey Phipps{/color}" at truecenter with dissolve
+    pause 3
+
+    show text "{color=#f5188a}{i}Music{/i}{/color} {color=#ffffff}\n Ishan Gupta{/color}" at truecenter with dissolve
     pause 3
 
     show text "{color=#f5188a}Thank you for playing!{/color}" at truecenter with dissolve
