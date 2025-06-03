@@ -520,6 +520,6 @@ label end_scene:
 
     #jump to the label of the love interest the outfit is primarily made of
     jump expression getOutfitLoveInterest()
-    hide bsf normal
+
     show black bg
     with fade
