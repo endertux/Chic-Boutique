@@ -166,8 +166,7 @@ label felixSit:
 
     show black bg
     with fade
-    centered "{color=#ffffff}Thank You For Playing{/color}"
-    return
+    jump credits
 
 
 label nadiaGo:
@@ -193,8 +192,7 @@ label nadiaGo:
 
     show black bg
     with fade
-    centered "{color=#ffffff}Thank You For Playing{/color}"
-    return
+    jump credits
 
 ###############################################################
 ############## Chapter 1: Movie Night - Addie #################
@@ -343,8 +341,7 @@ label addieSelfie2:
 
     show black bg
     with fade
-    centered "{color=#ffffff}Thank You For Playing{/color}"
-    return
+    jump credits
 
 ###############################################################
 ############## Chapter 1: Movie Night - Riya ##################
@@ -354,6 +351,33 @@ label riyaMovie:
 
     show black bg
     with fade
-    centered "{color=#ffffff}Thank You For Playing{/color}"
+    jump credits
+
+label credits: 
+    scene black with fade 
+    show text "{color=#f5188a}Credits{/color}" at truecenter with dissolve
+    pause 2
+
+    show text "{color=#f5188a}Producers:\n- Ruby Hirsch\n- Jennie Le\n- Helwa Halloum{/color}"
+    pause 3
+
+    show text "{color=#f5188a}Programmers: \n- Aidan Sterling\n- Helwa Halloum\n- Ruby Hirsch\n- Jennie Le{/color}"
+    pause 3
+
+    show text "{color=#f5188a}UX/UI: \n- Jennie Le\n- Ruby Hirsch{/color}"
+    pause 3
+
+    show text "{color=#f5188a}Artists:\n- Stephanie Lipe\n- Jennie Le\n- Helwa Halloum\n- Ruby Hirsch{/color}" at truecenter with dissolve
+    pause 3
+
+    show text "{color=#f5188a}Writers:\n- Stephanie Lipe\n- Noel Kim\n- Hailey Phipps{/color}" at truecenter with dissolve
+    pause 3
+
+    show text "{color=#f5188a}Editor:\n- Hailey Phipps{/color}" at truecenter with dissolve
+    pause 3
+
+    show text "{color=#f5188a}Thank you for playing!{/color}" at truecenter with dissolve
+    pause 3
+
     return
 
