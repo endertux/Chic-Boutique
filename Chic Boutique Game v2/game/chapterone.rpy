@@ -141,11 +141,11 @@ init python:
         if FelixCount >= 2 or default == "Felix":
             return "felixMovie"
         if RiyaCount >= 2 or default == "Riya":
-            return "riyaMovie"
+            return "riyaMovie_A"
+        elif music == "RiyaReturn":
+            return "riyaMovie_B"
         if AddieCount >= 2 or default == "Addie":
             return "addieMovie"
-
-
 
     #these three arrays automatically fill themselfs with Hide() functions for every item of their respective types. when you press a button it uses these to first hide all items of that type on the character before showing the specific one clicked
     tops2 = []

@@ -7,6 +7,9 @@ label splashscreen:
 ######################### Dress Up ############################
 ###############################################################
 
+# remember player choise connected to movie night
+$ music = False
+
 # dress up mini game by dicortesia --> https://www.youtube.com/watch?v=oZU0CmyuZHE&ab_channel=dicortesia
 
 #These variables correspond to the images saved in "images/Minigame". If the variable is 0, the corresponding clothes will have 0 in their filename and so on.
@@ -656,7 +659,6 @@ label instructions:
     "I have to at least go into the school if I want to attend…"
 
     #"…Which way first?"
-
     #COMMON ROUTE CHOICE 1: [museum] [garden] [field] [music studio]
     show dim_bg
     menu:
@@ -670,6 +672,7 @@ label instructions:
         "Go over to the field.":
             jump field
         "Check out the music studio.":
+            $ music = True
             jump music
 
     label museum:
@@ -1746,8 +1749,18 @@ label path:
     "Should I drop out?"
 
     "Should I do it?"
+    show dim_bg
+
+    menu:
+        "Stay In":
+            hide dim_bg
+            "(I guess I could keep going...)"
+
+        "Drop Out":
+            jump credits
 
     # concerned face
+    hide dim_bg
     anon "Um…"
 
     "?"

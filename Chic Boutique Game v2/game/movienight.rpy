@@ -346,8 +346,90 @@ label addieSelfie2:
 ###############################################################
 ############## Chapter 1: Movie Night - Riya ##################
 ###############################################################
-label riyaMovie:
-    "text Riya"
+
+# If player NEVER met Riya
+label riyaMovie_A:
+    show movie bg
+    show Player:
+        xpos 0.01
+        ypos 0.6
+    with fade
+
+    #riya looking away
+    mc "(I love her style. The ‘70s punk-rock spikes and chains, a gratuitous amount of piercings—it’s classic Vivienne Westwood. She looks like she was ripped straight out of one of those old punk zines, like Maximum Rocknroll.)"
+    mc "(I kind of want to ask her where she got her jewelry. Plus, there’s something about her…)"
+    mc "(Her jet-black hair and the sound of her voice… She seems a little familiar. Maybe I met her at orientation?)"
+    mc "(I should ask her.)"
+    menu:
+        "Hey, I love your jewelry. Where’d you get it?":
+            anon "Oh, thank you. They’re mostly from Carnage in Bloom, they’re a popular punk jeweler. I love your style, I feel like you’d like some of their pieces."
+            jump riya_isThatYou
+
+
+        "Hey, have we met somewhere?":
+            anon "Have we met? Not that I know of. Unless you’ve come to one of my shows? I’m the lead singer of—"
+            jump riya_isThatYou
+
+label riya_isThatYou:
+    anon "Hey, wait a second. [povname], is that you!?"
+    mc "(Maybe we do know each other…?)"
+    Riya "What the hell are you doing here!? It’s me, Riya!"
+    mc "Riya!? Oh my god, it’s been so long!"
+    mc "(No wonder why she looked familiar! Riya and I were friends in middle school, and she always talked about wanting to start a band. She would practice guitar in front of me for hours, and god, she was so bad! It’s making me laugh just thinking about it.)"
+    mc "(Riya goes in for a hug and squeezes me tight. When she pulls away and holds me by the shoulders, I feel like we’re back in middle school again.)"
+    mc "I just got accepted into Slaycademy! I just met my roommate and she told me about this movie night. What are you doing here?"
+    Riya "Figures you’d end up here, you always used to talk my ear off about fashion. I started last year, Music major. I started a band in high school, and now we play shows around here. You’ve gotta come see us sometime!"
+    mc "Wow, that’s so cool. I’d love to!"
+
+    jump riyaMovie_Join
+
+    
+    show black bg
+    with fade
+    jump credits
+
+# if player DID pick music studio
+label riyaMovie_B:
+    show movie bg
+    show Player:
+        xpos 0.01
+        ypos 0.6
+    with fade
+
+    mc "Hey, Riya!"
+    Riya "Oh, hey, Ruffles."
+    mc "(Ruffles? That’s kind of cute…)"
+    Riya "Sorry, do you not like it anymore? I used to call you that in middle school, remember? Because of all the frilly, ruffly designs you’d sketch and show me in class."
+    mc "(Oh, right. In homeroom, I’d subject Riya to reviewing all of my amateurish fashion sketches. She always liked the punk-inspired ones the most.)"
+    mc "Oh yeah! Remember when our homeroom teacher caught us talking about them, and he pinned my sketchbook pages to the board for a whole month? He thought they were too cute not to show off…"
+    Riya "They were really cute! I remember this mermaid skirt you designed with a criminal amount of belts and spikes. That was the craziest thing I’ve ever seen."
+    mc "Wow, I totally forgot about that one! I did have some crazy ideas back then."
+
+    jump riyaMovie_Join
+
+label riyaMovie_Join:
+    Riya "Hey, so, what are you doing this weekend? My favorite band is playing here on Saturday and my guitarist, James, just bailed on me ‘cause he has a date. I’ve got a free ticket if you’d like to come."
+    menu:
+        "Is it Velvet Panic? I wanted to go so bad!":
+            Riya "No way, you listen to them too? You’re going to love seeing them live."
+
+            jump riyaMovie_PickUp
+
+        "I might be too busy. Some of my classes already assigned design homework…":
+            Riya "Hey, no worries. You know, the concert might be a good inspiration for your designs. Velvet Panic’s style is pretty out there."
+            mc "Maybe you’re right… I could use some inspiration."
+
+            jump riyaMovie_PickUp
+
+label riyaMovie_PickUp:
+    Riya "Should I pick you up at 7 on Saturday then?"
+    mc "Yeah, that sounds great!"
+    Riya "Great, then it’s a date. Throw on something grimy and grunge, okay?"
+    mc "(A date!? Wait, no, she probably doesn’t mean a date date. But maybe…?)"
+    Riya "Oh, hey, my bandmates just got here. I need to update them on some gigs we’ve got next week. But I’ll see you on Saturday, yeah?"
+    mc "Oh, sure! See you then, Riya."
+    Riya "See you, Ruffles."
+
 
     show black bg
     with fade
