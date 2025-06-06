@@ -499,6 +499,10 @@ layeredimage Player:
         "Assets/Bottom_10.png"
     if bottom == 5:
         "Assets/Bottom_13.png"
+
+# for looping sounds? 
+#init:
+#    renpy.music.register_channel("Addie", "sfx", True) # Register a looping "Addie" channel
         
 ###############################################################
 #################### Gameplay: Prologue #######################
@@ -561,7 +565,8 @@ label instructions:
 
     scene congratsnew
     with dissolve
-    play music "Test Theme  - Opening the Mail-001.mp3" fadein 1.0 volume 0.5
+    #play music "Test Theme  - Opening the Mail-001.mp3" fadein 1.0 volume 0.5
+    play sound "Open_mail_theme.wav" volume 0.5 loop
     #"Congratulations, [povname]!"
 
     "After reviewing your application, we have decided to offer you admission to Slaycademy Institute of the Arts for the upcoming school year."
@@ -597,6 +602,7 @@ label instructions:
 
     "A new chapter begins…"
 
+
     #CG OF SLAYCADEMY ENTraNCE 
     #IF POSSIBLE, do a pan up reveal
     scene school
@@ -607,8 +613,10 @@ label instructions:
         ypos 0.6
     with dissolve
     
-    #play music
-    play music "podcast-smooth-jazz-instrumental-music-225674.mp3" volume 0.5
+    #stop sound fadeout 0.5
+
+    #play sound "Chic_Boutique_General_Theme.wav" volume 0.5 loop
+    #play music "podcast-smooth-jazz-instrumental-music-225674.mp3" volume 0.5
     # https://pixabay.com/music/smooth-jazz-podcast-smooth-jazz-instrumental-music-225674/
 
     # Suprised Face
@@ -660,6 +668,7 @@ label instructions:
 
     "I have to at least go into the school if I want to attend…"
 
+
     #"…Which way first?"
     #COMMON ROUTE CHOICE 1: [museum] [garden] [field] [music studio]
     show dim_bg
@@ -668,17 +677,22 @@ label instructions:
         "…Which way first?"
 
         "Head over to the museum.":
+            stop sound fadeout 0.5
             jump museum
         "Walk to the garden.":
+            stop sound fadeout 0.5
             jump garden
         "Go over to the field.":
+            stop sound fadeout 0.5
             jump field
         "Check out the music studio.":
-            $ music = True
+            #$ music = True
+            stop sound fadeout 0.5
             jump music
 
     label museum:
-        play music "felixtheme.mp3" fadein 1.0 volume 0.5
+        ##play music "felixtheme.mp3" fadein 1.0 volume 0.5
+        play sound "Felix_test_audio.wav" volume 0.5 loop
     #BG ART OF SCHOOL MUSEUM
         scene museum 4
         with fade
@@ -1012,12 +1026,19 @@ label felixtalking3:
 
     with dissolve
     scene black bg
+    stop sound fadeout 0.5
     with fade
     jump path
 
 
 label garden:
-    play music "Addie Test Theme 1-002.mp3" fadein 1.0 volume 0.5
+    #play music "Addie Test Theme 1-002.mp3" fadein 1.0 volume 0.5
+    
+
+    #loop text 
+    #play Addie "Addie_test_audio.wav"
+
+
     #BG ART OF SCHOOL GARDEN
     scene garden bg
 
@@ -1049,6 +1070,7 @@ label garden:
     # Confused Face
     mc "{i}(Is she talking to me?){i}"
 
+    play sound "Addie_test_audio.wav" volume 0.5 loop
     show baddie small:
         xpos 0.75
         ypos 0.35
@@ -1331,10 +1353,14 @@ label actcalm:
     scene black bg
     with fade
 
+    stop sound fadeout 1.0
+
     jump path
 
 label field:
-    play music "Gymbro_test_theme_3.mp3" fadein 1.0 volume 0.5
+
+    #define audio.Gymbro = "Gymbro_test_theme_3.mp3"
+    #play music Gymbro fadein 1.0 volume 0.5
     #BG ART OF SCHOOL FOOTBALL FIELD
     scene field
     with fade
@@ -1364,7 +1390,7 @@ label field:
     #maybe put some sort of screen movement here to indicate that she stood back up after falling
 
     #KYLE SPRITE
-
+    play sound "Gymbro_test_audio.wav" loop volume 0.5
     show gymbro normal:
         xpos 0.32
         ypos 0.15
@@ -1498,13 +1524,15 @@ label field:
     "({i}Did this guy really give me the right directions?{i})"
 
     scene black bg
+    stop sound fadeout 0.5
     with fade
 
     jump path
 
 label music:
-    play music "Riya Band Practice Theme Test 1.mp3" fadein 1.0 volume 0.5
+    #play music "Riya Band Practice Theme Test 1.mp3" fadein 1.0 volume 0.5
 
+    play sound "Riya_test_audio.wav" loop volume 0.5
     scene music studio bg
     with fade
 
@@ -1667,13 +1695,15 @@ label music_continue:
     Riya "Oh, uh, okay. Hope to see you soon?"
 
     scene black bg
+    stop sound fadeout 1.0
     with fade
 
     jump path
 
 
 label path:
-    play music "RAtheme.mp3" fadein 1.0 volume 0.5 
+    #play music "RAtheme.mp3" fadein 1.0 volume 0.5 
+    play sound "Chic_Boutique_General_Theme.wav" volume 0.5 loop
     #FADE TO SCENE OUTSIDE ON PATH
 
     #atp all choice options should have converged into the same main story where player is on the path outside
@@ -1761,11 +1791,15 @@ label path:
             "(I guess I could keep going...)"
 
         "Drop Out":
+            stop sound fadeout 0.5
             jump credits
+
 
     # concerned face
     hide dim_bg
     anon "Um…"
+    stop sound fadeout 0.5
+    play sound "RA_test_theme.wav" volume 0.5 loop
 
     "?"
     show Player with fade:
@@ -1866,8 +1900,11 @@ label path:
     # cry face
     mc "Thanks…"
     #😭
+    stop sound fadeout 0.5
+
 
     #BG ART OF DORM HALL
+    play sound "Chic_Boutique_General_Theme.wav" volume 0.5 loop
     scene temp hallway
     with fade
 
@@ -1880,6 +1917,8 @@ label path:
 
     "I wonder what the room w-"
 
+    stop sound fadeout 0.5
+
     # surprised face
     mc "Ah!"
 
@@ -1888,6 +1927,8 @@ label path:
     show temp hallway with hpunch
 
     #CraSH EFFECT
+
+    play sound "Nadia_test_theme.wav" volume 0.5 loop
 
     scene zoe cg
 
@@ -1990,7 +2031,9 @@ label path:
 
     # sweat drop face
     "She left…"
-
+    stop sound fadeout 0.5
+    
+    play sound "Chic_Boutique_General_Theme.wav" volume 0.5 loop
     # neutral happy face
 
     #BG ART DORM ROOM
@@ -2021,6 +2064,7 @@ label path:
 
     # surprised face
     "? (What was that?)"
+    
 
 
     #NADIA SPRITE
@@ -2039,7 +2083,9 @@ label path:
 
     show bsf worried
     
-    play music "Nadia_Test_Theme_1.mp3" fadein 1.0 volume 0.5 
+    #play music "Nadia_Test_Theme_1.mp3" fadein 1.0 volume 0.5 
+    stop sound fadeout 0.5
+    play sound "Nadia_test_theme.wav" volume 0.5 loop
     Nadia "HAHAHAHAHA"
 
     show dim_bg
@@ -2137,6 +2183,7 @@ label path:
     #😭
     jump dress
     with fade
+    stop sound fadeout 0.5
 
 return
     

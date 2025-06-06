@@ -8,6 +8,7 @@ image nadia worried = "bsf worried.png"
 ############## Chapter 1: Movie Night - Felix #################
 ###############################################################
 label felixMovie:
+    play sound "Felix_test_audio.wav" volume 0.5 loop
     show movie bg
     show Player:
         xpos 0.01
@@ -200,12 +201,14 @@ label nadiaGo:
 
     show black bg
     with fade
+    stop sound fadeout 0.5
     jump credits
 
 ###############################################################
 ############## Chapter 1: Movie Night - Addie #################
 ###############################################################
 label addieMovie:
+    play sound "Addie_test_audio.wav" volume 0.5 loop
     show movie bg
     show Player:
         xpos 0.01
@@ -351,6 +354,7 @@ label addieSelfie2:
 
     show black bg
     with fade
+    stop sound fadeout 0.5
     jump credits
 
 ###############################################################
@@ -359,6 +363,7 @@ label addieSelfie2:
 
 # If player NEVER met Riya
 label riyaMovie_A:
+    play sound "Riya_test_audio.wav" loop volume 0.5
     show movie bg
     show Player:
         xpos 0.01
@@ -464,6 +469,7 @@ label riyaMovie_PickUp:
 
     show black bg
     with fade
+    stop sound fadeout 0.5
     jump credits
 
 label credits:

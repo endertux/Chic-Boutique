@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/chapterone.rpy", line 114: 'action' is not a keyword argument or valid child of the screen statement.
-    action [tops2,Show(showname)]
-          ^
+File "game/prologue.rpy", line 605: expected end of line
+    stop sound "Open_mail_theme.wav" fadeout 0.5
+               ^
 
-Ren'Py Version: Ren'Py 8.3.4.24120703
-Sun Jun  1 15:02:23 2025
+Ren'Py Version: Ren'Py 8.2.3.24061702
+Fri Jun  6 09:44:51 2025
