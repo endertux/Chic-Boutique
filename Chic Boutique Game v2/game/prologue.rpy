@@ -465,7 +465,7 @@ layeredimage Player:
     if shoe == 4: 
         "Assets/fShoe_10.png"
     if shoe == 5: 
-        "Assets/aShoe_12.png"
+        "Assets/Shoe_12.png"
 
     group top:
         attribute 8 default:
