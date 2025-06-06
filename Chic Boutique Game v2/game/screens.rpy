@@ -298,7 +298,7 @@ style quick_button_text:
 
 screen navigation():
 
-    on "show" action If(not renpy.music.is_playing(channel="music"), Play("music", "chicboutique.mp3", loop=True, fadein=1.0))
+    on "show" action If(not renpy.music.is_playing(channel="music"), Play("music", "Chic Boutique Main Menu Test Theme 1-002.mp3", loop=True, fadein=1.0))
 
 
     vbox:

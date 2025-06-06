@@ -23,6 +23,9 @@ label felixMovie:
 
     show nadia sad
     with dissolve
+
+    play music "Nadia_Test_Theme_1.mp3" fadein 1.0 volume 0.5 
+
     Nadia "Wait, wait why!"
     Nadia "Your outfit is so cutieful!"
 
@@ -37,6 +40,9 @@ label felixMovie:
 
     show artguy normal
     with dissolve
+    
+    play music "felixtheme.mp3" fadein 1.0 volume 0.5
+
     mc "Felix…"
 
     show nadia speak:
@@ -172,6 +178,8 @@ label felixSit:
 label nadiaGo:
     hide dim_bg
 
+    play music "Nadia_Test_Theme_1.mp3" fadein 1.0 volume 0.5 
+
     mc "Ooh, I was eyeing those when I walked in too."
     hide nadia normal
     show artguy speak
@@ -203,6 +211,8 @@ label addieMovie:
         xpos 0.01
         ypos 0.6
     with fade
+
+    play music "Addie Test Theme 1-002.mp3" fadein 1.0 volume 0.5
 
     show baddie happy
     with dissolve
@@ -355,7 +365,11 @@ label riyaMovie_A:
         ypos 0.6
     with fade
 
+    play music "Riya Tender Moment Test Theme 1.mp3" fadein 1.0 volume 0.5
+
     #riya looking away
+    show riya normal
+    with dissolve
     mc "(I love her style. The ‘70s punk-rock spikes and chains, a gratuitous amount of piercings—it’s classic Vivienne Westwood. She looks like she was ripped straight out of one of those old punk zines, like Maximum Rocknroll.)"
     mc "(I kind of want to ask her where she got her jewelry. Plus, there’s something about her…)"
     mc "(Her jet-black hair and the sound of her voice… She seems a little familiar. Maybe I met her at orientation?)"
@@ -371,13 +385,16 @@ label riyaMovie_A:
             jump riya_isThatYou
 
 label riya_isThatYou:
+    show riya talking
     anon "Hey, wait a second. [povname], is that you!?"
     mc "(Maybe we do know each other…?)"
     Riya "What the hell are you doing here!? It’s me, Riya!"
+    show riya smiling
     mc "Riya!? Oh my god, it’s been so long!"
     mc "(No wonder why she looked familiar! Riya and I were friends in middle school, and she always talked about wanting to start a band. She would practice guitar in front of me for hours, and god, she was so bad! It’s making me laugh just thinking about it.)"
     mc "(Riya goes in for a hug and squeezes me tight. When she pulls away and holds me by the shoulders, I feel like we’re back in middle school again.)"
     mc "I just got accepted into Slaycademy! I just met my roommate and she told me about this movie night. What are you doing here?"
+    show riya talking
     Riya "Figures you’d end up here, you always used to talk my ear off about fashion. I started last year, Music major. I started a band in high school, and now we play shows around here. You’ve gotta come see us sometime!"
     mc "Wow, that’s so cool. I’d love to!"
 
@@ -388,7 +405,7 @@ label riya_isThatYou:
     with fade
     jump credits
 
-# if player DID pick music studio
+######### if player DID pick music studio ######### 
 label riyaMovie_B:
     show movie bg
     show Player:
@@ -396,18 +413,25 @@ label riyaMovie_B:
         ypos 0.6
     with fade
 
+    show riya normal
     mc "Hey, Riya!"
+    show riya talking
     Riya "Oh, hey, Ruffles."
+    show riya standing
     mc "(Ruffles? That’s kind of cute…)"
+    show riya smiling
     Riya "Sorry, do you not like it anymore? I used to call you that in middle school, remember? Because of all the frilly, ruffly designs you’d sketch and show me in class."
     mc "(Oh, right. In homeroom, I’d subject Riya to reviewing all of my amateurish fashion sketches. She always liked the punk-inspired ones the most.)"
     mc "Oh yeah! Remember when our homeroom teacher caught us talking about them, and he pinned my sketchbook pages to the board for a whole month? He thought they were too cute not to show off…"
+    show riya talking
     Riya "They were really cute! I remember this mermaid skirt you designed with a criminal amount of belts and spikes. That was the craziest thing I’ve ever seen."
+    show riya standing
     mc "Wow, I totally forgot about that one! I did have some crazy ideas back then."
 
     jump riyaMovie_Join
 
 label riyaMovie_Join:
+    show riya talking
     Riya "Hey, so, what are you doing this weekend? My favorite band is playing here on Saturday and my guitarist, James, just bailed on me ‘cause he has a date. I’ve got a free ticket if you’d like to come."
     menu:
         "Is it Velvet Panic? I wanted to go so bad!":
@@ -422,12 +446,19 @@ label riyaMovie_Join:
             jump riyaMovie_PickUp
 
 label riyaMovie_PickUp:
+    show riya talking
     Riya "Should I pick you up at 7 on Saturday then?"
+    show riya standing
     mc "Yeah, that sounds great!"
+    show riya talking
     Riya "Great, then it’s a date. Throw on something grimy and grunge, okay?"
+    show riya smiling
     mc "(A date!? Wait, no, she probably doesn’t mean a date date. But maybe…?)"
+    show riya talking
     Riya "Oh, hey, my bandmates just got here. I need to update them on some gigs we’ve got next week. But I’ll see you on Saturday, yeah?"
+    show riya standing
     mc "Oh, sure! See you then, Riya."
+    show riya talking
     Riya "See you, Ruffles."
 
 
@@ -435,7 +466,8 @@ label riyaMovie_PickUp:
     with fade
     jump credits
 
-label credits: 
+label credits:
+    play music "421887__b_sean__reflection-[AudioTrimmer.com] (1).wav" fadein 1.3 volume 0.5
     scene black with fade 
     show text "{color=#f5188a}Credits{/color}" at truecenter with dissolve
     pause 2

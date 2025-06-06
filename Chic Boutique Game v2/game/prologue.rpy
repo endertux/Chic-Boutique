@@ -1,5 +1,6 @@
 ﻿# play intro
 label splashscreen:
+    play sound "Chic_Boutique_Studio_Intro.mp3"
     $ renpy.movie_cutscene('intro.webm')
     return
 
@@ -560,6 +561,7 @@ label instructions:
 
     scene congratsnew
     with dissolve
+    play music "Test Theme  - Opening the Mail-001.mp3" fadein 1.0 volume 0.5
     #"Congratulations, [povname]!"
 
     "After reviewing your application, we have decided to offer you admission to Slaycademy Institute of the Arts for the upcoming school year."
@@ -1015,7 +1017,7 @@ label felixtalking3:
 
 
 label garden:
-    play music "addietheme.mp3" fadein 1.0 volume 0.5
+    play music "Addie Test Theme 1-002.mp3" fadein 1.0 volume 0.5
     #BG ART OF SCHOOL GARDEN
     scene garden bg
 
@@ -1501,7 +1503,7 @@ label field:
     jump path
 
 label music:
-    play music "riyatheme.mp3" fadein 1.0 volume 0.5
+    play music "Riya Band Practice Theme Test 1.mp3" fadein 1.0 volume 0.5
 
     scene music studio bg
     with fade
@@ -1544,6 +1546,8 @@ label music:
     "{i}(Her clear tone, and that jet-black hair… She looks a little familiar. Maybe I met her at orientation?{i})"
 
     "{i}(Oh, they finished. Everyone’s cheering and putting up their instruments. Maybe I should leave before they see me.{i})"
+
+    play music "Riya Tender Moment Test Theme 1.mp3" fadein 1.0 volume 0.5
 
     anon "Last one to the car is paying for drinks tonight!"
 
@@ -2035,7 +2039,7 @@ label path:
 
     show bsf worried
     
-    play music "bestietheme.mp3" fadein 1.0 volume 0.5 
+    play music "Nadia_Test_Theme_1.mp3" fadein 1.0 volume 0.5 
     Nadia "HAHAHAHAHA"
 
     show dim_bg
