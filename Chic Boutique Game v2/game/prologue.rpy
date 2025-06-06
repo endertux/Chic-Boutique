@@ -323,13 +323,13 @@ init python:
 
 
         #TEST OUTFITS, these are chapter one outfits that are here to show the scroll bar
-        ("Assets/Top_10_%s.png", "Assets/Top_10_%s.png",    "top",   "top4", 0, -20, 30),
-        ("Assets/Bottom_10_%s.png", "Assets/Bottom_10_%s.png", "bottom", "bottom4", 0, -20, 40),
-        ("Assets/Shoe_10_%s.png", "Assets/Shoe_10_%s.png",   "shoe",   "shoe4", 0,   0, 100),
+        ("Assets/Top_10_%s.png", "Assets/Top_10_%s.png",    "top",   "top4", 4, -20, 30),
+        ("Assets/Bottom_10_%s.png", "Assets/Bottom_10_%s.png", "bottom", "bottom4", 4, -20, 40),
+        ("Assets/Shoe_10_%s.png", "Assets/Shoe_10_%s.png",   "shoe",   "shoe4", 4,   0, 100),
 
-        ("Assets/Top_11_%s.png", "Assets/Top_11_%s.png",    "top",   "top5", 0, -20, 30),
-        ("Assets/Bottom_13_%s.png", "Assets/Bottom_13_%s.png", "bottom", "bottom5", 0, -20, 40),
-        ("Assets/Shoe_12_%s.png", "Assets/Shoe_12_%s.png",   "shoe",   "shoe5", 0, 0, 100),
+        ("Assets/Top_11_%s.png", "Assets/Top_11_%s.png",    "top",   "top5", 5, -20, 30),
+        ("Assets/Bottom_13_%s.png", "Assets/Bottom_13_%s.png", "bottom", "bottom5", 5, -20, 40),
+        ("Assets/Shoe_12_%s.png", "Assets/Shoe_12_%s.png",   "shoe",   "shoe5", 5, 0, 100),
 
         #("Assets/Top_6_%s.png", "Assets/Top_6_%s.png",    "top",   "top1", 1,     0, 40),
         #("Assets/Bottom_6_%s.png", "Assets/Bottom_6_%s.png", "bottom", "bottom1", 1, 0, 50),
